@@ -121,19 +121,19 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services" className="text-card/80 hover:text-card transition-colors">
-                  Move-In/Move-Out
+                 Move-In / Move-Out Cleaning
                 </Link>
               </li>
 
                <li>
                 <Link href="/services" className="text-card/80 hover:text-card transition-colors">
-                  Commercial & Office
+                 Commercial & Office Cleaning
                 </Link>
               </li>
 
                <li>
                 <Link href="/services" className="text-card/80 hover:text-card transition-colors">
-               Airbnb & Turnover
+            Airbnb & Rental Turnover Cleaning
                 </Link>
               </li>
 
@@ -142,6 +142,20 @@ export default function Footer() {
                   Post-Renovation
                 </Link>
               </li>
+
+              <li>
+                <Link href="/services" className="text-card/80 hover:text-card transition-colors">
+                 Carpet Cleaning
+                </Link>
+              </li>
+
+               <li>
+                <Link href="/services" className="text-card/80 hover:text-card transition-colors">
+              Seasonal & Specialty Services
+                </Link>
+              </li>
+
+              
 
 
 
