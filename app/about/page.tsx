@@ -3,221 +3,317 @@
 import { useState } from "react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { Phone, Mail, MapPin, Send, CheckCircle2 } from "lucide-react"
+import { Phone, Mail, MapPin, Send, CheckCircle2, Star, Shield, Clock, Heart } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function About() {
-  // State for the contact form
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success">("idle")
 
-  // Handler for the contact form
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setFormStatus("submitting")
-    // Simulate network request
     setTimeout(() => setFormStatus("success"), 1500)
   }
 
+  // Animation Variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  }
+
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  }
+
+  const cardVariant = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+  }
+
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background overflow-hidden selection:bg-primary/20">
       <Navbar />
 
-      {/* --- ABOUT HEADER --- */}
-      <section className="pt-32 pb-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center sm:text-left">
-          <h1 className="text-5xl font-bold text-foreground mb-4">About Lizzo Cleaning</h1>
-          <p className="text-xl text-foreground/60">Professional cleaning with a personal touch</p>
-        </div>
-      </section>
-
-      {/* --- STORY SECTION --- */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="rounded-xl overflow-hidden mb-12 h-64 sm:h-96 bg-muted">
-            {/* Placeholder image background if image is missing */}
-            <img 
-              src="/professional-cleaning-team-happy.jpg" 
-              alt="Our Team" 
-              className="w-full h-full object-cover" 
+      {/* --- HERO SECTION (Animated Gradient Background) --- */}
+      <section className="relative pt-24 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Abstract Background Blobs */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl -z-10 opacity-30 pointer-events-none">
+            <motion.div 
+                animate={{ rotate: 360, scale: [1, 1.1, 1] }} 
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                className="absolute top-10 left-10 w-96 h-96 bg-primary rounded-full blur-[100px]" 
             />
-          </div>
+            <motion.div 
+                animate={{ rotate: -360, scale: [1, 1.2, 1] }} 
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+                className="absolute bottom-10 right-10 w-80 h-80 bg-blue-400 rounded-full blur-[100px]" 
+            />
+        </div>
 
-          <div className="prose prose-lg max-w-none text-foreground/80">
-            <h2 className="text-3xl font-semibold text-foreground mb-6">Our Story</h2>
-            <p className="mb-6 leading-relaxed">
-              Lizzo Cleaning was created with a simple promise: deliver reliable, detailed cleaning with the same care
-              we would want in our own homes.
-            </p>
-            <p className="mb-6 leading-relaxed">
-              We know inviting someone into your space requires trust. That is why we focus on clear communication,
-              professionalism, punctuality, and consistent quality every visit.
-            </p>
-            <p className="leading-relaxed">
-              Whether we are cleaning a family home, a growing office, or a busy short-term rental, our goal is the
-              same: a fresh, calm space that makes your day easier.
-            </p>
-          </div>
+        <div className="max-w-7xl mx-auto text-center">
+          <motion.h1 
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            className="text-6xl md:text-7xl font-extrabold tracking-tight text-foreground mb-6"
+          >
+            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Lizzo Cleaning</span>
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="text-2xl text-foreground/70 max-w-2xl mx-auto font-light"
+          >
+            Professional cleaning with a personal touch
+          </motion.p>
         </div>
       </section>
 
-      {/* --- VALUES SECTION --- */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-card border-y border-border">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-semibold text-foreground mb-12 text-center">Our Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            {[
-              { title: "Reliability", description: "We show up on time, every time." },
-              { title: "Respect", description: "We treat your space with care and dignity." },
-              { title: "Detail", description: "We pay attention to every corner." },
-              { title: "Care", description: "We clean like it is our own home." },
-            ].map((value, index) => (
-              <div key={index} className="p-6 rounded-xl border border-border bg-background shadow-sm">
-                <h3 className="text-lg font-semibold text-foreground mb-2">{value.title}</h3>
-                <p className="text-foreground/60">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* --- EMBEDDED CONTACT FORM SECTION --- */}
-      <section id="contact" className=" py-20 px-4 sm:px-6 lg:px-8  scroll-mt-28">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Ready to get started?</h2>
-            <p className="text-xl text-foreground/60">Contact us today for a free quote.</p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+      {/* --- STORY SECTION (Scroll Reveal) --- */}
+      <section className=" px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             
-            {/* Left Side: Contact Info */}
-            <div className="space-y-10">
+            {/* Image Side */}
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative group"
+            >
+              <div className="absolute inset-0 bg-primary/20 rounded-2xl transform translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
+              <div className="rounded-2xl overflow-hidden h-80 sm:h-[500px] shadow-2xl">
+                 <img 
+                  src="/professional-cleaning-team-happy.jpg" 
+                  alt="Our Team" 
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                />
+              </div>
+            </motion.div>
+
+            {/* Text Side */}
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="space-y-8"
+            >
+              <h2 className="text-4xl font-bold text-foreground">Our Story</h2>
+              <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
+                <p>
+                  Lizzo Cleaning was created with a simple promise: deliver reliable, detailed cleaning with the same care
+                  we would want in our own homes.
+                </p>
+                <p>
+                  We know inviting someone into your space requires trust. That is why we focus on clear communication,
+                  professionalism, punctuality, and consistent quality every visit.
+                </p>
+                <p>
+                  Whether we are cleaning a family home, a growing office, or a busy short-term rental, our goal is the
+                  same: a fresh, calm space that makes your day easier.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- VALUES SECTION (Staggered Cards) --- */}
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-foreground mb-4">Our Values</h2>
+            <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            {[
+              { title: "Reliability", description: "We show up on time, every time.", icon: Clock },
+              { title: "Respect", description: "We treat your space with care and dignity.", icon: Shield },
+              { title: "Detail", description: "We pay attention to every corner.", icon: Star },
+              { title: "Care", description: "We clean like it is our own home.", icon: Heart },
+            ].map((value, index) => (
+              <motion.div 
+                key={index} 
+                variants={cardVariant}
+                whileHover={{ y: -10, transition: { duration: 0.2 } }}
+                className="p-8 rounded-2xl bg-background border border-border/50 shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                  <value.icon className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-3">{value.title}</h3>
+                <p className="text-foreground/60">{value.description}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* --- CONTACT FORM SECTION (Glassmorphism & Floating) --- */}
+      <section id="contact" className="py-12 px-4 sm:px-6 lg:px-8 relative scroll-mt-10">
+        {/* Background Gradient Mesh */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-blue-500/5 -z-10"></div>
+        
+        <div className="max-w-7xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl font-bold text-foreground mb-4">Ready to get started?</h2>
+            <p className="text-xl text-foreground/60">Contact us today for a free quote.</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            
+            {/* Left Side: Info */}
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-12"
+            >
               <div>
-                <h3 className="text-2xl font-semibold text-foreground mb-6">Contact Details</h3>
-                <p className="text-foreground/80 leading-relaxed mb-8">
+                <h3 className="text-2xl font-bold text-foreground mb-6">Contact Details</h3>
+                <p className="text-lg text-foreground/80 leading-relaxed mb-8">
                   Whether you need a quick quote for a one-time clean or want to discuss a 
                   recurring schedule for your office, we are here to help.
                 </p>
 
-                <div className="space-y-6">
-                  {/* Phone */}
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10 text-primary">
-                      <Phone className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">Phone</h4>
-                      <p className="text-foreground/60 hover:text-primary transition-colors">
-                        <a href="tel:+1 (613) 854-7507">+1 (613) 854-7507</a>
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Email */}
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10 text-primary">
-                      <Mail className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">Email</h4>
-                      <p className="text-foreground/60 hover:text-primary transition-colors">
-                        <a href="mailto:hello@lizzo.ca">hello@lizzo.ca</a>
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Service Area */}
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary/10 text-primary">
-                      <MapPin className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground">Service Areas</h4>
-                      <p className="text-foreground/60">Ottawa & Surrounding Regions</p>
-                    </div>
-                  </div>
+                <div className="space-y-8">
+                  {[
+                    { title: "Phone", value: "+1 (613) 854-7507", link: "tel:+1 (613) 854-7507", icon: Phone },
+                    { title: "Email", value: "hello@lizzo.ca", link: "mailto:hello@lizzo.ca", icon: Mail },
+                    { title: "Service Areas", value: "Ottawa & Surrounding Regions", link: null, icon: MapPin },
+                  ].map((item, i) => (
+                    <motion.div 
+                      key={i}
+                      whileHover={{ x: 10 }}
+                      className="flex items-center gap-6 group"
+                    >
+                      <div className="w-14 h-14 rounded-full bg-background border border-border shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                        <item.icon className="w-6 h-6" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground text-lg">{item.title}</h4>
+                        {item.link ? (
+                          <a href={item.link} className="text-foreground/60 hover:text-primary transition-colors text-lg">
+                            {item.value}
+                          </a>
+                        ) : (
+                          <p className="text-foreground/60 text-lg">{item.value}</p>
+                        )}
+                      </div>
+                    </motion.div>
+                  ))}
                 </div>
               </div>
+            </motion.div>
 
-              {/* Business Hours Box */}
-              <div className="p-6 bg-card border border-border rounded-xl">
-                <h3 className="font-semibold text-foreground mb-2">Business Hours</h3>
-                <ul className="space-y-2 text-foreground/60 text-sm">
-                  <li className="flex justify-between"><span>Monday - Friday</span> <span>8:00 AM - 6:00 PM</span></li>
-                  <li className="flex justify-between"><span>Saturday</span> <span>9:00 AM - 4:00 PM</span></li>
-                  <li className="flex justify-between"><span>Sunday</span> <span>Closed</span></li>
-                </ul>
-              </div>
-            </div>
+            {/* Right Side: Form */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-background/80 backdrop-blur-md border border-border rounded-3xl p-8 sm:p-10 shadow-2xl relative"
+            >
+              {/* Decorative accent */}
+              <div className="absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
 
-            {/* Right Side: The Form */}
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-sm">
-              <h2 className="text-2xl font-semibold text-foreground mb-6">Request a Free Quote</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-8">Request a Free Quote</h2>
               
               {formStatus === "success" ? (
-                <div className="h-full flex flex-col items-center justify-center text-center py-12 space-y-4">
-                  <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="w-8 h-8" />
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="h-96 flex flex-col items-center justify-center text-center space-y-6"
+                >
+                  <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
+                    <CheckCircle2 className="w-10 h-10" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground">Message Sent!</h3>
-                  <p className="text-foreground/60">Thank you for contacting Lizzo Cleaning. We will get back to you within 24 hours.</p>
+                  <h3 className="text-3xl font-bold text-foreground">Message Sent!</h3>
+                  <p className="text-foreground/60 text-lg">Thank you for contacting Lizzo Cleaning. We will get back to you within 24 hours.</p>
                   <button 
                     onClick={() => setFormStatus("idle")}
                     className="mt-4 text-primary font-medium hover:underline"
                   >
                     Send another message
                   </button>
-                </div>
+                </motion.div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label htmlFor="firstName" className="text-sm font-medium text-foreground">First Name</label>
+                      <label className="text-sm font-medium text-foreground">First Name</label>
                       <input 
                         required
                         type="text" 
                         id="firstName" 
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                         placeholder="Jane"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="lastName" className="text-sm font-medium text-foreground">Last Name</label>
+                      <label className="text-sm font-medium text-foreground">Last Name</label>
                       <input 
                         required
                         type="text" 
                         id="lastName" 
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                         placeholder="Doe"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-foreground">Email</label>
+                    <label className="text-sm font-medium text-foreground">Email</label>
                     <input 
                       required
                       type="email" 
                       id="email" 
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       placeholder="jane@example.com"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium text-foreground">Phone Number</label>
+                    <label className="text-sm font-medium text-foreground">Phone Number</label>
                     <input 
                       type="tel" 
                       id="phone" 
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="service" className="text-sm font-medium text-foreground">Service Type</label>
+                    <label className="text-sm font-medium text-foreground">Service Type</label>
                     <select 
                       id="service" 
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                     >
                       <option value="">Select a service...</option>
                       <option value="standard">Standard Residential Cleaning</option>
@@ -228,75 +324,31 @@ export default function About() {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-foreground">Message / Details</label>
+                    <label className="text-sm font-medium text-foreground">Message / Details</label>
                     <textarea 
                       id="message" 
                       rows={4}
-                      className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                      className="flex w-full rounded-xl border border-input bg-background/50 px-4 py-3 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none"
                       placeholder="Tell us about your space (sq ft, number of bedrooms/bathrooms)..."
                     />
                   </div>
 
-                  <button 
+                  <motion.button 
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
                     type="submit" 
                     disabled={formStatus === "submitting"}
-                    className="w-full inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8"
+                    className="w-full inline-flex items-center justify-center rounded-xl text-base font-bold transition-colors disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-14 shadow-lg shadow-primary/25"
                   >
                     {formStatus === "submitting" ? (
                       "Sending..."
                     ) : (
-                      <>Send Message <Send className="ml-2 w-4 h-4" /></>
+                      <>Send Message <Send className="ml-2 w-5 h-5" /></>
                     )}
-                  </button>
+                  </motion.button>
                 </form>
               )}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- FAQ SECTION --- */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-card/50 border-t border-border">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-semibold text-foreground mb-12 text-center">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            {[
-              {
-                q: "Do I need to be home during the cleaning?",
-                a: "No. Many clients are at work or out while we clean. We just need safe access instructions and a way to lock up when we are done.",
-              },
-              {
-                q: "Do you bring your own supplies and equipment?",
-                a: "Yes, our team arrives fully equipped with professional-grade products and tools. If you prefer we use specific products, let us know in advance.",
-              },
-              {
-                q: "Are you insured?",
-                a: "Yes, Lizzo Cleaning is fully insured for your peace of mind.",
-              },
-              {
-                q: "What if I am not satisfied with the cleaning?",
-                a: "Please contact us within 24 hours. We will make it right with a touch-up or solution that works for you.",
-              },
-              {
-                q: "How do payments work?",
-                a: "All bookings are confirmed with secure online payment. For ongoing commercial clients, we also offer invoicing.",
-              },
-              {
-                q: "Do you offer recurring cleaning?",
-                a: "Yes. Weekly, bi-weekly, and monthly plans are available at preferred rates.",
-              },
-            ].map((faq, index) => (
-              <details
-                key={index}
-                className="group border border-border bg-background rounded-lg p-6 hover:border-primary/30 transition-colors cursor-pointer"
-              >
-                <summary className="flex items-center justify-between font-semibold text-foreground hover:text-primary transition-colors list-none">
-                  {faq.q}
-                  <span className="group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <p className="mt-4 text-foreground/60 leading-relaxed">{faq.a}</p>
-              </details>
-            ))}
+            </motion.div>
           </div>
         </div>
       </section>

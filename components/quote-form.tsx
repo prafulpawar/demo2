@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useFormik } from "formik"
 import {
   ChevronRight,
@@ -15,6 +15,7 @@ import {
   MapPin,
   Phone,
   Loader2,
+  User,
 } from "lucide-react"
 
 interface FormData {
@@ -49,7 +50,7 @@ interface FormData {
 }
 
 const STEPS = [
-  { number: 1, title: "Contact Info", icon: Phone },
+  { number: 1, title: "Contact Info", icon: User },
   { number: 2, title: "Location", icon: MapPin },
   { number: 3, title: "Property Type", icon: Home },
   { number: 4, title: "Property Size", icon: Droplets },
@@ -65,6 +66,11 @@ export default function QuoteForm() {
   const [currentStep, setCurrentStep] = useState(1)
   const [isSending, setIsSending] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+
+  // Scroll to top when step changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }, [currentStep])
 
   const formik = useFormik<FormData>({
     initialValues: {
@@ -100,7 +106,6 @@ export default function QuoteForm() {
     onSubmit: async (values) => {
       setIsSending(true)
 
-     
       const selectedAreas = Object.entries(values.areas)
         .filter(([_, isSelected]) => isSelected)
         .map(([key]) => key.charAt(0).toUpperCase() + key.slice(1))
@@ -111,7 +116,6 @@ export default function QuoteForm() {
         .map(([key]) => key.charAt(0).toUpperCase() + key.slice(1))
         .join(", ")
 
-      
       const payload = {
         _subject: `New Cleaning Quote: ${values.fullName}`,
         _template: "table",
@@ -121,18 +125,17 @@ export default function QuoteForm() {
         Phone: values.phone,
         Address: `${values.address}, ${values.city}, ${values.postalCode}`,
         "Property Type": values.propertyType,
-        "Size": `${values.bedrooms} Bed, ${values.bathrooms} Bath, ${values.squareFeet} sqft`,
+        Size: `${values.bedrooms} Bed, ${values.bathrooms} Bath, ${values.squareFeet} sqft`,
         "Service Type": values.serviceType,
         "Areas to Clean": selectedAreas || "None selected",
         Frequency: values.frequency,
         "Preferred Schedule": `${values.preferredDate} (${values.preferredTime})`,
         "Add-Ons": selectedAddOns || "None selected",
         "Pet Friendly": values.petFriendly ? "Yes" : "No",
-        message: values.specialInstructions, // Optional notes
+        message: values.specialInstructions,
       }
 
       try {
-        
         const response = await fetch("https://formsubmit.co/ajax/kocebi8671@roastic.com", {
           method: "POST",
           headers: {
@@ -143,7 +146,6 @@ export default function QuoteForm() {
         })
 
         if (response.ok) {
-          console.log("SUCCESS!")
           setSubmitted(true)
           setTimeout(() => {
             setSubmitted(false)
@@ -165,18 +167,15 @@ export default function QuoteForm() {
   const handleNext = () => {
     if (currentStep < STEPS.length) {
       setCurrentStep(currentStep + 1)
-      window.scrollTo({ top: 0, behavior: "smooth" })
     }
   }
 
   const handlePrev = () => {
     if (currentStep > 1) {
       setCurrentStep(currentStep - 1)
-      window.scrollTo({ top: 0, behavior: "smooth" })
     }
   }
 
-  // Helper to validate steps
   const isStepComplete = (step: number): boolean => {
     const v = formik.values
     switch (step) {
@@ -209,8 +208,8 @@ export default function QuoteForm() {
     switch (currentStep) {
       case 1:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">Let's get your contact information</h2>
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">Let's get your contact information</h2>
             <div>
               <label className="block text-sm font-semibold text-foreground mb-2">Full Name *</label>
               <input
@@ -252,8 +251,8 @@ export default function QuoteForm() {
 
       case 2:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">Where is your property located?</h2>
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">Where is your property located?</h2>
             <div>
               <label className="block text-sm font-semibold text-foreground mb-2">Street Address *</label>
               <input
@@ -265,7 +264,7 @@ export default function QuoteForm() {
                 placeholder="123 Main Street"
               />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <div>
                 <label className="block text-sm font-semibold text-foreground mb-2">City *</label>
                 <input
@@ -294,9 +293,9 @@ export default function QuoteForm() {
 
       case 3:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">What type of property do you have?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">What type of property do you have?</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
               {[
                 { value: "apartment", label: "Apartment/Condo" },
                 { value: "house", label: "House" },
@@ -323,9 +322,9 @@ export default function QuoteForm() {
 
       case 4:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">Tell us about your property size</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">Tell us about your property size</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
               <div>
                 <label className="block text-sm font-semibold text-foreground mb-2">Bedrooms</label>
                 <input
@@ -368,9 +367,9 @@ export default function QuoteForm() {
 
       case 5:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">What type of cleaning service do you need?</h2>
-            <div className="grid grid-cols-1 gap-4">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">What type of cleaning service do you need?</h2>
+            <div className="grid grid-cols-1 gap-3 md:gap-4">
               {[
                 { value: "regular", label: "Regular Cleaning", desc: "Routine maintenance cleaning" },
                 { value: "deep", label: "Deep Cleaning", desc: "Top-to-bottom thorough cleaning" },
@@ -398,9 +397,9 @@ export default function QuoteForm() {
 
       case 6:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">Which areas need cleaning?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">Which areas need cleaning?</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
               {[
                 { key: "kitchen", label: "Kitchen" },
                 { key: "bathrooms", label: "Bathrooms" },
@@ -409,7 +408,7 @@ export default function QuoteForm() {
               ].map((area) => (
                 <label
                   key={area.key}
-                  className="flex items-center p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer transition-all"
+                  className="flex items-center p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer transition-all active:scale-[0.98]"
                 >
                   <input
                     type="checkbox"
@@ -427,9 +426,9 @@ export default function QuoteForm() {
 
       case 7:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">How often do you need cleaning?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">How often do you need cleaning?</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
               {[
                 { value: "one-time", label: "One-Time Service" },
                 { value: "weekly", label: "Weekly" },
@@ -455,8 +454,8 @@ export default function QuoteForm() {
 
       case 8:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">When would you like to schedule?</h2>
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">When would you like to schedule?</h2>
             <div>
               <label className="block text-sm font-semibold text-foreground mb-2">Preferred Date *</label>
               <input
@@ -470,7 +469,7 @@ export default function QuoteForm() {
             </div>
             <div>
               <label className="block text-sm font-semibold text-foreground mb-4">Preferred Time</label>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
                   { value: "morning", label: "Morning (8am - 12pm)" },
                   { value: "afternoon", label: "Afternoon (12pm - 5pm)" },
@@ -497,9 +496,9 @@ export default function QuoteForm() {
 
       case 9:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">Any add-on services?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">Any add-on services?</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
               {[
                 { key: "insideOvens", label: "Inside Ovens" },
                 { key: "fridge", label: "Inside Fridge" },
@@ -508,7 +507,7 @@ export default function QuoteForm() {
               ].map((addon) => (
                 <label
                   key={addon.key}
-                  className="flex items-center p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer transition-all"
+                  className="flex items-center p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer transition-all active:scale-[0.98]"
                 >
                   <input
                     type="checkbox"
@@ -523,7 +522,7 @@ export default function QuoteForm() {
                 </label>
               ))}
             </div>
-            <div className="mt-8">
+            <div className="mt-4 md:mt-8">
               <label className="flex items-center gap-3 p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer">
                 <input
                   type="checkbox"
@@ -535,7 +534,7 @@ export default function QuoteForm() {
                 <span className="font-medium text-foreground">I have pets in my home</span>
               </label>
             </div>
-          
+
             <div className="mt-4">
               <label className="block text-sm font-semibold text-foreground mb-2">Special Instructions</label>
               <textarea
@@ -551,9 +550,9 @@ export default function QuoteForm() {
 
       case 10:
         return (
-          <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">Review Your Information</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-4 md:space-y-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">Review Your Information</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
               <div className="p-4 bg-primary/5 rounded-lg border border-border">
                 <h3 className="font-semibold text-foreground mb-2">Contact</h3>
                 <p className="text-sm text-foreground/70">{formik.values.fullName}</p>
@@ -594,19 +593,37 @@ export default function QuoteForm() {
   }
 
   return (
-    <div className="bg-background min-h-screen py-8">
+    <div className="bg-background   py-4 md:py-8">
       {submitted && (
         <div className="fixed top-4 left-4 right-4 max-w-md mx-auto bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg shadow-lg animate-fade-in z-50">
           ✓ Thank you! Your quote request has been received. We'll contact you shortly!
         </div>
       )}
 
-      <div className="max-w-2xl mx-auto px-4">
-      
-        <div className="mb-12">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6">
+        
+        {/* Mobile Step Indicator (< 768px) */}
+        <div className="md:hidden mb-6">
+             <div className="flex justify-between items-end mb-2">
+                 <h2 className="text-lg font-bold text-foreground">
+                    {STEPS[currentStep - 1].title}
+                 </h2>
+                 <span className="text-sm text-foreground/60 font-medium">
+                    Step {currentStep}/{STEPS.length}
+                 </span>
+             </div>
+             <div className="h-2 bg-border rounded-full overflow-hidden">
+                <div 
+                    className="h-full bg-primary transition-all duration-300" 
+                    style={{ width: `${(currentStep / STEPS.length) * 100}%` }}
+                ></div>
+             </div>
+        </div>
+
+        {/* Desktop Step Indicator (>= 768px) */}
+        <div className="hidden md:block mb-12">
           <div className="flex justify-between mb-4">
             {STEPS.map((step, index) => {
-              const Icon = step.icon
               const isComplete = index < currentStep - 1
               const isCurrent = step.number === currentStep
               return (
@@ -615,7 +632,7 @@ export default function QuoteForm() {
                     type="button"
                     onClick={() => setCurrentStep(step.number)}
                     disabled={index >= currentStep && !isComplete}
-                    className={`w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all mb-2 ${
+                    className={`w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center font-bold transition-all mb-2 ${
                       isComplete
                         ? "bg-primary text-white"
                         : isCurrent
@@ -625,7 +642,7 @@ export default function QuoteForm() {
                   >
                     {isComplete ? <Check size={20} /> : step.number}
                   </button>
-                  <span className="text-xs text-center font-medium text-foreground/70 hidden sm:block">
+                  <span className="text-[10px] lg:text-xs text-center font-medium text-foreground/70 hidden lg:block">
                     {step.title}
                   </span>
                 </div>
@@ -640,9 +657,11 @@ export default function QuoteForm() {
           </div>
         </div>
 
-     
         <form onSubmit={formik.handleSubmit}>
-          <div className="bg-white rounded-2xl p-8 border border-border shadow-lg mb-8 min-h-96">{renderStep()}</div>
+          {/* Changed min-h-[400px] to md:min-h-[400px] here */}
+          <div className="bg-white rounded-2xl p-5 md:p-8 border border-border shadow-lg mb-6 md:mb-8 md:min-h-[400px]">
+            {renderStep()}
+          </div>
 
           {/* Navigation Buttons */}
           <div className="flex gap-4 justify-between">
@@ -650,17 +669,17 @@ export default function QuoteForm() {
               type="button"
               onClick={handlePrev}
               disabled={currentStep === 1}
-              className="flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:bg-background disabled:opacity-50 disabled:cursor-not-allowed transition-all font-semibold"
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:bg-background disabled:opacity-50 disabled:cursor-not-allowed transition-all font-semibold flex-1 sm:flex-initial"
             >
               <ChevronLeft size={20} />
-              Back
+              <span className="hidden sm:inline">Back</span>
             </button>
 
             {currentStep === STEPS.length ? (
               <button
                 type="submit"
                 disabled={isSending || submitted}
-                className="flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-all font-bold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-all font-bold text-lg disabled:opacity-50 disabled:cursor-not-allowed flex-1 sm:flex-initial"
               >
                 {isSending ? (
                   <>
@@ -670,7 +689,7 @@ export default function QuoteForm() {
                 ) : (
                   <>
                     <Check size={20} />
-                    Get My Quote
+                    Get Quote
                   </>
                 )}
               </button>
@@ -679,7 +698,7 @@ export default function QuoteForm() {
                 type="button"
                 onClick={handleNext}
                 disabled={!isStepComplete(currentStep)}
-                className="flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all font-bold"
+                className="flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all font-bold flex-1 sm:flex-initial"
               >
                 Next
                 <ChevronRight size={20} />
@@ -688,7 +707,7 @@ export default function QuoteForm() {
           </div>
         </form>
 
-        <p className="text-center text-sm text-foreground/60 mt-6">
+        <p className="text-center text-sm text-foreground/60 mt-6 md:hidden">
           Step {currentStep} of {STEPS.length}
         </p>
       </div>

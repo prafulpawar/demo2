@@ -3,8 +3,9 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Link from "next/link"
-import { Check, ArrowRight, Users, Award, Clock } from "lucide-react"
+import { Check, ArrowRight, Users, Award, Clock, Zap, Shield, MapPin ,ArrowUpRight  } from "lucide-react"
 import { useState, useEffect } from "react"
+import { motion } from 'framer-motion';
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -52,6 +53,45 @@ export default function Home() {
     { number: "5 Yrs", label: "Experience", icon: Clock },
   ]
 
+  const serviceAreas = [
+    "Ottawa",
+    "Kanata",
+    "Vanier",
+    "Nepean",
+    "Barrhaven",
+    "Orleans",
+    "Stittsville",
+    "Riverside South",
+    "Findlay Creek",
+    "Greely",
+    "Westboro",
+    "Manotick",
+    "Crystal Beach",
+    "Bells Corners",
+    "Smiths Falls",
+    "Alta Vista",
+  ];
+
+
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1, // Delays each child animation
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
+};
+
+
+
+
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
@@ -83,7 +123,7 @@ export default function Home() {
                   Get A Quote <ArrowRight size={20} />
                 </Link>
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+1 (613) 854-7507"
                   className="px-8 py-3.5 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground/5 transition-all font-semibold inline-flex items-center justify-center gap-2"
                 >
                   Call Now
@@ -138,8 +178,98 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works - Scroll animated cards */}
+      <section className="relative py-14">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">How It Works</h2>
+            <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto font-medium">Simple, transparent, and hassle-free</p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {[
+              {
+                number: "01",
+                title: "Tell Us About Your Space",
+                desc: "Fill out a quick form with details",
+                icon: "📋",
+              },
+              {
+                number: "02",
+                title: "Choose Your Date & Time",
+                desc: "Pick a time that works for you",
+                icon: "📅",
+              },
+              { number: "03", title: "Book & Pay Online", desc: "Secure, transparent pricing", icon: "💳" },
+              { number: "04", title: "Relax", desc: "We deliver pristine results", icon: "✨" },
+            ].map((step, i) => (
+              <div
+                key={i}
+                className="group relative p-6 rounded-2xl transition-all duration-300 hover:bg-white hover:shadow-xl hover:-translate-y-1"
+              >
+                <div className="text-5xl mb-6 grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-110 origin-center">
+                  {step.icon}
+                </div>
+                <div className="text-4xl font-extrabold text-blue-900 mb-3 opacity-90 group-hover:opacity-100">
+                  {step.number}
+                </div>
+                <h3 className="font-bold text-slate-900 mb-3 text-lg leading-snug">{step.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      <section className="relative py-14 md:py-14 bg-slate-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="slide-in-left">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">We clean so you can focus</h2>
+              <p className="text-foreground/60 mb-8 text-lg leading-relaxed">
+                Whether it's your home, office, or rental property, Lizzo Cleaning delivers reliable, consistent results
+                every time with trained professionals.
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  { icon: Check, text: "Trained, trusted cleaners" },
+                  { icon: Zap, text: "Flexible scheduling" },
+                  { icon: Shield, text: "Fully bonded & insured" },
+                  { icon: Users, text: "Transparent pricing" },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 fade-up p-3 rounded-lg hover:bg-primary/10 transition"
+                    style={{ animationDelay: `${i * 100}ms` }}
+                  >
+                    <div className="p-2 rounded-lg bg-primary/20">
+                      <item.icon className="text-primary" size={20} />
+                    </div>
+                    <span className="text-foreground font-medium">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="scale-in">
+              <div className="relative glass rounded-2xl overflow-hidden neon-border neon-glow h-96">
+                <img
+                  src="/happy-customers-cleaning-service.jpg"
+                  alt="Happy customers"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* Services Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-foreground mb-4">Our Services</h2>
@@ -174,28 +304,147 @@ export default function Home() {
         </div>
       </section>
 
+
+
+
+     <section className="py-8 relative overflow-hidden bg-slate-50/50">
+      
+      {/* 1. Modern Grid Background Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      
+      {/* 2. Soft Gradient Blurs */}
+      <div className="absolute left-0 top-0 -ml-[20%] -mt-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-3xl pointer-events-none" />
+      <div className="absolute right-0 bottom-0 -mr-[20%] -mb-[10%] w-[50%] h-[50%] rounded-full bg-blue-400/5 blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        
+        {/* Header */}
+        <div className="text-center mb-10 max-w-3xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-primary text-xs font-bold uppercase tracking-widest shadow-sm mb-6"
+          >
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            Service Coverage
+          </motion.div>
+          
+          <motion.h2 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight"
+          >
+            Bringing the shine to <br className="hidden md:block" />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">Ottawa & Surroundings</span>
+          </motion.h2>
+          
+          <motion.p 
+             initial={{ opacity: 0, y: 10 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ delay: 0.2 }}
+             viewport={{ once: true }}
+             className="text-slate-500 text-lg leading-relaxed"
+          >
+            From downtown condos to suburban family homes, our mobile team covers the entire National Capital Region.
+          </motion.p>
+        </div>
+
+        {/* Grid Area */}
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto"
+        >
+          {serviceAreas.map((area, index) => (
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              whileHover={{ y: -5 }}
+              className="group relative bg-white rounded-xl p-5 border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 cursor-default overflow-hidden"
+            >
+              {/* Hover Gradient Background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              
+              <div className="relative z-10 flex flex-col items-center justify-center text-center gap-3">
+                <div className="p-3 bg-slate-50 rounded-full group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  <MapPin size={20} />
+                </div>
+                <span className="font-semibold text-slate-700 group-hover:text-slate-900">{area}</span>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Footer Link */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="mt-16 text-center"
+        >
+          <Link 
+            href="/about#contact" 
+            className="inline-flex items-center gap-1 text-slate-500 hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-0.5"
+          >
+            Check if we cover your specific street <ArrowUpRight size={16} />
+          </Link>
+        </motion.div>
+
+      </div>
+    </section>
+
+
       {/* CTA Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-primary text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-6">We Clean So You Can Focus On What Matters</h2>
-          <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Whether it's a busy family household, a high-traffic office, or a short-term rental, Lizzo Cleaning delivers
-            reliable, consistent results every time.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-white/90 transition-all font-semibold inline-flex items-center justify-center gap-2"
-            >
-              Get Started Today <ArrowRight size={20} />
-            </Link>
-            <a
-              href="tel:+1234567890"
-              className="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all font-semibold inline-flex items-center justify-center"
-            >
-              Call: (555) 123-4567
-            </a>
+      <section className="py-14 px-4 sm:px-6 lg:px-8 bg-white border-y border-slate-100">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+          {/* Left Side: Typography */}
+          <div className="text-left">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
+              Ready for a spotlessly <br /> clean space?
+            </h2>
+            <p className="text-lg text-slate-500 mb-8 max-w-lg leading-relaxed">
+              Whether it's a short-term rental or your forever home, our team provides the consistent quality you've been looking for.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="px-7 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium inline-flex items-center gap-2"
+              >
+                Book Now <ArrowRight size={18} />
+              </Link>
+              <a
+                href="tel:+1234567890"
+                className="px-7 py-3.5 text-slate-600 hover:text-primary font-medium transition-colors inline-flex items-center"
+              >
+                Call us:  +1 (613) 854-7507
+              </a>
+            </div>
           </div>
+
+          {/* Right Side: Abstract Visual or Stats */}
+          <div className="relative bg-slate-50 rounded-2xl p-8 border border-slate-100">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <span className="block text-3xl font-bold text-slate-900 mb-1">100%</span>
+                <span className="text-sm text-slate-500">Satisfaction</span>
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <span className="block text-3xl font-bold text-slate-900 mb-1">5★</span>
+                <span className="text-sm text-slate-500">Rated Service</span>
+              </div>
+              <div className="col-span-2 bg-primary/5 p-6 rounded-xl border border-primary/10">
+                <p className="text-primary font-medium">"Lizzo Cleaning transformed our office space!"</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 

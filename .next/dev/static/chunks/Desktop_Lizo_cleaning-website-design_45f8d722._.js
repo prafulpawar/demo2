@@ -18,8 +18,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$dollar$2d$sign$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__DollarSign$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/dollar-sign.js [app-client] (ecmascript) <export default as DollarSign>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/user.js [app-client] (ecmascript) <export default as User>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -30,7 +30,7 @@ const STEPS = [
     {
         number: 1,
         title: "Contact Info",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"]
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"]
     },
     {
         number: 2,
@@ -83,6 +83,17 @@ function QuoteForm() {
     const [currentStep, setCurrentStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(1);
     const [isSending, setIsSending] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [submitted, setSubmitted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Scroll to top when step changes
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "QuoteForm.useEffect": ()=>{
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    }["QuoteForm.useEffect"], [
+        currentStep
+    ]);
     const formik = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$formik$2f$dist$2f$formik$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormik"])({
         initialValues: {
             fullName: "",
@@ -136,7 +147,7 @@ function QuoteForm() {
                     Phone: values.phone,
                     Address: `${values.address}, ${values.city}, ${values.postalCode}`,
                     "Property Type": values.propertyType,
-                    "Size": `${values.bedrooms} Bed, ${values.bathrooms} Bath, ${values.squareFeet} sqft`,
+                    Size: `${values.bedrooms} Bed, ${values.bathrooms} Bath, ${values.squareFeet} sqft`,
                     "Service Type": values.serviceType,
                     "Areas to Clean": selectedAreas || "None selected",
                     Frequency: values.frequency,
@@ -155,7 +166,6 @@ function QuoteForm() {
                         body: JSON.stringify(payload)
                     });
                     if (response.ok) {
-                        console.log("SUCCESS!");
                         setSubmitted(true);
                         setTimeout({
                             "QuoteForm.useFormik[formik]": ()=>{
@@ -179,22 +189,13 @@ function QuoteForm() {
     const handleNext = ()=>{
         if (currentStep < STEPS.length) {
             setCurrentStep(currentStep + 1);
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
         }
     };
     const handlePrev = ()=>{
         if (currentStep > 1) {
             setCurrentStep(currentStep - 1);
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
         }
     };
-    // Helper to validate steps
     const isStepComplete = (step)=>{
         const v = formik.values;
         switch(step){
@@ -226,14 +227,14 @@ function QuoteForm() {
         switch(currentStep){
             case 1:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "Let's get your contact information"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 213,
+                            lineNumber: 212,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -243,7 +244,7 @@ function QuoteForm() {
                                     children: "Full Name *"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 215,
+                                    lineNumber: 214,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -256,13 +257,13 @@ function QuoteForm() {
                                     placeholder: "John Doe"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 216,
+                                    lineNumber: 215,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 214,
+                            lineNumber: 213,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -272,7 +273,7 @@ function QuoteForm() {
                                     children: "Email *"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 227,
+                                    lineNumber: 226,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -285,13 +286,13 @@ function QuoteForm() {
                                     placeholder: "john@example.com"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 228,
+                                    lineNumber: 227,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 226,
+                            lineNumber: 225,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -301,7 +302,7 @@ function QuoteForm() {
                                     children: "Phone *"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 239,
+                                    lineNumber: 238,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -314,31 +315,31 @@ function QuoteForm() {
                                     placeholder: "(555) 123-4567"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 240,
+                                    lineNumber: 239,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 238,
+                            lineNumber: 237,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 212,
+                    lineNumber: 211,
                     columnNumber: 11
                 }, this);
             case 2:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "Where is your property located?"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 256,
+                            lineNumber: 255,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -348,7 +349,7 @@ function QuoteForm() {
                                     children: "Street Address *"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 258,
+                                    lineNumber: 257,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -360,17 +361,17 @@ function QuoteForm() {
                                     placeholder: "123 Main Street"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 259,
+                                    lineNumber: 258,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 257,
+                            lineNumber: 256,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                            className: "grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
@@ -379,7 +380,7 @@ function QuoteForm() {
                                             children: "City *"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 270,
+                                            lineNumber: 269,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -391,13 +392,13 @@ function QuoteForm() {
                                             placeholder: "Ottawa"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 271,
+                                            lineNumber: 270,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 269,
+                                    lineNumber: 268,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -407,7 +408,7 @@ function QuoteForm() {
                                             children: "Postal Code *"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 281,
+                                            lineNumber: 280,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -419,41 +420,41 @@ function QuoteForm() {
                                             placeholder: "K1A 0A1"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 282,
+                                            lineNumber: 281,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 280,
+                                    lineNumber: 279,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 268,
+                            lineNumber: 267,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 255,
+                    lineNumber: 254,
                     columnNumber: 11
                 }, this);
             case 3:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "What type of property do you have?"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 298,
+                            lineNumber: 297,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                            className: "grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4",
                             children: [
                                 {
                                     value: "apartment",
@@ -482,34 +483,34 @@ function QuoteForm() {
                                     children: type.label
                                 }, type.value, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 307,
+                                    lineNumber: 306,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 299,
+                            lineNumber: 298,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 297,
+                    lineNumber: 296,
                     columnNumber: 11
                 }, this);
             case 4:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "Tell us about your property size"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 327,
+                            lineNumber: 326,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-3 gap-6",
+                            className: "grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
@@ -518,7 +519,7 @@ function QuoteForm() {
                                             children: "Bedrooms"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 330,
+                                            lineNumber: 329,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -531,13 +532,13 @@ function QuoteForm() {
                                             placeholder: "2"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 331,
+                                            lineNumber: 330,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 329,
+                                    lineNumber: 328,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -547,7 +548,7 @@ function QuoteForm() {
                                             children: "Bathrooms"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 342,
+                                            lineNumber: 341,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -560,13 +561,13 @@ function QuoteForm() {
                                             placeholder: "1"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 343,
+                                            lineNumber: 342,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 341,
+                                    lineNumber: 340,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -576,7 +577,7 @@ function QuoteForm() {
                                             children: "Square Feet (Optional)"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 354,
+                                            lineNumber: 353,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -589,41 +590,41 @@ function QuoteForm() {
                                             placeholder: "1500"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 355,
+                                            lineNumber: 354,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 353,
+                                    lineNumber: 352,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 328,
+                            lineNumber: 327,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 326,
+                    lineNumber: 325,
                     columnNumber: 11
                 }, this);
             case 5:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "What type of cleaning service do you need?"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 372,
+                            lineNumber: 371,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 gap-4",
+                            className: "grid grid-cols-1 gap-3 md:gap-4",
                             children: [
                                 {
                                     value: "regular",
@@ -660,7 +661,7 @@ function QuoteForm() {
                                             children: service.label
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 391,
+                                            lineNumber: 390,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -668,40 +669,40 @@ function QuoteForm() {
                                             children: service.desc
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 392,
+                                            lineNumber: 391,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, service.value, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 381,
+                                    lineNumber: 380,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 373,
+                            lineNumber: 372,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 371,
+                    lineNumber: 370,
                     columnNumber: 11
                 }, this);
             case 6:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "Which areas need cleaning?"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 402,
+                            lineNumber: 401,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                            className: "grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4",
                             children: [
                                 {
                                     key: "kitchen",
@@ -720,7 +721,7 @@ function QuoteForm() {
                                     label: "Living Areas"
                                 }
                             ].map((area)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "flex items-center p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer transition-all",
+                                    className: "flex items-center p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer transition-all active:scale-[0.98]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "checkbox",
@@ -730,7 +731,7 @@ function QuoteForm() {
                                             className: "w-5 h-5 rounded border-border"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 414,
+                                            lineNumber: 413,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -738,40 +739,40 @@ function QuoteForm() {
                                             children: area.label
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 421,
+                                            lineNumber: 420,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, area.key, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 410,
+                                    lineNumber: 409,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 403,
+                            lineNumber: 402,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 401,
+                    lineNumber: 400,
                     columnNumber: 11
                 }, this);
             case 7:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "How often do you need cleaning?"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 431,
+                            lineNumber: 430,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                            className: "grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4",
                             children: [
                                 {
                                     value: "one-time",
@@ -796,30 +797,30 @@ function QuoteForm() {
                                     children: freq.label
                                 }, freq.value, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 439,
+                                    lineNumber: 438,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 432,
+                            lineNumber: 431,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 430,
+                    lineNumber: 429,
                     columnNumber: 11
                 }, this);
             case 8:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "When would you like to schedule?"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 459,
+                            lineNumber: 458,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -829,7 +830,7 @@ function QuoteForm() {
                                     children: "Preferred Date *"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 461,
+                                    lineNumber: 460,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -841,13 +842,13 @@ function QuoteForm() {
                                     className: "w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 462,
+                                    lineNumber: 461,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 460,
+                            lineNumber: 459,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -857,11 +858,11 @@ function QuoteForm() {
                                     children: "Preferred Time"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 472,
+                                    lineNumber: 471,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 md:grid-cols-2 gap-3",
+                                    className: "grid grid-cols-1 sm:grid-cols-2 gap-3",
                                     children: [
                                         {
                                             value: "morning",
@@ -886,40 +887,40 @@ function QuoteForm() {
                                             children: time.label
                                         }, time.value, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 480,
+                                            lineNumber: 479,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 473,
+                                    lineNumber: 472,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 471,
+                            lineNumber: 470,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 458,
+                    lineNumber: 457,
                     columnNumber: 11
                 }, this);
             case 9:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "Any add-on services?"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 501,
+                            lineNumber: 500,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                            className: "grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4",
                             children: [
                                 {
                                     key: "insideOvens",
@@ -938,7 +939,7 @@ function QuoteForm() {
                                     label: "Laundry Service"
                                 }
                             ].map((addon)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "flex items-center p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer transition-all",
+                                    className: "flex items-center p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer transition-all active:scale-[0.98]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "checkbox",
@@ -948,7 +949,7 @@ function QuoteForm() {
                                             className: "w-5 h-5 rounded border-border"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 513,
+                                            lineNumber: 512,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -958,27 +959,27 @@ function QuoteForm() {
                                                 children: addon.label
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                                lineNumber: 521,
+                                                lineNumber: 520,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 520,
+                                            lineNumber: 519,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, addon.key, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 509,
+                                    lineNumber: 508,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 502,
+                            lineNumber: 501,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-8",
+                            className: "mt-4 md:mt-8",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                 className: "flex items-center gap-3 p-4 rounded-lg border border-border bg-background hover:bg-background/80 cursor-pointer",
                                 children: [
@@ -990,7 +991,7 @@ function QuoteForm() {
                                         className: "w-5 h-5 rounded border-border"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                        lineNumber: 528,
+                                        lineNumber: 527,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -998,18 +999,18 @@ function QuoteForm() {
                                         children: "I have pets in my home"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                        lineNumber: 535,
+                                        lineNumber: 534,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                lineNumber: 527,
+                                lineNumber: 526,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 526,
+                            lineNumber: 525,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1020,7 +1021,7 @@ function QuoteForm() {
                                     children: "Special Instructions"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 540,
+                                    lineNumber: 539,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1031,35 +1032,35 @@ function QuoteForm() {
                                     placeholder: "Gate code, parking info, etc..."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 541,
+                                    lineNumber: 540,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 539,
+                            lineNumber: 538,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 500,
+                    lineNumber: 499,
                     columnNumber: 11
                 }, this);
             case 10:
                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4 md:space-y-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-2xl font-bold text-foreground",
+                            className: "text-xl md:text-2xl font-bold text-foreground",
                             children: "Review Your Information"
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 555,
+                            lineNumber: 554,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                            className: "grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "p-4 bg-primary/5 rounded-lg border border-border",
@@ -1069,7 +1070,7 @@ function QuoteForm() {
                                             children: "Contact"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 558,
+                                            lineNumber: 557,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1077,7 +1078,7 @@ function QuoteForm() {
                                             children: formik.values.fullName
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 559,
+                                            lineNumber: 558,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1085,7 +1086,7 @@ function QuoteForm() {
                                             children: formik.values.email
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 560,
+                                            lineNumber: 559,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1093,13 +1094,13 @@ function QuoteForm() {
                                             children: formik.values.phone
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 561,
+                                            lineNumber: 560,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 557,
+                                    lineNumber: 556,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1110,7 +1111,7 @@ function QuoteForm() {
                                             children: "Location"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 564,
+                                            lineNumber: 563,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1118,7 +1119,7 @@ function QuoteForm() {
                                             children: formik.values.address
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 565,
+                                            lineNumber: 564,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1130,13 +1131,13 @@ function QuoteForm() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 566,
+                                            lineNumber: 565,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 563,
+                                    lineNumber: 562,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1147,7 +1148,7 @@ function QuoteForm() {
                                             children: "Property"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 571,
+                                            lineNumber: 570,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1155,7 +1156,7 @@ function QuoteForm() {
                                             children: formik.values.propertyType.charAt(0).toUpperCase() + formik.values.propertyType.slice(1)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 572,
+                                            lineNumber: 571,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1168,13 +1169,13 @@ function QuoteForm() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 575,
+                                            lineNumber: 574,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 570,
+                                    lineNumber: 569,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1185,7 +1186,7 @@ function QuoteForm() {
                                             children: "Service"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 580,
+                                            lineNumber: 579,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1198,7 +1199,7 @@ function QuoteForm() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 581,
+                                            lineNumber: 580,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1206,25 +1207,25 @@ function QuoteForm() {
                                             children: formik.values.preferredDate
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                            lineNumber: 585,
+                                            lineNumber: 584,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 579,
+                                    lineNumber: 578,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                            lineNumber: 556,
+                            lineNumber: 555,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                    lineNumber: 554,
+                    lineNumber: 553,
                     columnNumber: 11
                 }, this);
             default:
@@ -1232,26 +1233,81 @@ function QuoteForm() {
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-background min-h-screen py-8",
+        className: "bg-background   py-4 md:py-8",
         children: [
             submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed top-4 left-4 right-4 max-w-md mx-auto bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg shadow-lg animate-fade-in z-50",
                 children: "✓ Thank you! Your quote request has been received. We'll contact you shortly!"
             }, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                lineNumber: 599,
+                lineNumber: 598,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-2xl mx-auto px-4",
+                className: "max-w-3xl mx-auto px-4 sm:px-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mb-12",
+                        className: "md:hidden mb-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex justify-between items-end mb-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-lg font-bold text-foreground",
+                                        children: STEPS[currentStep - 1].title
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
+                                        lineNumber: 608,
+                                        columnNumber: 18
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-sm text-foreground/60 font-medium",
+                                        children: [
+                                            "Step ",
+                                            currentStep,
+                                            "/",
+                                            STEPS.length
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
+                                        lineNumber: 611,
+                                        columnNumber: 18
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
+                                lineNumber: 607,
+                                columnNumber: 14
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "h-2 bg-border rounded-full overflow-hidden",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "h-full bg-primary transition-all duration-300",
+                                    style: {
+                                        width: `${currentStep / STEPS.length * 100}%`
+                                    }
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
+                                    lineNumber: 616,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
+                                lineNumber: 615,
+                                columnNumber: 14
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
+                        lineNumber: 606,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "hidden md:block mb-12",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex justify-between mb-4",
                                 children: STEPS.map((step, index)=>{
-                                    const Icon = step.icon;
                                     const isComplete = index < currentStep - 1;
                                     const isCurrent = step.number === currentStep;
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1261,37 +1317,37 @@ function QuoteForm() {
                                                 type: "button",
                                                 onClick: ()=>setCurrentStep(step.number),
                                                 disabled: index >= currentStep && !isComplete,
-                                                className: `w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all mb-2 ${isComplete ? "bg-primary text-white" : isCurrent ? "bg-primary text-white ring-4 ring-primary/30" : "bg-border text-foreground/50"}`,
+                                                className: `w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center font-bold transition-all mb-2 ${isComplete ? "bg-primary text-white" : isCurrent ? "bg-primary text-white ring-4 ring-primary/30" : "bg-border text-foreground/50"}`,
                                                 children: isComplete ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                                                     size: 20
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                                    lineNumber: 626,
+                                                    lineNumber: 643,
                                                     columnNumber: 35
                                                 }, this) : step.number
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                                lineNumber: 614,
+                                                lineNumber: 631,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-center font-medium text-foreground/70 hidden sm:block",
+                                                className: "text-[10px] lg:text-xs text-center font-medium text-foreground/70 hidden lg:block",
                                                 children: step.title
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                                lineNumber: 628,
+                                                lineNumber: 645,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, step.number, true, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                        lineNumber: 613,
+                                        lineNumber: 630,
                                         columnNumber: 17
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                lineNumber: 607,
+                                lineNumber: 625,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1303,29 +1359,29 @@ function QuoteForm() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                    lineNumber: 636,
+                                    lineNumber: 653,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                lineNumber: 635,
+                                lineNumber: 652,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                        lineNumber: 606,
+                        lineNumber: 624,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                         onSubmit: formik.handleSubmit,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white rounded-2xl p-8 border border-border shadow-lg mb-8 min-h-96",
+                                className: "bg-white rounded-2xl p-5 md:p-8 border border-border shadow-lg mb-6 md:mb-8 md:min-h-[400px]",
                                 children: renderStep()
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                lineNumber: 645,
+                                lineNumber: 662,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1335,26 +1391,33 @@ function QuoteForm() {
                                         type: "button",
                                         onClick: handlePrev,
                                         disabled: currentStep === 1,
-                                        className: "flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:bg-background disabled:opacity-50 disabled:cursor-not-allowed transition-all font-semibold",
+                                        className: "flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:bg-background disabled:opacity-50 disabled:cursor-not-allowed transition-all font-semibold flex-1 sm:flex-initial",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {
                                                 size: 20
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                                lineNumber: 655,
+                                                lineNumber: 674,
                                                 columnNumber: 15
                                             }, this),
-                                            "Back"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "hidden sm:inline",
+                                                children: "Back"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
+                                                lineNumber: 675,
+                                                columnNumber: 15
+                                            }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                        lineNumber: 649,
+                                        lineNumber: 668,
                                         columnNumber: 13
                                     }, this),
                                     currentStep === STEPS.length ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "submit",
                                         disabled: isSending || submitted,
-                                        className: "flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-all font-bold text-lg disabled:opacity-50 disabled:cursor-not-allowed",
+                                        className: "flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-all font-bold text-lg disabled:opacity-50 disabled:cursor-not-allowed flex-1 sm:flex-initial",
                                         children: isSending ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
@@ -1362,7 +1425,7 @@ function QuoteForm() {
                                                     size: 20
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                                    lineNumber: 667,
+                                                    lineNumber: 686,
                                                     columnNumber: 21
                                                 }, this),
                                                 "Sending..."
@@ -1373,50 +1436,50 @@ function QuoteForm() {
                                                     size: 20
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                                    lineNumber: 672,
+                                                    lineNumber: 691,
                                                     columnNumber: 21
                                                 }, this),
-                                                "Get My Quote"
+                                                "Get Quote"
                                             ]
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                        lineNumber: 660,
+                                        lineNumber: 679,
                                         columnNumber: 15
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "button",
                                         onClick: handleNext,
                                         disabled: !isStepComplete(currentStep),
-                                        className: "flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all font-bold",
+                                        className: "flex items-center justify-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all font-bold flex-1 sm:flex-initial",
                                         children: [
                                             "Next",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                                 size: 20
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                                lineNumber: 685,
+                                                lineNumber: 704,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                        lineNumber: 678,
+                                        lineNumber: 697,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                                lineNumber: 648,
+                                lineNumber: 667,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                        lineNumber: 644,
+                        lineNumber: 660,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-center text-sm text-foreground/60 mt-6",
+                        className: "text-center text-sm text-foreground/60 mt-6 md:hidden",
                         children: [
                             "Step ",
                             currentStep,
@@ -1425,23 +1488,23 @@ function QuoteForm() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                        lineNumber: 691,
+                        lineNumber: 710,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-                lineNumber: 604,
+                lineNumber: 603,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/Lizo/cleaning-website-design/components/quote-form.tsx",
-        lineNumber: 597,
+        lineNumber: 596,
         columnNumber: 5
     }, this);
 }
-_s(QuoteForm, "W18sbK0ml5PxceoN6n1Adg4n9ys=", false, function() {
+_s(QuoteForm, "BoDizus7k82f3QEoUBIj+gzWdws=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$formik$2f$dist$2f$formik$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormik"]
     ];
@@ -1500,7 +1563,7 @@ function Navbar() {
     ];
     return(// Added backdrop-blur for better visibility when scrolling
     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: "fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border shadow-sm z-50",
+        className: "fixed top-0 w-full bg-white backdrop-blur-sm border-b border-border shadow-sm z-50",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",

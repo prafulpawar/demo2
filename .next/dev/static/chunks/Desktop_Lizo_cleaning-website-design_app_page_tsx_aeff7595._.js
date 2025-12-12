@@ -2,7 +2,11 @@
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
   "static/chunks/Desktop_Lizo_cleaning-website-design_24728092._.js",
-  "static/chunks/f1a15_13ea7c59._.js"
+  "static/chunks/f1a15_next_10403ed5._.js",
+  "static/chunks/f1a15_lodash-es_483c10a3._.js",
+  "static/chunks/f1a15_motion-dom_dist_es_940ac11b._.js",
+  "static/chunks/f1a15_framer-motion_dist_es_0e046864._.js",
+  "static/chunks/f1a15_53933c5c._.js"
 ],
     source: "dynamic"
 });

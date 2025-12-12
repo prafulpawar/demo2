@@ -44,7 +44,7 @@ function Navbar() {
     ];
     return(// Added backdrop-blur for better visibility when scrolling
     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: "fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border shadow-sm z-50",
+        className: "fixed top-0 w-full bg-white backdrop-blur-sm border-b border-border shadow-sm z-50",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
@@ -747,7 +747,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript) <export default as Check>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-ssr] (ecmascript) <export default as Sparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/house.js [app-ssr] (ecmascript) <export default as Home>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/building-2.js [app-ssr] (ecmascript) <export default as Building2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/box.js [app-ssr] (ecmascript) <export default as Box>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$spray$2d$can$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__SprayCan$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/spray-can.js [app-ssr] (ecmascript) <export default as SprayCan>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/zap.js [app-ssr] (ecmascript) <export default as Zap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-ssr] (ecmascript) <export default as Briefcase>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -756,10 +765,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$
 function Pricing() {
     const packages = [
         {
-            name: "Standard Cleaning",
+            name: "Standard Apartment",
             type: "Apartments & Condos",
-            price: "Starting from $149",
-            description: "Perfect for regular maintenance and upkeep",
+            price: "$149",
+            period: "starting from",
+            description: "Perfect for regular maintenance and upkeep.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$spray$2d$can$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__SprayCan$3e$__["SprayCan"],
             features: [
                 "Dusting and wiping",
                 "Vacuuming and mopping",
@@ -769,24 +780,27 @@ function Pricing() {
             ]
         },
         {
-            name: "Deep Cleaning",
+            name: "Deep Apartment",
             type: "Apartments & Condos",
-            price: "Starting from $249",
-            description: "Comprehensive cleaning for special occasions",
+            price: "$249",
+            period: "starting from",
+            description: "Comprehensive cleaning for special occasions.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"],
             features: [
-                "Everything in Standard, plus:",
+                "Everything in Standard",
                 "Baseboards and doors",
                 "Inside microwave",
                 "Extra bathroom detail",
                 "Hard-to-reach areas"
-            ],
-            highlighted: true
+            ]
         },
         {
-            name: "Standard Cleaning",
+            name: "Standard House",
             type: "Houses",
-            price: "Starting from $199",
-            description: "Regular maintenance for your home",
+            price: "$199",
+            period: "starting from",
+            description: "Regular maintenance for your home.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Home$3e$__["Home"],
             features: [
                 "All standard services",
                 "Multiple bedrooms",
@@ -796,10 +810,12 @@ function Pricing() {
             ]
         },
         {
-            name: "Deep Cleaning",
+            name: "Deep House",
             type: "Houses",
-            price: "Starting from $349",
-            description: "Thorough cleaning for larger spaces",
+            price: "$349",
+            period: "starting from",
+            description: "Thorough cleaning for larger spaces.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
             features: [
                 "All deep clean services",
                 "Every bedroom detail",
@@ -809,10 +825,12 @@ function Pricing() {
             ]
         },
         {
-            name: "Move-In / Move-Out",
+            name: "Move-In / Out",
             type: "All Properties",
-            price: "Starting from $299",
-            description: "Ensure your space is ready for transition",
+            price: "$299",
+            period: "starting from",
+            description: "Ensure your space is ready for transition.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"],
             features: [
                 "Inside all cabinets",
                 "Fridge and oven",
@@ -822,12 +840,14 @@ function Pricing() {
             ]
         },
         {
-            name: "Commercial Cleaning",
+            name: "Commercial",
             type: "Office & Business",
-            price: "Custom Quote",
-            description: "Tailored for your business needs",
+            price: "Custom",
+            period: "tailored quote",
+            description: "Tailored for your business needs.",
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__["Building2"],
             features: [
-                "Daily/weekly/bi-weekly",
+                "Daily / Weekly / Bi-weekly",
                 "Common areas",
                 "Restroom sanitization",
                 "Desk cleaning",
@@ -835,239 +855,428 @@ function Pricing() {
             ]
         }
     ];
+    // Animation Variants
+    const containerVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1
+            }
+        }
+    };
+    const cardVariants = {
+        hidden: {
+            opacity: 0,
+            y: 20
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: "easeOut"
+            }
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
         className: "min-h-screen bg-background",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$navbar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                lineNumber: 93,
+                lineNumber: 136,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "pt-32 pb-12 px-4 sm:px-6 lg:px-8",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-7xl mx-auto",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-5xl font-bold text-foreground mb-4",
-                            children: "Transparent Pricing"
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                            lineNumber: 98,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xl text-foreground/60",
-                            children: "No hidden fees, no surprises. Just honest, fair pricing."
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                            lineNumber: 99,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                    lineNumber: 97,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                className: "pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-background relative overflow-hidden",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                        lineNumber: 141,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "max-w-7xl mx-auto text-center relative z-10",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                initial: {
+                                    opacity: 0,
+                                    scale: 0.9
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    scale: 1
+                                },
+                                transition: {
+                                    duration: 0.5
+                                },
+                                className: "inline-flex items-center justify-center p-3 mb-6 rounded-full bg-primary/10 text-primary",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {
+                                    size: 24
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                    lineNumber: 150,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                lineNumber: 144,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
+                                initial: {
+                                    opacity: 0,
+                                    y: 10
+                                },
+                                animate: {
+                                    opacity: 1,
+                                    y: 0
+                                },
+                                transition: {
+                                    delay: 0.1
+                                },
+                                className: "text-4xl md:text-5xl font-bold text-foreground mb-4",
+                                children: "Simple, Transparent Pricing"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                lineNumber: 153,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
+                                initial: {
+                                    opacity: 0
+                                },
+                                animate: {
+                                    opacity: 1
+                                },
+                                transition: {
+                                    delay: 0.2
+                                },
+                                className: "text-xl text-foreground/60 max-w-2xl mx-auto",
+                                children: "Choose the service that fits your needs. No hidden fees, just honest work."
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                lineNumber: 162,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                        lineNumber: 143,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                lineNumber: 96,
+                lineNumber: 139,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-12 px-4 sm:px-6 lg:px-8",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "pb-24 px-4 sm:px-6 lg:px-8",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
                     className: "max-w-7xl mx-auto",
+                    variants: containerVariants,
+                    initial: "hidden",
+                    whileInView: "visible",
+                    viewport: {
+                        once: true,
+                        margin: "-50px"
+                    },
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
-                        children: packages.map((pkg, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `rounded-xl border transition-all overflow-hidden group hover:shadow-lg ${pkg.highlighted ? "border-primary bg-primary/5 scale-105 lg:scale-110 relative z-10" : "border-border bg-card hover:border-primary/30"}`,
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-8",
-                                    children: [
-                                        pkg.highlighted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute top-4 right-4 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full",
-                                            children: "Popular"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                            lineNumber: 118,
-                                            columnNumber: 21
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-semibold text-foreground mb-1",
-                                            children: pkg.name
-                                        }, void 0, false, {
-                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                            lineNumber: 122,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm text-foreground/60 mb-4",
-                                            children: pkg.type
-                                        }, void 0, false, {
-                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                            lineNumber: 123,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mb-6",
+                        children: packages.map((pkg, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                variants: cardVariants,
+                                whileHover: {
+                                    y: -8,
+                                    transition: {
+                                        duration: 0.3
+                                    }
+                                },
+                                className: "group relative bg-card border border-border hover:border-primary/50 rounded-2xl p-6 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5 flex flex-col",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex justify-between items-start mb-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(pkg.icon, {
+                                                    size: 28
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                    lineNumber: 193,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                lineNumber: 192,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-right",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-sm font-medium text-foreground/50",
+                                                    children: pkg.type
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                    lineNumber: 196,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                lineNumber: 195,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                        lineNumber: 191,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "text-2xl font-bold text-foreground mb-2",
+                                        children: pkg.name
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                        lineNumber: 200,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm text-foreground/60 mb-6 h-10",
+                                        children: pkg.description
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                        lineNumber: 201,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mb-6 pt-6 border-t border-border group-hover:border-primary/20 transition-colors",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-baseline gap-1",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: `text-3xl font-bold mb-2 ${pkg.highlighted ? "text-primary" : "text-foreground"}`,
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl font-bold text-foreground",
                                                     children: pkg.price
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                                    lineNumber: 125,
+                                                    lineNumber: 206,
                                                     columnNumber: 21
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-foreground/60",
-                                                    children: pkg.description
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm text-foreground/50",
+                                                    children: pkg.period
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                                    lineNumber: 128,
+                                                    lineNumber: 207,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                            lineNumber: 124,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                            className: "space-y-3 mb-8",
-                                            children: pkg.features.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    className: "flex items-start gap-3",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                            size: 18,
-                                                            className: `flex-shrink-0 mt-0.5 ${pkg.highlighted ? "text-primary" : "text-primary"}`
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                                            lineNumber: 134,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-foreground/80 text-sm",
-                                                            children: feature
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                                            lineNumber: 138,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, idx, true, {
-                                                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                                    lineNumber: 133,
-                                                    columnNumber: 23
-                                                }, this))
-                                        }, void 0, false, {
-                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                            lineNumber: 131,
-                                            columnNumber: 19
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "/contact",
-                                            className: `w-full py-2 rounded-lg font-medium transition-all text-center inline-block ${pkg.highlighted ? "bg-primary text-primary-foreground hover:bg-primary/90" : "border border-primary text-primary hover:bg-primary/5"}`,
-                                            children: "Get Quote"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                            lineNumber: 143,
+                                            lineNumber: 205,
                                             columnNumber: 19
                                         }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                    lineNumber: 116,
-                                    columnNumber: 17
-                                }, this)
-                            }, index, false, {
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                        lineNumber: 204,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "space-y-3 mb-8 flex-grow",
+                                        children: pkg.features.map((feature, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                className: "flex items-start gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                        size: 18,
+                                                        className: "flex-shrink-0 mt-0.5 text-primary"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                        lineNumber: 215,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-sm text-foreground/80 group-hover:text-foreground transition-colors",
+                                                        children: feature
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                        lineNumber: 219,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, idx, true, {
+                                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                lineNumber: 214,
+                                                columnNumber: 21
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                        lineNumber: 212,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/contact",
+                                        className: "mt-auto",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "w-full py-3 px-4 rounded-xl border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-3",
+                                            children: [
+                                                "Get Quote",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                    size: 18
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                    lineNumber: 230,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                            lineNumber: 228,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                        lineNumber: 227,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, index, true, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                lineNumber: 108,
+                                lineNumber: 184,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                        lineNumber: 106,
+                        lineNumber: 182,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                    lineNumber: 105,
+                    lineNumber: 175,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                lineNumber: 104,
+                lineNumber: 174,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 px-4 sm:px-6 lg:px-8 bg-card",
+                className: "pb-16 px-4 sm:px-6 lg:px-8",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-4xl mx-auto",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "rounded-xl border border-primary/30 bg-primary/5 p-8 text-center",
+                    className: "max-w-7xl mx-auto",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            scale: 0.98
+                        },
+                        whileInView: {
+                            opacity: 1,
+                            scale: 1
+                        },
+                        viewport: {
+                            once: true
+                        },
+                        className: "rounded-2xl bg-primary/5 border border-primary/20 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-2xl font-semibold text-foreground mb-3",
-                                children: "Save with Recurring Service"
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                lineNumber: 164,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-foreground/60 mb-6",
-                                children: "Weekly, bi-weekly, and monthly clients receive preferred rates and priority scheduling."
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                lineNumber: 165,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/contact",
-                                className: "inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all font-medium",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-start gap-6",
                                 children: [
-                                    "Request a Custom Quote ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                        size: 18
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "hidden sm:flex p-4 rounded-full bg-background border border-primary/20 text-primary shadow-sm",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {
+                                            size: 32
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                            lineNumber: 250,
+                                            columnNumber: 18
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                        lineNumber: 172,
-                                        columnNumber: 38
+                                        lineNumber: 249,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "text-2xl font-bold text-foreground mb-2",
+                                                children: "Regular Maintenance Plans"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                lineNumber: 253,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-foreground/70 max-w-xl",
+                                                children: "Weekly, bi-weekly, and monthly clients receive preferred rates. Contact us to set up a recurring schedule that keeps your space spotless year-round."
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                                lineNumber: 254,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                        lineNumber: 252,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                                lineNumber: 168,
+                                lineNumber: 248,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/about#contact",
+                                className: "flex-shrink-0 w-full md:w-auto",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: "w-full md:w-auto px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2",
+                                    children: [
+                                        "Inquire About Recurring",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                            size: 18
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                            lineNumber: 264,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                    lineNumber: 262,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
+                                lineNumber: 261,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                        lineNumber: 163,
+                        lineNumber: 242,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                    lineNumber: 162,
+                    lineNumber: 241,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                lineNumber: 161,
+                lineNumber: 240,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-                lineNumber: 178,
+                lineNumber: 271,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/pricing/page.tsx",
-        lineNumber: 92,
+        lineNumber: 135,
         columnNumber: 5
     }, this);
 }
