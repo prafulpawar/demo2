@@ -17,30 +17,62 @@ export default function Home() {
   const services = [
     {
       title: "Residential Cleaning",
-      description: "Professional cleaning for homes, apartments, and condos with attention to detail.",
+      details: [
+        "Standard home cleaning",
+        "Deep cleaning",
+        "Move-in cleaning",
+        "Move-out cleaning",
+      ],
       icon: "🏠",
     },
     {
-      title: "Deep Cleaning",
-      description: "Comprehensive cleaning for spring cleaning or special occasions.",
-      icon: "✨",
-    },
-    {
-      title: "Move-In/Move-Out Cleaning",
-      description: "Complete turnover cleaning for transitions between properties.",
-      icon: "📦",
-    },
-    {
-      title: "Commercial Cleaning & Office Cleaning",
-      description: "Professional office and business space cleaning services.",
+      title: "Commercial & Office Cleaning",
+      details: [
+        "Office cleaning",
+        "Small business cleaning",
+        "After-hours cleaning",
+      ],
       icon: "🏢",
     },
     {
-      title: "Airbnb & Rental Turnovers Cleaning",
-      description: "Quick, reliable turnovers between guests for rental properties.",
+      title: "Airbnb / Short-Term Rental Turnovers",
+      details: [
+        "Guest-ready cleaning",
+        "Bed making and restocking",
+        "Same-day turnovers",
+      ],
       icon: "🛏️",
     },
-  ]
+    {
+      title: "Post-Renovation Cleaning",
+      details: [
+        "Dust removal",
+        "Surface wipe-down",
+        "Floor and window detailing",
+      ],
+      icon: "🏗️",
+    },
+    {
+      title: "Seasonal & Specialty Services",
+      details: [
+        "Christmas tree teardown & holiday clean-up",
+        "Post-home-sale cleaning (listing prep and turnover)",
+        "Closet organizing & decluttering",
+        "Garage organizing & clean-up",
+      ],
+      icon: "🌟",
+    },
+    {
+      title: "Carpet Cleaning",
+      details: [
+        "Carpet shampooing",
+        "Spot and stain treatment",
+        "Odor removal",
+        "Area rug cleaning",
+      ],
+      icon: "🧼",
+    },
+  ];
 
   const stats = [
     { number: "500+", label: "Homes Cleaned", icon: Users },
@@ -48,9 +80,9 @@ export default function Home() {
     { number: "5 Yrs", label: "Experience", icon: Clock },
   ]
 
-  const serviceAreas = ["Ottawa", "Kanata", "Vanier", "Stittsville", 
+  const serviceAreas = ["Ottawa", "Kanata", "Vanier", "Stittsville",
     "Nepean", "Alta Visa", "Riverside South", "Findlay Creek", "Orleans", "Westboro", "Manotick", "Crystal Beach", "Kanata",
-     "Greely", "Barrhaven", "Bells Corners", "Smithfall"]
+    "Greely", "Barrhaven", "Bells Corners", "Smithfall"]
 
 
 
@@ -178,9 +210,9 @@ export default function Home() {
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">How It Works</h2>
             <p className="text-black-500 text-xl md:text-xl max-w-2xl mx-auto font-medium">We clean so you can focus on what matters.</p>
-              <p className="text-slate-500 text-sm md:text-sm max-w-xl mx-auto font-medium">
-                Whether it is a busy family household, a high-traffic office, or a short-term rental that needs fast turnovers, Lizzo Cleaning delivers reliable, consistent results every time.
-              </p>
+            <p className="text-slate-500 text-sm md:text-sm max-w-xl mx-auto font-medium">
+              Whether it is a busy family household, a high-traffic office, or a short-term rental that needs fast turnovers, Lizzo Cleaning delivers reliable, consistent results every time.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
@@ -285,18 +317,20 @@ export default function Home() {
                 <h3 className="font-bold text-xl mb-3 text-foreground group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-foreground/70 leading-relaxed">{service.description}</p>
+
+                {/* Yahan maine <p> hata kar <ul> aur map() lagaya hai */}
+                <ul className="text-foreground/70 leading-relaxed space-y-2">
+                  {service.details.map((detail, idx) => (
+                    <li key={idx} className="flex items-start">
+                      {/* Bullet point ke liye dot add kiya hai */}
+                      <span className="mr-2">•</span>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+
               </div>
             ))}
-          </div>
-
-          <div className="text-center mt-16">
-            <Link
-              href="/services"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all font-semibold"
-            >
-              View All Services <ArrowRight size={20} />
-            </Link>
           </div>
         </div>
       </section>

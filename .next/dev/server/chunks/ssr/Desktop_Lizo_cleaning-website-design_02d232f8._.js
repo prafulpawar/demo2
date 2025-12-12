@@ -1167,8 +1167,7 @@ function Services() {
                 "Vacuuming and mopping floors",
                 "Bathrooms cleaned and sanitized",
                 "Kitchen surfaces & appliances exterior",
-                "Emptying trash & bin liner replacement",
-                "Making beds (linens changed if left out)"
+                "Emptying trash "
             ]
         },
         {
@@ -1180,12 +1179,10 @@ function Services() {
             image: "https://5.imimg.com/data5/IY/VT/WG/SELLER-92734525/bathroom-cleaning-1000x1000.jpg",
             url: "/contact",
             includes: [
-                "Everything in a standard clean",
-                "Baseboards, door frames, & light switches",
-                "Inside microwave & oven scrub",
-                "Scrubbing tile grout in bathrooms",
-                "High-touch & hard-to-reach areas",
-                "Ceiling fans and light fixtures"
+                "Baseboards, door ,and light switches",
+                "Inside microwave ",
+                "Extra detail in bathrooms and kitchen",
+                "High-touch & hard-to-reach areas"
             ]
         },
         {
@@ -1198,11 +1195,10 @@ function Services() {
             url: "/contact",
             includes: [
                 "Inside cabinets and drawers (empty units)",
-                "Inside fridge, oven, and dishwasher",
-                "Deep scrub of bathrooms & kitchen",
-                "Floors thoroughly vacuumed & mopped",
-                "Spot cleaning walls & baseboards",
-                "Window sills and tracks"
+                "Inside fridge and oven",
+                "Full bathroom and kitchen scrub",
+                "Floors thoroughly vacuumed and mopped",
+                "Spot cleaning walls where possible"
             ]
         },
         {
@@ -1214,12 +1210,10 @@ function Services() {
             image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop",
             url: "/contact",
             includes: [
-                "Daily, weekly, or bi-weekly options",
-                "Sanitizing restrooms & break rooms",
-                "Desks, phones, and touch points wiped",
-                "Trash removal & recycling",
-                "Floor care (vacuuming/mopping)",
-                "Supply restocking (soap, paper)"
+                "Daily, weekly, or bi-weekly service",
+                "Common areas, restrooms, break rooms",
+                "Desks and touch points wiped",
+                "Trash removal and floors"
             ]
         },
         {
@@ -1231,12 +1225,10 @@ function Services() {
             image: "https://cdn.prod.website-files.com/66eae7c3f6bec634152a5d82/66fdad7178925f4d926262f9_Cleaning%20Company%20(2).webp",
             url: "/contact",
             includes: [
-                "Guest-ready presentation & staging",
-                "Fresh bedding & towel setup",
-                "Reporting damages or low supplies",
-                "Deep sanitization of high-touch areas",
-                "Laundry service (wash & fold)",
-                "Same-day turnover availability"
+                "Full cleaning of all rooms",
+                "Bed stripping and remaking",
+                "Basic restocking (soap, toilet paper, etc. if provided)",
+                "Light staging so your listing looks great in reviews"
             ]
         },
         {
@@ -1248,12 +1240,9 @@ function Services() {
             image: "https://reallycleanservices.com/wp-content/uploads/2025/02/diploma-1.webp",
             url: "/contact",
             includes: [
-                "High-dust removal from walls/ceilings",
-                "Surface wipe-down & polishing",
-                "Paint spot removal from floors",
-                "Cleaning inside empty cabinets",
-                "Window sticker & residue removal",
-                "Final detail inspection"
+                "Dust removal ",
+                "Surface wipe-down ",
+                "Floor and window cleaning"
             ]
         },
         {
@@ -1262,7 +1251,7 @@ function Services() {
             description: "Specialized assistance for holidays, moving, and organization.",
             longDescription: "Beyond standard cleaning, we assist with seasonal transitions, real estate preparation, and organizing cluttered spaces like garages and closets.",
             icon: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"],
-            image: "https://reallycleanservices.com/wp-content/uploads/2025/02/diploma-1.webp",
+            image: "https://officepride.com/wp-content/uploads/2021/11/OP1014-Office-Pride-Blog_10Oct2021-Micro.jpg",
             url: "/contact",
             includes: [
                 "Christmas tree teardown & holiday clean-up",
@@ -1300,7 +1289,7 @@ function Services() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$navbar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                lineNumber: 203,
+                lineNumber: 193,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1317,7 +1306,7 @@ function Services() {
                                         className: "h-4 w-4 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                        lineNumber: 210,
+                                        lineNumber: 200,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1325,13 +1314,13 @@ function Services() {
                                         children: "Expert Cleaning Services"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 201,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                lineNumber: 209,
+                                lineNumber: 199,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1342,7 +1331,7 @@ function Services() {
                                         className: "hidden sm:block"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                        lineNumber: 216,
+                                        lineNumber: 206,
                                         columnNumber: 37
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1350,13 +1339,13 @@ function Services() {
                                         children: "Every Space"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                        lineNumber: 217,
+                                        lineNumber: 207,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                lineNumber: 215,
+                                lineNumber: 205,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1364,23 +1353,23 @@ function Services() {
                                 children: "Professional, reliable, and thorough. Choose the perfect service package aimed at restoring freshness to your home or office."
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                lineNumber: 219,
+                                lineNumber: 209,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                        lineNumber: 208,
+                        lineNumber: 198,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                    lineNumber: 207,
+                    lineNumber: 197,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                lineNumber: 206,
+                lineNumber: 196,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1401,14 +1390,14 @@ function Services() {
                                             className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                            lineNumber: 238,
+                                            lineNumber: 228,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-70 transition-opacity"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                            lineNumber: 243,
+                                            lineNumber: 233,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1420,12 +1409,12 @@ function Services() {
                                                         className: "h-6 w-6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                        lineNumber: 248,
+                                                        lineNumber: 238,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                    lineNumber: 247,
+                                                    lineNumber: 237,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1433,19 +1422,19 @@ function Services() {
                                                     children: service.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                    lineNumber: 250,
+                                                    lineNumber: 240,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                            lineNumber: 246,
+                                            lineNumber: 236,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                    lineNumber: 237,
+                                    lineNumber: 227,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1456,7 +1445,7 @@ function Services() {
                                             children: service.description
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                            lineNumber: 257,
+                                            lineNumber: 247,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1474,18 +1463,18 @@ function Services() {
                                                                     className: "ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                    lineNumber: 270,
+                                                                    lineNumber: 260,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                            lineNumber: 265,
+                                                            lineNumber: 255,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                        lineNumber: 264,
+                                                        lineNumber: 254,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DrawerContent"], {
@@ -1506,12 +1495,12 @@ function Services() {
                                                                                             className: "h-5 w-5"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                            lineNumber: 281,
+                                                                                            lineNumber: 271,
                                                                                             columnNumber: 33
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                        lineNumber: 280,
+                                                                                        lineNumber: 270,
                                                                                         columnNumber: 31
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DrawerTitle"], {
@@ -1519,13 +1508,13 @@ function Services() {
                                                                                         children: service.title
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                        lineNumber: 283,
+                                                                                        lineNumber: 273,
                                                                                         columnNumber: 31
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                lineNumber: 279,
+                                                                                lineNumber: 269,
                                                                                 columnNumber: 29
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DrawerClose"], {
@@ -1538,23 +1527,23 @@ function Services() {
                                                                                         className: "h-4 w-4"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                        lineNumber: 289,
+                                                                                        lineNumber: 279,
                                                                                         columnNumber: 33
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                    lineNumber: 288,
+                                                                                    lineNumber: 278,
                                                                                     columnNumber: 31
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                lineNumber: 287,
+                                                                                lineNumber: 277,
                                                                                 columnNumber: 29
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                        lineNumber: 278,
+                                                                        lineNumber: 268,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DrawerDescription"], {
@@ -1566,13 +1555,13 @@ function Services() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                        lineNumber: 293,
+                                                                        lineNumber: 283,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                lineNumber: 277,
+                                                                lineNumber: 267,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1590,17 +1579,17 @@ function Services() {
                                                                                     className: "w-full object-cover"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                    lineNumber: 305,
-                                                                                    columnNumber: 37
+                                                                                    lineNumber: 295,
+                                                                                    columnNumber: 33
                                                                                 }, this)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                lineNumber: 304,
-                                                                                columnNumber: 33
+                                                                                lineNumber: 294,
+                                                                                columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                            lineNumber: 303,
+                                                                            lineNumber: 293,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1613,22 +1602,22 @@ function Services() {
                                                                                             children: "Description"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                            lineNumber: 316,
-                                                                                            columnNumber: 37
+                                                                                            lineNumber: 306,
+                                                                                            columnNumber: 33
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                                             className: "text-muted-foreground leading-relaxed",
                                                                                             children: service.longDescription
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                            lineNumber: 317,
-                                                                                            columnNumber: 37
+                                                                                            lineNumber: 307,
+                                                                                            columnNumber: 33
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                    lineNumber: 315,
-                                                                                    columnNumber: 33
+                                                                                    lineNumber: 305,
+                                                                                    columnNumber: 31
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     children: [
@@ -1639,15 +1628,15 @@ function Services() {
                                                                                                     className: "h-5 w-5 text-primary"
                                                                                                 }, void 0, false, {
                                                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                                    lineNumber: 324,
-                                                                                                    columnNumber: 41
+                                                                                                    lineNumber: 314,
+                                                                                                    columnNumber: 35
                                                                                                 }, this),
                                                                                                 "What's Included?"
                                                                                             ]
                                                                                         }, void 0, true, {
                                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                            lineNumber: 323,
-                                                                                            columnNumber: 37
+                                                                                            lineNumber: 313,
+                                                                                            columnNumber: 33
                                                                                         }, this),
                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                             className: "grid grid-cols-1 sm:grid-cols-2 gap-3",
@@ -1658,49 +1647,49 @@ function Services() {
                                                                                                             className: "h-4 w-4 text-primary mt-0.5 shrink-0"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                                            lineNumber: 330,
-                                                                                                            columnNumber: 49
+                                                                                                            lineNumber: 320,
+                                                                                                            columnNumber: 39
                                                                                                         }, this),
                                                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                                             className: "text-sm text-foreground/90",
                                                                                                             children: item
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                                            lineNumber: 331,
-                                                                                                            columnNumber: 49
+                                                                                                            lineNumber: 321,
+                                                                                                            columnNumber: 39
                                                                                                         }, this)
                                                                                                     ]
                                                                                                 }, idx, true, {
                                                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                                    lineNumber: 329,
-                                                                                                    columnNumber: 45
+                                                                                                    lineNumber: 319,
+                                                                                                    columnNumber: 37
                                                                                                 }, this))
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                            lineNumber: 327,
-                                                                                            columnNumber: 37
+                                                                                            lineNumber: 317,
+                                                                                            columnNumber: 33
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                    lineNumber: 322,
-                                                                                    columnNumber: 33
+                                                                                    lineNumber: 312,
+                                                                                    columnNumber: 31
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                            lineNumber: 314,
+                                                                            lineNumber: 304,
                                                                             columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                    lineNumber: 300,
+                                                                    lineNumber: 290,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                lineNumber: 299,
+                                                                lineNumber: 289,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DrawerFooter"], {
@@ -1716,13 +1705,13 @@ function Services() {
                                                                                 children: "Close"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                lineNumber: 344,
-                                                                                columnNumber: 37
+                                                                                lineNumber: 334,
+                                                                                columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                            lineNumber: 343,
-                                                                            columnNumber: 33
+                                                                            lineNumber: 333,
+                                                                            columnNumber: 29
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                                             href: service.url,
@@ -1737,63 +1726,63 @@ function Services() {
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                                lineNumber: 347,
-                                                                                columnNumber: 37
+                                                                                lineNumber: 337,
+                                                                                columnNumber: 31
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                            lineNumber: 346,
-                                                                            columnNumber: 33
+                                                                            lineNumber: 336,
+                                                                            columnNumber: 29
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                    lineNumber: 342,
-                                                                    columnNumber: 29
+                                                                    lineNumber: 332,
+                                                                    columnNumber: 27
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                                lineNumber: 341,
+                                                                lineNumber: 331,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                        lineNumber: 275,
+                                                        lineNumber: 265,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                lineNumber: 263,
+                                                lineNumber: 253,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                            lineNumber: 261,
+                                            lineNumber: 251,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                    lineNumber: 256,
+                                    lineNumber: 246,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, service.id, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                            lineNumber: 232,
+                            lineNumber: 222,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                    lineNumber: 228,
+                    lineNumber: 218,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                lineNumber: 227,
+                lineNumber: 217,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1809,7 +1798,7 @@ function Services() {
                                     children: "Add-On Services"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                    lineNumber: 370,
+                                    lineNumber: 360,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1817,13 +1806,13 @@ function Services() {
                                     children: "Need a little extra? Add these specialized services to any package to tailor the cleaning to your specific needs."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                    lineNumber: 373,
+                                    lineNumber: 363,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                            lineNumber: 369,
+                            lineNumber: 359,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1838,12 +1827,12 @@ function Services() {
                                                 className: "text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                                lineNumber: 385,
+                                                lineNumber: 375,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                            lineNumber: 384,
+                                            lineNumber: 374,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1851,40 +1840,40 @@ function Services() {
                                             children: addon
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                            lineNumber: 387,
+                                            lineNumber: 377,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                                    lineNumber: 380,
+                                    lineNumber: 370,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                            lineNumber: 378,
+                            lineNumber: 368,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                    lineNumber: 368,
+                    lineNumber: 358,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                lineNumber: 367,
+                lineNumber: 357,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$components$2f$footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-                lineNumber: 394,
+                lineNumber: 384,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/Lizo/cleaning-website-design/app/services/page.tsx",
-        lineNumber: 202,
+        lineNumber: 192,
         columnNumber: 5
     }, this);
 }

@@ -50,13 +50,11 @@ export default function Services() {
         "https://plus.unsplash.com/premium_photo-1679920025550-75324e59680f?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       url: "/contact",
       includes: [
-        "Standard home cleaning",
         "Dusting and wiping surfaces",
         "Vacuuming and mopping floors",
         "Bathrooms cleaned and sanitized",
         "Kitchen surfaces & appliances exterior",
-        "Emptying trash & bin liner replacement",
-        "Making beds (linens changed if left out)",
+        "Emptying trash ",
       ],
     },
     {
@@ -72,12 +70,11 @@ export default function Services() {
       url: "/contact",
       includes: [
 
-        "Everything in a standard clean",
-        "Baseboards, door frames, & light switches",
-        "Inside microwave & oven scrub",
-        "Scrubbing tile grout in bathrooms",
+        "Baseboards, door ,and light switches",
+        "Inside microwave ",
+        "Extra detail in bathrooms and kitchen",
         "High-touch & hard-to-reach areas",
-        "Ceiling fans and light fixtures",
+
       ],
     },
     {
@@ -92,12 +89,11 @@ export default function Services() {
       url: "/contact",
       includes: [
         "Inside cabinets and drawers (empty units)",
-        "Inside fridge, oven, and dishwasher",
-        "Deep scrub of bathrooms & kitchen",
-        "Floors thoroughly vacuumed & mopped",
-        "Spot cleaning walls & baseboards",
-        "Window sills and tracks",
-      ],
+        "Inside fridge and oven",
+        "Full bathroom and kitchen scrub",
+        "Floors thoroughly vacuumed and mopped",
+        "Spot cleaning walls where possible",
+      ]
     },
     {
       id: "commercial",
@@ -110,12 +106,10 @@ export default function Services() {
         "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop",
       url: "/contact",
       includes: [
-        "Daily, weekly, or bi-weekly options",
-        "Sanitizing restrooms & break rooms",
-        "Desks, phones, and touch points wiped",
-        "Trash removal & recycling",
-        "Floor care (vacuuming/mopping)",
-        "Supply restocking (soap, paper)",
+        "Daily, weekly, or bi-weekly service",
+        "Common areas, restrooms, break rooms",
+        "Desks and touch points wiped",
+        "Trash removal and floors",
       ],
     },
     {
@@ -129,15 +123,10 @@ export default function Services() {
         "https://cdn.prod.website-files.com/66eae7c3f6bec634152a5d82/66fdad7178925f4d926262f9_Cleaning%20Company%20(2).webp",
       url: "/contact",
       includes: [
-        "Guest-ready cleaning ", 
-        "Bed making & restocking ",
-        "Same-day turnover ",
-
         "Full cleaning of all rooms",
         "Bed stripping and remaking",
-        "Basic restocking (soap, toilet paper,etc. if provided)",
-        "Light staging so your listing look great in reviews",
-       
+        "Basic restocking (soap, toilet paper, etc. if provided)",
+        "Light staging so your listing looks great in reviews",
       ],
     },
     {
@@ -151,12 +140,9 @@ export default function Services() {
         "https://reallycleanservices.com/wp-content/uploads/2025/02/diploma-1.webp",
       url: "/contact",
       includes: [
-        "High-dust removal from walls/ceilings",
-        "Surface wipe-down & polishing",
-        "Paint spot removal from floors",
-        "Cleaning inside empty cabinets",
-        "Window sticker & residue removal",
-        "Final detail inspection",
+        "Dust removal ",
+        "Surface wipe-down ",
+        "Floor and window cleaning",
       ],
     },
     {
@@ -245,7 +231,7 @@ export default function Services() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-70 transition-opacity" />
-                  
+
                   {/* Floating Icon */}
                   <div className="absolute bottom-4 left-4 flex items-center gap-3">
                     <div className="h-12 w-12 bg-primary text-primary-foreground rounded-xl flex items-center justify-center shadow-lg transform group-hover:rotate-6 transition-transform duration-300">
@@ -274,7 +260,7 @@ export default function Services() {
                           <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>
                       </DrawerTrigger>
-                      
+
                       {/* Responsive Scrollable Content */}
                       <DrawerContent className="max-h-[70vh] flex flex-col fixed bottom-0 left-0 right-0 outline-none">
                         {/* Header - Fixed */}
@@ -295,64 +281,64 @@ export default function Services() {
                             </DrawerClose>
                           </div>
                           <DrawerDescription className="mt-2 text-base">
-                             Overview of the {service.title} package.
+                            Overview of the {service.title} package.
                           </DrawerDescription>
                         </DrawerHeader>
 
                         {/* Body - Scrollable */}
                         <div className="p-4 md:p-6 flex-1 overflow-y-auto md:overflow-hidden max-h-[70vh] md:max-h-none">
                           <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-                            
+
                             {/* Left: Image (Hidden on very small screens if needed, or kept) */}
                             <div className="w-full md:w-1/3 shrink-0">
-                                <div className="aspect-video  rounded-xl overflow-hidden shadow-md relative">
-                                    <img 
-                                        src={service.image} 
-                                        alt={service.title} 
-                                        className="w-full object-cover"
-                                    />
-                                </div>
+                              <div className="aspect-video  rounded-xl overflow-hidden shadow-md relative">
+                                <img
+                                  src={service.image}
+                                  alt={service.title}
+                                  className="w-full object-cover"
+                                />
+                              </div>
                             </div>
 
                             {/* Right: Content */}
                             <div className="flex-1 space-y-6">
-                                <div>
-                                    <h4 className="text-lg font-semibold text-foreground mb-2">Description</h4>
-                                    <p className="text-muted-foreground leading-relaxed">
-                                        {service.longDescription}
-                                    </p>
-                                </div>
+                              <div>
+                                <h4 className="text-lg font-semibold text-foreground mb-2">Description</h4>
+                                <p className="text-muted-foreground leading-relaxed">
+                                  {service.longDescription}
+                                </p>
+                              </div>
 
-                                <div>
-                                    <h4 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
-                                        <CheckCircle className="h-5 w-5 text-primary" />
-                                        What's Included?
-                                    </h4>
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                        {service.includes.map((item, idx) => (
-                                            <div key={idx} className="flex items-start gap-2.5 p-3 rounded-lg bg-muted/30 border border-border/40">
-                                                <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
-                                                <span className="text-sm text-foreground/90">{item}</span>
-                                            </div>
-                                        ))}
+                              <div>
+                                <h4 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                                  <CheckCircle className="h-5 w-5 text-primary" />
+                                  What's Included?
+                                </h4>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                  {service.includes.map((item, idx) => (
+                                    <div key={idx} className="flex items-start gap-2.5 p-3 rounded-lg bg-muted/30 border border-border/40">
+                                      <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                                      <span className="text-sm text-foreground/90">{item}</span>
                                     </div>
+                                  ))}
                                 </div>
+                              </div>
                             </div>
                           </div>
                         </div>
 
                         {/* Footer - Fixed CTA */}
                         <DrawerFooter className="border-t border-border/10 pt-4 shrink-0 bg-background">
-                            <div className="flex flex-col sm:flex-row gap-3 w-full max-w-4xl mx-auto">
-                                <DrawerClose asChild>
-                                    <Button variant="outline" className="flex-1 sm:flex-none">Close</Button>
-                                </DrawerClose>
-                                <Link href={service.url} className="flex-1">
-                                    <Button className="w-full text-base" size="lg">
-                                        Book {service.title} Now
-                                    </Button>
-                                </Link>
-                            </div>
+                          <div className="flex flex-col sm:flex-row gap-3 w-full max-w-4xl mx-auto">
+                            <DrawerClose asChild>
+                              <Button variant="outline" className="flex-1 sm:flex-none">Close</Button>
+                            </DrawerClose>
+                            <Link href={service.url} className="flex-1">
+                              <Button className="w-full text-base" size="lg">
+                                Book {service.title} Now
+                              </Button>
+                            </Link>
+                          </div>
                         </DrawerFooter>
                       </DrawerContent>
                     </Drawer>
@@ -365,20 +351,20 @@ export default function Services() {
       </section>
 
 
-      
+
 
       {/* Add-ons Section */}
       <section className="py-16 bg-muted/30 border-t border-border">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-10 md:mb-14">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-             Add-On Services
+              Add-On Services
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
               Need a little extra? Add these specialized services to any package to tailor the cleaning to your specific needs.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {addOns.map((addon, index) => (
               <div
