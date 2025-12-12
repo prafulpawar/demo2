@@ -168,7 +168,7 @@ export default function Services() {
       longDescription:
         "Revitalize your flooring with our deep cleaning methods designed to handle odors, tough stains, and general wear and tear on carpets.",
       icon: Sparkles, // You may need to import this icon or choose another
-      image: "https://reallycleanservices.com/wp-content/uploads/2025/02/diploma-1.webp", // Replace with your specific image
+      image: "https://img.freepik.com/premium-photo/carpet-cleaning-vacuum-cleaner_266247-56.jpg?semt=ais_hybrid&w=740&q=80", // Replace with your specific image
       url: "/contact",
       includes: [
         "Carpet shampooing",
