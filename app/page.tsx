@@ -26,24 +26,19 @@ export default function Home() {
       icon: "✨",
     },
     {
-      title: "Move-In/Out Cleaning",
+      title: "Move-In/Move-Out Cleaning",
       description: "Complete turnover cleaning for transitions between properties.",
       icon: "📦",
     },
     {
-      title: "Commercial Cleaning",
+      title: "Commercial Cleaning & Office Cleaning",
       description: "Professional office and business space cleaning services.",
       icon: "🏢",
     },
     {
-      title: "Airbnb Turnovers",
+      title: "Airbnb & Rental Turnovers Cleaning",
       description: "Quick, reliable turnovers between guests for rental properties.",
       icon: "🛏️",
-    },
-    {
-      title: "Post-Renovation",
-      description: "Complete dust removal and cleanup after construction work.",
-      icon: "🔨",
     },
   ]
 
