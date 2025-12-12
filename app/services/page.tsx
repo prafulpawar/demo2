@@ -33,6 +33,7 @@ import {
   CheckCircle,
   Check,
   X,
+  Calendar
 } from "lucide-react";
 
 export default function Services() {
@@ -153,17 +154,48 @@ export default function Services() {
         "Final detail inspection",
       ],
     },
+    {
+      id: "seasonal-specialty",
+      title: "Seasonal & Specialty Services",
+      description: "Specialized assistance for holidays, moving, and organization.",
+      longDescription:
+        "Beyond standard cleaning, we assist with seasonal transitions, real estate preparation, and organizing cluttered spaces like garages and closets.",
+      icon: Calendar, // You may need to import this icon or choose another
+      image: "https://reallycleanservices.com/wp-content/uploads/2025/02/diploma-1.webp", // Replace with your specific image
+      url: "/contact",
+      includes: [
+        "Christmas tree teardown & holiday clean-up",
+        "Post-home-sale cleaning (listing prep and turnover)",
+        "Closet organizing & decluttering",
+        "Garage organizing & clean-up",
+      ],
+    },
+    {
+      id: "carpet-cleaning",
+      title: "Carpet Cleaning",
+      description: "Deep cleaning treatments for carpets, rugs, and stains.",
+      longDescription:
+        "Revitalize your flooring with our deep cleaning methods designed to handle odors, tough stains, and general wear and tear on carpets.",
+      icon: Sparkles, // You may need to import this icon or choose another
+      image: "https://reallycleanservices.com/wp-content/uploads/2025/02/diploma-1.webp", // Replace with your specific image
+      url: "/contact",
+      includes: [
+        "Carpet shampooing",
+        "Spot and stain treatment",
+        "Odor removal",
+        "Area rug cleaning",
+      ],
+    },
   ];
 
   const addOns = [
     "Inside Fridge",
     "Inside Oven",
     "Inside Cabinets",
+    "Interior Window  ",
     "Laundry Wash & Fold",
-    "Balcony Cleaning",
-    "Window Cleaning ",
-    "Odor removal ",
-    "Area rug cleaning"
+    "Balcony or porch Cleaning",
+    
   ];
 
   return (
