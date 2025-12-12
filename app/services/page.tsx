@@ -79,7 +79,7 @@ export default function Services() {
     },
     {
       id: "move-in-out",
-      title: "Move-In / Move-Out",
+      title: "Move-In / Move-Out Cleaning",
       description: "Ensure the property is pristine for the next chapter.",
       longDescription:
         "Ideal for landlords, tenants, and homeowners. Whether you want your deposit back or a fresh start in a new home, we leave the place spotless.",
@@ -97,7 +97,7 @@ export default function Services() {
     },
     {
       id: "commercial",
-      title: "Commercial & Office",
+      title: "Commercial & Office Cleaning",
       description: "Professional spaces kept clean for employees and clients.",
       longDescription:
         "Keep your workplace clean, professional, and welcoming. A clean office boosts productivity and leaves a great first impression on clients.",
@@ -114,7 +114,7 @@ export default function Services() {
     },
     {
       id: "airbnb",
-      title: "Airbnb & Turnover",
+      title: "Airbnb & Rental Turnover Cleaning",
       description: "Fast, reliable turnovers to maintain Superhost status.",
       longDescription:
         "Quick, reliable turnovers between guests. We understand the tight schedules of short-term rentals and ensure 5-star cleanliness every time.",
@@ -131,7 +131,7 @@ export default function Services() {
     },
     {
       id: "renovation",
-      title: "Post-Renovation",
+      title: "Post-Renovation ",
       description: "Removing dust and debris so you can enjoy your new space.",
       longDescription:
         "Construction is messy. We handle the fine dust and debris left behind by contractors so you can move your furniture in immediately.",
