@@ -161,7 +161,7 @@ export default function Services() {
       longDescription:
         "Beyond standard cleaning, we assist with seasonal transitions, real estate preparation, and organizing cluttered spaces like garages and closets.",
       icon: Calendar, // You may need to import this icon or choose another
-      image: "https://reallycleanservices.com/wp-content/uploads/2025/02/diploma-1.webp", // Replace with your specific image
+      image: "https://officepride.com/wp-content/uploads/2021/11/OP1014-Office-Pride-Blog_10Oct2021-Micro.jpg", // Replace with your specific image
       url: "/contact",
       includes: [
         "Christmas tree teardown & holiday clean-up",
@@ -195,7 +195,6 @@ export default function Services() {
     "Interior Window  ",
     "Laundry Wash & Fold",
     "Balcony or porch Cleaning",
-    
   ];
 
   return (
