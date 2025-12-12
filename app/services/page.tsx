@@ -334,7 +334,11 @@ export default function Services() {
                               <Button variant="outline" className="flex-1 sm:flex-none">Close</Button>
                             </DrawerClose>
                             <Link href={service.url} className="flex-1">
-                              <Button className="w-full text-base" size="lg">
+                             
+                              <Button
+                                className="w-full text-sm sm:text-base"
+                                size="lg"
+                              >
                                 Book {service.title} Now
                               </Button>
                             </Link>
