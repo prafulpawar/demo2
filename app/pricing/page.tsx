@@ -10,9 +10,8 @@ import {
   Home, 
   Building2, 
   Box, 
-  SprayCan, 
-  Zap,
-  Briefcase
+  Briefcase,
+  Repeat
 } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -20,93 +19,71 @@ export default function Pricing() {
   
   const packages = [
     {
-      name: "Standard Apartment",
-      type: "Apartments & Condos",
-      price: "$149",
+      name: "Apartments & Condos",
+      type: "Residential",
+      price: "$119",
       period: "starting from",
-      description: "Perfect for regular maintenance and upkeep.",
-      icon: SprayCan,
-      features: [
-        "Dusting and wiping",
-        "Vacuuming and mopping",
-        "Bathroom cleaning",
-        "Kitchen surfaces",
-        "Trash removal",
-      ],
-    },
-    {
-      name: "Deep Apartment",
-      type: "Apartments & Condos",
-      price: "$249",
-      period: "starting from",
-      description: "Comprehensive cleaning for special occasions.",
-      icon: Sparkles,
-      features: [
-        "Everything in Standard",
-        "Baseboards and doors",
-        "Inside microwave",
-        "Extra bathroom detail",
-        "Hard-to-reach areas",
-      ],
-    },
-    {
-      name: "Standard House",
-      type: "Houses",
-      price: "$199",
-      period: "starting from",
-      description: "Regular maintenance for your home.",
-      icon: Home,
-      features: [
-        "All standard services",
-        "Multiple bedrooms",
-        "Multiple bathrooms",
-        "Flexible scheduling",
-        "Recurring discounts",
-      ],
-    },
-    {
-      name: "Deep House",
-      type: "Houses",
-      price: "$349",
-      period: "starting from",
-      description: "Thorough cleaning for larger spaces.",
-      icon: Zap,
-      features: [
-        "All deep clean services",
-        "Every bedroom detail",
-        "Complete kitchen detail",
-        "Window wiping",
-        "Interior appliance cleaning",
-      ],
-    },
-    {
-      name: "Move-In / Out",
-      type: "All Properties",
-      price: "$299",
-      period: "starting from",
-      description: "Ensure your space is ready for transition.",
-      icon: Box,
-      features: [
-        "Inside all cabinets",
-        "Fridge and oven",
-        "Full kitchen scrub",
-        "Complete floor care",
-        "Wall spot cleaning",
-      ],
-    },
-    {
-      name: "Commercial",
-      type: "Office & Business",
-      price: "Custom",
-      period: "tailored quote",
-      description: "Tailored for your business needs.",
+      description: "Transparent Pricing, No Surprises.",
       icon: Building2,
       features: [
-        "Daily / Weekly / Bi-weekly",
-        "Common areas",
-        "Restroom sanitization",
-        "Desk cleaning",
-        "Flexible scheduling",
+        "From $119 for a standard clean",
+        "From $199 for a deep clean",
+        "Final price confirmed at booking"
+      ],
+    },
+    {
+      name: "Houses",
+      type: "Residential",
+      price: "$169",
+      period: "starting from",
+      description: "Comprehensive care for your entire home.",
+      icon: Home,
+      features: [
+        "From $169 for a standard clean",
+        "From $299 for a deep clean",
+        "Final price confirmed at booking"
+      ],
+    },
+    {
+      name: "Move-In / Move-Out",
+      type: "Transition",
+      price: "$249",
+      period: "starting from",
+      description: "Price depends on size and condition.",
+      icon: Box,
+      features: [
+        "Dependent on property size",
+        "Dependent on condition",
+        "Deep detailed cleaning",
+        "Ready for new occupants"
+      ],
+    },
+    {
+      name: "Commercial & Office",
+      type: "Business",
+      price: "Custom",
+      period: "quote",
+      description: "Custom quotes based on square footage and frequency.",
+      icon: Briefcase,
+      features: [
+        "Based on square footage",
+        "Based on cleaning frequency",
+        "Tailored to business needs",
+        "Flexible scheduling"
+      ],
+    },
+    {
+      name: "Airbnb Turnovers",
+      type: "Short-term Rental",
+      price: "Flat Rate",
+      period: "or per-clean",
+      description: "Pricing based on unit size and laundry needs.",
+      icon: Sparkles,
+      features: [
+        "Flat-rate pricing available",
+        "Per-clean pricing options",
+        "Based on unit size",
+        "Laundry needs handled"
       ],
     },
   ]
@@ -156,7 +133,7 @@ export default function Pricing() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold text-foreground mb-4"
           >
-            Simple, Transparent Pricing
+            Pricing & Packages
           </motion.h1>
           
           <motion.p 
@@ -165,7 +142,8 @@ export default function Pricing() {
             transition={{ delay: 0.2 }}
             className="text-xl text-foreground/60 max-w-2xl mx-auto"
           >
-            Choose the service that fits your needs. No hidden fees, just honest work.
+            Transparent Pricing, No Surprises. <br className="hidden md:block"/>
+            Final price is confirmed at booking.
           </motion.p>
         </div>
       </section>
@@ -198,7 +176,7 @@ export default function Pricing() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-foreground mb-2">{pkg.name}</h3>
-                <p className="text-sm text-foreground/60 mb-6 h-10">{pkg.description}</p>
+                <p className="text-sm text-foreground/60 mb-6 min-h-[40px]">{pkg.description}</p>
 
                 {/* Price */}
                 <div className="mb-6 pt-6 border-t border-border group-hover:border-primary/20 transition-colors">
@@ -226,7 +204,7 @@ export default function Pricing() {
                 {/* Action Button */}
                 <Link href="/contact" className="mt-auto">
                   <button className="w-full py-3 px-4 rounded-xl border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-3">
-                    Get Quote
+                    Request Quote
                     <ArrowRight size={18} />
                   </button>
                 </Link>
@@ -247,20 +225,19 @@ export default function Pricing() {
           >
             <div className="flex items-start gap-6">
               <div className="hidden sm:flex p-4 rounded-full bg-background border border-primary/20 text-primary shadow-sm">
-                 <Briefcase size={32} />
+                 <Repeat size={32} />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-foreground mb-2">Regular Maintenance Plans</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-2">Need recurring service?</h2>
                 <p className="text-foreground/70 max-w-xl">
-                  Weekly, bi-weekly, and monthly clients receive preferred rates. 
-                  Contact us to set up a recurring schedule that keeps your space spotless year-round.
+                  Weekly, bi-weekly, and monthly clients receive preferred rates.
                 </p>
               </div>
             </div>
             
-            <Link href="/about#contact" className="flex-shrink-0 w-full md:w-auto">
+            <Link href="/contact" className="flex-shrink-0 w-full md:w-auto">
               <button className="w-full md:w-auto px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2">
-                Inquire About Recurring
+                Book Now
                 <ArrowRight size={18} />
               </button>
             </Link>

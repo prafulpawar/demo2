@@ -6,7 +6,7 @@
   "static/chunks/f1a15_lodash-es_483c10a3._.js",
   "static/chunks/f1a15_motion-dom_dist_es_940ac11b._.js",
   "static/chunks/f1a15_framer-motion_dist_es_0e046864._.js",
-  "static/chunks/f1a15_0425166c._.js"
+  "static/chunks/f1a15_dc52d66d._.js"
 ],
     source: "dynamic"
 });

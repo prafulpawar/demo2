@@ -182,7 +182,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">How It Works</h2>
-            <p className="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto font-medium">Simple, transparent, and hassle-free</p>
+            <p className="text-black-500 text-xl md:text-xl max-w-2xl mx-auto font-medium">We clean so you can focus on what matters.</p>
+              <p className="text-slate-500 text-xl md:text-xl max-w-xl mx-auto font-medium">
+                Whether it is a busy family household, a high-traffic office, or a short-term rental that needs fast turnovers, Lizzo Cleaning delivers reliable, consistent results every time.
+              </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-8">
