@@ -193,17 +193,17 @@ export default function Home() {
               {
                 number: "01",
                 title: "Tell Us About Your Space",
-                desc: "Fill out a quick form with details",
+                desc: "Fill out a quick  with your home or office details",
                 icon: "📋",
               },
               {
                 number: "02",
                 title: "Choose Your Date & Time",
-                desc: "Pick a time that works for you",
+                desc: "Pick a time that works for you-one-time or recurring",
                 icon: "📅",
               },
-              { number: "03", title: "Book & Pay Online", desc: "Secure, transparent pricing", icon: "💳" },
-              { number: "04", title: "Relax", desc: "We deliver pristine results", icon: "✨" },
+              { number: "03", title: "Book & pay online", desc: "Confirm instantly with secure online payment.", icon: "💳" },
+              { number: "04", title: "Relax, we do the rest", desc: "Our team arrives with supplies and leaves your space spotless.", icon: "✨" },
             ].map((step, i) => (
               <div
                 key={i}
