@@ -1,0 +1,12374 @@
+module.exports = [
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "mergeClasses",
+    ()=>mergeClasses,
+    "toKebabCase",
+    ()=>toKebabCase
+]);
+const toKebabCase = (string)=>string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+const mergeClasses = (...classes)=>classes.filter((className, index, array)=>{
+        return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
+    }).join(" ").trim();
+;
+ //# sourceMappingURL=utils.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/defaultAttributes.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>defaultAttributes
+]);
+var defaultAttributes = {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+};
+;
+ //# sourceMappingURL=defaultAttributes.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/Icon.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Icon
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$defaultAttributes$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/defaultAttributes.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-ssr] (ecmascript)");
+;
+;
+;
+const Icon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ color = "currentColor", size = 24, strokeWidth = 2, absoluteStrokeWidth, className = "", children, iconNode, ...rest }, ref)=>{
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])("svg", {
+        ref,
+        ...__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$defaultAttributes$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"],
+        width: size,
+        height: size,
+        stroke: color,
+        strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeClasses"])("lucide", className),
+        ...rest
+    }, [
+        ...iconNode.map(([tag, attrs])=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(tag, attrs)),
+        ...Array.isArray(children) ? children : [
+            children
+        ]
+    ]);
+});
+;
+ //# sourceMappingURL=Icon.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>createLucideIcon
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/Icon.js [app-ssr] (ecmascript)");
+;
+;
+;
+const createLucideIcon = (iconName, iconNode)=>{
+    const Component = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, ...props }, ref)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$Icon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+            ref,
+            iconNode,
+            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mergeClasses"])(`lucide-${(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$shared$2f$src$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toKebabCase"])(iconName)}`, className),
+            ...props
+        }));
+    Component.displayName = `${iconName}`;
+    return Component;
+};
+;
+ //# sourceMappingURL=createLucideIcon.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Menu
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const Menu = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("Menu", [
+    [
+        "line",
+        {
+            x1: "4",
+            x2: "20",
+            y1: "12",
+            y2: "12",
+            key: "1e0a9i"
+        }
+    ],
+    [
+        "line",
+        {
+            x1: "4",
+            x2: "20",
+            y1: "6",
+            y2: "6",
+            key: "1owob3"
+        }
+    ],
+    [
+        "line",
+        {
+            x1: "4",
+            x2: "20",
+            y1: "18",
+            y2: "18",
+            key: "yk5zj1"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=menu.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript) <export default as Menu>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Menu",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/menu.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>X
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const X = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("X", [
+    [
+        "path",
+        {
+            d: "M18 6 6 18",
+            key: "1bl5f8"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m6 6 12 12",
+            key: "d8bk6v"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=x.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "X",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/mail.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Mail
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const Mail = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("Mail", [
+    [
+        "rect",
+        {
+            width: "20",
+            height: "16",
+            x: "2",
+            y: "4",
+            rx: "2",
+            key: "18n3k1"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7",
+            key: "1ocrg3"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=mail.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/mail.js [app-ssr] (ecmascript) <export default as Mail>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Mail",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/mail.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/phone.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Phone
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const Phone = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("Phone", [
+    [
+        "path",
+        {
+            d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z",
+            key: "foiqr5"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=phone.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/phone.js [app-ssr] (ecmascript) <export default as Phone>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Phone",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/phone.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>MapPin
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const MapPin = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("MapPin", [
+    [
+        "path",
+        {
+            d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",
+            key: "1r0f0z"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "10",
+            r: "3",
+            key: "ilqhr7"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=map-pin.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-ssr] (ecmascript) <export default as MapPin>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "MapPin",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/send.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Send
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const Send = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("Send", [
+    [
+        "path",
+        {
+            d: "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",
+            key: "1ffxy3"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m21.854 2.147-10.94 10.939",
+            key: "12cjpa"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=send.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/send.js [app-ssr] (ecmascript) <export default as Send>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Send",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/send.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>LoaderCircle
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const LoaderCircle = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("LoaderCircle", [
+    [
+        "path",
+        {
+            d: "M21 12a9 9 0 1 1-6.219-8.56",
+            key: "13zald"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=loader-circle.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-ssr] (ecmascript) <export default as Loader2>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Loader2",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>CircleCheckBig
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const CircleCheckBig = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("CircleCheckBig", [
+    [
+        "path",
+        {
+            d: "M21.801 10A10 10 0 1 1 17 3.335",
+            key: "yps3ct"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m9 11 3 3L22 4",
+            key: "1pflzl"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=circle-check-big.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-ssr] (ecmascript) <export default as CheckCircle>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "CheckCircle",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/circle-alert.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>CircleAlert
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const CircleAlert = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("CircleAlert", [
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "12",
+            r: "10",
+            key: "1mglay"
+        }
+    ],
+    [
+        "line",
+        {
+            x1: "12",
+            x2: "12",
+            y1: "8",
+            y2: "12",
+            key: "1pkeuh"
+        }
+    ],
+    [
+        "line",
+        {
+            x1: "12",
+            x2: "12.01",
+            y1: "16",
+            y2: "16",
+            key: "4dfq90"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=circle-alert.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/circle-alert.js [app-ssr] (ecmascript) <export default as AlertCircle>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "AlertCircle",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$alert$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/circle-alert.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/house.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>House
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const House = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("House", [
+    [
+        "path",
+        {
+            d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",
+            key: "5wwlr5"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+            key: "1d0kgt"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=house.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/house.js [app-ssr] (ecmascript) <export default as Home>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Home",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$house$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/house.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Sparkles
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const Sparkles = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("Sparkles", [
+    [
+        "path",
+        {
+            d: "M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z",
+            key: "4pj2yx"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M20 3v4",
+            key: "1olli1"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M22 5h-4",
+            key: "1gvqau"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4 17v2",
+            key: "vumght"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M5 18H3",
+            key: "zchphs"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=sparkles.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-ssr] (ecmascript) <export default as Sparkles>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Sparkles",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/truck.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Truck
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const Truck = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("Truck", [
+    [
+        "path",
+        {
+            d: "M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2",
+            key: "wrbu53"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M15 18H9",
+            key: "1lyqi6"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14",
+            key: "lysw3i"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "17",
+            cy: "18",
+            r: "2",
+            key: "332jqn"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "7",
+            cy: "18",
+            r: "2",
+            key: "19iecd"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=truck.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/truck.js [app-ssr] (ecmascript) <export default as Truck>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Truck",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/truck.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/building-2.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Building2
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const Building2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("Building2", [
+    [
+        "path",
+        {
+            d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z",
+            key: "1b4qmf"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2",
+            key: "i71pzd"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2",
+            key: "10jefs"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 6h4",
+            key: "1itunk"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 10h4",
+            key: "tcdvrf"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 14h4",
+            key: "kelpxr"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 18h4",
+            key: "1ulq68"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=building-2.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/building-2.js [app-ssr] (ecmascript) <export default as Building2>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Building2",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/building-2.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/bed-double.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>BedDouble
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const BedDouble = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("BedDouble", [
+    [
+        "path",
+        {
+            d: "M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8",
+            key: "1k78r4"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4",
+            key: "fb3tl2"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M12 4v6",
+            key: "1dcgq2"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M2 18h20",
+            key: "ajqnye"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=bed-double.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/bed-double.js [app-ssr] (ecmascript) <export default as BedDouble>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "BedDouble",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bed$2d$double$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bed$2d$double$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/bed-double.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>ArrowRight
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const ArrowRight = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("ArrowRight", [
+    [
+        "path",
+        {
+            d: "M5 12h14",
+            key: "1ays0h"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m12 5 7 7-7 7",
+            key: "xquz4c"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=arrow-right.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript) <export default as ArrowRight>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ArrowRight",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.454.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "default",
+    ()=>Check
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const Check = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("Check", [
+    [
+        "path",
+        {
+            d: "M20 6 9 17l-5-5",
+            key: "1gmf2c"
+        }
+    ]
+]);
+;
+ //# sourceMappingURL=check.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript) <export default as Check>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Check",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+function _interop_require_default(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+exports._ = _interop_require_default;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/deepmerge/dist/es.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var isMergeableObject = function isMergeableObject(value) {
+    return isNonNullObject(value) && !isSpecial(value);
+};
+function isNonNullObject(value) {
+    return !!value && typeof value === 'object';
+}
+function isSpecial(value) {
+    var stringValue = Object.prototype.toString.call(value);
+    return stringValue === '[object RegExp]' || stringValue === '[object Date]' || isReactElement(value);
+}
+// see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
+var canUseSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = canUseSymbol ? Symbol.for('react.element') : 0xeac7;
+function isReactElement(value) {
+    return value.$$typeof === REACT_ELEMENT_TYPE;
+}
+function emptyTarget(val) {
+    return Array.isArray(val) ? [] : {};
+}
+function cloneUnlessOtherwiseSpecified(value, options) {
+    return options.clone !== false && options.isMergeableObject(value) ? deepmerge(emptyTarget(value), value, options) : value;
+}
+function defaultArrayMerge(target, source, options) {
+    return target.concat(source).map(function(element) {
+        return cloneUnlessOtherwiseSpecified(element, options);
+    });
+}
+function mergeObject(target, source, options) {
+    var destination = {};
+    if (options.isMergeableObject(target)) {
+        Object.keys(target).forEach(function(key) {
+            destination[key] = cloneUnlessOtherwiseSpecified(target[key], options);
+        });
+    }
+    Object.keys(source).forEach(function(key) {
+        if (!options.isMergeableObject(source[key]) || !target[key]) {
+            destination[key] = cloneUnlessOtherwiseSpecified(source[key], options);
+        } else {
+            destination[key] = deepmerge(target[key], source[key], options);
+        }
+    });
+    return destination;
+}
+function deepmerge(target, source, options) {
+    options = options || {};
+    options.arrayMerge = options.arrayMerge || defaultArrayMerge;
+    options.isMergeableObject = options.isMergeableObject || isMergeableObject;
+    var sourceIsArray = Array.isArray(source);
+    var targetIsArray = Array.isArray(target);
+    var sourceAndTargetTypesMatch = sourceIsArray === targetIsArray;
+    if (!sourceAndTargetTypesMatch) {
+        return cloneUnlessOtherwiseSpecified(source, options);
+    } else if (sourceIsArray) {
+        return options.arrayMerge(target, source, options);
+    } else {
+        return mergeObject(target, source, options);
+    }
+}
+deepmerge.all = function deepmergeAll(array, options) {
+    if (!Array.isArray(array)) {
+        throw new Error('first argument should be an array');
+    }
+    return array.reduce(function(prev, next) {
+        return deepmerge(prev, next, options);
+    }, {});
+};
+var deepmerge_1 = deepmerge;
+const __TURBOPACK__default__export__ = deepmerge_1;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-fast-compare/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var isArray = Array.isArray;
+var keyList = Object.keys;
+var hasProp = Object.prototype.hasOwnProperty;
+var hasElementType = typeof Element !== 'undefined';
+function equal(a, b) {
+    // fast-deep-equal index.js 2.0.1
+    if (a === b) return true;
+    if (a && b && typeof a == 'object' && typeof b == 'object') {
+        var arrA = isArray(a), arrB = isArray(b), i, length, key;
+        if (arrA && arrB) {
+            length = a.length;
+            if (length != b.length) return false;
+            for(i = length; i-- !== 0;)if (!equal(a[i], b[i])) return false;
+            return true;
+        }
+        if (arrA != arrB) return false;
+        var dateA = a instanceof Date, dateB = b instanceof Date;
+        if (dateA != dateB) return false;
+        if (dateA && dateB) return a.getTime() == b.getTime();
+        var regexpA = a instanceof RegExp, regexpB = b instanceof RegExp;
+        if (regexpA != regexpB) return false;
+        if (regexpA && regexpB) return a.toString() == b.toString();
+        var keys = keyList(a);
+        length = keys.length;
+        if (length !== keyList(b).length) return false;
+        for(i = length; i-- !== 0;)if (!hasProp.call(b, keys[i])) return false;
+        // end fast-deep-equal
+        // start react-fast-compare
+        // custom handling for DOM elements
+        if (hasElementType && a instanceof Element && b instanceof Element) return a === b;
+        // custom handling for React
+        for(i = length; i-- !== 0;){
+            key = keys[i];
+            if (key === '_owner' && a.$$typeof) {
+                continue;
+            } else {
+                // all other properties should be traversed as usual
+                if (!equal(a[key], b[key])) return false;
+            }
+        }
+        // end react-fast-compare
+        // fast-deep-equal index.js 2.0.1
+        return true;
+    }
+    return a !== a && b !== b;
+}
+// end fast-deep-equal
+module.exports = function exportedEqual(a, b) {
+    try {
+        return equal(a, b);
+    } catch (error) {
+        if (error.message && error.message.match(/stack|recursion/i) || error.number === -2146828260) {
+            // warn on circular references, don't crash
+            // browsers give this different errors name and messages:
+            // chrome/safari: "RangeError", "Maximum call stack size exceeded"
+            // firefox: "InternalError", too much recursion"
+            // edge: "Error", "Out of stack space"
+            console.warn('Warning: react-fast-compare does not handle circular references.', error.name, error.message);
+            return false;
+        }
+        // some other error. we should definitely know about these
+        throw error;
+    }
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/tiny-warning/dist/tiny-warning.esm.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var isProduction = ("TURBOPACK compile-time value", "development") === 'production';
+function warning(condition, message) {
+    if ("TURBOPACK compile-time truthy", 1) {
+        if (condition) {
+            return;
+        }
+        var text = "Warning: " + message;
+        if (typeof console !== 'undefined') {
+            console.warn(text);
+        }
+        try {
+            throw Error(text);
+        } catch (x) {}
+    }
+}
+const __TURBOPACK__default__export__ = warning;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ if ("TURBOPACK compile-time truthy", 1) {
+    (function() {
+        'use strict';
+        // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+        // nor polyfill, then a plain number is used for performance.
+        var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+        var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+        var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+        var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+        var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+        var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+        var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+        var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+        // (unstable) APIs that have been removed. Can we remove the symbols?
+        var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+        var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+        var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+        var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+        var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+        var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+        var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+        var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+        var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+        var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+        var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+        function isValidElementType(type) {
+            return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+            type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+        }
+        function typeOf(object) {
+            if (typeof object === 'object' && object !== null) {
+                var $$typeof = object.$$typeof;
+                switch($$typeof){
+                    case REACT_ELEMENT_TYPE:
+                        var type = object.type;
+                        switch(type){
+                            case REACT_ASYNC_MODE_TYPE:
+                            case REACT_CONCURRENT_MODE_TYPE:
+                            case REACT_FRAGMENT_TYPE:
+                            case REACT_PROFILER_TYPE:
+                            case REACT_STRICT_MODE_TYPE:
+                            case REACT_SUSPENSE_TYPE:
+                                return type;
+                            default:
+                                var $$typeofType = type && type.$$typeof;
+                                switch($$typeofType){
+                                    case REACT_CONTEXT_TYPE:
+                                    case REACT_FORWARD_REF_TYPE:
+                                    case REACT_LAZY_TYPE:
+                                    case REACT_MEMO_TYPE:
+                                    case REACT_PROVIDER_TYPE:
+                                        return $$typeofType;
+                                    default:
+                                        return $$typeof;
+                                }
+                        }
+                    case REACT_PORTAL_TYPE:
+                        return $$typeof;
+                }
+            }
+            return undefined;
+        } // AsyncMode is deprecated along with isAsyncMode
+        var AsyncMode = REACT_ASYNC_MODE_TYPE;
+        var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+        var ContextConsumer = REACT_CONTEXT_TYPE;
+        var ContextProvider = REACT_PROVIDER_TYPE;
+        var Element = REACT_ELEMENT_TYPE;
+        var ForwardRef = REACT_FORWARD_REF_TYPE;
+        var Fragment = REACT_FRAGMENT_TYPE;
+        var Lazy = REACT_LAZY_TYPE;
+        var Memo = REACT_MEMO_TYPE;
+        var Portal = REACT_PORTAL_TYPE;
+        var Profiler = REACT_PROFILER_TYPE;
+        var StrictMode = REACT_STRICT_MODE_TYPE;
+        var Suspense = REACT_SUSPENSE_TYPE;
+        var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+        function isAsyncMode(object) {
+            {
+                if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+                    hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+                    console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+                }
+            }
+            return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+        }
+        function isConcurrentMode(object) {
+            return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+        }
+        function isContextConsumer(object) {
+            return typeOf(object) === REACT_CONTEXT_TYPE;
+        }
+        function isContextProvider(object) {
+            return typeOf(object) === REACT_PROVIDER_TYPE;
+        }
+        function isElement(object) {
+            return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+        }
+        function isForwardRef(object) {
+            return typeOf(object) === REACT_FORWARD_REF_TYPE;
+        }
+        function isFragment(object) {
+            return typeOf(object) === REACT_FRAGMENT_TYPE;
+        }
+        function isLazy(object) {
+            return typeOf(object) === REACT_LAZY_TYPE;
+        }
+        function isMemo(object) {
+            return typeOf(object) === REACT_MEMO_TYPE;
+        }
+        function isPortal(object) {
+            return typeOf(object) === REACT_PORTAL_TYPE;
+        }
+        function isProfiler(object) {
+            return typeOf(object) === REACT_PROFILER_TYPE;
+        }
+        function isStrictMode(object) {
+            return typeOf(object) === REACT_STRICT_MODE_TYPE;
+        }
+        function isSuspense(object) {
+            return typeOf(object) === REACT_SUSPENSE_TYPE;
+        }
+        exports.AsyncMode = AsyncMode;
+        exports.ConcurrentMode = ConcurrentMode;
+        exports.ContextConsumer = ContextConsumer;
+        exports.ContextProvider = ContextProvider;
+        exports.Element = Element;
+        exports.ForwardRef = ForwardRef;
+        exports.Fragment = Fragment;
+        exports.Lazy = Lazy;
+        exports.Memo = Memo;
+        exports.Portal = Portal;
+        exports.Profiler = Profiler;
+        exports.StrictMode = StrictMode;
+        exports.Suspense = Suspense;
+        exports.isAsyncMode = isAsyncMode;
+        exports.isConcurrentMode = isConcurrentMode;
+        exports.isContextConsumer = isContextConsumer;
+        exports.isContextProvider = isContextProvider;
+        exports.isElement = isElement;
+        exports.isForwardRef = isForwardRef;
+        exports.isFragment = isFragment;
+        exports.isLazy = isLazy;
+        exports.isMemo = isMemo;
+        exports.isPortal = isPortal;
+        exports.isProfiler = isProfiler;
+        exports.isStrictMode = isStrictMode;
+        exports.isSuspense = isSuspense;
+        exports.isValidElementType = isValidElementType;
+        exports.typeOf = typeOf;
+    })();
+}
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/hoist-non-react-statics/node_modules/react-is/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+;
+else {
+    module.exports = __turbopack_context__.r("[project]/Desktop/Lizo/cleaning-website-design/node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js [app-ssr] (ecmascript)");
+}
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var reactIs = __turbopack_context__.r("[project]/Desktop/Lizo/cleaning-website-design/node_modules/hoist-non-react-statics/node_modules/react-is/index.js [app-ssr] (ecmascript)");
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */ var REACT_STATICS = {
+    childContextTypes: true,
+    contextType: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    getDerivedStateFromError: true,
+    getDerivedStateFromProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    callee: true,
+    arguments: true,
+    arity: true
+};
+var FORWARD_REF_STATICS = {
+    '$$typeof': true,
+    render: true,
+    defaultProps: true,
+    displayName: true,
+    propTypes: true
+};
+var MEMO_STATICS = {
+    '$$typeof': true,
+    compare: true,
+    defaultProps: true,
+    displayName: true,
+    propTypes: true,
+    type: true
+};
+var TYPE_STATICS = {};
+TYPE_STATICS[reactIs.ForwardRef] = FORWARD_REF_STATICS;
+TYPE_STATICS[reactIs.Memo] = MEMO_STATICS;
+function getStatics(component) {
+    // React v16.11 and below
+    if (reactIs.isMemo(component)) {
+        return MEMO_STATICS;
+    } // React v16.12 and above
+    return TYPE_STATICS[component['$$typeof']] || REACT_STATICS;
+}
+var defineProperty = Object.defineProperty;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var getPrototypeOf = Object.getPrototypeOf;
+var objectPrototype = Object.prototype;
+function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+    if (typeof sourceComponent !== 'string') {
+        // don't hoist over string (html) components
+        if (objectPrototype) {
+            var inheritedComponent = getPrototypeOf(sourceComponent);
+            if (inheritedComponent && inheritedComponent !== objectPrototype) {
+                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+            }
+        }
+        var keys = getOwnPropertyNames(sourceComponent);
+        if (getOwnPropertySymbols) {
+            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+        }
+        var targetStatics = getStatics(targetComponent);
+        var sourceStatics = getStatics(sourceComponent);
+        for(var i = 0; i < keys.length; ++i){
+            var key = keys[i];
+            if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
+                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+                try {
+                    // Avoid failures from read-only properties
+                    defineProperty(targetComponent, key, descriptor);
+                } catch (e) {}
+            }
+        }
+    }
+    return targetComponent;
+}
+module.exports = hoistNonReactStatics;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/formik/dist/formik.esm.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ErrorMessage",
+    ()=>ErrorMessage,
+    "FastField",
+    ()=>FastField,
+    "Field",
+    ()=>Field,
+    "FieldArray",
+    ()=>FieldArray,
+    "Form",
+    ()=>Form,
+    "Formik",
+    ()=>Formik,
+    "FormikConsumer",
+    ()=>FormikConsumer,
+    "FormikContext",
+    ()=>FormikContext,
+    "FormikProvider",
+    ()=>FormikProvider,
+    "connect",
+    ()=>connect,
+    "getActiveElement",
+    ()=>getActiveElement,
+    "getIn",
+    ()=>getIn,
+    "insert",
+    ()=>insert,
+    "isEmptyArray",
+    ()=>isEmptyArray,
+    "isEmptyChildren",
+    ()=>isEmptyChildren,
+    "isFunction",
+    ()=>isFunction,
+    "isInputEvent",
+    ()=>isInputEvent,
+    "isInteger",
+    ()=>isInteger,
+    "isNaN",
+    ()=>isNaN$1,
+    "isObject",
+    ()=>isObject,
+    "isPromise",
+    ()=>isPromise,
+    "isString",
+    ()=>isString,
+    "move",
+    ()=>move,
+    "prepareDataForValidation",
+    ()=>prepareDataForValidation,
+    "replace",
+    ()=>replace,
+    "setIn",
+    ()=>setIn,
+    "setNestedObjectValues",
+    ()=>setNestedObjectValues,
+    "swap",
+    ()=>swap,
+    "useField",
+    ()=>useField,
+    "useFormik",
+    ()=>useFormik,
+    "useFormikContext",
+    ()=>useFormikContext,
+    "validateYupSchema",
+    ()=>validateYupSchema,
+    "withFormik",
+    ()=>withFormik,
+    "yupToFormErrors",
+    ()=>yupToFormErrors
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$deepmerge$2f$dist$2f$es$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/deepmerge/dist/es.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$isPlainObject$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lodash-es/isPlainObject.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$cloneDeep$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lodash-es/cloneDeep.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-fast-compare/index.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/tiny-warning/dist/tiny-warning.esm.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$clone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lodash-es/clone.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$toPath$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/lodash-es/toPath.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$hoist$2d$non$2d$react$2d$statics$2f$dist$2f$hoist$2d$non$2d$react$2d$statics$2e$cjs$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function _extends() {
+    _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source){
+                if (Object.prototype.hasOwnProperty.call(source, key)) {
+                    target[key] = source[key];
+                }
+            }
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function _inheritsLoose(subClass, superClass) {
+    subClass.prototype = Object.create(superClass.prototype);
+    subClass.prototype.constructor = subClass;
+    subClass.__proto__ = superClass;
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) {
+        throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+    return self;
+}
+var FormikContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])(undefined);
+FormikContext.displayName = 'FormikContext';
+var FormikProvider = FormikContext.Provider;
+var FormikConsumer = FormikContext.Consumer;
+function useFormikContext() {
+    var formik = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"])(FormikContext);
+    !!!formik ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, "Formik context is undefined, please verify you are calling useFormikContext() as child of a <Formik> component.") : "TURBOPACK unreachable" : void 0;
+    return formik;
+}
+/** @private is the value an empty array? */ var isEmptyArray = function isEmptyArray(value) {
+    return Array.isArray(value) && value.length === 0;
+};
+/** @private is the given object a Function? */ var isFunction = function isFunction(obj) {
+    return typeof obj === 'function';
+};
+/** @private is the given object an Object? */ var isObject = function isObject(obj) {
+    return obj !== null && typeof obj === 'object';
+};
+/** @private is the given object an integer? */ var isInteger = function isInteger(obj) {
+    return String(Math.floor(Number(obj))) === obj;
+};
+/** @private is the given object a string? */ var isString = function isString(obj) {
+    return Object.prototype.toString.call(obj) === '[object String]';
+};
+/** @private is the given object a NaN? */ // eslint-disable-next-line no-self-compare
+var isNaN$1 = function isNaN1(obj) {
+    return obj !== obj;
+};
+/** @private Does a React component have exactly 0 children? */ var isEmptyChildren = function isEmptyChildren(children) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].count(children) === 0;
+};
+/** @private is the given object/value a promise? */ var isPromise = function isPromise(value) {
+    return isObject(value) && isFunction(value.then);
+};
+/** @private is the given object/value a type of synthetic event? */ var isInputEvent = function isInputEvent(value) {
+    return value && isObject(value) && isObject(value.target);
+};
+/**
+ * Same as document.activeElement but wraps in a try-catch block. In IE it is
+ * not safe to call document.activeElement if there is nothing focused.
+ *
+ * The activeElement will be null only if the document or document body is not
+ * yet defined.
+ *
+ * @param {?Document} doc Defaults to current document.
+ * @return {Element | null}
+ * @see https://github.com/facebook/fbjs/blob/master/packages/fbjs/src/core/dom/getActiveElement.js
+ */ function getActiveElement(doc) {
+    doc = doc || (typeof document !== 'undefined' ? document : undefined);
+    if (typeof doc === 'undefined') {
+        return null;
+    }
+    try {
+        return doc.activeElement || doc.body;
+    } catch (e) {
+        return doc.body;
+    }
+}
+/**
+ * Deeply get a value from an object via its path.
+ */ function getIn(obj, key, def, p) {
+    if (p === void 0) {
+        p = 0;
+    }
+    var path = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$toPath$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(key);
+    while(obj && p < path.length){
+        obj = obj[path[p++]];
+    } // check if path is not in the end
+    if (p !== path.length && !obj) {
+        return def;
+    }
+    return obj === undefined ? def : obj;
+}
+/**
+ * Deeply set a value from in object via it's path. If the value at `path`
+ * has changed, return a shallow copy of obj with `value` set at `path`.
+ * If `value` has not changed, return the original `obj`.
+ *
+ * Existing objects / arrays along `path` are also shallow copied. Sibling
+ * objects along path retain the same internal js reference. Since new
+ * objects / arrays are only created along `path`, we can test if anything
+ * changed in a nested structure by comparing the object's reference in
+ * the old and new object, similar to how russian doll cache invalidation
+ * works.
+ *
+ * In earlier versions of this function, which used cloneDeep, there were
+ * issues whereby settings a nested value would mutate the parent
+ * instead of creating a new object. `clone` avoids that bug making a
+ * shallow copy of the objects along the update path
+ * so no object is mutated in place.
+ *
+ * Before changing this function, please read through the following
+ * discussions.
+ *
+ * @see https://github.com/developit/linkstate
+ * @see https://github.com/jaredpalmer/formik/pull/123
+ */ function setIn(obj, path, value) {
+    var res = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$clone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(obj); // this keeps inheritance when obj is a class
+    var resVal = res;
+    var i = 0;
+    var pathArray = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$toPath$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(path);
+    for(; i < pathArray.length - 1; i++){
+        var currentPath = pathArray[i];
+        var currentObj = getIn(obj, pathArray.slice(0, i + 1));
+        if (currentObj && (isObject(currentObj) || Array.isArray(currentObj))) {
+            resVal = resVal[currentPath] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$clone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(currentObj);
+        } else {
+            var nextPath = pathArray[i + 1];
+            resVal = resVal[currentPath] = isInteger(nextPath) && Number(nextPath) >= 0 ? [] : {};
+        }
+    } // Return original object if new value is the same as current
+    if ((i === 0 ? obj : resVal)[pathArray[i]] === value) {
+        return obj;
+    }
+    if (value === undefined) {
+        delete resVal[pathArray[i]];
+    } else {
+        resVal[pathArray[i]] = value;
+    } // If the path array has a single element, the loop did not run.
+    // Deleting on `resVal` had no effect in this scenario, so we delete on the result instead.
+    if (i === 0 && value === undefined) {
+        delete res[pathArray[i]];
+    }
+    return res;
+}
+/**
+ * Recursively a set the same value for all keys and arrays nested object, cloning
+ * @param object
+ * @param value
+ * @param visited
+ * @param response
+ */ function setNestedObjectValues(object, value, visited, response) {
+    if (visited === void 0) {
+        visited = new WeakMap();
+    }
+    if (response === void 0) {
+        response = {};
+    }
+    for(var _i = 0, _Object$keys = Object.keys(object); _i < _Object$keys.length; _i++){
+        var k = _Object$keys[_i];
+        var val = object[k];
+        if (isObject(val)) {
+            if (!visited.get(val)) {
+                visited.set(val, true); // In order to keep array values consistent for both dot path  and
+                // bracket syntax, we need to check if this is an array so that
+                // this will output  { friends: [true] } and not { friends: { "0": true } }
+                response[k] = Array.isArray(val) ? [] : {};
+                setNestedObjectValues(val, value, visited, response[k]);
+            }
+        } else {
+            response[k] = value;
+        }
+    }
+    return response;
+}
+function formikReducer(state, msg) {
+    switch(msg.type){
+        case 'SET_VALUES':
+            return _extends({}, state, {
+                values: msg.payload
+            });
+        case 'SET_TOUCHED':
+            return _extends({}, state, {
+                touched: msg.payload
+            });
+        case 'SET_ERRORS':
+            if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(state.errors, msg.payload)) {
+                return state;
+            }
+            return _extends({}, state, {
+                errors: msg.payload
+            });
+        case 'SET_STATUS':
+            return _extends({}, state, {
+                status: msg.payload
+            });
+        case 'SET_ISSUBMITTING':
+            return _extends({}, state, {
+                isSubmitting: msg.payload
+            });
+        case 'SET_ISVALIDATING':
+            return _extends({}, state, {
+                isValidating: msg.payload
+            });
+        case 'SET_FIELD_VALUE':
+            return _extends({}, state, {
+                values: setIn(state.values, msg.payload.field, msg.payload.value)
+            });
+        case 'SET_FIELD_TOUCHED':
+            return _extends({}, state, {
+                touched: setIn(state.touched, msg.payload.field, msg.payload.value)
+            });
+        case 'SET_FIELD_ERROR':
+            return _extends({}, state, {
+                errors: setIn(state.errors, msg.payload.field, msg.payload.value)
+            });
+        case 'RESET_FORM':
+            return _extends({}, state, msg.payload);
+        case 'SET_FORMIK_STATE':
+            return msg.payload(state);
+        case 'SUBMIT_ATTEMPT':
+            return _extends({}, state, {
+                touched: setNestedObjectValues(state.values, true),
+                isSubmitting: true,
+                submitCount: state.submitCount + 1
+            });
+        case 'SUBMIT_FAILURE':
+            return _extends({}, state, {
+                isSubmitting: false
+            });
+        case 'SUBMIT_SUCCESS':
+            return _extends({}, state, {
+                isSubmitting: false
+            });
+        default:
+            return state;
+    }
+} // Initial empty states // objects
+var emptyErrors = {};
+var emptyTouched = {};
+function useFormik(_ref) {
+    var _ref$validateOnChange = _ref.validateOnChange, validateOnChange = _ref$validateOnChange === void 0 ? true : _ref$validateOnChange, _ref$validateOnBlur = _ref.validateOnBlur, validateOnBlur = _ref$validateOnBlur === void 0 ? true : _ref$validateOnBlur, _ref$validateOnMount = _ref.validateOnMount, validateOnMount = _ref$validateOnMount === void 0 ? false : _ref$validateOnMount, isInitialValid = _ref.isInitialValid, _ref$enableReinitiali = _ref.enableReinitialize, enableReinitialize = _ref$enableReinitiali === void 0 ? false : _ref$enableReinitiali, onSubmit = _ref.onSubmit, rest = _objectWithoutPropertiesLoose(_ref, [
+        "validateOnChange",
+        "validateOnBlur",
+        "validateOnMount",
+        "isInitialValid",
+        "enableReinitialize",
+        "onSubmit"
+    ]);
+    var props = _extends({
+        validateOnChange: validateOnChange,
+        validateOnBlur: validateOnBlur,
+        validateOnMount: validateOnMount,
+        onSubmit: onSubmit
+    }, rest);
+    var initialValues = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(props.initialValues);
+    var initialErrors = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(props.initialErrors || emptyErrors);
+    var initialTouched = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(props.initialTouched || emptyTouched);
+    var initialStatus = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(props.initialStatus);
+    var isMounted = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
+    var fieldRegistry = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])({});
+    if ("TURBOPACK compile-time truthy", 1) {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+            !(typeof isInitialValid === 'undefined') ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'isInitialValid has been deprecated and will be removed in future versions of Formik. Please use initialErrors or validateOnMount instead.') : "TURBOPACK unreachable" : void 0; // eslint-disable-next-line
+        }, []);
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+        isMounted.current = true;
+        return function() {
+            isMounted.current = false;
+        };
+    }, []);
+    var _React$useState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0), setIteration = _React$useState[1];
+    var stateRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])({
+        values: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$cloneDeep$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(props.initialValues),
+        errors: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$cloneDeep$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(props.initialErrors) || emptyErrors,
+        touched: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$cloneDeep$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(props.initialTouched) || emptyTouched,
+        status: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$cloneDeep$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(props.initialStatus),
+        isSubmitting: false,
+        isValidating: false,
+        submitCount: 0
+    });
+    var state = stateRef.current;
+    var dispatch = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(action) {
+        var prev = stateRef.current;
+        stateRef.current = formikReducer(prev, action); // force rerender
+        if (prev !== stateRef.current) setIteration(function(x) {
+            return x + 1;
+        });
+    }, []);
+    var runValidateHandler = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(values, field) {
+        return new Promise(function(resolve, reject) {
+            var maybePromisedErrors = props.validate(values, field);
+            if (maybePromisedErrors == null) {
+                // use loose null check here on purpose
+                resolve(emptyErrors);
+            } else if (isPromise(maybePromisedErrors)) {
+                maybePromisedErrors.then(function(errors) {
+                    resolve(errors || emptyErrors);
+                }, function(actualException) {
+                    if ("TURBOPACK compile-time truthy", 1) {
+                        console.warn("Warning: An unhandled error was caught during validation in <Formik validate />", actualException);
+                    }
+                    reject(actualException);
+                });
+            } else {
+                resolve(maybePromisedErrors);
+            }
+        });
+    }, [
+        props.validate
+    ]);
+    /**
+   * Run validation against a Yup schema and optionally run a function if successful
+   */ var runValidationSchema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(values, field) {
+        var validationSchema = props.validationSchema;
+        var schema = isFunction(validationSchema) ? validationSchema(field) : validationSchema;
+        var promise = field && schema.validateAt ? schema.validateAt(field, values) : validateYupSchema(values, schema);
+        return new Promise(function(resolve, reject) {
+            promise.then(function() {
+                resolve(emptyErrors);
+            }, function(err) {
+                // Yup will throw a validation error if validation fails. We catch those and
+                // resolve them into Formik errors. We can sniff if something is a Yup error
+                // by checking error.name.
+                // @see https://github.com/jquense/yup#validationerrorerrors-string--arraystring-value-any-path-string
+                if (err.name === 'ValidationError') {
+                    resolve(yupToFormErrors(err));
+                } else {
+                    // We throw any other errors
+                    if ("TURBOPACK compile-time truthy", 1) {
+                        console.warn("Warning: An unhandled error was caught during validation in <Formik validationSchema />", err);
+                    }
+                    reject(err);
+                }
+            });
+        });
+    }, [
+        props.validationSchema
+    ]);
+    var runSingleFieldLevelValidation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(field, value) {
+        return new Promise(function(resolve) {
+            return resolve(fieldRegistry.current[field].validate(value));
+        });
+    }, []);
+    var runFieldLevelValidations = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(values) {
+        var fieldKeysWithValidation = Object.keys(fieldRegistry.current).filter(function(f) {
+            return isFunction(fieldRegistry.current[f].validate);
+        }); // Construct an array with all of the field validation functions
+        var fieldValidations = fieldKeysWithValidation.length > 0 ? fieldKeysWithValidation.map(function(f) {
+            return runSingleFieldLevelValidation(f, getIn(values, f));
+        }) : [
+            Promise.resolve('DO_NOT_DELETE_YOU_WILL_BE_FIRED')
+        ]; // use special case ;)
+        return Promise.all(fieldValidations).then(function(fieldErrorsList) {
+            return fieldErrorsList.reduce(function(prev, curr, index) {
+                if (curr === 'DO_NOT_DELETE_YOU_WILL_BE_FIRED') {
+                    return prev;
+                }
+                if (curr) {
+                    prev = setIn(prev, fieldKeysWithValidation[index], curr);
+                }
+                return prev;
+            }, {});
+        });
+    }, [
+        runSingleFieldLevelValidation
+    ]); // Run all validations and return the result
+    var runAllValidations = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(values) {
+        return Promise.all([
+            runFieldLevelValidations(values),
+            props.validationSchema ? runValidationSchema(values) : {},
+            props.validate ? runValidateHandler(values) : {}
+        ]).then(function(_ref2) {
+            var fieldErrors = _ref2[0], schemaErrors = _ref2[1], validateErrors = _ref2[2];
+            var combinedErrors = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$deepmerge$2f$dist$2f$es$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].all([
+                fieldErrors,
+                schemaErrors,
+                validateErrors
+            ], {
+                arrayMerge: arrayMerge
+            });
+            return combinedErrors;
+        });
+    }, [
+        props.validate,
+        props.validationSchema,
+        runFieldLevelValidations,
+        runValidateHandler,
+        runValidationSchema
+    ]); // Run all validations methods and update state accordingly
+    var validateFormWithHighPriority = useEventCallback(function(values) {
+        if (values === void 0) {
+            values = state.values;
+        }
+        dispatch({
+            type: 'SET_ISVALIDATING',
+            payload: true
+        });
+        return runAllValidations(values).then(function(combinedErrors) {
+            if (!!isMounted.current) {
+                dispatch({
+                    type: 'SET_ISVALIDATING',
+                    payload: false
+                });
+                dispatch({
+                    type: 'SET_ERRORS',
+                    payload: combinedErrors
+                });
+            }
+            return combinedErrors;
+        });
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+        if (validateOnMount && isMounted.current === true && (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(initialValues.current, props.initialValues)) {
+            validateFormWithHighPriority(initialValues.current);
+        }
+    }, [
+        validateOnMount,
+        validateFormWithHighPriority
+    ]);
+    var resetForm = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(nextState) {
+        var values = nextState && nextState.values ? nextState.values : initialValues.current;
+        var errors = nextState && nextState.errors ? nextState.errors : initialErrors.current ? initialErrors.current : props.initialErrors || {};
+        var touched = nextState && nextState.touched ? nextState.touched : initialTouched.current ? initialTouched.current : props.initialTouched || {};
+        var status = nextState && nextState.status ? nextState.status : initialStatus.current ? initialStatus.current : props.initialStatus;
+        initialValues.current = values;
+        initialErrors.current = errors;
+        initialTouched.current = touched;
+        initialStatus.current = status;
+        var dispatchFn = function dispatchFn() {
+            dispatch({
+                type: 'RESET_FORM',
+                payload: {
+                    isSubmitting: !!nextState && !!nextState.isSubmitting,
+                    errors: errors,
+                    touched: touched,
+                    status: status,
+                    values: values,
+                    isValidating: !!nextState && !!nextState.isValidating,
+                    submitCount: !!nextState && !!nextState.submitCount && typeof nextState.submitCount === 'number' ? nextState.submitCount : 0
+                }
+            });
+        };
+        if (props.onReset) {
+            var maybePromisedOnReset = props.onReset(state.values, imperativeMethods);
+            if (isPromise(maybePromisedOnReset)) {
+                maybePromisedOnReset.then(dispatchFn);
+            } else {
+                dispatchFn();
+            }
+        } else {
+            dispatchFn();
+        }
+    }, [
+        props.initialErrors,
+        props.initialStatus,
+        props.initialTouched,
+        props.onReset
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+        if (isMounted.current === true && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(initialValues.current, props.initialValues)) {
+            if (enableReinitialize) {
+                initialValues.current = props.initialValues;
+                resetForm();
+                if (validateOnMount) {
+                    validateFormWithHighPriority(initialValues.current);
+                }
+            }
+        }
+    }, [
+        enableReinitialize,
+        props.initialValues,
+        resetForm,
+        validateOnMount,
+        validateFormWithHighPriority
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+        if (enableReinitialize && isMounted.current === true && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(initialErrors.current, props.initialErrors)) {
+            initialErrors.current = props.initialErrors || emptyErrors;
+            dispatch({
+                type: 'SET_ERRORS',
+                payload: props.initialErrors || emptyErrors
+            });
+        }
+    }, [
+        enableReinitialize,
+        props.initialErrors
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+        if (enableReinitialize && isMounted.current === true && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(initialTouched.current, props.initialTouched)) {
+            initialTouched.current = props.initialTouched || emptyTouched;
+            dispatch({
+                type: 'SET_TOUCHED',
+                payload: props.initialTouched || emptyTouched
+            });
+        }
+    }, [
+        enableReinitialize,
+        props.initialTouched
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+        if (enableReinitialize && isMounted.current === true && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(initialStatus.current, props.initialStatus)) {
+            initialStatus.current = props.initialStatus;
+            dispatch({
+                type: 'SET_STATUS',
+                payload: props.initialStatus
+            });
+        }
+    }, [
+        enableReinitialize,
+        props.initialStatus,
+        props.initialTouched
+    ]);
+    var validateField = useEventCallback(function(name) {
+        // This will efficiently validate a single field by avoiding state
+        // changes if the validation function is synchronous. It's different from
+        // what is called when using validateForm.
+        if (fieldRegistry.current[name] && isFunction(fieldRegistry.current[name].validate)) {
+            var value = getIn(state.values, name);
+            var maybePromise = fieldRegistry.current[name].validate(value);
+            if (isPromise(maybePromise)) {
+                // Only flip isValidating if the function is async.
+                dispatch({
+                    type: 'SET_ISVALIDATING',
+                    payload: true
+                });
+                return maybePromise.then(function(x) {
+                    return x;
+                }).then(function(error) {
+                    dispatch({
+                        type: 'SET_FIELD_ERROR',
+                        payload: {
+                            field: name,
+                            value: error
+                        }
+                    });
+                    dispatch({
+                        type: 'SET_ISVALIDATING',
+                        payload: false
+                    });
+                });
+            } else {
+                dispatch({
+                    type: 'SET_FIELD_ERROR',
+                    payload: {
+                        field: name,
+                        value: maybePromise
+                    }
+                });
+                return Promise.resolve(maybePromise);
+            }
+        } else if (props.validationSchema) {
+            dispatch({
+                type: 'SET_ISVALIDATING',
+                payload: true
+            });
+            return runValidationSchema(state.values, name).then(function(x) {
+                return x;
+            }).then(function(error) {
+                dispatch({
+                    type: 'SET_FIELD_ERROR',
+                    payload: {
+                        field: name,
+                        value: getIn(error, name)
+                    }
+                });
+                dispatch({
+                    type: 'SET_ISVALIDATING',
+                    payload: false
+                });
+            });
+        }
+        return Promise.resolve();
+    });
+    var registerField = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(name, _ref3) {
+        var validate = _ref3.validate;
+        fieldRegistry.current[name] = {
+            validate: validate
+        };
+    }, []);
+    var unregisterField = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(name) {
+        delete fieldRegistry.current[name];
+    }, []);
+    var setTouched = useEventCallback(function(touched, shouldValidate) {
+        dispatch({
+            type: 'SET_TOUCHED',
+            payload: touched
+        });
+        var willValidate = shouldValidate === undefined ? validateOnBlur : shouldValidate;
+        return willValidate ? validateFormWithHighPriority(state.values) : Promise.resolve();
+    });
+    var setErrors = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(errors) {
+        dispatch({
+            type: 'SET_ERRORS',
+            payload: errors
+        });
+    }, []);
+    var setValues = useEventCallback(function(values, shouldValidate) {
+        var resolvedValues = isFunction(values) ? values(state.values) : values;
+        dispatch({
+            type: 'SET_VALUES',
+            payload: resolvedValues
+        });
+        var willValidate = shouldValidate === undefined ? validateOnChange : shouldValidate;
+        return willValidate ? validateFormWithHighPriority(resolvedValues) : Promise.resolve();
+    });
+    var setFieldError = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(field, value) {
+        dispatch({
+            type: 'SET_FIELD_ERROR',
+            payload: {
+                field: field,
+                value: value
+            }
+        });
+    }, []);
+    var setFieldValue = useEventCallback(function(field, value, shouldValidate) {
+        var resolvedValue = isFunction(value) ? value(getIn(state.values, field)) : value;
+        dispatch({
+            type: 'SET_FIELD_VALUE',
+            payload: {
+                field: field,
+                value: resolvedValue
+            }
+        });
+        var willValidate = shouldValidate === undefined ? validateOnChange : shouldValidate;
+        return willValidate ? validateFormWithHighPriority(setIn(state.values, field, resolvedValue)) : Promise.resolve();
+    });
+    var executeChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(eventOrTextValue, maybePath) {
+        // By default, assume that the first argument is a string. This allows us to use
+        // handleChange with React Native and React Native Web's onChangeText prop which
+        // provides just the value of the input.
+        var field = maybePath;
+        var val = eventOrTextValue;
+        var parsed; // If the first argument is not a string though, it has to be a synthetic React Event (or a fake one),
+        // so we handle like we would a normal HTML change event.
+        if (!isString(eventOrTextValue)) {
+            // If we can, persist the event
+            // @see https://reactjs.org/docs/events.html#event-pooling
+            if (eventOrTextValue.persist) {
+                eventOrTextValue.persist();
+            }
+            var target = eventOrTextValue.target ? eventOrTextValue.target : eventOrTextValue.currentTarget;
+            var type = target.type, name = target.name, id = target.id, value = target.value, checked = target.checked, outerHTML = target.outerHTML, options = target.options, multiple = target.multiple;
+            field = maybePath ? maybePath : name ? name : id;
+            if (!field && ("TURBOPACK compile-time value", "development") !== "production") {
+                warnAboutMissingIdentifier({
+                    htmlContent: outerHTML,
+                    documentationAnchorLink: 'handlechange-e-reactchangeeventany--void',
+                    handlerName: 'handleChange'
+                });
+            }
+            val = /number|range/.test(type) ? (parsed = parseFloat(value), isNaN(parsed) ? '' : parsed) : /checkbox/.test(type) // checkboxes
+             ? getValueForCheckbox(getIn(state.values, field), checked, value) : options && multiple // <select multiple>
+             ? getSelectedValues(options) : value;
+        }
+        if (field) {
+            // Set form fields by name
+            setFieldValue(field, val);
+        }
+    }, [
+        setFieldValue,
+        state.values
+    ]);
+    var handleChange = useEventCallback(function(eventOrPath) {
+        if (isString(eventOrPath)) {
+            return function(event) {
+                return executeChange(event, eventOrPath);
+            };
+        } else {
+            executeChange(eventOrPath);
+        }
+    });
+    var setFieldTouched = useEventCallback(function(field, touched, shouldValidate) {
+        if (touched === void 0) {
+            touched = true;
+        }
+        dispatch({
+            type: 'SET_FIELD_TOUCHED',
+            payload: {
+                field: field,
+                value: touched
+            }
+        });
+        var willValidate = shouldValidate === undefined ? validateOnBlur : shouldValidate;
+        return willValidate ? validateFormWithHighPriority(state.values) : Promise.resolve();
+    });
+    var executeBlur = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(e, path) {
+        if (e.persist) {
+            e.persist();
+        }
+        var _e$target = e.target, name = _e$target.name, id = _e$target.id, outerHTML = _e$target.outerHTML;
+        var field = path ? path : name ? name : id;
+        if (!field && ("TURBOPACK compile-time value", "development") !== "production") {
+            warnAboutMissingIdentifier({
+                htmlContent: outerHTML,
+                documentationAnchorLink: 'handleblur-e-any--void',
+                handlerName: 'handleBlur'
+            });
+        }
+        setFieldTouched(field, true);
+    }, [
+        setFieldTouched
+    ]);
+    var handleBlur = useEventCallback(function(eventOrString) {
+        if (isString(eventOrString)) {
+            return function(event) {
+                return executeBlur(event, eventOrString);
+            };
+        } else {
+            executeBlur(eventOrString);
+        }
+    });
+    var setFormikState = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(stateOrCb) {
+        if (isFunction(stateOrCb)) {
+            dispatch({
+                type: 'SET_FORMIK_STATE',
+                payload: stateOrCb
+            });
+        } else {
+            dispatch({
+                type: 'SET_FORMIK_STATE',
+                payload: function payload() {
+                    return stateOrCb;
+                }
+            });
+        }
+    }, []);
+    var setStatus = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(status) {
+        dispatch({
+            type: 'SET_STATUS',
+            payload: status
+        });
+    }, []);
+    var setSubmitting = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(isSubmitting) {
+        dispatch({
+            type: 'SET_ISSUBMITTING',
+            payload: isSubmitting
+        });
+    }, []);
+    var submitForm = useEventCallback(function() {
+        dispatch({
+            type: 'SUBMIT_ATTEMPT'
+        });
+        return validateFormWithHighPriority().then(function(combinedErrors) {
+            // In case an error was thrown and passed to the resolved Promise,
+            // `combinedErrors` can be an instance of an Error. We need to check
+            // that and abort the submit.
+            // If we don't do that, calling `Object.keys(new Error())` yields an
+            // empty array, which causes the validation to pass and the form
+            // to be submitted.
+            var isInstanceOfError = combinedErrors instanceof Error;
+            var isActuallyValid = !isInstanceOfError && Object.keys(combinedErrors).length === 0;
+            if (isActuallyValid) {
+                // Proceed with submit...
+                //
+                // To respect sync submit fns, we can't simply wrap executeSubmit in a promise and
+                // _always_ dispatch SUBMIT_SUCCESS because isSubmitting would then always be false.
+                // This would be fine in simple cases, but make it impossible to disable submit
+                // buttons where people use callbacks or promises as side effects (which is basically
+                // all of v1 Formik code). Instead, recall that we are inside of a promise chain already,
+                //  so we can try/catch executeSubmit(), if it returns undefined, then just bail.
+                // If there are errors, throw em. Otherwise, wrap executeSubmit in a promise and handle
+                // cleanup of isSubmitting on behalf of the consumer.
+                var promiseOrUndefined;
+                try {
+                    promiseOrUndefined = executeSubmit(); // Bail if it's sync, consumer is responsible for cleaning up
+                    // via setSubmitting(false)
+                    if (promiseOrUndefined === undefined) {
+                        return;
+                    }
+                } catch (error) {
+                    throw error;
+                }
+                return Promise.resolve(promiseOrUndefined).then(function(result) {
+                    if (!!isMounted.current) {
+                        dispatch({
+                            type: 'SUBMIT_SUCCESS'
+                        });
+                    }
+                    return result;
+                })["catch"](function(_errors) {
+                    if (!!isMounted.current) {
+                        dispatch({
+                            type: 'SUBMIT_FAILURE'
+                        }); // This is a legit error rejected by the onSubmit fn
+                        // so we don't want to break the promise chain
+                        throw _errors;
+                    }
+                });
+            } else if (!!isMounted.current) {
+                // ^^^ Make sure Formik is still mounted before updating state
+                dispatch({
+                    type: 'SUBMIT_FAILURE'
+                }); // throw combinedErrors;
+                if (isInstanceOfError) {
+                    throw combinedErrors;
+                }
+            }
+            return;
+        });
+    });
+    var handleSubmit = useEventCallback(function(e) {
+        if (e && e.preventDefault && isFunction(e.preventDefault)) {
+            e.preventDefault();
+        }
+        if (e && e.stopPropagation && isFunction(e.stopPropagation)) {
+            e.stopPropagation();
+        } // Warn if form submission is triggered by a <button> without a
+        // specified `type` attribute during development. This mitigates
+        // a common gotcha in forms with both reset and submit buttons,
+        // where the dev forgets to add type="button" to the reset button.
+        if (("TURBOPACK compile-time value", "development") !== "production" && typeof document !== 'undefined') {
+            // Safely get the active element (works with IE)
+            var activeElement = getActiveElement();
+            if (activeElement !== null && activeElement instanceof HTMLButtonElement) {
+                !(activeElement.attributes && activeElement.attributes.getNamedItem('type')) ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'You submitted a Formik form using a button with an unspecified `type` attribute.  Most browsers default button elements to `type="submit"`. If this is not a submit button, please add `type="button"`.') : "TURBOPACK unreachable" : void 0;
+            }
+        }
+        submitForm()["catch"](function(reason) {
+            console.warn("Warning: An unhandled error was caught from submitForm()", reason);
+        });
+    });
+    var imperativeMethods = {
+        resetForm: resetForm,
+        validateForm: validateFormWithHighPriority,
+        validateField: validateField,
+        setErrors: setErrors,
+        setFieldError: setFieldError,
+        setFieldTouched: setFieldTouched,
+        setFieldValue: setFieldValue,
+        setStatus: setStatus,
+        setSubmitting: setSubmitting,
+        setTouched: setTouched,
+        setValues: setValues,
+        setFormikState: setFormikState,
+        submitForm: submitForm
+    };
+    var executeSubmit = useEventCallback(function() {
+        return onSubmit(state.values, imperativeMethods);
+    });
+    var handleReset = useEventCallback(function(e) {
+        if (e && e.preventDefault && isFunction(e.preventDefault)) {
+            e.preventDefault();
+        }
+        if (e && e.stopPropagation && isFunction(e.stopPropagation)) {
+            e.stopPropagation();
+        }
+        resetForm();
+    });
+    var getFieldMeta = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(name) {
+        return {
+            value: getIn(state.values, name),
+            error: getIn(state.errors, name),
+            touched: !!getIn(state.touched, name),
+            initialValue: getIn(initialValues.current, name),
+            initialTouched: !!getIn(initialTouched.current, name),
+            initialError: getIn(initialErrors.current, name)
+        };
+    }, [
+        state.errors,
+        state.touched,
+        state.values
+    ]);
+    var getFieldHelpers = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(name) {
+        return {
+            setValue: function setValue(value, shouldValidate) {
+                return setFieldValue(name, value, shouldValidate);
+            },
+            setTouched: function setTouched(value, shouldValidate) {
+                return setFieldTouched(name, value, shouldValidate);
+            },
+            setError: function setError(value) {
+                return setFieldError(name, value);
+            }
+        };
+    }, [
+        setFieldValue,
+        setFieldTouched,
+        setFieldError
+    ]);
+    var getFieldProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function(nameOrOptions) {
+        var isAnObject = isObject(nameOrOptions);
+        var name = isAnObject ? nameOrOptions.name : nameOrOptions;
+        var valueState = getIn(state.values, name);
+        var field = {
+            name: name,
+            value: valueState,
+            onChange: handleChange,
+            onBlur: handleBlur
+        };
+        if (isAnObject) {
+            var type = nameOrOptions.type, valueProp = nameOrOptions.value, is = nameOrOptions.as, multiple = nameOrOptions.multiple;
+            if (type === 'checkbox') {
+                if (valueProp === undefined) {
+                    field.checked = !!valueState;
+                } else {
+                    field.checked = !!(Array.isArray(valueState) && ~valueState.indexOf(valueProp));
+                    field.value = valueProp;
+                }
+            } else if (type === 'radio') {
+                field.checked = valueState === valueProp;
+                field.value = valueProp;
+            } else if (is === 'select' && multiple) {
+                field.value = field.value || [];
+                field.multiple = true;
+            }
+        }
+        return field;
+    }, [
+        handleBlur,
+        handleChange,
+        state.values
+    ]);
+    var dirty = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(function() {
+        return !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(initialValues.current, state.values);
+    }, [
+        initialValues.current,
+        state.values
+    ]);
+    var isValid = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(function() {
+        return typeof isInitialValid !== 'undefined' ? dirty ? state.errors && Object.keys(state.errors).length === 0 : isInitialValid !== false && isFunction(isInitialValid) ? isInitialValid(props) : isInitialValid : state.errors && Object.keys(state.errors).length === 0;
+    }, [
+        isInitialValid,
+        dirty,
+        state.errors,
+        props
+    ]);
+    var ctx = _extends({}, state, {
+        initialValues: initialValues.current,
+        initialErrors: initialErrors.current,
+        initialTouched: initialTouched.current,
+        initialStatus: initialStatus.current,
+        handleBlur: handleBlur,
+        handleChange: handleChange,
+        handleReset: handleReset,
+        handleSubmit: handleSubmit,
+        resetForm: resetForm,
+        setErrors: setErrors,
+        setFormikState: setFormikState,
+        setFieldTouched: setFieldTouched,
+        setFieldValue: setFieldValue,
+        setFieldError: setFieldError,
+        setStatus: setStatus,
+        setSubmitting: setSubmitting,
+        setTouched: setTouched,
+        setValues: setValues,
+        submitForm: submitForm,
+        validateForm: validateFormWithHighPriority,
+        validateField: validateField,
+        isValid: isValid,
+        dirty: dirty,
+        unregisterField: unregisterField,
+        registerField: registerField,
+        getFieldProps: getFieldProps,
+        getFieldMeta: getFieldMeta,
+        getFieldHelpers: getFieldHelpers,
+        validateOnBlur: validateOnBlur,
+        validateOnChange: validateOnChange,
+        validateOnMount: validateOnMount
+    });
+    return ctx;
+}
+function Formik(props) {
+    var formikbag = useFormik(props);
+    var component = props.component, children = props.children, render = props.render, innerRef = props.innerRef; // This allows folks to pass a ref to <Formik />
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useImperativeHandle"])(innerRef, function() {
+        return formikbag;
+    });
+    if ("TURBOPACK compile-time truthy", 1) {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+            !!props.render ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, "<Formik render> has been deprecated and will be removed in future versions of Formik. Please use a child callback function instead. To get rid of this warning, replace <Formik render={(props) => ...} /> with <Formik>{(props) => ...}</Formik>") : "TURBOPACK unreachable" : void 0; // eslint-disable-next-line
+        }, []);
+    }
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(FormikProvider, {
+        value: formikbag
+    }, component ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(component, formikbag) : render ? render(formikbag) : children // children come last, always called
+     ? isFunction(children) ? children(formikbag) : !isEmptyChildren(children) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].only(children) : null : null);
+}
+function warnAboutMissingIdentifier(_ref4) {
+    var htmlContent = _ref4.htmlContent, documentationAnchorLink = _ref4.documentationAnchorLink, handlerName = _ref4.handlerName;
+    console.warn("Warning: Formik called `" + handlerName + "`, but you forgot to pass an `id` or `name` attribute to your input:\n    " + htmlContent + "\n    Formik cannot determine which value to update. For more info see https://formik.org/docs/api/formik#" + documentationAnchorLink + "\n  ");
+}
+/**
+ * Transform Yup ValidationError to a more usable object
+ */ function yupToFormErrors(yupError) {
+    var errors = {};
+    if (yupError.inner) {
+        if (yupError.inner.length === 0) {
+            return setIn(errors, yupError.path, yupError.message);
+        }
+        for(var _iterator = yupError.inner, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;){
+            var _ref5;
+            if (_isArray) {
+                if (_i >= _iterator.length) break;
+                _ref5 = _iterator[_i++];
+            } else {
+                _i = _iterator.next();
+                if (_i.done) break;
+                _ref5 = _i.value;
+            }
+            var err = _ref5;
+            if (!getIn(errors, err.path)) {
+                errors = setIn(errors, err.path, err.message);
+            }
+        }
+    }
+    return errors;
+}
+/**
+ * Validate a yup schema.
+ */ function validateYupSchema(values, schema, sync, context) {
+    if (sync === void 0) {
+        sync = false;
+    }
+    var normalizedValues = prepareDataForValidation(values);
+    return schema[sync ? 'validateSync' : 'validate'](normalizedValues, {
+        abortEarly: false,
+        context: context || normalizedValues
+    });
+}
+/**
+ * Recursively prepare values.
+ */ function prepareDataForValidation(values) {
+    var data = Array.isArray(values) ? [] : {};
+    for(var k in values){
+        if (Object.prototype.hasOwnProperty.call(values, k)) {
+            var key = String(k);
+            if (Array.isArray(values[key]) === true) {
+                data[key] = values[key].map(function(value) {
+                    if (Array.isArray(value) === true || (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$isPlainObject$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(value)) {
+                        return prepareDataForValidation(value);
+                    } else {
+                        return value !== '' ? value : undefined;
+                    }
+                });
+            } else if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$isPlainObject$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(values[key])) {
+                data[key] = prepareDataForValidation(values[key]);
+            } else {
+                data[key] = values[key] !== '' ? values[key] : undefined;
+            }
+        }
+    }
+    return data;
+}
+/**
+ * deepmerge array merging algorithm
+ * https://github.com/KyleAMathews/deepmerge#combine-array
+ */ function arrayMerge(target, source, options) {
+    var destination = target.slice();
+    source.forEach(function merge(e, i) {
+        if (typeof destination[i] === 'undefined') {
+            var cloneRequested = options.clone !== false;
+            var shouldClone = cloneRequested && options.isMergeableObject(e);
+            destination[i] = shouldClone ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$deepmerge$2f$dist$2f$es$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(Array.isArray(e) ? [] : {}, e, options) : e;
+        } else if (options.isMergeableObject(e)) {
+            destination[i] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$deepmerge$2f$dist$2f$es$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(target[i], e, options);
+        } else if (target.indexOf(e) === -1) {
+            destination.push(e);
+        }
+    });
+    return destination;
+}
+/** Return multi select values based on an array of options */ function getSelectedValues(options) {
+    return Array.from(options).filter(function(el) {
+        return el.selected;
+    }).map(function(el) {
+        return el.value;
+    });
+}
+/** Return the next value for a checkbox */ function getValueForCheckbox(currentValue, checked, valueProp) {
+    // If the current value was a boolean, return a boolean
+    if (typeof currentValue === 'boolean') {
+        return Boolean(checked);
+    } // If the currentValue was not a boolean we want to return an array
+    var currentArrayOfValues = [];
+    var isValueInArray = false;
+    var index = -1;
+    if (!Array.isArray(currentValue)) {
+        // eslint-disable-next-line eqeqeq
+        if (!valueProp || valueProp == 'true' || valueProp == 'false') {
+            return Boolean(checked);
+        }
+    } else {
+        // If the current value is already an array, use it
+        currentArrayOfValues = currentValue;
+        index = currentValue.indexOf(valueProp);
+        isValueInArray = index >= 0;
+    } // If the checkbox was checked and the value is not already present in the aray we want to add the new value to the array of values
+    if (checked && valueProp && !isValueInArray) {
+        return currentArrayOfValues.concat(valueProp);
+    } // If the checkbox was unchecked and the value is not in the array, simply return the already existing array of values
+    if (!isValueInArray) {
+        return currentArrayOfValues;
+    } // If the checkbox was unchecked and the value is in the array, remove the value and return the array
+    return currentArrayOfValues.slice(0, index).concat(currentArrayOfValues.slice(index + 1));
+} // React currently throws a warning when using useLayoutEffect on the server.
+// To get around it, we can conditionally useEffect on the server (no-op) and
+// useLayoutEffect in the browser.
+// @see https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85
+var useIsomorphicLayoutEffect = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"];
+function useEventCallback(fn) {
+    var ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(fn); // we copy a ref to the callback scoped to the current state/props on each render
+    useIsomorphicLayoutEffect(function() {
+        ref.current = fn;
+    });
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(function() {
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++){
+            args[_key] = arguments[_key];
+        }
+        return ref.current.apply(void 0, args);
+    }, []);
+}
+function useField(propsOrFieldName) {
+    var formik = useFormikContext();
+    var getFieldProps = formik.getFieldProps, getFieldMeta = formik.getFieldMeta, getFieldHelpers = formik.getFieldHelpers, registerField = formik.registerField, unregisterField = formik.unregisterField;
+    var isAnObject = isObject(propsOrFieldName); // Normalize propsOrFieldName to FieldHookConfig<Val>
+    var props = isAnObject ? propsOrFieldName : {
+        name: propsOrFieldName
+    };
+    var fieldName = props.name, validateFn = props.validate;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+        if (fieldName) {
+            registerField(fieldName, {
+                validate: validateFn
+            });
+        }
+        return function() {
+            if (fieldName) {
+                unregisterField(fieldName);
+            }
+        };
+    }, [
+        registerField,
+        unregisterField,
+        fieldName,
+        validateFn
+    ]);
+    if ("TURBOPACK compile-time truthy", 1) {
+        !formik ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'useField() / <Field /> must be used underneath a <Formik> component or withFormik() higher order component') : "TURBOPACK unreachable" : void 0;
+    }
+    !fieldName ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'Invalid field name. Either pass `useField` a string or an object containing a `name` key.') : "TURBOPACK unreachable" : void 0;
+    var fieldHelpers = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(function() {
+        return getFieldHelpers(fieldName);
+    }, [
+        getFieldHelpers,
+        fieldName
+    ]);
+    return [
+        getFieldProps(props),
+        getFieldMeta(fieldName),
+        fieldHelpers
+    ];
+}
+function Field(_ref) {
+    var validate = _ref.validate, name = _ref.name, render = _ref.render, children = _ref.children, is = _ref.as, component = _ref.component, className = _ref.className, props = _objectWithoutPropertiesLoose(_ref, [
+        "validate",
+        "name",
+        "render",
+        "children",
+        "as",
+        "component",
+        "className"
+    ]);
+    var _useFormikContext = useFormikContext(), formik = _objectWithoutPropertiesLoose(_useFormikContext, [
+        "validate",
+        "validationSchema"
+    ]);
+    if ("TURBOPACK compile-time truthy", 1) {
+        // eslint-disable-next-line react-hooks/rules-of-hooks
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+            !!render ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, "<Field render> has been deprecated and will be removed in future versions of Formik. Please use a child callback function instead. To get rid of this warning, replace <Field name=\"" + name + "\" render={({field, form}) => ...} /> with <Field name=\"" + name + "\">{({field, form, meta}) => ...}</Field>") : "TURBOPACK unreachable" : void 0;
+            !!(is && children && isFunction(children)) ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'You should not use <Field as> and <Field children> as a function in the same <Field> component; <Field as> will be ignored.') : "TURBOPACK unreachable" : void 0;
+            !!(component && children && isFunction(children)) ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'You should not use <Field component> and <Field children> as a function in the same <Field> component; <Field component> will be ignored.') : "TURBOPACK unreachable" : void 0;
+            !!(render && children && !isEmptyChildren(children)) ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'You should not use <Field render> and <Field children> in the same <Field> component; <Field children> will be ignored') : "TURBOPACK unreachable" : void 0; // eslint-disable-next-line
+        }, []);
+    } // Register field and field-level validation with parent <Formik>
+    var registerField = formik.registerField, unregisterField = formik.unregisterField;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(function() {
+        registerField(name, {
+            validate: validate
+        });
+        return function() {
+            unregisterField(name);
+        };
+    }, [
+        registerField,
+        unregisterField,
+        name,
+        validate
+    ]);
+    var field = formik.getFieldProps(_extends({
+        name: name
+    }, props));
+    var meta = formik.getFieldMeta(name);
+    var legacyBag = {
+        field: field,
+        form: formik
+    };
+    if (render) {
+        return render(_extends({}, legacyBag, {
+            meta: meta
+        }));
+    }
+    if (isFunction(children)) {
+        return children(_extends({}, legacyBag, {
+            meta: meta
+        }));
+    }
+    if (component) {
+        // This behavior is backwards compat with earlier Formik 0.9 to 1.x
+        if (typeof component === 'string') {
+            var innerRef = props.innerRef, rest = _objectWithoutPropertiesLoose(props, [
+                "innerRef"
+            ]);
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(component, _extends({
+                ref: innerRef
+            }, field, rest, {
+                className: className
+            }), children);
+        } // We don't pass `meta` for backwards compat
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(component, _extends({
+            field: field,
+            form: formik
+        }, props, {
+            className: className
+        }), children);
+    } // default to input here so we can check for both `as` and `children` above
+    var asElement = is || 'input';
+    if (typeof asElement === 'string') {
+        var _innerRef = props.innerRef, _rest = _objectWithoutPropertiesLoose(props, [
+            "innerRef"
+        ]);
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(asElement, _extends({
+            ref: _innerRef
+        }, field, _rest, {
+            className: className
+        }), children);
+    }
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(asElement, _extends({}, field, props, {
+        className: className
+    }), children);
+}
+var Form = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(function(props, ref) {
+    // iOS needs an "action" attribute for nice input: https://stackoverflow.com/a/39485162/406725
+    // We default the action to "#" in case the preventDefault fails (just updates the URL hash)
+    var action = props.action, rest = _objectWithoutPropertiesLoose(props, [
+        "action"
+    ]);
+    var _action = action != null ? action : '#';
+    var _useFormikContext = useFormikContext(), handleReset = _useFormikContext.handleReset, handleSubmit = _useFormikContext.handleSubmit;
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])("form", _extends({
+        onSubmit: handleSubmit,
+        ref: ref,
+        onReset: handleReset,
+        action: _action
+    }, rest));
+});
+Form.displayName = 'Form';
+/**
+ * A public higher-order component to access the imperative API
+ */ function withFormik(_ref) {
+    var _ref$mapPropsToValues = _ref.mapPropsToValues, mapPropsToValues = _ref$mapPropsToValues === void 0 ? function(vanillaProps) {
+        var val = {};
+        for(var k in vanillaProps){
+            if (vanillaProps.hasOwnProperty(k) && typeof vanillaProps[k] !== 'function') {
+                // @todo TypeScript fix
+                val[k] = vanillaProps[k];
+            }
+        }
+        return val;
+    } : _ref$mapPropsToValues, config = _objectWithoutPropertiesLoose(_ref, [
+        "mapPropsToValues"
+    ]);
+    return function createFormik(Component$1) {
+        var componentDisplayName = Component$1.displayName || Component$1.name || Component$1.constructor && Component$1.constructor.name || 'Component';
+        /**
+     * We need to use closures here for to provide the wrapped component's props to
+     * the respective withFormik config methods.
+     */ var C = /*#__PURE__*/ function(_React$Component) {
+            _inheritsLoose(C, _React$Component);
+            function C() {
+                var _this;
+                for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++){
+                    args[_key] = arguments[_key];
+                }
+                _this = _React$Component.call.apply(_React$Component, [
+                    this
+                ].concat(args)) || this;
+                _this.validate = function(values) {
+                    return config.validate(values, _this.props);
+                };
+                _this.validationSchema = function() {
+                    return isFunction(config.validationSchema) ? config.validationSchema(_this.props) : config.validationSchema;
+                };
+                _this.handleSubmit = function(values, actions) {
+                    return config.handleSubmit(values, _extends({}, actions, {
+                        props: _this.props
+                    }));
+                };
+                _this.renderFormComponent = function(formikProps) {
+                    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(Component$1, _extends({}, _this.props, formikProps));
+                };
+                return _this;
+            }
+            var _proto = C.prototype;
+            _proto.render = function render() {
+                var _this$props = this.props, props = _objectWithoutPropertiesLoose(_this$props, [
+                    "children"
+                ]);
+                return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(Formik, _extends({}, props, config, {
+                    validate: config.validate && this.validate,
+                    validationSchema: config.validationSchema && this.validationSchema,
+                    initialValues: mapPropsToValues(this.props),
+                    initialStatus: config.mapPropsToStatus && config.mapPropsToStatus(this.props),
+                    initialErrors: config.mapPropsToErrors && config.mapPropsToErrors(this.props),
+                    initialTouched: config.mapPropsToTouched && config.mapPropsToTouched(this.props),
+                    onSubmit: this.handleSubmit,
+                    children: this.renderFormComponent
+                }));
+            };
+            return C;
+        }(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"]);
+        C.displayName = "WithFormik(" + componentDisplayName + ")";
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$hoist$2d$non$2d$react$2d$statics$2f$dist$2f$hoist$2d$non$2d$react$2d$statics$2e$cjs$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(C, Component$1 // cast type to ComponentClass (even if SFC)
+        );
+    };
+}
+/**
+ * Connect any component to Formik context, and inject as a prop called `formik`;
+ * @param Comp React Component
+ */ function connect(Comp) {
+    var C = function C(props) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(FormikConsumer, null, function(formik) {
+            !!!formik ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, "Formik context is undefined, please verify you are rendering <Form>, <Field>, <FastField>, <FieldArray>, or your custom context-using component as a child of a <Formik> component. Component name: " + Comp.name) : "TURBOPACK unreachable" : void 0;
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(Comp, _extends({}, props, {
+                formik: formik
+            }));
+        });
+    };
+    var componentDisplayName = Comp.displayName || Comp.name || Comp.constructor && Comp.constructor.name || 'Component'; // Assign Comp to C.WrappedComponent so we can access the inner component in tests
+    // For example, <Field.WrappedComponent /> gets us <FieldInner/>
+    C.WrappedComponent = Comp;
+    C.displayName = "FormikConnect(" + componentDisplayName + ")";
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$hoist$2d$non$2d$react$2d$statics$2f$dist$2f$hoist$2d$non$2d$react$2d$statics$2e$cjs$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(C, Comp // cast type to ComponentClass (even if SFC)
+    );
+}
+/**
+ * Some array helpers!
+ */ var move = function move(array, from, to) {
+    var copy = copyArrayLike(array);
+    var value = copy[from];
+    copy.splice(from, 1);
+    copy.splice(to, 0, value);
+    return copy;
+};
+var swap = function swap(arrayLike, indexA, indexB) {
+    var copy = copyArrayLike(arrayLike);
+    var a = copy[indexA];
+    copy[indexA] = copy[indexB];
+    copy[indexB] = a;
+    return copy;
+};
+var insert = function insert(arrayLike, index, value) {
+    var copy = copyArrayLike(arrayLike);
+    copy.splice(index, 0, value);
+    return copy;
+};
+var replace = function replace(arrayLike, index, value) {
+    var copy = copyArrayLike(arrayLike);
+    copy[index] = value;
+    return copy;
+};
+var copyArrayLike = function copyArrayLike(arrayLike) {
+    if (!arrayLike) {
+        return [];
+    } else if (Array.isArray(arrayLike)) {
+        return [].concat(arrayLike);
+    } else {
+        var maxIndex = Object.keys(arrayLike).map(function(key) {
+            return parseInt(key);
+        }).reduce(function(max, el) {
+            return el > max ? el : max;
+        }, 0);
+        return Array.from(_extends({}, arrayLike, {
+            length: maxIndex + 1
+        }));
+    }
+};
+var createAlterationHandler = function createAlterationHandler(alteration, defaultFunction) {
+    var fn = typeof alteration === 'function' ? alteration : defaultFunction;
+    return function(data) {
+        if (Array.isArray(data) || isObject(data)) {
+            var clone = copyArrayLike(data);
+            return fn(clone);
+        } // This can be assumed to be a primitive, which
+        // is a case for top level validation errors
+        return data;
+    };
+};
+var FieldArrayInner = /*#__PURE__*/ function(_React$Component) {
+    _inheritsLoose(FieldArrayInner, _React$Component);
+    function FieldArrayInner(props) {
+        var _this;
+        _this = _React$Component.call(this, props) || this; // We need TypeScript generics on these, so we'll bind them in the constructor
+        // @todo Fix TS 3.2.1
+        _this.updateArrayField = function(fn, alterTouched, alterErrors) {
+            var _this$props = _this.props, name = _this$props.name, setFormikState = _this$props.formik.setFormikState;
+            setFormikState(function(prevState) {
+                var updateErrors = createAlterationHandler(alterErrors, fn);
+                var updateTouched = createAlterationHandler(alterTouched, fn); // values fn should be executed before updateErrors and updateTouched,
+                // otherwise it causes an error with unshift.
+                var values = setIn(prevState.values, name, fn(getIn(prevState.values, name)));
+                var fieldError = alterErrors ? updateErrors(getIn(prevState.errors, name)) : undefined;
+                var fieldTouched = alterTouched ? updateTouched(getIn(prevState.touched, name)) : undefined;
+                if (isEmptyArray(fieldError)) {
+                    fieldError = undefined;
+                }
+                if (isEmptyArray(fieldTouched)) {
+                    fieldTouched = undefined;
+                }
+                return _extends({}, prevState, {
+                    values: values,
+                    errors: alterErrors ? setIn(prevState.errors, name, fieldError) : prevState.errors,
+                    touched: alterTouched ? setIn(prevState.touched, name, fieldTouched) : prevState.touched
+                });
+            });
+        };
+        _this.push = function(value) {
+            return _this.updateArrayField(function(arrayLike) {
+                return [].concat(copyArrayLike(arrayLike), [
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$lodash$2d$es$2f$cloneDeep$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(value)
+                ]);
+            }, false, false);
+        };
+        _this.handlePush = function(value) {
+            return function() {
+                return _this.push(value);
+            };
+        };
+        _this.swap = function(indexA, indexB) {
+            return _this.updateArrayField(function(array) {
+                return swap(array, indexA, indexB);
+            }, true, true);
+        };
+        _this.handleSwap = function(indexA, indexB) {
+            return function() {
+                return _this.swap(indexA, indexB);
+            };
+        };
+        _this.move = function(from, to) {
+            return _this.updateArrayField(function(array) {
+                return move(array, from, to);
+            }, true, true);
+        };
+        _this.handleMove = function(from, to) {
+            return function() {
+                return _this.move(from, to);
+            };
+        };
+        _this.insert = function(index, value) {
+            return _this.updateArrayField(function(array) {
+                return insert(array, index, value);
+            }, function(array) {
+                return insert(array, index, null);
+            }, function(array) {
+                return insert(array, index, null);
+            });
+        };
+        _this.handleInsert = function(index, value) {
+            return function() {
+                return _this.insert(index, value);
+            };
+        };
+        _this.replace = function(index, value) {
+            return _this.updateArrayField(function(array) {
+                return replace(array, index, value);
+            }, false, false);
+        };
+        _this.handleReplace = function(index, value) {
+            return function() {
+                return _this.replace(index, value);
+            };
+        };
+        _this.unshift = function(value) {
+            var length = -1;
+            _this.updateArrayField(function(array) {
+                var arr = array ? [
+                    value
+                ].concat(array) : [
+                    value
+                ];
+                length = arr.length;
+                return arr;
+            }, function(array) {
+                return array ? [
+                    null
+                ].concat(array) : [
+                    null
+                ];
+            }, function(array) {
+                return array ? [
+                    null
+                ].concat(array) : [
+                    null
+                ];
+            });
+            return length;
+        };
+        _this.handleUnshift = function(value) {
+            return function() {
+                return _this.unshift(value);
+            };
+        };
+        _this.handleRemove = function(index) {
+            return function() {
+                return _this.remove(index);
+            };
+        };
+        _this.handlePop = function() {
+            return function() {
+                return _this.pop();
+            };
+        };
+        _this.remove = _this.remove.bind(_assertThisInitialized(_this));
+        _this.pop = _this.pop.bind(_assertThisInitialized(_this));
+        return _this;
+    }
+    var _proto = FieldArrayInner.prototype;
+    _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+        if (this.props.validateOnChange && this.props.formik.validateOnChange && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$fast$2d$compare$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(getIn(prevProps.formik.values, prevProps.name), getIn(this.props.formik.values, this.props.name))) {
+            this.props.formik.validateForm(this.props.formik.values);
+        }
+    };
+    _proto.remove = function remove(index) {
+        // We need to make sure we also remove relevant pieces of `touched` and `errors`
+        var result;
+        this.updateArrayField(function(array) {
+            var copy = array ? copyArrayLike(array) : [];
+            if (!result) {
+                result = copy[index];
+            }
+            if (isFunction(copy.splice)) {
+                copy.splice(index, 1);
+            } // if the array only includes undefined values we have to return an empty array
+            return isFunction(copy.every) ? copy.every(function(v) {
+                return v === undefined;
+            }) ? [] : copy : copy;
+        }, true, true);
+        return result;
+    };
+    _proto.pop = function pop() {
+        // Remove relevant pieces of `touched` and `errors` too!
+        var result;
+        this.updateArrayField(function(array) {
+            var tmp = array.slice();
+            if (!result) {
+                result = tmp && tmp.pop && tmp.pop();
+            }
+            return tmp;
+        }, true, true);
+        return result;
+    };
+    _proto.render = function render() {
+        var arrayHelpers = {
+            push: this.push,
+            pop: this.pop,
+            swap: this.swap,
+            move: this.move,
+            insert: this.insert,
+            replace: this.replace,
+            unshift: this.unshift,
+            remove: this.remove,
+            handlePush: this.handlePush,
+            handlePop: this.handlePop,
+            handleSwap: this.handleSwap,
+            handleMove: this.handleMove,
+            handleInsert: this.handleInsert,
+            handleReplace: this.handleReplace,
+            handleUnshift: this.handleUnshift,
+            handleRemove: this.handleRemove
+        };
+        var _this$props2 = this.props, component = _this$props2.component, render = _this$props2.render, children = _this$props2.children, name = _this$props2.name, _this$props2$formik = _this$props2.formik, restOfFormik = _objectWithoutPropertiesLoose(_this$props2$formik, [
+            "validate",
+            "validationSchema"
+        ]);
+        var props = _extends({}, arrayHelpers, {
+            form: restOfFormik,
+            name: name
+        });
+        return component ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(component, props) : render ? render(props) : children // children come last, always called
+         ? typeof children === 'function' ? children(props) : !isEmptyChildren(children) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].only(children) : null : null;
+    };
+    return FieldArrayInner;
+}(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"]);
+FieldArrayInner.defaultProps = {
+    validateOnChange: true
+};
+var FieldArray = /*#__PURE__*/ connect(FieldArrayInner);
+var ErrorMessageImpl = /*#__PURE__*/ function(_React$Component) {
+    _inheritsLoose(ErrorMessageImpl, _React$Component);
+    function ErrorMessageImpl() {
+        return _React$Component.apply(this, arguments) || this;
+    }
+    var _proto = ErrorMessageImpl.prototype;
+    _proto.shouldComponentUpdate = function shouldComponentUpdate(props) {
+        if (getIn(this.props.formik.errors, this.props.name) !== getIn(props.formik.errors, this.props.name) || getIn(this.props.formik.touched, this.props.name) !== getIn(props.formik.touched, this.props.name) || Object.keys(this.props).length !== Object.keys(props).length) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+    _proto.render = function render() {
+        var _this$props = this.props, component = _this$props.component, formik = _this$props.formik, render = _this$props.render, children = _this$props.children, name = _this$props.name, rest = _objectWithoutPropertiesLoose(_this$props, [
+            "component",
+            "formik",
+            "render",
+            "children",
+            "name"
+        ]);
+        var touch = getIn(formik.touched, name);
+        var error = getIn(formik.errors, name);
+        return !!touch && !!error ? render ? isFunction(render) ? render(error) : null : children ? isFunction(children) ? children(error) : null : component ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(component, rest, error) : error : null;
+    };
+    return ErrorMessageImpl;
+}(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"]);
+var ErrorMessage = /*#__PURE__*/ connect(ErrorMessageImpl);
+/**
+ * Custom Field component for quickly hooking into Formik
+ * context and wiring up forms.
+ */ var FastFieldInner = /*#__PURE__*/ function(_React$Component) {
+    _inheritsLoose(FastFieldInner, _React$Component);
+    function FastFieldInner(props) {
+        var _this;
+        _this = _React$Component.call(this, props) || this;
+        var render = props.render, children = props.children, component = props.component, is = props.as, name = props.name;
+        !!render ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, "<FastField render> has been deprecated. Please use a child callback function instead: <FastField name={" + name + "}>{props => ...}</FastField> instead.") : "TURBOPACK unreachable" : void 0;
+        !!(component && render) ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'You should not use <FastField component> and <FastField render> in the same <FastField> component; <FastField component> will be ignored') : "TURBOPACK unreachable" : void 0;
+        !!(is && children && isFunction(children)) ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'You should not use <FastField as> and <FastField children> as a function in the same <FastField> component; <FastField as> will be ignored.') : "TURBOPACK unreachable" : void 0;
+        !!(component && children && isFunction(children)) ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'You should not use <FastField component> and <FastField children> as a function in the same <FastField> component; <FastField component> will be ignored.') : "TURBOPACK unreachable" : void 0;
+        !!(render && children && !isEmptyChildren(children)) ? ("TURBOPACK compile-time truthy", 1) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tiny$2d$warning$2f$dist$2f$tiny$2d$warning$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(false, 'You should not use <FastField render> and <FastField children> in the same <FastField> component; <FastField children> will be ignored') : "TURBOPACK unreachable" : void 0;
+        return _this;
+    }
+    var _proto = FastFieldInner.prototype;
+    _proto.shouldComponentUpdate = function shouldComponentUpdate(props) {
+        if (this.props.shouldUpdate) {
+            return this.props.shouldUpdate(props, this.props);
+        } else if (props.name !== this.props.name || getIn(props.formik.values, this.props.name) !== getIn(this.props.formik.values, this.props.name) || getIn(props.formik.errors, this.props.name) !== getIn(this.props.formik.errors, this.props.name) || getIn(props.formik.touched, this.props.name) !== getIn(this.props.formik.touched, this.props.name) || Object.keys(this.props).length !== Object.keys(props).length || props.formik.isSubmitting !== this.props.formik.isSubmitting) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+    _proto.componentDidMount = function componentDidMount() {
+        // Register the Field with the parent Formik. Parent will cycle through
+        // registered Field's validate fns right prior to submit
+        this.props.formik.registerField(this.props.name, {
+            validate: this.props.validate
+        });
+    };
+    _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+        if (this.props.name !== prevProps.name) {
+            this.props.formik.unregisterField(prevProps.name);
+            this.props.formik.registerField(this.props.name, {
+                validate: this.props.validate
+            });
+        }
+        if (this.props.validate !== prevProps.validate) {
+            this.props.formik.registerField(this.props.name, {
+                validate: this.props.validate
+            });
+        }
+    };
+    _proto.componentWillUnmount = function componentWillUnmount() {
+        this.props.formik.unregisterField(this.props.name);
+    };
+    _proto.render = function render() {
+        var _this$props = this.props, name = _this$props.name, render = _this$props.render, is = _this$props.as, children = _this$props.children, component = _this$props.component, formik = _this$props.formik, props = _objectWithoutPropertiesLoose(_this$props, [
+            "validate",
+            "name",
+            "render",
+            "as",
+            "children",
+            "component",
+            "shouldUpdate",
+            "formik"
+        ]);
+        var restOfFormik = _objectWithoutPropertiesLoose(formik, [
+            "validate",
+            "validationSchema"
+        ]);
+        var field = formik.getFieldProps(_extends({
+            name: name
+        }, props));
+        var meta = {
+            value: getIn(formik.values, name),
+            error: getIn(formik.errors, name),
+            touched: !!getIn(formik.touched, name),
+            initialValue: getIn(formik.initialValues, name),
+            initialTouched: !!getIn(formik.initialTouched, name),
+            initialError: getIn(formik.initialErrors, name)
+        };
+        var bag = {
+            field: field,
+            meta: meta,
+            form: restOfFormik
+        };
+        if (render) {
+            return render(bag);
+        }
+        if (isFunction(children)) {
+            return children(bag);
+        }
+        if (component) {
+            // This behavior is backwards compat with earlier Formik 0.9 to 1.x
+            if (typeof component === 'string') {
+                var innerRef = props.innerRef, rest = _objectWithoutPropertiesLoose(props, [
+                    "innerRef"
+                ]);
+                return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(component, _extends({
+                    ref: innerRef
+                }, field, rest), children);
+            } // We don't pass `meta` for backwards compat
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(component, _extends({
+                field: field,
+                form: formik
+            }, props), children);
+        } // default to input here so we can check for both `as` and `children` above
+        var asElement = is || 'input';
+        if (typeof asElement === 'string') {
+            var _innerRef = props.innerRef, _rest = _objectWithoutPropertiesLoose(props, [
+                "innerRef"
+            ]);
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(asElement, _extends({
+                ref: _innerRef
+            }, field, _rest), children);
+        }
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"])(asElement, _extends({}, field, props), children);
+    };
+    return FastFieldInner;
+}(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"]);
+var FastField = /*#__PURE__*/ connect(FastFieldInner);
+;
+ //# sourceMappingURL=formik.esm.js.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "clsx",
+    ()=>clsx,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+function r(e) {
+    var t, f, n = "";
+    if ("string" == typeof e || "number" == typeof e) n += e;
+    else if ("object" == typeof e) if (Array.isArray(e)) {
+        var o = e.length;
+        for(t = 0; t < o; t++)e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+    } else for(f in e)e[f] && (n && (n += " "), n += f);
+    return n;
+}
+function clsx() {
+    for(var e, t, f = 0, n = "", o = arguments.length; f < o; f++)(e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
+    return n;
+}
+const __TURBOPACK__default__export__ = clsx;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createTailwindMerge",
+    ()=>createTailwindMerge,
+    "extendTailwindMerge",
+    ()=>extendTailwindMerge,
+    "fromTheme",
+    ()=>fromTheme,
+    "getDefaultConfig",
+    ()=>getDefaultConfig,
+    "mergeConfigs",
+    ()=>mergeConfigs,
+    "twJoin",
+    ()=>twJoin,
+    "twMerge",
+    ()=>twMerge,
+    "validators",
+    ()=>validators
+]);
+const CLASS_PART_SEPARATOR = '-';
+const createClassGroupUtils = (config)=>{
+    const classMap = createClassMap(config);
+    const { conflictingClassGroups, conflictingClassGroupModifiers } = config;
+    const getClassGroupId = (className)=>{
+        const classParts = className.split(CLASS_PART_SEPARATOR);
+        // Classes like `-inset-1` produce an empty string as first classPart. We assume that classes for negative values are used correctly and remove it from classParts.
+        if (classParts[0] === '' && classParts.length !== 1) {
+            classParts.shift();
+        }
+        return getGroupRecursive(classParts, classMap) || getGroupIdForArbitraryProperty(className);
+    };
+    const getConflictingClassGroupIds = (classGroupId, hasPostfixModifier)=>{
+        const conflicts = conflictingClassGroups[classGroupId] || [];
+        if (hasPostfixModifier && conflictingClassGroupModifiers[classGroupId]) {
+            return [
+                ...conflicts,
+                ...conflictingClassGroupModifiers[classGroupId]
+            ];
+        }
+        return conflicts;
+    };
+    return {
+        getClassGroupId,
+        getConflictingClassGroupIds
+    };
+};
+const getGroupRecursive = (classParts, classPartObject)=>{
+    if (classParts.length === 0) {
+        return classPartObject.classGroupId;
+    }
+    const currentClassPart = classParts[0];
+    const nextClassPartObject = classPartObject.nextPart.get(currentClassPart);
+    const classGroupFromNextClassPart = nextClassPartObject ? getGroupRecursive(classParts.slice(1), nextClassPartObject) : undefined;
+    if (classGroupFromNextClassPart) {
+        return classGroupFromNextClassPart;
+    }
+    if (classPartObject.validators.length === 0) {
+        return undefined;
+    }
+    const classRest = classParts.join(CLASS_PART_SEPARATOR);
+    return classPartObject.validators.find(({ validator })=>validator(classRest))?.classGroupId;
+};
+const arbitraryPropertyRegex = /^\[(.+)\]$/;
+const getGroupIdForArbitraryProperty = (className)=>{
+    if (arbitraryPropertyRegex.test(className)) {
+        const arbitraryPropertyClassName = arbitraryPropertyRegex.exec(className)[1];
+        const property = arbitraryPropertyClassName?.substring(0, arbitraryPropertyClassName.indexOf(':'));
+        if (property) {
+            // I use two dots here because one dot is used as prefix for class groups in plugins
+            return 'arbitrary..' + property;
+        }
+    }
+};
+/**
+ * Exported for testing only
+ */ const createClassMap = (config)=>{
+    const { theme, prefix } = config;
+    const classMap = {
+        nextPart: new Map(),
+        validators: []
+    };
+    const prefixedClassGroupEntries = getPrefixedClassGroupEntries(Object.entries(config.classGroups), prefix);
+    prefixedClassGroupEntries.forEach(([classGroupId, classGroup])=>{
+        processClassesRecursively(classGroup, classMap, classGroupId, theme);
+    });
+    return classMap;
+};
+const processClassesRecursively = (classGroup, classPartObject, classGroupId, theme)=>{
+    classGroup.forEach((classDefinition)=>{
+        if (typeof classDefinition === 'string') {
+            const classPartObjectToEdit = classDefinition === '' ? classPartObject : getPart(classPartObject, classDefinition);
+            classPartObjectToEdit.classGroupId = classGroupId;
+            return;
+        }
+        if (typeof classDefinition === 'function') {
+            if (isThemeGetter(classDefinition)) {
+                processClassesRecursively(classDefinition(theme), classPartObject, classGroupId, theme);
+                return;
+            }
+            classPartObject.validators.push({
+                validator: classDefinition,
+                classGroupId
+            });
+            return;
+        }
+        Object.entries(classDefinition).forEach(([key, classGroup])=>{
+            processClassesRecursively(classGroup, getPart(classPartObject, key), classGroupId, theme);
+        });
+    });
+};
+const getPart = (classPartObject, path)=>{
+    let currentClassPartObject = classPartObject;
+    path.split(CLASS_PART_SEPARATOR).forEach((pathPart)=>{
+        if (!currentClassPartObject.nextPart.has(pathPart)) {
+            currentClassPartObject.nextPart.set(pathPart, {
+                nextPart: new Map(),
+                validators: []
+            });
+        }
+        currentClassPartObject = currentClassPartObject.nextPart.get(pathPart);
+    });
+    return currentClassPartObject;
+};
+const isThemeGetter = (func)=>func.isThemeGetter;
+const getPrefixedClassGroupEntries = (classGroupEntries, prefix)=>{
+    if (!prefix) {
+        return classGroupEntries;
+    }
+    return classGroupEntries.map(([classGroupId, classGroup])=>{
+        const prefixedClassGroup = classGroup.map((classDefinition)=>{
+            if (typeof classDefinition === 'string') {
+                return prefix + classDefinition;
+            }
+            if (typeof classDefinition === 'object') {
+                return Object.fromEntries(Object.entries(classDefinition).map(([key, value])=>[
+                        prefix + key,
+                        value
+                    ]));
+            }
+            return classDefinition;
+        });
+        return [
+            classGroupId,
+            prefixedClassGroup
+        ];
+    });
+};
+// LRU cache inspired from hashlru (https://github.com/dominictarr/hashlru/blob/v1.0.4/index.js) but object replaced with Map to improve performance
+const createLruCache = (maxCacheSize)=>{
+    if (maxCacheSize < 1) {
+        return {
+            get: ()=>undefined,
+            set: ()=>{}
+        };
+    }
+    let cacheSize = 0;
+    let cache = new Map();
+    let previousCache = new Map();
+    const update = (key, value)=>{
+        cache.set(key, value);
+        cacheSize++;
+        if (cacheSize > maxCacheSize) {
+            cacheSize = 0;
+            previousCache = cache;
+            cache = new Map();
+        }
+    };
+    return {
+        get (key) {
+            let value = cache.get(key);
+            if (value !== undefined) {
+                return value;
+            }
+            if ((value = previousCache.get(key)) !== undefined) {
+                update(key, value);
+                return value;
+            }
+        },
+        set (key, value) {
+            if (cache.has(key)) {
+                cache.set(key, value);
+            } else {
+                update(key, value);
+            }
+        }
+    };
+};
+const IMPORTANT_MODIFIER = '!';
+const createParseClassName = (config)=>{
+    const { separator, experimentalParseClassName } = config;
+    const isSeparatorSingleCharacter = separator.length === 1;
+    const firstSeparatorCharacter = separator[0];
+    const separatorLength = separator.length;
+    // parseClassName inspired by https://github.com/tailwindlabs/tailwindcss/blob/v3.2.2/src/util/splitAtTopLevelOnly.js
+    const parseClassName = (className)=>{
+        const modifiers = [];
+        let bracketDepth = 0;
+        let modifierStart = 0;
+        let postfixModifierPosition;
+        for(let index = 0; index < className.length; index++){
+            let currentCharacter = className[index];
+            if (bracketDepth === 0) {
+                if (currentCharacter === firstSeparatorCharacter && (isSeparatorSingleCharacter || className.slice(index, index + separatorLength) === separator)) {
+                    modifiers.push(className.slice(modifierStart, index));
+                    modifierStart = index + separatorLength;
+                    continue;
+                }
+                if (currentCharacter === '/') {
+                    postfixModifierPosition = index;
+                    continue;
+                }
+            }
+            if (currentCharacter === '[') {
+                bracketDepth++;
+            } else if (currentCharacter === ']') {
+                bracketDepth--;
+            }
+        }
+        const baseClassNameWithImportantModifier = modifiers.length === 0 ? className : className.substring(modifierStart);
+        const hasImportantModifier = baseClassNameWithImportantModifier.startsWith(IMPORTANT_MODIFIER);
+        const baseClassName = hasImportantModifier ? baseClassNameWithImportantModifier.substring(1) : baseClassNameWithImportantModifier;
+        const maybePostfixModifierPosition = postfixModifierPosition && postfixModifierPosition > modifierStart ? postfixModifierPosition - modifierStart : undefined;
+        return {
+            modifiers,
+            hasImportantModifier,
+            baseClassName,
+            maybePostfixModifierPosition
+        };
+    };
+    if (experimentalParseClassName) {
+        return (className)=>experimentalParseClassName({
+                className,
+                parseClassName
+            });
+    }
+    return parseClassName;
+};
+/**
+ * Sorts modifiers according to following schema:
+ * - Predefined modifiers are sorted alphabetically
+ * - When an arbitrary variant appears, it must be preserved which modifiers are before and after it
+ */ const sortModifiers = (modifiers)=>{
+    if (modifiers.length <= 1) {
+        return modifiers;
+    }
+    const sortedModifiers = [];
+    let unsortedModifiers = [];
+    modifiers.forEach((modifier)=>{
+        const isArbitraryVariant = modifier[0] === '[';
+        if (isArbitraryVariant) {
+            sortedModifiers.push(...unsortedModifiers.sort(), modifier);
+            unsortedModifiers = [];
+        } else {
+            unsortedModifiers.push(modifier);
+        }
+    });
+    sortedModifiers.push(...unsortedModifiers.sort());
+    return sortedModifiers;
+};
+const createConfigUtils = (config)=>({
+        cache: createLruCache(config.cacheSize),
+        parseClassName: createParseClassName(config),
+        ...createClassGroupUtils(config)
+    });
+const SPLIT_CLASSES_REGEX = /\s+/;
+const mergeClassList = (classList, configUtils)=>{
+    const { parseClassName, getClassGroupId, getConflictingClassGroupIds } = configUtils;
+    /**
+   * Set of classGroupIds in following format:
+   * `{importantModifier}{variantModifiers}{classGroupId}`
+   * @example 'float'
+   * @example 'hover:focus:bg-color'
+   * @example 'md:!pr'
+   */ const classGroupsInConflict = [];
+    const classNames = classList.trim().split(SPLIT_CLASSES_REGEX);
+    let result = '';
+    for(let index = classNames.length - 1; index >= 0; index -= 1){
+        const originalClassName = classNames[index];
+        const { modifiers, hasImportantModifier, baseClassName, maybePostfixModifierPosition } = parseClassName(originalClassName);
+        let hasPostfixModifier = Boolean(maybePostfixModifierPosition);
+        let classGroupId = getClassGroupId(hasPostfixModifier ? baseClassName.substring(0, maybePostfixModifierPosition) : baseClassName);
+        if (!classGroupId) {
+            if (!hasPostfixModifier) {
+                // Not a Tailwind class
+                result = originalClassName + (result.length > 0 ? ' ' + result : result);
+                continue;
+            }
+            classGroupId = getClassGroupId(baseClassName);
+            if (!classGroupId) {
+                // Not a Tailwind class
+                result = originalClassName + (result.length > 0 ? ' ' + result : result);
+                continue;
+            }
+            hasPostfixModifier = false;
+        }
+        const variantModifier = sortModifiers(modifiers).join(':');
+        const modifierId = hasImportantModifier ? variantModifier + IMPORTANT_MODIFIER : variantModifier;
+        const classId = modifierId + classGroupId;
+        if (classGroupsInConflict.includes(classId)) {
+            continue;
+        }
+        classGroupsInConflict.push(classId);
+        const conflictGroups = getConflictingClassGroupIds(classGroupId, hasPostfixModifier);
+        for(let i = 0; i < conflictGroups.length; ++i){
+            const group = conflictGroups[i];
+            classGroupsInConflict.push(modifierId + group);
+        }
+        // Tailwind class not in conflict
+        result = originalClassName + (result.length > 0 ? ' ' + result : result);
+    }
+    return result;
+};
+/**
+ * The code in this file is copied from https://github.com/lukeed/clsx and modified to suit the needs of tailwind-merge better.
+ *
+ * Specifically:
+ * - Runtime code from https://github.com/lukeed/clsx/blob/v1.2.1/src/index.js
+ * - TypeScript types from https://github.com/lukeed/clsx/blob/v1.2.1/clsx.d.ts
+ *
+ * Original code has MIT license: Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
+ */ function twJoin() {
+    let index = 0;
+    let argument;
+    let resolvedValue;
+    let string = '';
+    while(index < arguments.length){
+        if (argument = arguments[index++]) {
+            if (resolvedValue = toValue(argument)) {
+                string && (string += ' ');
+                string += resolvedValue;
+            }
+        }
+    }
+    return string;
+}
+const toValue = (mix)=>{
+    if (typeof mix === 'string') {
+        return mix;
+    }
+    let resolvedValue;
+    let string = '';
+    for(let k = 0; k < mix.length; k++){
+        if (mix[k]) {
+            if (resolvedValue = toValue(mix[k])) {
+                string && (string += ' ');
+                string += resolvedValue;
+            }
+        }
+    }
+    return string;
+};
+function createTailwindMerge(createConfigFirst, ...createConfigRest) {
+    let configUtils;
+    let cacheGet;
+    let cacheSet;
+    let functionToCall = initTailwindMerge;
+    function initTailwindMerge(classList) {
+        const config = createConfigRest.reduce((previousConfig, createConfigCurrent)=>createConfigCurrent(previousConfig), createConfigFirst());
+        configUtils = createConfigUtils(config);
+        cacheGet = configUtils.cache.get;
+        cacheSet = configUtils.cache.set;
+        functionToCall = tailwindMerge;
+        return tailwindMerge(classList);
+    }
+    function tailwindMerge(classList) {
+        const cachedResult = cacheGet(classList);
+        if (cachedResult) {
+            return cachedResult;
+        }
+        const result = mergeClassList(classList, configUtils);
+        cacheSet(classList, result);
+        return result;
+    }
+    return function callTailwindMerge() {
+        return functionToCall(twJoin.apply(null, arguments));
+    };
+}
+const fromTheme = (key)=>{
+    const themeGetter = (theme)=>theme[key] || [];
+    themeGetter.isThemeGetter = true;
+    return themeGetter;
+};
+const arbitraryValueRegex = /^\[(?:([a-z-]+):)?(.+)\]$/i;
+const fractionRegex = /^\d+\/\d+$/;
+const stringLengths = /*#__PURE__*/ new Set([
+    'px',
+    'full',
+    'screen'
+]);
+const tshirtUnitRegex = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/;
+const lengthUnitRegex = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/;
+const colorFunctionRegex = /^(rgba?|hsla?|hwb|(ok)?(lab|lch))\(.+\)$/;
+// Shadow always begins with x and y offset separated by underscore optionally prepended by inset
+const shadowRegex = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/;
+const imageRegex = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/;
+const isLength = (value)=>isNumber(value) || stringLengths.has(value) || fractionRegex.test(value);
+const isArbitraryLength = (value)=>getIsArbitraryValue(value, 'length', isLengthOnly);
+const isNumber = (value)=>Boolean(value) && !Number.isNaN(Number(value));
+const isArbitraryNumber = (value)=>getIsArbitraryValue(value, 'number', isNumber);
+const isInteger = (value)=>Boolean(value) && Number.isInteger(Number(value));
+const isPercent = (value)=>value.endsWith('%') && isNumber(value.slice(0, -1));
+const isArbitraryValue = (value)=>arbitraryValueRegex.test(value);
+const isTshirtSize = (value)=>tshirtUnitRegex.test(value);
+const sizeLabels = /*#__PURE__*/ new Set([
+    'length',
+    'size',
+    'percentage'
+]);
+const isArbitrarySize = (value)=>getIsArbitraryValue(value, sizeLabels, isNever);
+const isArbitraryPosition = (value)=>getIsArbitraryValue(value, 'position', isNever);
+const imageLabels = /*#__PURE__*/ new Set([
+    'image',
+    'url'
+]);
+const isArbitraryImage = (value)=>getIsArbitraryValue(value, imageLabels, isImage);
+const isArbitraryShadow = (value)=>getIsArbitraryValue(value, '', isShadow);
+const isAny = ()=>true;
+const getIsArbitraryValue = (value, label, testValue)=>{
+    const result = arbitraryValueRegex.exec(value);
+    if (result) {
+        if (result[1]) {
+            return typeof label === 'string' ? result[1] === label : label.has(result[1]);
+        }
+        return testValue(result[2]);
+    }
+    return false;
+};
+const isLengthOnly = (value)=>// `colorFunctionRegex` check is necessary because color functions can have percentages in them which which would be incorrectly classified as lengths.
+    // For example, `hsl(0 0% 0%)` would be classified as a length without this check.
+    // I could also use lookbehind assertion in `lengthUnitRegex` but that isn't supported widely enough.
+    lengthUnitRegex.test(value) && !colorFunctionRegex.test(value);
+const isNever = ()=>false;
+const isShadow = (value)=>shadowRegex.test(value);
+const isImage = (value)=>imageRegex.test(value);
+const validators = /*#__PURE__*/ Object.defineProperty({
+    __proto__: null,
+    isAny,
+    isArbitraryImage,
+    isArbitraryLength,
+    isArbitraryNumber,
+    isArbitraryPosition,
+    isArbitraryShadow,
+    isArbitrarySize,
+    isArbitraryValue,
+    isInteger,
+    isLength,
+    isNumber,
+    isPercent,
+    isTshirtSize
+}, Symbol.toStringTag, {
+    value: 'Module'
+});
+const getDefaultConfig = ()=>{
+    const colors = fromTheme('colors');
+    const spacing = fromTheme('spacing');
+    const blur = fromTheme('blur');
+    const brightness = fromTheme('brightness');
+    const borderColor = fromTheme('borderColor');
+    const borderRadius = fromTheme('borderRadius');
+    const borderSpacing = fromTheme('borderSpacing');
+    const borderWidth = fromTheme('borderWidth');
+    const contrast = fromTheme('contrast');
+    const grayscale = fromTheme('grayscale');
+    const hueRotate = fromTheme('hueRotate');
+    const invert = fromTheme('invert');
+    const gap = fromTheme('gap');
+    const gradientColorStops = fromTheme('gradientColorStops');
+    const gradientColorStopPositions = fromTheme('gradientColorStopPositions');
+    const inset = fromTheme('inset');
+    const margin = fromTheme('margin');
+    const opacity = fromTheme('opacity');
+    const padding = fromTheme('padding');
+    const saturate = fromTheme('saturate');
+    const scale = fromTheme('scale');
+    const sepia = fromTheme('sepia');
+    const skew = fromTheme('skew');
+    const space = fromTheme('space');
+    const translate = fromTheme('translate');
+    const getOverscroll = ()=>[
+            'auto',
+            'contain',
+            'none'
+        ];
+    const getOverflow = ()=>[
+            'auto',
+            'hidden',
+            'clip',
+            'visible',
+            'scroll'
+        ];
+    const getSpacingWithAutoAndArbitrary = ()=>[
+            'auto',
+            isArbitraryValue,
+            spacing
+        ];
+    const getSpacingWithArbitrary = ()=>[
+            isArbitraryValue,
+            spacing
+        ];
+    const getLengthWithEmptyAndArbitrary = ()=>[
+            '',
+            isLength,
+            isArbitraryLength
+        ];
+    const getNumberWithAutoAndArbitrary = ()=>[
+            'auto',
+            isNumber,
+            isArbitraryValue
+        ];
+    const getPositions = ()=>[
+            'bottom',
+            'center',
+            'left',
+            'left-bottom',
+            'left-top',
+            'right',
+            'right-bottom',
+            'right-top',
+            'top'
+        ];
+    const getLineStyles = ()=>[
+            'solid',
+            'dashed',
+            'dotted',
+            'double',
+            'none'
+        ];
+    const getBlendModes = ()=>[
+            'normal',
+            'multiply',
+            'screen',
+            'overlay',
+            'darken',
+            'lighten',
+            'color-dodge',
+            'color-burn',
+            'hard-light',
+            'soft-light',
+            'difference',
+            'exclusion',
+            'hue',
+            'saturation',
+            'color',
+            'luminosity'
+        ];
+    const getAlign = ()=>[
+            'start',
+            'end',
+            'center',
+            'between',
+            'around',
+            'evenly',
+            'stretch'
+        ];
+    const getZeroAndEmpty = ()=>[
+            '',
+            '0',
+            isArbitraryValue
+        ];
+    const getBreaks = ()=>[
+            'auto',
+            'avoid',
+            'all',
+            'avoid-page',
+            'page',
+            'left',
+            'right',
+            'column'
+        ];
+    const getNumberAndArbitrary = ()=>[
+            isNumber,
+            isArbitraryValue
+        ];
+    return {
+        cacheSize: 500,
+        separator: ':',
+        theme: {
+            colors: [
+                isAny
+            ],
+            spacing: [
+                isLength,
+                isArbitraryLength
+            ],
+            blur: [
+                'none',
+                '',
+                isTshirtSize,
+                isArbitraryValue
+            ],
+            brightness: getNumberAndArbitrary(),
+            borderColor: [
+                colors
+            ],
+            borderRadius: [
+                'none',
+                '',
+                'full',
+                isTshirtSize,
+                isArbitraryValue
+            ],
+            borderSpacing: getSpacingWithArbitrary(),
+            borderWidth: getLengthWithEmptyAndArbitrary(),
+            contrast: getNumberAndArbitrary(),
+            grayscale: getZeroAndEmpty(),
+            hueRotate: getNumberAndArbitrary(),
+            invert: getZeroAndEmpty(),
+            gap: getSpacingWithArbitrary(),
+            gradientColorStops: [
+                colors
+            ],
+            gradientColorStopPositions: [
+                isPercent,
+                isArbitraryLength
+            ],
+            inset: getSpacingWithAutoAndArbitrary(),
+            margin: getSpacingWithAutoAndArbitrary(),
+            opacity: getNumberAndArbitrary(),
+            padding: getSpacingWithArbitrary(),
+            saturate: getNumberAndArbitrary(),
+            scale: getNumberAndArbitrary(),
+            sepia: getZeroAndEmpty(),
+            skew: getNumberAndArbitrary(),
+            space: getSpacingWithArbitrary(),
+            translate: getSpacingWithArbitrary()
+        },
+        classGroups: {
+            // Layout
+            /**
+       * Aspect Ratio
+       * @see https://tailwindcss.com/docs/aspect-ratio
+       */ aspect: [
+                {
+                    aspect: [
+                        'auto',
+                        'square',
+                        'video',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Container
+       * @see https://tailwindcss.com/docs/container
+       */ container: [
+                'container'
+            ],
+            /**
+       * Columns
+       * @see https://tailwindcss.com/docs/columns
+       */ columns: [
+                {
+                    columns: [
+                        isTshirtSize
+                    ]
+                }
+            ],
+            /**
+       * Break After
+       * @see https://tailwindcss.com/docs/break-after
+       */ 'break-after': [
+                {
+                    'break-after': getBreaks()
+                }
+            ],
+            /**
+       * Break Before
+       * @see https://tailwindcss.com/docs/break-before
+       */ 'break-before': [
+                {
+                    'break-before': getBreaks()
+                }
+            ],
+            /**
+       * Break Inside
+       * @see https://tailwindcss.com/docs/break-inside
+       */ 'break-inside': [
+                {
+                    'break-inside': [
+                        'auto',
+                        'avoid',
+                        'avoid-page',
+                        'avoid-column'
+                    ]
+                }
+            ],
+            /**
+       * Box Decoration Break
+       * @see https://tailwindcss.com/docs/box-decoration-break
+       */ 'box-decoration': [
+                {
+                    'box-decoration': [
+                        'slice',
+                        'clone'
+                    ]
+                }
+            ],
+            /**
+       * Box Sizing
+       * @see https://tailwindcss.com/docs/box-sizing
+       */ box: [
+                {
+                    box: [
+                        'border',
+                        'content'
+                    ]
+                }
+            ],
+            /**
+       * Display
+       * @see https://tailwindcss.com/docs/display
+       */ display: [
+                'block',
+                'inline-block',
+                'inline',
+                'flex',
+                'inline-flex',
+                'table',
+                'inline-table',
+                'table-caption',
+                'table-cell',
+                'table-column',
+                'table-column-group',
+                'table-footer-group',
+                'table-header-group',
+                'table-row-group',
+                'table-row',
+                'flow-root',
+                'grid',
+                'inline-grid',
+                'contents',
+                'list-item',
+                'hidden'
+            ],
+            /**
+       * Floats
+       * @see https://tailwindcss.com/docs/float
+       */ float: [
+                {
+                    float: [
+                        'right',
+                        'left',
+                        'none',
+                        'start',
+                        'end'
+                    ]
+                }
+            ],
+            /**
+       * Clear
+       * @see https://tailwindcss.com/docs/clear
+       */ clear: [
+                {
+                    clear: [
+                        'left',
+                        'right',
+                        'both',
+                        'none',
+                        'start',
+                        'end'
+                    ]
+                }
+            ],
+            /**
+       * Isolation
+       * @see https://tailwindcss.com/docs/isolation
+       */ isolation: [
+                'isolate',
+                'isolation-auto'
+            ],
+            /**
+       * Object Fit
+       * @see https://tailwindcss.com/docs/object-fit
+       */ 'object-fit': [
+                {
+                    object: [
+                        'contain',
+                        'cover',
+                        'fill',
+                        'none',
+                        'scale-down'
+                    ]
+                }
+            ],
+            /**
+       * Object Position
+       * @see https://tailwindcss.com/docs/object-position
+       */ 'object-position': [
+                {
+                    object: [
+                        ...getPositions(),
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Overflow
+       * @see https://tailwindcss.com/docs/overflow
+       */ overflow: [
+                {
+                    overflow: getOverflow()
+                }
+            ],
+            /**
+       * Overflow X
+       * @see https://tailwindcss.com/docs/overflow
+       */ 'overflow-x': [
+                {
+                    'overflow-x': getOverflow()
+                }
+            ],
+            /**
+       * Overflow Y
+       * @see https://tailwindcss.com/docs/overflow
+       */ 'overflow-y': [
+                {
+                    'overflow-y': getOverflow()
+                }
+            ],
+            /**
+       * Overscroll Behavior
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */ overscroll: [
+                {
+                    overscroll: getOverscroll()
+                }
+            ],
+            /**
+       * Overscroll Behavior X
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */ 'overscroll-x': [
+                {
+                    'overscroll-x': getOverscroll()
+                }
+            ],
+            /**
+       * Overscroll Behavior Y
+       * @see https://tailwindcss.com/docs/overscroll-behavior
+       */ 'overscroll-y': [
+                {
+                    'overscroll-y': getOverscroll()
+                }
+            ],
+            /**
+       * Position
+       * @see https://tailwindcss.com/docs/position
+       */ position: [
+                'static',
+                'fixed',
+                'absolute',
+                'relative',
+                'sticky'
+            ],
+            /**
+       * Top / Right / Bottom / Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ inset: [
+                {
+                    inset: [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * Right / Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ 'inset-x': [
+                {
+                    'inset-x': [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * Top / Bottom
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ 'inset-y': [
+                {
+                    'inset-y': [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * Start
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ start: [
+                {
+                    start: [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * End
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ end: [
+                {
+                    end: [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * Top
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ top: [
+                {
+                    top: [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * Right
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ right: [
+                {
+                    right: [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * Bottom
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ bottom: [
+                {
+                    bottom: [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * Left
+       * @see https://tailwindcss.com/docs/top-right-bottom-left
+       */ left: [
+                {
+                    left: [
+                        inset
+                    ]
+                }
+            ],
+            /**
+       * Visibility
+       * @see https://tailwindcss.com/docs/visibility
+       */ visibility: [
+                'visible',
+                'invisible',
+                'collapse'
+            ],
+            /**
+       * Z-Index
+       * @see https://tailwindcss.com/docs/z-index
+       */ z: [
+                {
+                    z: [
+                        'auto',
+                        isInteger,
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            // Flexbox and Grid
+            /**
+       * Flex Basis
+       * @see https://tailwindcss.com/docs/flex-basis
+       */ basis: [
+                {
+                    basis: getSpacingWithAutoAndArbitrary()
+                }
+            ],
+            /**
+       * Flex Direction
+       * @see https://tailwindcss.com/docs/flex-direction
+       */ 'flex-direction': [
+                {
+                    flex: [
+                        'row',
+                        'row-reverse',
+                        'col',
+                        'col-reverse'
+                    ]
+                }
+            ],
+            /**
+       * Flex Wrap
+       * @see https://tailwindcss.com/docs/flex-wrap
+       */ 'flex-wrap': [
+                {
+                    flex: [
+                        'wrap',
+                        'wrap-reverse',
+                        'nowrap'
+                    ]
+                }
+            ],
+            /**
+       * Flex
+       * @see https://tailwindcss.com/docs/flex
+       */ flex: [
+                {
+                    flex: [
+                        '1',
+                        'auto',
+                        'initial',
+                        'none',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Flex Grow
+       * @see https://tailwindcss.com/docs/flex-grow
+       */ grow: [
+                {
+                    grow: getZeroAndEmpty()
+                }
+            ],
+            /**
+       * Flex Shrink
+       * @see https://tailwindcss.com/docs/flex-shrink
+       */ shrink: [
+                {
+                    shrink: getZeroAndEmpty()
+                }
+            ],
+            /**
+       * Order
+       * @see https://tailwindcss.com/docs/order
+       */ order: [
+                {
+                    order: [
+                        'first',
+                        'last',
+                        'none',
+                        isInteger,
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Grid Template Columns
+       * @see https://tailwindcss.com/docs/grid-template-columns
+       */ 'grid-cols': [
+                {
+                    'grid-cols': [
+                        isAny
+                    ]
+                }
+            ],
+            /**
+       * Grid Column Start / End
+       * @see https://tailwindcss.com/docs/grid-column
+       */ 'col-start-end': [
+                {
+                    col: [
+                        'auto',
+                        {
+                            span: [
+                                'full',
+                                isInteger,
+                                isArbitraryValue
+                            ]
+                        },
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Grid Column Start
+       * @see https://tailwindcss.com/docs/grid-column
+       */ 'col-start': [
+                {
+                    'col-start': getNumberWithAutoAndArbitrary()
+                }
+            ],
+            /**
+       * Grid Column End
+       * @see https://tailwindcss.com/docs/grid-column
+       */ 'col-end': [
+                {
+                    'col-end': getNumberWithAutoAndArbitrary()
+                }
+            ],
+            /**
+       * Grid Template Rows
+       * @see https://tailwindcss.com/docs/grid-template-rows
+       */ 'grid-rows': [
+                {
+                    'grid-rows': [
+                        isAny
+                    ]
+                }
+            ],
+            /**
+       * Grid Row Start / End
+       * @see https://tailwindcss.com/docs/grid-row
+       */ 'row-start-end': [
+                {
+                    row: [
+                        'auto',
+                        {
+                            span: [
+                                isInteger,
+                                isArbitraryValue
+                            ]
+                        },
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Grid Row Start
+       * @see https://tailwindcss.com/docs/grid-row
+       */ 'row-start': [
+                {
+                    'row-start': getNumberWithAutoAndArbitrary()
+                }
+            ],
+            /**
+       * Grid Row End
+       * @see https://tailwindcss.com/docs/grid-row
+       */ 'row-end': [
+                {
+                    'row-end': getNumberWithAutoAndArbitrary()
+                }
+            ],
+            /**
+       * Grid Auto Flow
+       * @see https://tailwindcss.com/docs/grid-auto-flow
+       */ 'grid-flow': [
+                {
+                    'grid-flow': [
+                        'row',
+                        'col',
+                        'dense',
+                        'row-dense',
+                        'col-dense'
+                    ]
+                }
+            ],
+            /**
+       * Grid Auto Columns
+       * @see https://tailwindcss.com/docs/grid-auto-columns
+       */ 'auto-cols': [
+                {
+                    'auto-cols': [
+                        'auto',
+                        'min',
+                        'max',
+                        'fr',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Grid Auto Rows
+       * @see https://tailwindcss.com/docs/grid-auto-rows
+       */ 'auto-rows': [
+                {
+                    'auto-rows': [
+                        'auto',
+                        'min',
+                        'max',
+                        'fr',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Gap
+       * @see https://tailwindcss.com/docs/gap
+       */ gap: [
+                {
+                    gap: [
+                        gap
+                    ]
+                }
+            ],
+            /**
+       * Gap X
+       * @see https://tailwindcss.com/docs/gap
+       */ 'gap-x': [
+                {
+                    'gap-x': [
+                        gap
+                    ]
+                }
+            ],
+            /**
+       * Gap Y
+       * @see https://tailwindcss.com/docs/gap
+       */ 'gap-y': [
+                {
+                    'gap-y': [
+                        gap
+                    ]
+                }
+            ],
+            /**
+       * Justify Content
+       * @see https://tailwindcss.com/docs/justify-content
+       */ 'justify-content': [
+                {
+                    justify: [
+                        'normal',
+                        ...getAlign()
+                    ]
+                }
+            ],
+            /**
+       * Justify Items
+       * @see https://tailwindcss.com/docs/justify-items
+       */ 'justify-items': [
+                {
+                    'justify-items': [
+                        'start',
+                        'end',
+                        'center',
+                        'stretch'
+                    ]
+                }
+            ],
+            /**
+       * Justify Self
+       * @see https://tailwindcss.com/docs/justify-self
+       */ 'justify-self': [
+                {
+                    'justify-self': [
+                        'auto',
+                        'start',
+                        'end',
+                        'center',
+                        'stretch'
+                    ]
+                }
+            ],
+            /**
+       * Align Content
+       * @see https://tailwindcss.com/docs/align-content
+       */ 'align-content': [
+                {
+                    content: [
+                        'normal',
+                        ...getAlign(),
+                        'baseline'
+                    ]
+                }
+            ],
+            /**
+       * Align Items
+       * @see https://tailwindcss.com/docs/align-items
+       */ 'align-items': [
+                {
+                    items: [
+                        'start',
+                        'end',
+                        'center',
+                        'baseline',
+                        'stretch'
+                    ]
+                }
+            ],
+            /**
+       * Align Self
+       * @see https://tailwindcss.com/docs/align-self
+       */ 'align-self': [
+                {
+                    self: [
+                        'auto',
+                        'start',
+                        'end',
+                        'center',
+                        'stretch',
+                        'baseline'
+                    ]
+                }
+            ],
+            /**
+       * Place Content
+       * @see https://tailwindcss.com/docs/place-content
+       */ 'place-content': [
+                {
+                    'place-content': [
+                        ...getAlign(),
+                        'baseline'
+                    ]
+                }
+            ],
+            /**
+       * Place Items
+       * @see https://tailwindcss.com/docs/place-items
+       */ 'place-items': [
+                {
+                    'place-items': [
+                        'start',
+                        'end',
+                        'center',
+                        'baseline',
+                        'stretch'
+                    ]
+                }
+            ],
+            /**
+       * Place Self
+       * @see https://tailwindcss.com/docs/place-self
+       */ 'place-self': [
+                {
+                    'place-self': [
+                        'auto',
+                        'start',
+                        'end',
+                        'center',
+                        'stretch'
+                    ]
+                }
+            ],
+            // Spacing
+            /**
+       * Padding
+       * @see https://tailwindcss.com/docs/padding
+       */ p: [
+                {
+                    p: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Padding X
+       * @see https://tailwindcss.com/docs/padding
+       */ px: [
+                {
+                    px: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Padding Y
+       * @see https://tailwindcss.com/docs/padding
+       */ py: [
+                {
+                    py: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Padding Start
+       * @see https://tailwindcss.com/docs/padding
+       */ ps: [
+                {
+                    ps: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Padding End
+       * @see https://tailwindcss.com/docs/padding
+       */ pe: [
+                {
+                    pe: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Padding Top
+       * @see https://tailwindcss.com/docs/padding
+       */ pt: [
+                {
+                    pt: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Padding Right
+       * @see https://tailwindcss.com/docs/padding
+       */ pr: [
+                {
+                    pr: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Padding Bottom
+       * @see https://tailwindcss.com/docs/padding
+       */ pb: [
+                {
+                    pb: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Padding Left
+       * @see https://tailwindcss.com/docs/padding
+       */ pl: [
+                {
+                    pl: [
+                        padding
+                    ]
+                }
+            ],
+            /**
+       * Margin
+       * @see https://tailwindcss.com/docs/margin
+       */ m: [
+                {
+                    m: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Margin X
+       * @see https://tailwindcss.com/docs/margin
+       */ mx: [
+                {
+                    mx: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Margin Y
+       * @see https://tailwindcss.com/docs/margin
+       */ my: [
+                {
+                    my: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Margin Start
+       * @see https://tailwindcss.com/docs/margin
+       */ ms: [
+                {
+                    ms: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Margin End
+       * @see https://tailwindcss.com/docs/margin
+       */ me: [
+                {
+                    me: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Margin Top
+       * @see https://tailwindcss.com/docs/margin
+       */ mt: [
+                {
+                    mt: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Margin Right
+       * @see https://tailwindcss.com/docs/margin
+       */ mr: [
+                {
+                    mr: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Margin Bottom
+       * @see https://tailwindcss.com/docs/margin
+       */ mb: [
+                {
+                    mb: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Margin Left
+       * @see https://tailwindcss.com/docs/margin
+       */ ml: [
+                {
+                    ml: [
+                        margin
+                    ]
+                }
+            ],
+            /**
+       * Space Between X
+       * @see https://tailwindcss.com/docs/space
+       */ 'space-x': [
+                {
+                    'space-x': [
+                        space
+                    ]
+                }
+            ],
+            /**
+       * Space Between X Reverse
+       * @see https://tailwindcss.com/docs/space
+       */ 'space-x-reverse': [
+                'space-x-reverse'
+            ],
+            /**
+       * Space Between Y
+       * @see https://tailwindcss.com/docs/space
+       */ 'space-y': [
+                {
+                    'space-y': [
+                        space
+                    ]
+                }
+            ],
+            /**
+       * Space Between Y Reverse
+       * @see https://tailwindcss.com/docs/space
+       */ 'space-y-reverse': [
+                'space-y-reverse'
+            ],
+            // Sizing
+            /**
+       * Width
+       * @see https://tailwindcss.com/docs/width
+       */ w: [
+                {
+                    w: [
+                        'auto',
+                        'min',
+                        'max',
+                        'fit',
+                        'svw',
+                        'lvw',
+                        'dvw',
+                        isArbitraryValue,
+                        spacing
+                    ]
+                }
+            ],
+            /**
+       * Min-Width
+       * @see https://tailwindcss.com/docs/min-width
+       */ 'min-w': [
+                {
+                    'min-w': [
+                        isArbitraryValue,
+                        spacing,
+                        'min',
+                        'max',
+                        'fit'
+                    ]
+                }
+            ],
+            /**
+       * Max-Width
+       * @see https://tailwindcss.com/docs/max-width
+       */ 'max-w': [
+                {
+                    'max-w': [
+                        isArbitraryValue,
+                        spacing,
+                        'none',
+                        'full',
+                        'min',
+                        'max',
+                        'fit',
+                        'prose',
+                        {
+                            screen: [
+                                isTshirtSize
+                            ]
+                        },
+                        isTshirtSize
+                    ]
+                }
+            ],
+            /**
+       * Height
+       * @see https://tailwindcss.com/docs/height
+       */ h: [
+                {
+                    h: [
+                        isArbitraryValue,
+                        spacing,
+                        'auto',
+                        'min',
+                        'max',
+                        'fit',
+                        'svh',
+                        'lvh',
+                        'dvh'
+                    ]
+                }
+            ],
+            /**
+       * Min-Height
+       * @see https://tailwindcss.com/docs/min-height
+       */ 'min-h': [
+                {
+                    'min-h': [
+                        isArbitraryValue,
+                        spacing,
+                        'min',
+                        'max',
+                        'fit',
+                        'svh',
+                        'lvh',
+                        'dvh'
+                    ]
+                }
+            ],
+            /**
+       * Max-Height
+       * @see https://tailwindcss.com/docs/max-height
+       */ 'max-h': [
+                {
+                    'max-h': [
+                        isArbitraryValue,
+                        spacing,
+                        'min',
+                        'max',
+                        'fit',
+                        'svh',
+                        'lvh',
+                        'dvh'
+                    ]
+                }
+            ],
+            /**
+       * Size
+       * @see https://tailwindcss.com/docs/size
+       */ size: [
+                {
+                    size: [
+                        isArbitraryValue,
+                        spacing,
+                        'auto',
+                        'min',
+                        'max',
+                        'fit'
+                    ]
+                }
+            ],
+            // Typography
+            /**
+       * Font Size
+       * @see https://tailwindcss.com/docs/font-size
+       */ 'font-size': [
+                {
+                    text: [
+                        'base',
+                        isTshirtSize,
+                        isArbitraryLength
+                    ]
+                }
+            ],
+            /**
+       * Font Smoothing
+       * @see https://tailwindcss.com/docs/font-smoothing
+       */ 'font-smoothing': [
+                'antialiased',
+                'subpixel-antialiased'
+            ],
+            /**
+       * Font Style
+       * @see https://tailwindcss.com/docs/font-style
+       */ 'font-style': [
+                'italic',
+                'not-italic'
+            ],
+            /**
+       * Font Weight
+       * @see https://tailwindcss.com/docs/font-weight
+       */ 'font-weight': [
+                {
+                    font: [
+                        'thin',
+                        'extralight',
+                        'light',
+                        'normal',
+                        'medium',
+                        'semibold',
+                        'bold',
+                        'extrabold',
+                        'black',
+                        isArbitraryNumber
+                    ]
+                }
+            ],
+            /**
+       * Font Family
+       * @see https://tailwindcss.com/docs/font-family
+       */ 'font-family': [
+                {
+                    font: [
+                        isAny
+                    ]
+                }
+            ],
+            /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */ 'fvn-normal': [
+                'normal-nums'
+            ],
+            /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */ 'fvn-ordinal': [
+                'ordinal'
+            ],
+            /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */ 'fvn-slashed-zero': [
+                'slashed-zero'
+            ],
+            /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */ 'fvn-figure': [
+                'lining-nums',
+                'oldstyle-nums'
+            ],
+            /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */ 'fvn-spacing': [
+                'proportional-nums',
+                'tabular-nums'
+            ],
+            /**
+       * Font Variant Numeric
+       * @see https://tailwindcss.com/docs/font-variant-numeric
+       */ 'fvn-fraction': [
+                'diagonal-fractions',
+                'stacked-fractions'
+            ],
+            /**
+       * Letter Spacing
+       * @see https://tailwindcss.com/docs/letter-spacing
+       */ tracking: [
+                {
+                    tracking: [
+                        'tighter',
+                        'tight',
+                        'normal',
+                        'wide',
+                        'wider',
+                        'widest',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Line Clamp
+       * @see https://tailwindcss.com/docs/line-clamp
+       */ 'line-clamp': [
+                {
+                    'line-clamp': [
+                        'none',
+                        isNumber,
+                        isArbitraryNumber
+                    ]
+                }
+            ],
+            /**
+       * Line Height
+       * @see https://tailwindcss.com/docs/line-height
+       */ leading: [
+                {
+                    leading: [
+                        'none',
+                        'tight',
+                        'snug',
+                        'normal',
+                        'relaxed',
+                        'loose',
+                        isLength,
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * List Style Image
+       * @see https://tailwindcss.com/docs/list-style-image
+       */ 'list-image': [
+                {
+                    'list-image': [
+                        'none',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * List Style Type
+       * @see https://tailwindcss.com/docs/list-style-type
+       */ 'list-style-type': [
+                {
+                    list: [
+                        'none',
+                        'disc',
+                        'decimal',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * List Style Position
+       * @see https://tailwindcss.com/docs/list-style-position
+       */ 'list-style-position': [
+                {
+                    list: [
+                        'inside',
+                        'outside'
+                    ]
+                }
+            ],
+            /**
+       * Placeholder Color
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/placeholder-color
+       */ 'placeholder-color': [
+                {
+                    placeholder: [
+                        colors
+                    ]
+                }
+            ],
+            /**
+       * Placeholder Opacity
+       * @see https://tailwindcss.com/docs/placeholder-opacity
+       */ 'placeholder-opacity': [
+                {
+                    'placeholder-opacity': [
+                        opacity
+                    ]
+                }
+            ],
+            /**
+       * Text Alignment
+       * @see https://tailwindcss.com/docs/text-align
+       */ 'text-alignment': [
+                {
+                    text: [
+                        'left',
+                        'center',
+                        'right',
+                        'justify',
+                        'start',
+                        'end'
+                    ]
+                }
+            ],
+            /**
+       * Text Color
+       * @see https://tailwindcss.com/docs/text-color
+       */ 'text-color': [
+                {
+                    text: [
+                        colors
+                    ]
+                }
+            ],
+            /**
+       * Text Opacity
+       * @see https://tailwindcss.com/docs/text-opacity
+       */ 'text-opacity': [
+                {
+                    'text-opacity': [
+                        opacity
+                    ]
+                }
+            ],
+            /**
+       * Text Decoration
+       * @see https://tailwindcss.com/docs/text-decoration
+       */ 'text-decoration': [
+                'underline',
+                'overline',
+                'line-through',
+                'no-underline'
+            ],
+            /**
+       * Text Decoration Style
+       * @see https://tailwindcss.com/docs/text-decoration-style
+       */ 'text-decoration-style': [
+                {
+                    decoration: [
+                        ...getLineStyles(),
+                        'wavy'
+                    ]
+                }
+            ],
+            /**
+       * Text Decoration Thickness
+       * @see https://tailwindcss.com/docs/text-decoration-thickness
+       */ 'text-decoration-thickness': [
+                {
+                    decoration: [
+                        'auto',
+                        'from-font',
+                        isLength,
+                        isArbitraryLength
+                    ]
+                }
+            ],
+            /**
+       * Text Underline Offset
+       * @see https://tailwindcss.com/docs/text-underline-offset
+       */ 'underline-offset': [
+                {
+                    'underline-offset': [
+                        'auto',
+                        isLength,
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Text Decoration Color
+       * @see https://tailwindcss.com/docs/text-decoration-color
+       */ 'text-decoration-color': [
+                {
+                    decoration: [
+                        colors
+                    ]
+                }
+            ],
+            /**
+       * Text Transform
+       * @see https://tailwindcss.com/docs/text-transform
+       */ 'text-transform': [
+                'uppercase',
+                'lowercase',
+                'capitalize',
+                'normal-case'
+            ],
+            /**
+       * Text Overflow
+       * @see https://tailwindcss.com/docs/text-overflow
+       */ 'text-overflow': [
+                'truncate',
+                'text-ellipsis',
+                'text-clip'
+            ],
+            /**
+       * Text Wrap
+       * @see https://tailwindcss.com/docs/text-wrap
+       */ 'text-wrap': [
+                {
+                    text: [
+                        'wrap',
+                        'nowrap',
+                        'balance',
+                        'pretty'
+                    ]
+                }
+            ],
+            /**
+       * Text Indent
+       * @see https://tailwindcss.com/docs/text-indent
+       */ indent: [
+                {
+                    indent: getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Vertical Alignment
+       * @see https://tailwindcss.com/docs/vertical-align
+       */ 'vertical-align': [
+                {
+                    align: [
+                        'baseline',
+                        'top',
+                        'middle',
+                        'bottom',
+                        'text-top',
+                        'text-bottom',
+                        'sub',
+                        'super',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Whitespace
+       * @see https://tailwindcss.com/docs/whitespace
+       */ whitespace: [
+                {
+                    whitespace: [
+                        'normal',
+                        'nowrap',
+                        'pre',
+                        'pre-line',
+                        'pre-wrap',
+                        'break-spaces'
+                    ]
+                }
+            ],
+            /**
+       * Word Break
+       * @see https://tailwindcss.com/docs/word-break
+       */ break: [
+                {
+                    break: [
+                        'normal',
+                        'words',
+                        'all',
+                        'keep'
+                    ]
+                }
+            ],
+            /**
+       * Hyphens
+       * @see https://tailwindcss.com/docs/hyphens
+       */ hyphens: [
+                {
+                    hyphens: [
+                        'none',
+                        'manual',
+                        'auto'
+                    ]
+                }
+            ],
+            /**
+       * Content
+       * @see https://tailwindcss.com/docs/content
+       */ content: [
+                {
+                    content: [
+                        'none',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            // Backgrounds
+            /**
+       * Background Attachment
+       * @see https://tailwindcss.com/docs/background-attachment
+       */ 'bg-attachment': [
+                {
+                    bg: [
+                        'fixed',
+                        'local',
+                        'scroll'
+                    ]
+                }
+            ],
+            /**
+       * Background Clip
+       * @see https://tailwindcss.com/docs/background-clip
+       */ 'bg-clip': [
+                {
+                    'bg-clip': [
+                        'border',
+                        'padding',
+                        'content',
+                        'text'
+                    ]
+                }
+            ],
+            /**
+       * Background Opacity
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/background-opacity
+       */ 'bg-opacity': [
+                {
+                    'bg-opacity': [
+                        opacity
+                    ]
+                }
+            ],
+            /**
+       * Background Origin
+       * @see https://tailwindcss.com/docs/background-origin
+       */ 'bg-origin': [
+                {
+                    'bg-origin': [
+                        'border',
+                        'padding',
+                        'content'
+                    ]
+                }
+            ],
+            /**
+       * Background Position
+       * @see https://tailwindcss.com/docs/background-position
+       */ 'bg-position': [
+                {
+                    bg: [
+                        ...getPositions(),
+                        isArbitraryPosition
+                    ]
+                }
+            ],
+            /**
+       * Background Repeat
+       * @see https://tailwindcss.com/docs/background-repeat
+       */ 'bg-repeat': [
+                {
+                    bg: [
+                        'no-repeat',
+                        {
+                            repeat: [
+                                '',
+                                'x',
+                                'y',
+                                'round',
+                                'space'
+                            ]
+                        }
+                    ]
+                }
+            ],
+            /**
+       * Background Size
+       * @see https://tailwindcss.com/docs/background-size
+       */ 'bg-size': [
+                {
+                    bg: [
+                        'auto',
+                        'cover',
+                        'contain',
+                        isArbitrarySize
+                    ]
+                }
+            ],
+            /**
+       * Background Image
+       * @see https://tailwindcss.com/docs/background-image
+       */ 'bg-image': [
+                {
+                    bg: [
+                        'none',
+                        {
+                            'gradient-to': [
+                                't',
+                                'tr',
+                                'r',
+                                'br',
+                                'b',
+                                'bl',
+                                'l',
+                                'tl'
+                            ]
+                        },
+                        isArbitraryImage
+                    ]
+                }
+            ],
+            /**
+       * Background Color
+       * @see https://tailwindcss.com/docs/background-color
+       */ 'bg-color': [
+                {
+                    bg: [
+                        colors
+                    ]
+                }
+            ],
+            /**
+       * Gradient Color Stops From Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */ 'gradient-from-pos': [
+                {
+                    from: [
+                        gradientColorStopPositions
+                    ]
+                }
+            ],
+            /**
+       * Gradient Color Stops Via Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */ 'gradient-via-pos': [
+                {
+                    via: [
+                        gradientColorStopPositions
+                    ]
+                }
+            ],
+            /**
+       * Gradient Color Stops To Position
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */ 'gradient-to-pos': [
+                {
+                    to: [
+                        gradientColorStopPositions
+                    ]
+                }
+            ],
+            /**
+       * Gradient Color Stops From
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */ 'gradient-from': [
+                {
+                    from: [
+                        gradientColorStops
+                    ]
+                }
+            ],
+            /**
+       * Gradient Color Stops Via
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */ 'gradient-via': [
+                {
+                    via: [
+                        gradientColorStops
+                    ]
+                }
+            ],
+            /**
+       * Gradient Color Stops To
+       * @see https://tailwindcss.com/docs/gradient-color-stops
+       */ 'gradient-to': [
+                {
+                    to: [
+                        gradientColorStops
+                    ]
+                }
+            ],
+            // Borders
+            /**
+       * Border Radius
+       * @see https://tailwindcss.com/docs/border-radius
+       */ rounded: [
+                {
+                    rounded: [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-s': [
+                {
+                    'rounded-s': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius End
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-e': [
+                {
+                    'rounded-e': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Top
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-t': [
+                {
+                    'rounded-t': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-r': [
+                {
+                    'rounded-r': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Bottom
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-b': [
+                {
+                    'rounded-b': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-l': [
+                {
+                    'rounded-l': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Start Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-ss': [
+                {
+                    'rounded-ss': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Start End
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-se': [
+                {
+                    'rounded-se': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius End End
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-ee': [
+                {
+                    'rounded-ee': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius End Start
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-es': [
+                {
+                    'rounded-es': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Top Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-tl': [
+                {
+                    'rounded-tl': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Top Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-tr': [
+                {
+                    'rounded-tr': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Bottom Right
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-br': [
+                {
+                    'rounded-br': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Radius Bottom Left
+       * @see https://tailwindcss.com/docs/border-radius
+       */ 'rounded-bl': [
+                {
+                    'rounded-bl': [
+                        borderRadius
+                    ]
+                }
+            ],
+            /**
+       * Border Width
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w': [
+                {
+                    border: [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Width X
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w-x': [
+                {
+                    'border-x': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Width Y
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w-y': [
+                {
+                    'border-y': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Width Start
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w-s': [
+                {
+                    'border-s': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Width End
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w-e': [
+                {
+                    'border-e': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Width Top
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w-t': [
+                {
+                    'border-t': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Width Right
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w-r': [
+                {
+                    'border-r': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Width Bottom
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w-b': [
+                {
+                    'border-b': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Width Left
+       * @see https://tailwindcss.com/docs/border-width
+       */ 'border-w-l': [
+                {
+                    'border-l': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Border Opacity
+       * @see https://tailwindcss.com/docs/border-opacity
+       */ 'border-opacity': [
+                {
+                    'border-opacity': [
+                        opacity
+                    ]
+                }
+            ],
+            /**
+       * Border Style
+       * @see https://tailwindcss.com/docs/border-style
+       */ 'border-style': [
+                {
+                    border: [
+                        ...getLineStyles(),
+                        'hidden'
+                    ]
+                }
+            ],
+            /**
+       * Divide Width X
+       * @see https://tailwindcss.com/docs/divide-width
+       */ 'divide-x': [
+                {
+                    'divide-x': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Divide Width X Reverse
+       * @see https://tailwindcss.com/docs/divide-width
+       */ 'divide-x-reverse': [
+                'divide-x-reverse'
+            ],
+            /**
+       * Divide Width Y
+       * @see https://tailwindcss.com/docs/divide-width
+       */ 'divide-y': [
+                {
+                    'divide-y': [
+                        borderWidth
+                    ]
+                }
+            ],
+            /**
+       * Divide Width Y Reverse
+       * @see https://tailwindcss.com/docs/divide-width
+       */ 'divide-y-reverse': [
+                'divide-y-reverse'
+            ],
+            /**
+       * Divide Opacity
+       * @see https://tailwindcss.com/docs/divide-opacity
+       */ 'divide-opacity': [
+                {
+                    'divide-opacity': [
+                        opacity
+                    ]
+                }
+            ],
+            /**
+       * Divide Style
+       * @see https://tailwindcss.com/docs/divide-style
+       */ 'divide-style': [
+                {
+                    divide: getLineStyles()
+                }
+            ],
+            /**
+       * Border Color
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color': [
+                {
+                    border: [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Border Color X
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color-x': [
+                {
+                    'border-x': [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Border Color Y
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color-y': [
+                {
+                    'border-y': [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Border Color S
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color-s': [
+                {
+                    'border-s': [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Border Color E
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color-e': [
+                {
+                    'border-e': [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Border Color Top
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color-t': [
+                {
+                    'border-t': [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Border Color Right
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color-r': [
+                {
+                    'border-r': [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Border Color Bottom
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color-b': [
+                {
+                    'border-b': [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Border Color Left
+       * @see https://tailwindcss.com/docs/border-color
+       */ 'border-color-l': [
+                {
+                    'border-l': [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Divide Color
+       * @see https://tailwindcss.com/docs/divide-color
+       */ 'divide-color': [
+                {
+                    divide: [
+                        borderColor
+                    ]
+                }
+            ],
+            /**
+       * Outline Style
+       * @see https://tailwindcss.com/docs/outline-style
+       */ 'outline-style': [
+                {
+                    outline: [
+                        '',
+                        ...getLineStyles()
+                    ]
+                }
+            ],
+            /**
+       * Outline Offset
+       * @see https://tailwindcss.com/docs/outline-offset
+       */ 'outline-offset': [
+                {
+                    'outline-offset': [
+                        isLength,
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Outline Width
+       * @see https://tailwindcss.com/docs/outline-width
+       */ 'outline-w': [
+                {
+                    outline: [
+                        isLength,
+                        isArbitraryLength
+                    ]
+                }
+            ],
+            /**
+       * Outline Color
+       * @see https://tailwindcss.com/docs/outline-color
+       */ 'outline-color': [
+                {
+                    outline: [
+                        colors
+                    ]
+                }
+            ],
+            /**
+       * Ring Width
+       * @see https://tailwindcss.com/docs/ring-width
+       */ 'ring-w': [
+                {
+                    ring: getLengthWithEmptyAndArbitrary()
+                }
+            ],
+            /**
+       * Ring Width Inset
+       * @see https://tailwindcss.com/docs/ring-width
+       */ 'ring-w-inset': [
+                'ring-inset'
+            ],
+            /**
+       * Ring Color
+       * @see https://tailwindcss.com/docs/ring-color
+       */ 'ring-color': [
+                {
+                    ring: [
+                        colors
+                    ]
+                }
+            ],
+            /**
+       * Ring Opacity
+       * @see https://tailwindcss.com/docs/ring-opacity
+       */ 'ring-opacity': [
+                {
+                    'ring-opacity': [
+                        opacity
+                    ]
+                }
+            ],
+            /**
+       * Ring Offset Width
+       * @see https://tailwindcss.com/docs/ring-offset-width
+       */ 'ring-offset-w': [
+                {
+                    'ring-offset': [
+                        isLength,
+                        isArbitraryLength
+                    ]
+                }
+            ],
+            /**
+       * Ring Offset Color
+       * @see https://tailwindcss.com/docs/ring-offset-color
+       */ 'ring-offset-color': [
+                {
+                    'ring-offset': [
+                        colors
+                    ]
+                }
+            ],
+            // Effects
+            /**
+       * Box Shadow
+       * @see https://tailwindcss.com/docs/box-shadow
+       */ shadow: [
+                {
+                    shadow: [
+                        '',
+                        'inner',
+                        'none',
+                        isTshirtSize,
+                        isArbitraryShadow
+                    ]
+                }
+            ],
+            /**
+       * Box Shadow Color
+       * @see https://tailwindcss.com/docs/box-shadow-color
+       */ 'shadow-color': [
+                {
+                    shadow: [
+                        isAny
+                    ]
+                }
+            ],
+            /**
+       * Opacity
+       * @see https://tailwindcss.com/docs/opacity
+       */ opacity: [
+                {
+                    opacity: [
+                        opacity
+                    ]
+                }
+            ],
+            /**
+       * Mix Blend Mode
+       * @see https://tailwindcss.com/docs/mix-blend-mode
+       */ 'mix-blend': [
+                {
+                    'mix-blend': [
+                        ...getBlendModes(),
+                        'plus-lighter',
+                        'plus-darker'
+                    ]
+                }
+            ],
+            /**
+       * Background Blend Mode
+       * @see https://tailwindcss.com/docs/background-blend-mode
+       */ 'bg-blend': [
+                {
+                    'bg-blend': getBlendModes()
+                }
+            ],
+            // Filters
+            /**
+       * Filter
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/filter
+       */ filter: [
+                {
+                    filter: [
+                        '',
+                        'none'
+                    ]
+                }
+            ],
+            /**
+       * Blur
+       * @see https://tailwindcss.com/docs/blur
+       */ blur: [
+                {
+                    blur: [
+                        blur
+                    ]
+                }
+            ],
+            /**
+       * Brightness
+       * @see https://tailwindcss.com/docs/brightness
+       */ brightness: [
+                {
+                    brightness: [
+                        brightness
+                    ]
+                }
+            ],
+            /**
+       * Contrast
+       * @see https://tailwindcss.com/docs/contrast
+       */ contrast: [
+                {
+                    contrast: [
+                        contrast
+                    ]
+                }
+            ],
+            /**
+       * Drop Shadow
+       * @see https://tailwindcss.com/docs/drop-shadow
+       */ 'drop-shadow': [
+                {
+                    'drop-shadow': [
+                        '',
+                        'none',
+                        isTshirtSize,
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Grayscale
+       * @see https://tailwindcss.com/docs/grayscale
+       */ grayscale: [
+                {
+                    grayscale: [
+                        grayscale
+                    ]
+                }
+            ],
+            /**
+       * Hue Rotate
+       * @see https://tailwindcss.com/docs/hue-rotate
+       */ 'hue-rotate': [
+                {
+                    'hue-rotate': [
+                        hueRotate
+                    ]
+                }
+            ],
+            /**
+       * Invert
+       * @see https://tailwindcss.com/docs/invert
+       */ invert: [
+                {
+                    invert: [
+                        invert
+                    ]
+                }
+            ],
+            /**
+       * Saturate
+       * @see https://tailwindcss.com/docs/saturate
+       */ saturate: [
+                {
+                    saturate: [
+                        saturate
+                    ]
+                }
+            ],
+            /**
+       * Sepia
+       * @see https://tailwindcss.com/docs/sepia
+       */ sepia: [
+                {
+                    sepia: [
+                        sepia
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Filter
+       * @deprecated since Tailwind CSS v3.0.0
+       * @see https://tailwindcss.com/docs/backdrop-filter
+       */ 'backdrop-filter': [
+                {
+                    'backdrop-filter': [
+                        '',
+                        'none'
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Blur
+       * @see https://tailwindcss.com/docs/backdrop-blur
+       */ 'backdrop-blur': [
+                {
+                    'backdrop-blur': [
+                        blur
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Brightness
+       * @see https://tailwindcss.com/docs/backdrop-brightness
+       */ 'backdrop-brightness': [
+                {
+                    'backdrop-brightness': [
+                        brightness
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Contrast
+       * @see https://tailwindcss.com/docs/backdrop-contrast
+       */ 'backdrop-contrast': [
+                {
+                    'backdrop-contrast': [
+                        contrast
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Grayscale
+       * @see https://tailwindcss.com/docs/backdrop-grayscale
+       */ 'backdrop-grayscale': [
+                {
+                    'backdrop-grayscale': [
+                        grayscale
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Hue Rotate
+       * @see https://tailwindcss.com/docs/backdrop-hue-rotate
+       */ 'backdrop-hue-rotate': [
+                {
+                    'backdrop-hue-rotate': [
+                        hueRotate
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Invert
+       * @see https://tailwindcss.com/docs/backdrop-invert
+       */ 'backdrop-invert': [
+                {
+                    'backdrop-invert': [
+                        invert
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Opacity
+       * @see https://tailwindcss.com/docs/backdrop-opacity
+       */ 'backdrop-opacity': [
+                {
+                    'backdrop-opacity': [
+                        opacity
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Saturate
+       * @see https://tailwindcss.com/docs/backdrop-saturate
+       */ 'backdrop-saturate': [
+                {
+                    'backdrop-saturate': [
+                        saturate
+                    ]
+                }
+            ],
+            /**
+       * Backdrop Sepia
+       * @see https://tailwindcss.com/docs/backdrop-sepia
+       */ 'backdrop-sepia': [
+                {
+                    'backdrop-sepia': [
+                        sepia
+                    ]
+                }
+            ],
+            // Tables
+            /**
+       * Border Collapse
+       * @see https://tailwindcss.com/docs/border-collapse
+       */ 'border-collapse': [
+                {
+                    border: [
+                        'collapse',
+                        'separate'
+                    ]
+                }
+            ],
+            /**
+       * Border Spacing
+       * @see https://tailwindcss.com/docs/border-spacing
+       */ 'border-spacing': [
+                {
+                    'border-spacing': [
+                        borderSpacing
+                    ]
+                }
+            ],
+            /**
+       * Border Spacing X
+       * @see https://tailwindcss.com/docs/border-spacing
+       */ 'border-spacing-x': [
+                {
+                    'border-spacing-x': [
+                        borderSpacing
+                    ]
+                }
+            ],
+            /**
+       * Border Spacing Y
+       * @see https://tailwindcss.com/docs/border-spacing
+       */ 'border-spacing-y': [
+                {
+                    'border-spacing-y': [
+                        borderSpacing
+                    ]
+                }
+            ],
+            /**
+       * Table Layout
+       * @see https://tailwindcss.com/docs/table-layout
+       */ 'table-layout': [
+                {
+                    table: [
+                        'auto',
+                        'fixed'
+                    ]
+                }
+            ],
+            /**
+       * Caption Side
+       * @see https://tailwindcss.com/docs/caption-side
+       */ caption: [
+                {
+                    caption: [
+                        'top',
+                        'bottom'
+                    ]
+                }
+            ],
+            // Transitions and Animation
+            /**
+       * Tranisition Property
+       * @see https://tailwindcss.com/docs/transition-property
+       */ transition: [
+                {
+                    transition: [
+                        'none',
+                        'all',
+                        '',
+                        'colors',
+                        'opacity',
+                        'shadow',
+                        'transform',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Transition Duration
+       * @see https://tailwindcss.com/docs/transition-duration
+       */ duration: [
+                {
+                    duration: getNumberAndArbitrary()
+                }
+            ],
+            /**
+       * Transition Timing Function
+       * @see https://tailwindcss.com/docs/transition-timing-function
+       */ ease: [
+                {
+                    ease: [
+                        'linear',
+                        'in',
+                        'out',
+                        'in-out',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Transition Delay
+       * @see https://tailwindcss.com/docs/transition-delay
+       */ delay: [
+                {
+                    delay: getNumberAndArbitrary()
+                }
+            ],
+            /**
+       * Animation
+       * @see https://tailwindcss.com/docs/animation
+       */ animate: [
+                {
+                    animate: [
+                        'none',
+                        'spin',
+                        'ping',
+                        'pulse',
+                        'bounce',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            // Transforms
+            /**
+       * Transform
+       * @see https://tailwindcss.com/docs/transform
+       */ transform: [
+                {
+                    transform: [
+                        '',
+                        'gpu',
+                        'none'
+                    ]
+                }
+            ],
+            /**
+       * Scale
+       * @see https://tailwindcss.com/docs/scale
+       */ scale: [
+                {
+                    scale: [
+                        scale
+                    ]
+                }
+            ],
+            /**
+       * Scale X
+       * @see https://tailwindcss.com/docs/scale
+       */ 'scale-x': [
+                {
+                    'scale-x': [
+                        scale
+                    ]
+                }
+            ],
+            /**
+       * Scale Y
+       * @see https://tailwindcss.com/docs/scale
+       */ 'scale-y': [
+                {
+                    'scale-y': [
+                        scale
+                    ]
+                }
+            ],
+            /**
+       * Rotate
+       * @see https://tailwindcss.com/docs/rotate
+       */ rotate: [
+                {
+                    rotate: [
+                        isInteger,
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Translate X
+       * @see https://tailwindcss.com/docs/translate
+       */ 'translate-x': [
+                {
+                    'translate-x': [
+                        translate
+                    ]
+                }
+            ],
+            /**
+       * Translate Y
+       * @see https://tailwindcss.com/docs/translate
+       */ 'translate-y': [
+                {
+                    'translate-y': [
+                        translate
+                    ]
+                }
+            ],
+            /**
+       * Skew X
+       * @see https://tailwindcss.com/docs/skew
+       */ 'skew-x': [
+                {
+                    'skew-x': [
+                        skew
+                    ]
+                }
+            ],
+            /**
+       * Skew Y
+       * @see https://tailwindcss.com/docs/skew
+       */ 'skew-y': [
+                {
+                    'skew-y': [
+                        skew
+                    ]
+                }
+            ],
+            /**
+       * Transform Origin
+       * @see https://tailwindcss.com/docs/transform-origin
+       */ 'transform-origin': [
+                {
+                    origin: [
+                        'center',
+                        'top',
+                        'top-right',
+                        'right',
+                        'bottom-right',
+                        'bottom',
+                        'bottom-left',
+                        'left',
+                        'top-left',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            // Interactivity
+            /**
+       * Accent Color
+       * @see https://tailwindcss.com/docs/accent-color
+       */ accent: [
+                {
+                    accent: [
+                        'auto',
+                        colors
+                    ]
+                }
+            ],
+            /**
+       * Appearance
+       * @see https://tailwindcss.com/docs/appearance
+       */ appearance: [
+                {
+                    appearance: [
+                        'none',
+                        'auto'
+                    ]
+                }
+            ],
+            /**
+       * Cursor
+       * @see https://tailwindcss.com/docs/cursor
+       */ cursor: [
+                {
+                    cursor: [
+                        'auto',
+                        'default',
+                        'pointer',
+                        'wait',
+                        'text',
+                        'move',
+                        'help',
+                        'not-allowed',
+                        'none',
+                        'context-menu',
+                        'progress',
+                        'cell',
+                        'crosshair',
+                        'vertical-text',
+                        'alias',
+                        'copy',
+                        'no-drop',
+                        'grab',
+                        'grabbing',
+                        'all-scroll',
+                        'col-resize',
+                        'row-resize',
+                        'n-resize',
+                        'e-resize',
+                        's-resize',
+                        'w-resize',
+                        'ne-resize',
+                        'nw-resize',
+                        'se-resize',
+                        'sw-resize',
+                        'ew-resize',
+                        'ns-resize',
+                        'nesw-resize',
+                        'nwse-resize',
+                        'zoom-in',
+                        'zoom-out',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            /**
+       * Caret Color
+       * @see https://tailwindcss.com/docs/just-in-time-mode#caret-color-utilities
+       */ 'caret-color': [
+                {
+                    caret: [
+                        colors
+                    ]
+                }
+            ],
+            /**
+       * Pointer Events
+       * @see https://tailwindcss.com/docs/pointer-events
+       */ 'pointer-events': [
+                {
+                    'pointer-events': [
+                        'none',
+                        'auto'
+                    ]
+                }
+            ],
+            /**
+       * Resize
+       * @see https://tailwindcss.com/docs/resize
+       */ resize: [
+                {
+                    resize: [
+                        'none',
+                        'y',
+                        'x',
+                        ''
+                    ]
+                }
+            ],
+            /**
+       * Scroll Behavior
+       * @see https://tailwindcss.com/docs/scroll-behavior
+       */ 'scroll-behavior': [
+                {
+                    scroll: [
+                        'auto',
+                        'smooth'
+                    ]
+                }
+            ],
+            /**
+       * Scroll Margin
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-m': [
+                {
+                    'scroll-m': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Margin X
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-mx': [
+                {
+                    'scroll-mx': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Margin Y
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-my': [
+                {
+                    'scroll-my': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Margin Start
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-ms': [
+                {
+                    'scroll-ms': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Margin End
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-me': [
+                {
+                    'scroll-me': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Margin Top
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-mt': [
+                {
+                    'scroll-mt': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Margin Right
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-mr': [
+                {
+                    'scroll-mr': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Margin Bottom
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-mb': [
+                {
+                    'scroll-mb': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Margin Left
+       * @see https://tailwindcss.com/docs/scroll-margin
+       */ 'scroll-ml': [
+                {
+                    'scroll-ml': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-p': [
+                {
+                    'scroll-p': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding X
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-px': [
+                {
+                    'scroll-px': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding Y
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-py': [
+                {
+                    'scroll-py': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding Start
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-ps': [
+                {
+                    'scroll-ps': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding End
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-pe': [
+                {
+                    'scroll-pe': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding Top
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-pt': [
+                {
+                    'scroll-pt': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding Right
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-pr': [
+                {
+                    'scroll-pr': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding Bottom
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-pb': [
+                {
+                    'scroll-pb': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Padding Left
+       * @see https://tailwindcss.com/docs/scroll-padding
+       */ 'scroll-pl': [
+                {
+                    'scroll-pl': getSpacingWithArbitrary()
+                }
+            ],
+            /**
+       * Scroll Snap Align
+       * @see https://tailwindcss.com/docs/scroll-snap-align
+       */ 'snap-align': [
+                {
+                    snap: [
+                        'start',
+                        'end',
+                        'center',
+                        'align-none'
+                    ]
+                }
+            ],
+            /**
+       * Scroll Snap Stop
+       * @see https://tailwindcss.com/docs/scroll-snap-stop
+       */ 'snap-stop': [
+                {
+                    snap: [
+                        'normal',
+                        'always'
+                    ]
+                }
+            ],
+            /**
+       * Scroll Snap Type
+       * @see https://tailwindcss.com/docs/scroll-snap-type
+       */ 'snap-type': [
+                {
+                    snap: [
+                        'none',
+                        'x',
+                        'y',
+                        'both'
+                    ]
+                }
+            ],
+            /**
+       * Scroll Snap Type Strictness
+       * @see https://tailwindcss.com/docs/scroll-snap-type
+       */ 'snap-strictness': [
+                {
+                    snap: [
+                        'mandatory',
+                        'proximity'
+                    ]
+                }
+            ],
+            /**
+       * Touch Action
+       * @see https://tailwindcss.com/docs/touch-action
+       */ touch: [
+                {
+                    touch: [
+                        'auto',
+                        'none',
+                        'manipulation'
+                    ]
+                }
+            ],
+            /**
+       * Touch Action X
+       * @see https://tailwindcss.com/docs/touch-action
+       */ 'touch-x': [
+                {
+                    'touch-pan': [
+                        'x',
+                        'left',
+                        'right'
+                    ]
+                }
+            ],
+            /**
+       * Touch Action Y
+       * @see https://tailwindcss.com/docs/touch-action
+       */ 'touch-y': [
+                {
+                    'touch-pan': [
+                        'y',
+                        'up',
+                        'down'
+                    ]
+                }
+            ],
+            /**
+       * Touch Action Pinch Zoom
+       * @see https://tailwindcss.com/docs/touch-action
+       */ 'touch-pz': [
+                'touch-pinch-zoom'
+            ],
+            /**
+       * User Select
+       * @see https://tailwindcss.com/docs/user-select
+       */ select: [
+                {
+                    select: [
+                        'none',
+                        'text',
+                        'all',
+                        'auto'
+                    ]
+                }
+            ],
+            /**
+       * Will Change
+       * @see https://tailwindcss.com/docs/will-change
+       */ 'will-change': [
+                {
+                    'will-change': [
+                        'auto',
+                        'scroll',
+                        'contents',
+                        'transform',
+                        isArbitraryValue
+                    ]
+                }
+            ],
+            // SVG
+            /**
+       * Fill
+       * @see https://tailwindcss.com/docs/fill
+       */ fill: [
+                {
+                    fill: [
+                        colors,
+                        'none'
+                    ]
+                }
+            ],
+            /**
+       * Stroke Width
+       * @see https://tailwindcss.com/docs/stroke-width
+       */ 'stroke-w': [
+                {
+                    stroke: [
+                        isLength,
+                        isArbitraryLength,
+                        isArbitraryNumber
+                    ]
+                }
+            ],
+            /**
+       * Stroke
+       * @see https://tailwindcss.com/docs/stroke
+       */ stroke: [
+                {
+                    stroke: [
+                        colors,
+                        'none'
+                    ]
+                }
+            ],
+            // Accessibility
+            /**
+       * Screen Readers
+       * @see https://tailwindcss.com/docs/screen-readers
+       */ sr: [
+                'sr-only',
+                'not-sr-only'
+            ],
+            /**
+       * Forced Color Adjust
+       * @see https://tailwindcss.com/docs/forced-color-adjust
+       */ 'forced-color-adjust': [
+                {
+                    'forced-color-adjust': [
+                        'auto',
+                        'none'
+                    ]
+                }
+            ]
+        },
+        conflictingClassGroups: {
+            overflow: [
+                'overflow-x',
+                'overflow-y'
+            ],
+            overscroll: [
+                'overscroll-x',
+                'overscroll-y'
+            ],
+            inset: [
+                'inset-x',
+                'inset-y',
+                'start',
+                'end',
+                'top',
+                'right',
+                'bottom',
+                'left'
+            ],
+            'inset-x': [
+                'right',
+                'left'
+            ],
+            'inset-y': [
+                'top',
+                'bottom'
+            ],
+            flex: [
+                'basis',
+                'grow',
+                'shrink'
+            ],
+            gap: [
+                'gap-x',
+                'gap-y'
+            ],
+            p: [
+                'px',
+                'py',
+                'ps',
+                'pe',
+                'pt',
+                'pr',
+                'pb',
+                'pl'
+            ],
+            px: [
+                'pr',
+                'pl'
+            ],
+            py: [
+                'pt',
+                'pb'
+            ],
+            m: [
+                'mx',
+                'my',
+                'ms',
+                'me',
+                'mt',
+                'mr',
+                'mb',
+                'ml'
+            ],
+            mx: [
+                'mr',
+                'ml'
+            ],
+            my: [
+                'mt',
+                'mb'
+            ],
+            size: [
+                'w',
+                'h'
+            ],
+            'font-size': [
+                'leading'
+            ],
+            'fvn-normal': [
+                'fvn-ordinal',
+                'fvn-slashed-zero',
+                'fvn-figure',
+                'fvn-spacing',
+                'fvn-fraction'
+            ],
+            'fvn-ordinal': [
+                'fvn-normal'
+            ],
+            'fvn-slashed-zero': [
+                'fvn-normal'
+            ],
+            'fvn-figure': [
+                'fvn-normal'
+            ],
+            'fvn-spacing': [
+                'fvn-normal'
+            ],
+            'fvn-fraction': [
+                'fvn-normal'
+            ],
+            'line-clamp': [
+                'display',
+                'overflow'
+            ],
+            rounded: [
+                'rounded-s',
+                'rounded-e',
+                'rounded-t',
+                'rounded-r',
+                'rounded-b',
+                'rounded-l',
+                'rounded-ss',
+                'rounded-se',
+                'rounded-ee',
+                'rounded-es',
+                'rounded-tl',
+                'rounded-tr',
+                'rounded-br',
+                'rounded-bl'
+            ],
+            'rounded-s': [
+                'rounded-ss',
+                'rounded-es'
+            ],
+            'rounded-e': [
+                'rounded-se',
+                'rounded-ee'
+            ],
+            'rounded-t': [
+                'rounded-tl',
+                'rounded-tr'
+            ],
+            'rounded-r': [
+                'rounded-tr',
+                'rounded-br'
+            ],
+            'rounded-b': [
+                'rounded-br',
+                'rounded-bl'
+            ],
+            'rounded-l': [
+                'rounded-tl',
+                'rounded-bl'
+            ],
+            'border-spacing': [
+                'border-spacing-x',
+                'border-spacing-y'
+            ],
+            'border-w': [
+                'border-w-s',
+                'border-w-e',
+                'border-w-t',
+                'border-w-r',
+                'border-w-b',
+                'border-w-l'
+            ],
+            'border-w-x': [
+                'border-w-r',
+                'border-w-l'
+            ],
+            'border-w-y': [
+                'border-w-t',
+                'border-w-b'
+            ],
+            'border-color': [
+                'border-color-s',
+                'border-color-e',
+                'border-color-t',
+                'border-color-r',
+                'border-color-b',
+                'border-color-l'
+            ],
+            'border-color-x': [
+                'border-color-r',
+                'border-color-l'
+            ],
+            'border-color-y': [
+                'border-color-t',
+                'border-color-b'
+            ],
+            'scroll-m': [
+                'scroll-mx',
+                'scroll-my',
+                'scroll-ms',
+                'scroll-me',
+                'scroll-mt',
+                'scroll-mr',
+                'scroll-mb',
+                'scroll-ml'
+            ],
+            'scroll-mx': [
+                'scroll-mr',
+                'scroll-ml'
+            ],
+            'scroll-my': [
+                'scroll-mt',
+                'scroll-mb'
+            ],
+            'scroll-p': [
+                'scroll-px',
+                'scroll-py',
+                'scroll-ps',
+                'scroll-pe',
+                'scroll-pt',
+                'scroll-pr',
+                'scroll-pb',
+                'scroll-pl'
+            ],
+            'scroll-px': [
+                'scroll-pr',
+                'scroll-pl'
+            ],
+            'scroll-py': [
+                'scroll-pt',
+                'scroll-pb'
+            ],
+            touch: [
+                'touch-x',
+                'touch-y',
+                'touch-pz'
+            ],
+            'touch-x': [
+                'touch'
+            ],
+            'touch-y': [
+                'touch'
+            ],
+            'touch-pz': [
+                'touch'
+            ]
+        },
+        conflictingClassGroupModifiers: {
+            'font-size': [
+                'leading'
+            ]
+        }
+    };
+};
+/**
+ * @param baseConfig Config where other config will be merged into. This object will be mutated.
+ * @param configExtension Partial config to merge into the `baseConfig`.
+ */ const mergeConfigs = (baseConfig, { cacheSize, prefix, separator, experimentalParseClassName, extend = {}, override = {} })=>{
+    overrideProperty(baseConfig, 'cacheSize', cacheSize);
+    overrideProperty(baseConfig, 'prefix', prefix);
+    overrideProperty(baseConfig, 'separator', separator);
+    overrideProperty(baseConfig, 'experimentalParseClassName', experimentalParseClassName);
+    for(const configKey in override){
+        overrideConfigProperties(baseConfig[configKey], override[configKey]);
+    }
+    for(const key in extend){
+        mergeConfigProperties(baseConfig[key], extend[key]);
+    }
+    return baseConfig;
+};
+const overrideProperty = (baseObject, overrideKey, overrideValue)=>{
+    if (overrideValue !== undefined) {
+        baseObject[overrideKey] = overrideValue;
+    }
+};
+const overrideConfigProperties = (baseObject, overrideObject)=>{
+    if (overrideObject) {
+        for(const key in overrideObject){
+            overrideProperty(baseObject, key, overrideObject[key]);
+        }
+    }
+};
+const mergeConfigProperties = (baseObject, mergeObject)=>{
+    if (mergeObject) {
+        for(const key in mergeObject){
+            const mergeValue = mergeObject[key];
+            if (mergeValue !== undefined) {
+                baseObject[key] = (baseObject[key] || []).concat(mergeValue);
+            }
+        }
+    }
+};
+const extendTailwindMerge = (configExtension, ...createConfig)=>typeof configExtension === 'function' ? createTailwindMerge(getDefaultConfig, configExtension, ...createConfig) : createTailwindMerge(()=>mergeConfigs(getDefaultConfig(), configExtension), ...createConfig);
+const twMerge = /*#__PURE__*/ createTailwindMerge(getDefaultConfig);
+;
+ //# sourceMappingURL=bundle-mjs.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-compose-refs/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/compose-refs/src/composeRefs.tsx
+__turbopack_context__.s([
+    "composeRefs",
+    ()=>composeRefs,
+    "useComposedRefs",
+    ()=>useComposedRefs
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+function setRef(ref, value) {
+    if (typeof ref === "function") {
+        return ref(value);
+    } else if (ref !== null && ref !== void 0) {
+        ref.current = value;
+    }
+}
+function composeRefs(...refs) {
+    return (node)=>{
+        let hasCleanup = false;
+        const cleanups = refs.map((ref)=>{
+            const cleanup = setRef(ref, node);
+            if (!hasCleanup && typeof cleanup == "function") {
+                hasCleanup = true;
+            }
+            return cleanup;
+        });
+        if (hasCleanup) {
+            return ()=>{
+                for(let i = 0; i < cleanups.length; i++){
+                    const cleanup = cleanups[i];
+                    if (typeof cleanup == "function") {
+                        cleanup();
+                    } else {
+                        setRef(refs[i], null);
+                    }
+                }
+            };
+        }
+    };
+}
+function useComposedRefs(...refs) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](composeRefs(...refs), refs);
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-slot/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/slot/src/Slot.tsx
+__turbopack_context__.s([
+    "Root",
+    ()=>Root,
+    "Slot",
+    ()=>Slot,
+    "Slottable",
+    ()=>Slottable
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-compose-refs/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+;
+;
+;
+var Slot = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { children, ...slotProps } = props;
+    const childrenArray = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].toArray(children);
+    const slottable = childrenArray.find(isSlottable);
+    if (slottable) {
+        const newElement = slottable.props.children;
+        const newChildren = childrenArray.map((child)=>{
+            if (child === slottable) {
+                if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].count(newElement) > 1) return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].only(null);
+                return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isValidElement"](newElement) ? newElement.props.children : null;
+            } else {
+                return child;
+            }
+        });
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(SlotClone, {
+            ...slotProps,
+            ref: forwardedRef,
+            children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isValidElement"](newElement) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"](newElement, void 0, newChildren) : null
+        });
+    }
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(SlotClone, {
+        ...slotProps,
+        ref: forwardedRef,
+        children
+    });
+});
+Slot.displayName = "Slot";
+var SlotClone = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { children, ...slotProps } = props;
+    if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isValidElement"](children)) {
+        const childrenRef = getElementRef(children);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"](children, {
+            ...mergeProps(slotProps, children.props),
+            // @ts-ignore
+            ref: forwardedRef ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeRefs"])(forwardedRef, childrenRef) : childrenRef
+        });
+    }
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].count(children) > 1 ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].only(null) : null;
+});
+SlotClone.displayName = "SlotClone";
+var Slottable = ({ children })=>{
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children
+    });
+};
+function isSlottable(child) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isValidElement"](child) && child.type === Slottable;
+}
+function mergeProps(slotProps, childProps) {
+    const overrideProps = {
+        ...childProps
+    };
+    for(const propName in childProps){
+        const slotPropValue = slotProps[propName];
+        const childPropValue = childProps[propName];
+        const isHandler = /^on[A-Z]/.test(propName);
+        if (isHandler) {
+            if (slotPropValue && childPropValue) {
+                overrideProps[propName] = (...args)=>{
+                    childPropValue(...args);
+                    slotPropValue(...args);
+                };
+            } else if (slotPropValue) {
+                overrideProps[propName] = slotPropValue;
+            }
+        } else if (propName === "style") {
+            overrideProps[propName] = {
+                ...slotPropValue,
+                ...childPropValue
+            };
+        } else if (propName === "className") {
+            overrideProps[propName] = [
+                slotPropValue,
+                childPropValue
+            ].filter(Boolean).join(" ");
+        }
+    }
+    return {
+        ...slotProps,
+        ...overrideProps
+    };
+}
+function getElementRef(element) {
+    let getter = Object.getOwnPropertyDescriptor(element.props, "ref")?.get;
+    let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+    if (mayWarn) {
+        return element.ref;
+    }
+    getter = Object.getOwnPropertyDescriptor(element, "ref")?.get;
+    mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+    if (mayWarn) {
+        return element.props.ref;
+    }
+    return element.props.ref || element.ref;
+}
+var Root = Slot;
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/class-variance-authority/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Copyright 2022 Joe Bell. All rights reserved.
+ *
+ * This file is licensed to you under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR REPRESENTATIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */ __turbopack_context__.s([
+    "cva",
+    ()=>cva,
+    "cx",
+    ()=>cx
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/clsx/dist/clsx.mjs [app-ssr] (ecmascript)");
+;
+const falsyToString = (value)=>typeof value === "boolean" ? `${value}` : value === 0 ? "0" : value;
+const cx = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["clsx"];
+const cva = (base, config)=>(props)=>{
+        var _config_compoundVariants;
+        if ((config === null || config === void 0 ? void 0 : config.variants) == null) return cx(base, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+        const { variants, defaultVariants } = config;
+        const getVariantClassNames = Object.keys(variants).map((variant)=>{
+            const variantProp = props === null || props === void 0 ? void 0 : props[variant];
+            const defaultVariantProp = defaultVariants === null || defaultVariants === void 0 ? void 0 : defaultVariants[variant];
+            if (variantProp === null) return null;
+            const variantKey = falsyToString(variantProp) || falsyToString(defaultVariantProp);
+            return variants[variant][variantKey];
+        });
+        const propsWithoutUndefined = props && Object.entries(props).reduce((acc, param)=>{
+            let [key, value] = param;
+            if (value === undefined) {
+                return acc;
+            }
+            acc[key] = value;
+            return acc;
+        }, {});
+        const getCompoundVariantClassNames = config === null || config === void 0 ? void 0 : (_config_compoundVariants = config.compoundVariants) === null || _config_compoundVariants === void 0 ? void 0 : _config_compoundVariants.reduce((acc, param)=>{
+            let { class: cvClass, className: cvClassName, ...compoundVariantOptions } = param;
+            return Object.entries(compoundVariantOptions).every((param)=>{
+                let [key, value] = param;
+                return Array.isArray(value) ? value.includes({
+                    ...defaultVariants,
+                    ...propsWithoutUndefined
+                }[key]) : ({
+                    ...defaultVariants,
+                    ...propsWithoutUndefined
+                })[key] === value;
+            }) ? [
+                ...acc,
+                cvClass,
+                cvClassName
+            ] : acc;
+        }, []);
+        return cx(base, getVariantClassNames, getCompoundVariantClassNames, props === null || props === void 0 ? void 0 : props.class, props === null || props === void 0 ? void 0 : props.className);
+    };
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/primitive/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/core/primitive/src/primitive.tsx
+__turbopack_context__.s([
+    "composeEventHandlers",
+    ()=>composeEventHandlers
+]);
+function composeEventHandlers(originalEventHandler, ourEventHandler, { checkForDefaultPrevented = true } = {}) {
+    return function handleEvent(event) {
+        originalEventHandler?.(event);
+        if (checkForDefaultPrevented === false || !event.defaultPrevented) {
+            return ourEventHandler?.(event);
+        }
+    };
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-context/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/context/src/createContext.tsx
+__turbopack_context__.s([
+    "createContext",
+    ()=>createContext2,
+    "createContextScope",
+    ()=>createContextScope
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+;
+;
+function createContext2(rootComponentName, defaultContext) {
+    const Context = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"](defaultContext);
+    const Provider = (props)=>{
+        const { children, ...context } = props;
+        const value = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](()=>context, Object.values(context));
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Context.Provider, {
+            value,
+            children
+        });
+    };
+    Provider.displayName = rootComponentName + "Provider";
+    function useContext2(consumerName) {
+        const context = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](Context);
+        if (context) return context;
+        if (defaultContext !== void 0) return defaultContext;
+        throw new Error(`\`${consumerName}\` must be used within \`${rootComponentName}\``);
+    }
+    return [
+        Provider,
+        useContext2
+    ];
+}
+function createContextScope(scopeName, createContextScopeDeps = []) {
+    let defaultContexts = [];
+    function createContext3(rootComponentName, defaultContext) {
+        const BaseContext = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"](defaultContext);
+        const index = defaultContexts.length;
+        defaultContexts = [
+            ...defaultContexts,
+            defaultContext
+        ];
+        const Provider = (props)=>{
+            const { scope, children, ...context } = props;
+            const Context = scope?.[scopeName]?.[index] || BaseContext;
+            const value = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](()=>context, Object.values(context));
+            return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Context.Provider, {
+                value,
+                children
+            });
+        };
+        Provider.displayName = rootComponentName + "Provider";
+        function useContext2(consumerName, scope) {
+            const Context = scope?.[scopeName]?.[index] || BaseContext;
+            const context = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](Context);
+            if (context) return context;
+            if (defaultContext !== void 0) return defaultContext;
+            throw new Error(`\`${consumerName}\` must be used within \`${rootComponentName}\``);
+        }
+        return [
+            Provider,
+            useContext2
+        ];
+    }
+    const createScope = ()=>{
+        const scopeContexts = defaultContexts.map((defaultContext)=>{
+            return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"](defaultContext);
+        });
+        return function useScope(scope) {
+            const contexts = scope?.[scopeName] || scopeContexts;
+            return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](()=>({
+                    [`__scope${scopeName}`]: {
+                        ...scope,
+                        [scopeName]: contexts
+                    }
+                }), [
+                scope,
+                contexts
+            ]);
+        };
+    };
+    createScope.scopeName = scopeName;
+    return [
+        createContext3,
+        composeContextScopes(createScope, ...createContextScopeDeps)
+    ];
+}
+function composeContextScopes(...scopes) {
+    const baseScope = scopes[0];
+    if (scopes.length === 1) return baseScope;
+    const createScope = ()=>{
+        const scopeHooks = scopes.map((createScope2)=>({
+                useScope: createScope2(),
+                scopeName: createScope2.scopeName
+            }));
+        return function useComposedScopes(overrideScopes) {
+            const nextScopes = scopeHooks.reduce((nextScopes2, { useScope, scopeName })=>{
+                const scopeProps = useScope(overrideScopes);
+                const currentScope = scopeProps[`__scope${scopeName}`];
+                return {
+                    ...nextScopes2,
+                    ...currentScope
+                };
+            }, {});
+            return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](()=>({
+                    [`__scope${baseScope.scopeName}`]: nextScopes
+                }), [
+                nextScopes
+            ]);
+        };
+    };
+    createScope.scopeName = baseScope.scopeName;
+    return createScope;
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/use-layout-effect/src/useLayoutEffect.tsx
+__turbopack_context__.s([
+    "useLayoutEffect",
+    ()=>useLayoutEffect2
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+var useLayoutEffect2 = Boolean(globalThis?.document) ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLayoutEffect"] : ()=>{};
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-id/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/id/src/id.tsx
+__turbopack_context__.s([
+    "useId",
+    ()=>useId
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs [app-ssr] (ecmascript)");
+;
+;
+var useReactId = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId".toString()] || (()=>void 0);
+var count = 0;
+function useId(deterministicId) {
+    const [id, setId] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__.useState(useReactId());
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLayoutEffect"])(()=>{
+        if (!deterministicId) setId((reactId)=>reactId ?? String(count++));
+    }, [
+        deterministicId
+    ]);
+    return deterministicId || (id ? `radix-${id}` : "");
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/use-callback-ref/src/useCallbackRef.tsx
+__turbopack_context__.s([
+    "useCallbackRef",
+    ()=>useCallbackRef
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+function useCallbackRef(callback) {
+    const callbackRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](callback);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        callbackRef.current = callback;
+    });
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](()=>(...args)=>callbackRef.current?.(...args), []);
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/use-controllable-state/src/useControllableState.tsx
+__turbopack_context__.s([
+    "useControllableState",
+    ()=>useControllableState
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs [app-ssr] (ecmascript)");
+;
+;
+function useControllableState({ prop, defaultProp, onChange = ()=>{} }) {
+    const [uncontrolledProp, setUncontrolledProp] = useUncontrolledState({
+        defaultProp,
+        onChange
+    });
+    const isControlled = prop !== void 0;
+    const value = isControlled ? prop : uncontrolledProp;
+    const handleChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallbackRef"])(onChange);
+    const setValue = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((nextValue)=>{
+        if (isControlled) {
+            const setter = nextValue;
+            const value2 = typeof nextValue === "function" ? setter(prop) : nextValue;
+            if (value2 !== prop) handleChange(value2);
+        } else {
+            setUncontrolledProp(nextValue);
+        }
+    }, [
+        isControlled,
+        prop,
+        setUncontrolledProp,
+        handleChange
+    ]);
+    return [
+        value,
+        setValue
+    ];
+}
+function useUncontrolledState({ defaultProp, onChange }) {
+    const uncontrolledState = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](defaultProp);
+    const [value] = uncontrolledState;
+    const prevValueRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](value);
+    const handleChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallbackRef"])(onChange);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (prevValueRef.current !== value) {
+            handleChange(value);
+            prevValueRef.current = value;
+        }
+    }, [
+        value,
+        prevValueRef,
+        handleChange
+    ]);
+    return uncontrolledState;
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-primitive/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/primitive/src/Primitive.tsx
+__turbopack_context__.s([
+    "Primitive",
+    ()=>Primitive,
+    "Root",
+    ()=>Root,
+    "dispatchDiscreteCustomEvent",
+    ()=>dispatchDiscreteCustomEvent
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-dom.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-slot/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+var NODES = [
+    "a",
+    "button",
+    "div",
+    "form",
+    "h2",
+    "h3",
+    "img",
+    "input",
+    "label",
+    "li",
+    "nav",
+    "ol",
+    "p",
+    "span",
+    "svg",
+    "ul"
+];
+var Primitive = NODES.reduce((primitive, node)=>{
+    const Node = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+        const { asChild, ...primitiveProps } = props;
+        const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Slot"] : node;
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+        return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(Comp, {
+            ...primitiveProps,
+            ref: forwardedRef
+        });
+    });
+    Node.displayName = `Primitive.${node}`;
+    return {
+        ...primitive,
+        [node]: Node
+    };
+}, {});
+function dispatchDiscreteCustomEvent(target, event) {
+    if (target) __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["flushSync"](()=>target.dispatchEvent(event));
+}
+var Root = Primitive;
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-escape-keydown/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// packages/react/use-escape-keydown/src/useEscapeKeydown.tsx
+__turbopack_context__.s([
+    "useEscapeKeydown",
+    ()=>useEscapeKeydown
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs [app-ssr] (ecmascript)");
+;
+;
+function useEscapeKeydown(onEscapeKeyDownProp, ownerDocument = globalThis?.document) {
+    const onEscapeKeyDown = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallbackRef"])(onEscapeKeyDownProp);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const handleKeyDown = (event)=>{
+            if (event.key === "Escape") {
+                onEscapeKeyDown(event);
+            }
+        };
+        ownerDocument.addEventListener("keydown", handleKeyDown, {
+            capture: true
+        });
+        return ()=>ownerDocument.removeEventListener("keydown", handleKeyDown, {
+                capture: true
+            });
+    }, [
+        onEscapeKeyDown,
+        ownerDocument
+    ]);
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Branch",
+    ()=>Branch,
+    "DismissableLayer",
+    ()=>DismissableLayer,
+    "DismissableLayerBranch",
+    ()=>DismissableLayerBranch,
+    "Root",
+    ()=>Root
+]);
+// packages/react/dismissable-layer/src/DismissableLayer.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/primitive/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-primitive/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-compose-refs/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$escape$2d$keydown$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-escape-keydown/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+var DISMISSABLE_LAYER_NAME = "DismissableLayer";
+var CONTEXT_UPDATE = "dismissableLayer.update";
+var POINTER_DOWN_OUTSIDE = "dismissableLayer.pointerDownOutside";
+var FOCUS_OUTSIDE = "dismissableLayer.focusOutside";
+var originalBodyPointerEvents;
+var DismissableLayerContext = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"]({
+    layers: /* @__PURE__ */ new Set(),
+    layersWithOutsidePointerEventsDisabled: /* @__PURE__ */ new Set(),
+    branches: /* @__PURE__ */ new Set()
+});
+var DismissableLayer = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { disableOutsidePointerEvents = false, onEscapeKeyDown, onPointerDownOutside, onFocusOutside, onInteractOutside, onDismiss, ...layerProps } = props;
+    const context = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](DismissableLayerContext);
+    const [node, setNode] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](null);
+    const ownerDocument = node?.ownerDocument ?? globalThis?.document;
+    const [, force] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"]({});
+    const composedRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useComposedRefs"])(forwardedRef, (node2)=>setNode(node2));
+    const layers = Array.from(context.layers);
+    const [highestLayerWithOutsidePointerEventsDisabled] = [
+        ...context.layersWithOutsidePointerEventsDisabled
+    ].slice(-1);
+    const highestLayerWithOutsidePointerEventsDisabledIndex = layers.indexOf(highestLayerWithOutsidePointerEventsDisabled);
+    const index = node ? layers.indexOf(node) : -1;
+    const isBodyPointerEventsDisabled = context.layersWithOutsidePointerEventsDisabled.size > 0;
+    const isPointerEventsEnabled = index >= highestLayerWithOutsidePointerEventsDisabledIndex;
+    const pointerDownOutside = usePointerDownOutside((event)=>{
+        const target = event.target;
+        const isPointerDownOnBranch = [
+            ...context.branches
+        ].some((branch)=>branch.contains(target));
+        if (!isPointerEventsEnabled || isPointerDownOnBranch) return;
+        onPointerDownOutside?.(event);
+        onInteractOutside?.(event);
+        if (!event.defaultPrevented) onDismiss?.();
+    }, ownerDocument);
+    const focusOutside = useFocusOutside((event)=>{
+        const target = event.target;
+        const isFocusInBranch = [
+            ...context.branches
+        ].some((branch)=>branch.contains(target));
+        if (isFocusInBranch) return;
+        onFocusOutside?.(event);
+        onInteractOutside?.(event);
+        if (!event.defaultPrevented) onDismiss?.();
+    }, ownerDocument);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$escape$2d$keydown$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEscapeKeydown"])((event)=>{
+        const isHighestLayer = index === context.layers.size - 1;
+        if (!isHighestLayer) return;
+        onEscapeKeyDown?.(event);
+        if (!event.defaultPrevented && onDismiss) {
+            event.preventDefault();
+            onDismiss();
+        }
+    }, ownerDocument);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (!node) return;
+        if (disableOutsidePointerEvents) {
+            if (context.layersWithOutsidePointerEventsDisabled.size === 0) {
+                originalBodyPointerEvents = ownerDocument.body.style.pointerEvents;
+                ownerDocument.body.style.pointerEvents = "none";
+            }
+            context.layersWithOutsidePointerEventsDisabled.add(node);
+        }
+        context.layers.add(node);
+        dispatchUpdate();
+        return ()=>{
+            if (disableOutsidePointerEvents && context.layersWithOutsidePointerEventsDisabled.size === 1) {
+                ownerDocument.body.style.pointerEvents = originalBodyPointerEvents;
+            }
+        };
+    }, [
+        node,
+        ownerDocument,
+        disableOutsidePointerEvents,
+        context
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        return ()=>{
+            if (!node) return;
+            context.layers.delete(node);
+            context.layersWithOutsidePointerEventsDisabled.delete(node);
+            dispatchUpdate();
+        };
+    }, [
+        node,
+        context
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const handleUpdate = ()=>force({});
+        document.addEventListener(CONTEXT_UPDATE, handleUpdate);
+        return ()=>document.removeEventListener(CONTEXT_UPDATE, handleUpdate);
+    }, []);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].div, {
+        ...layerProps,
+        ref: composedRefs,
+        style: {
+            pointerEvents: isBodyPointerEventsDisabled ? isPointerEventsEnabled ? "auto" : "none" : void 0,
+            ...props.style
+        },
+        onFocusCapture: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeEventHandlers"])(props.onFocusCapture, focusOutside.onFocusCapture),
+        onBlurCapture: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeEventHandlers"])(props.onBlurCapture, focusOutside.onBlurCapture),
+        onPointerDownCapture: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeEventHandlers"])(props.onPointerDownCapture, pointerDownOutside.onPointerDownCapture)
+    });
+});
+DismissableLayer.displayName = DISMISSABLE_LAYER_NAME;
+var BRANCH_NAME = "DismissableLayerBranch";
+var DismissableLayerBranch = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const context = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useContext"](DismissableLayerContext);
+    const ref = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const composedRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useComposedRefs"])(forwardedRef, ref);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const node = ref.current;
+        if (node) {
+            context.branches.add(node);
+            return ()=>{
+                context.branches.delete(node);
+            };
+        }
+    }, [
+        context.branches
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].div, {
+        ...props,
+        ref: composedRefs
+    });
+});
+DismissableLayerBranch.displayName = BRANCH_NAME;
+function usePointerDownOutside(onPointerDownOutside, ownerDocument = globalThis?.document) {
+    const handlePointerDownOutside = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallbackRef"])(onPointerDownOutside);
+    const isPointerInsideReactTreeRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](false);
+    const handleClickRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](()=>{});
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const handlePointerDown = (event)=>{
+            if (event.target && !isPointerInsideReactTreeRef.current) {
+                let handleAndDispatchPointerDownOutsideEvent2 = function() {
+                    handleAndDispatchCustomEvent(POINTER_DOWN_OUTSIDE, handlePointerDownOutside, eventDetail, {
+                        discrete: true
+                    });
+                };
+                var handleAndDispatchPointerDownOutsideEvent = handleAndDispatchPointerDownOutsideEvent2;
+                const eventDetail = {
+                    originalEvent: event
+                };
+                if (event.pointerType === "touch") {
+                    ownerDocument.removeEventListener("click", handleClickRef.current);
+                    handleClickRef.current = handleAndDispatchPointerDownOutsideEvent2;
+                    ownerDocument.addEventListener("click", handleClickRef.current, {
+                        once: true
+                    });
+                } else {
+                    handleAndDispatchPointerDownOutsideEvent2();
+                }
+            } else {
+                ownerDocument.removeEventListener("click", handleClickRef.current);
+            }
+            isPointerInsideReactTreeRef.current = false;
+        };
+        const timerId = window.setTimeout(()=>{
+            ownerDocument.addEventListener("pointerdown", handlePointerDown);
+        }, 0);
+        return ()=>{
+            window.clearTimeout(timerId);
+            ownerDocument.removeEventListener("pointerdown", handlePointerDown);
+            ownerDocument.removeEventListener("click", handleClickRef.current);
+        };
+    }, [
+        ownerDocument,
+        handlePointerDownOutside
+    ]);
+    return {
+        // ensures we check React component tree (not just DOM tree)
+        onPointerDownCapture: ()=>isPointerInsideReactTreeRef.current = true
+    };
+}
+function useFocusOutside(onFocusOutside, ownerDocument = globalThis?.document) {
+    const handleFocusOutside = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallbackRef"])(onFocusOutside);
+    const isFocusInsideReactTreeRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](false);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const handleFocus = (event)=>{
+            if (event.target && !isFocusInsideReactTreeRef.current) {
+                const eventDetail = {
+                    originalEvent: event
+                };
+                handleAndDispatchCustomEvent(FOCUS_OUTSIDE, handleFocusOutside, eventDetail, {
+                    discrete: false
+                });
+            }
+        };
+        ownerDocument.addEventListener("focusin", handleFocus);
+        return ()=>ownerDocument.removeEventListener("focusin", handleFocus);
+    }, [
+        ownerDocument,
+        handleFocusOutside
+    ]);
+    return {
+        onFocusCapture: ()=>isFocusInsideReactTreeRef.current = true,
+        onBlurCapture: ()=>isFocusInsideReactTreeRef.current = false
+    };
+}
+function dispatchUpdate() {
+    const event = new CustomEvent(CONTEXT_UPDATE);
+    document.dispatchEvent(event);
+}
+function handleAndDispatchCustomEvent(name, handler, detail, { discrete }) {
+    const target = detail.originalEvent.target;
+    const event = new CustomEvent(name, {
+        bubbles: false,
+        cancelable: true,
+        detail
+    });
+    if (handler) target.addEventListener(name, handler, {
+        once: true
+    });
+    if (discrete) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["dispatchDiscreteCustomEvent"])(target, event);
+    } else {
+        target.dispatchEvent(event);
+    }
+}
+var Root = DismissableLayer;
+var Branch = DismissableLayerBranch;
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-focus-scope/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "FocusScope",
+    ()=>FocusScope,
+    "Root",
+    ()=>Root
+]);
+// packages/react/focus-scope/src/FocusScope.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-compose-refs/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-primitive/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var AUTOFOCUS_ON_MOUNT = "focusScope.autoFocusOnMount";
+var AUTOFOCUS_ON_UNMOUNT = "focusScope.autoFocusOnUnmount";
+var EVENT_OPTIONS = {
+    bubbles: false,
+    cancelable: true
+};
+var FOCUS_SCOPE_NAME = "FocusScope";
+var FocusScope = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { loop = false, trapped = false, onMountAutoFocus: onMountAutoFocusProp, onUnmountAutoFocus: onUnmountAutoFocusProp, ...scopeProps } = props;
+    const [container, setContainer] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](null);
+    const onMountAutoFocus = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallbackRef"])(onMountAutoFocusProp);
+    const onUnmountAutoFocus = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$callback$2d$ref$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallbackRef"])(onUnmountAutoFocusProp);
+    const lastFocusedElementRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const composedRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useComposedRefs"])(forwardedRef, (node)=>setContainer(node));
+    const focusScope = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"]({
+        paused: false,
+        pause () {
+            this.paused = true;
+        },
+        resume () {
+            this.paused = false;
+        }
+    }).current;
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (trapped) {
+            let handleFocusIn2 = function(event) {
+                if (focusScope.paused || !container) return;
+                const target = event.target;
+                if (container.contains(target)) {
+                    lastFocusedElementRef.current = target;
+                } else {
+                    focus(lastFocusedElementRef.current, {
+                        select: true
+                    });
+                }
+            }, handleFocusOut2 = function(event) {
+                if (focusScope.paused || !container) return;
+                const relatedTarget = event.relatedTarget;
+                if (relatedTarget === null) return;
+                if (!container.contains(relatedTarget)) {
+                    focus(lastFocusedElementRef.current, {
+                        select: true
+                    });
+                }
+            }, handleMutations2 = function(mutations) {
+                const focusedElement = document.activeElement;
+                if (focusedElement !== document.body) return;
+                for (const mutation of mutations){
+                    if (mutation.removedNodes.length > 0) focus(container);
+                }
+            };
+            var handleFocusIn = handleFocusIn2, handleFocusOut = handleFocusOut2, handleMutations = handleMutations2;
+            document.addEventListener("focusin", handleFocusIn2);
+            document.addEventListener("focusout", handleFocusOut2);
+            const mutationObserver = new MutationObserver(handleMutations2);
+            if (container) mutationObserver.observe(container, {
+                childList: true,
+                subtree: true
+            });
+            return ()=>{
+                document.removeEventListener("focusin", handleFocusIn2);
+                document.removeEventListener("focusout", handleFocusOut2);
+                mutationObserver.disconnect();
+            };
+        }
+    }, [
+        trapped,
+        container,
+        focusScope.paused
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (container) {
+            focusScopesStack.add(focusScope);
+            const previouslyFocusedElement = document.activeElement;
+            const hasFocusedCandidate = container.contains(previouslyFocusedElement);
+            if (!hasFocusedCandidate) {
+                const mountEvent = new CustomEvent(AUTOFOCUS_ON_MOUNT, EVENT_OPTIONS);
+                container.addEventListener(AUTOFOCUS_ON_MOUNT, onMountAutoFocus);
+                container.dispatchEvent(mountEvent);
+                if (!mountEvent.defaultPrevented) {
+                    focusFirst(removeLinks(getTabbableCandidates(container)), {
+                        select: true
+                    });
+                    if (document.activeElement === previouslyFocusedElement) {
+                        focus(container);
+                    }
+                }
+            }
+            return ()=>{
+                container.removeEventListener(AUTOFOCUS_ON_MOUNT, onMountAutoFocus);
+                setTimeout(()=>{
+                    const unmountEvent = new CustomEvent(AUTOFOCUS_ON_UNMOUNT, EVENT_OPTIONS);
+                    container.addEventListener(AUTOFOCUS_ON_UNMOUNT, onUnmountAutoFocus);
+                    container.dispatchEvent(unmountEvent);
+                    if (!unmountEvent.defaultPrevented) {
+                        focus(previouslyFocusedElement ?? document.body, {
+                            select: true
+                        });
+                    }
+                    container.removeEventListener(AUTOFOCUS_ON_UNMOUNT, onUnmountAutoFocus);
+                    focusScopesStack.remove(focusScope);
+                }, 0);
+            };
+        }
+    }, [
+        container,
+        onMountAutoFocus,
+        onUnmountAutoFocus,
+        focusScope
+    ]);
+    const handleKeyDown = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((event)=>{
+        if (!loop && !trapped) return;
+        if (focusScope.paused) return;
+        const isTabKey = event.key === "Tab" && !event.altKey && !event.ctrlKey && !event.metaKey;
+        const focusedElement = document.activeElement;
+        if (isTabKey && focusedElement) {
+            const container2 = event.currentTarget;
+            const [first, last] = getTabbableEdges(container2);
+            const hasTabbableElementsInside = first && last;
+            if (!hasTabbableElementsInside) {
+                if (focusedElement === container2) event.preventDefault();
+            } else {
+                if (!event.shiftKey && focusedElement === last) {
+                    event.preventDefault();
+                    if (loop) focus(first, {
+                        select: true
+                    });
+                } else if (event.shiftKey && focusedElement === first) {
+                    event.preventDefault();
+                    if (loop) focus(last, {
+                        select: true
+                    });
+                }
+            }
+        }
+    }, [
+        loop,
+        trapped,
+        focusScope.paused
+    ]);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].div, {
+        tabIndex: -1,
+        ...scopeProps,
+        ref: composedRefs,
+        onKeyDown: handleKeyDown
+    });
+});
+FocusScope.displayName = FOCUS_SCOPE_NAME;
+function focusFirst(candidates, { select = false } = {}) {
+    const previouslyFocusedElement = document.activeElement;
+    for (const candidate of candidates){
+        focus(candidate, {
+            select
+        });
+        if (document.activeElement !== previouslyFocusedElement) return;
+    }
+}
+function getTabbableEdges(container) {
+    const candidates = getTabbableCandidates(container);
+    const first = findVisible(candidates, container);
+    const last = findVisible(candidates.reverse(), container);
+    return [
+        first,
+        last
+    ];
+}
+function getTabbableCandidates(container) {
+    const nodes = [];
+    const walker = document.createTreeWalker(container, NodeFilter.SHOW_ELEMENT, {
+        acceptNode: (node)=>{
+            const isHiddenInput = node.tagName === "INPUT" && node.type === "hidden";
+            if (node.disabled || node.hidden || isHiddenInput) return NodeFilter.FILTER_SKIP;
+            return node.tabIndex >= 0 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+        }
+    });
+    while(walker.nextNode())nodes.push(walker.currentNode);
+    return nodes;
+}
+function findVisible(elements, container) {
+    for (const element of elements){
+        if (!isHidden(element, {
+            upTo: container
+        })) return element;
+    }
+}
+function isHidden(node, { upTo }) {
+    if (getComputedStyle(node).visibility === "hidden") return true;
+    while(node){
+        if (upTo !== void 0 && node === upTo) return false;
+        if (getComputedStyle(node).display === "none") return true;
+        node = node.parentElement;
+    }
+    return false;
+}
+function isSelectableInput(element) {
+    return element instanceof HTMLInputElement && "select" in element;
+}
+function focus(element, { select = false } = {}) {
+    if (element && element.focus) {
+        const previouslyFocusedElement = document.activeElement;
+        element.focus({
+            preventScroll: true
+        });
+        if (element !== previouslyFocusedElement && isSelectableInput(element) && select) element.select();
+    }
+}
+var focusScopesStack = createFocusScopesStack();
+function createFocusScopesStack() {
+    let stack = [];
+    return {
+        add (focusScope) {
+            const activeFocusScope = stack[0];
+            if (focusScope !== activeFocusScope) {
+                activeFocusScope?.pause();
+            }
+            stack = arrayRemove(stack, focusScope);
+            stack.unshift(focusScope);
+        },
+        remove (focusScope) {
+            stack = arrayRemove(stack, focusScope);
+            stack[0]?.resume();
+        }
+    };
+}
+function arrayRemove(array, item) {
+    const updatedArray = [
+        ...array
+    ];
+    const index = updatedArray.indexOf(item);
+    if (index !== -1) {
+        updatedArray.splice(index, 1);
+    }
+    return updatedArray;
+}
+function removeLinks(items) {
+    return items.filter((item)=>item.tagName !== "A");
+}
+var Root = FocusScope;
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-portal/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Portal",
+    ()=>Portal,
+    "Root",
+    ()=>Root
+]);
+// packages/react/portal/src/Portal.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-dom.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-primitive/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+var PORTAL_NAME = "Portal";
+var Portal = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { container: containerProp, ...portalProps } = props;
+    const [mounted, setMounted] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLayoutEffect"])(()=>setMounted(true), []);
+    const container = containerProp || mounted && globalThis?.document?.body;
+    return container ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$dom$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createPortal(/* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].div, {
+        ...portalProps,
+        ref: forwardedRef
+    }), container) : null;
+});
+Portal.displayName = PORTAL_NAME;
+var Root = Portal;
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-presence/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Presence",
+    ()=>Presence
+]);
+// packages/react/presence/src/Presence.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-compose-refs/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function useStateMachine(initialState, machine) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useReducer"]((state, event)=>{
+        const nextState = machine[state][event];
+        return nextState ?? state;
+    }, initialState);
+}
+// packages/react/presence/src/Presence.tsx
+var Presence = (props)=>{
+    const { present, children } = props;
+    const presence = usePresence(present);
+    const child = typeof children === "function" ? children({
+        present: presence.isPresent
+    }) : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].only(children);
+    const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useComposedRefs"])(presence.ref, getElementRef(child));
+    const forceMount = typeof children === "function";
+    return forceMount || presence.isPresent ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"](child, {
+        ref
+    }) : null;
+};
+Presence.displayName = "Presence";
+function usePresence(present) {
+    const [node, setNode] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"]();
+    const stylesRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"]({});
+    const prevPresentRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](present);
+    const prevAnimationNameRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"]("none");
+    const initialState = present ? "mounted" : "unmounted";
+    const [state, send] = useStateMachine(initialState, {
+        mounted: {
+            UNMOUNT: "unmounted",
+            ANIMATION_OUT: "unmountSuspended"
+        },
+        unmountSuspended: {
+            MOUNT: "mounted",
+            ANIMATION_END: "unmounted"
+        },
+        unmounted: {
+            MOUNT: "mounted"
+        }
+    });
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const currentAnimationName = getAnimationName(stylesRef.current);
+        prevAnimationNameRef.current = state === "mounted" ? currentAnimationName : "none";
+    }, [
+        state
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLayoutEffect"])(()=>{
+        const styles = stylesRef.current;
+        const wasPresent = prevPresentRef.current;
+        const hasPresentChanged = wasPresent !== present;
+        if (hasPresentChanged) {
+            const prevAnimationName = prevAnimationNameRef.current;
+            const currentAnimationName = getAnimationName(styles);
+            if (present) {
+                send("MOUNT");
+            } else if (currentAnimationName === "none" || styles?.display === "none") {
+                send("UNMOUNT");
+            } else {
+                const isAnimating = prevAnimationName !== currentAnimationName;
+                if (wasPresent && isAnimating) {
+                    send("ANIMATION_OUT");
+                } else {
+                    send("UNMOUNT");
+                }
+            }
+            prevPresentRef.current = present;
+        }
+    }, [
+        present,
+        send
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$layout$2d$effect$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLayoutEffect"])(()=>{
+        if (node) {
+            let timeoutId;
+            const ownerWindow = node.ownerDocument.defaultView ?? window;
+            const handleAnimationEnd = (event)=>{
+                const currentAnimationName = getAnimationName(stylesRef.current);
+                const isCurrentAnimation = currentAnimationName.includes(event.animationName);
+                if (event.target === node && isCurrentAnimation) {
+                    send("ANIMATION_END");
+                    if (!prevPresentRef.current) {
+                        const currentFillMode = node.style.animationFillMode;
+                        node.style.animationFillMode = "forwards";
+                        timeoutId = ownerWindow.setTimeout(()=>{
+                            if (node.style.animationFillMode === "forwards") {
+                                node.style.animationFillMode = currentFillMode;
+                            }
+                        });
+                    }
+                }
+            };
+            const handleAnimationStart = (event)=>{
+                if (event.target === node) {
+                    prevAnimationNameRef.current = getAnimationName(stylesRef.current);
+                }
+            };
+            node.addEventListener("animationstart", handleAnimationStart);
+            node.addEventListener("animationcancel", handleAnimationEnd);
+            node.addEventListener("animationend", handleAnimationEnd);
+            return ()=>{
+                ownerWindow.clearTimeout(timeoutId);
+                node.removeEventListener("animationstart", handleAnimationStart);
+                node.removeEventListener("animationcancel", handleAnimationEnd);
+                node.removeEventListener("animationend", handleAnimationEnd);
+            };
+        } else {
+            send("ANIMATION_END");
+        }
+    }, [
+        node,
+        send
+    ]);
+    return {
+        isPresent: [
+            "mounted",
+            "unmountSuspended"
+        ].includes(state),
+        ref: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"]((node2)=>{
+            if (node2) stylesRef.current = getComputedStyle(node2);
+            setNode(node2);
+        }, [])
+    };
+}
+function getAnimationName(styles) {
+    return styles?.animationName || "none";
+}
+function getElementRef(element) {
+    let getter = Object.getOwnPropertyDescriptor(element.props, "ref")?.get;
+    let mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+    if (mayWarn) {
+        return element.ref;
+    }
+    getter = Object.getOwnPropertyDescriptor(element, "ref")?.get;
+    mayWarn = getter && "isReactWarning" in getter && getter.isReactWarning;
+    if (mayWarn) {
+        return element.props.ref;
+    }
+    return element.props.ref || element.ref;
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-focus-guards/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "FocusGuards",
+    ()=>FocusGuards,
+    "Root",
+    ()=>Root,
+    "useFocusGuards",
+    ()=>useFocusGuards
+]);
+// packages/react/focus-guards/src/FocusGuards.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+"use client";
+;
+var count = 0;
+function FocusGuards(props) {
+    useFocusGuards();
+    return props.children;
+}
+function useFocusGuards() {
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const edgeGuards = document.querySelectorAll("[data-radix-focus-guard]");
+        document.body.insertAdjacentElement("afterbegin", edgeGuards[0] ?? createFocusGuard());
+        document.body.insertAdjacentElement("beforeend", edgeGuards[1] ?? createFocusGuard());
+        count++;
+        return ()=>{
+            if (count === 1) {
+                document.querySelectorAll("[data-radix-focus-guard]").forEach((node)=>node.remove());
+            }
+            count--;
+        };
+    }, []);
+}
+function createFocusGuard() {
+    const element = document.createElement("span");
+    element.setAttribute("data-radix-focus-guard", "");
+    element.tabIndex = 0;
+    element.style.outline = "none";
+    element.style.opacity = "0";
+    element.style.position = "fixed";
+    element.style.pointerEvents = "none";
+    return element;
+}
+var Root = FocusGuards;
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/tslib/tslib.es6.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */ /* global Reflect, Promise, SuppressedError, Symbol, Iterator */ __turbopack_context__.s([
+    "__addDisposableResource",
+    ()=>__addDisposableResource,
+    "__assign",
+    ()=>__assign,
+    "__asyncDelegator",
+    ()=>__asyncDelegator,
+    "__asyncGenerator",
+    ()=>__asyncGenerator,
+    "__asyncValues",
+    ()=>__asyncValues,
+    "__await",
+    ()=>__await,
+    "__awaiter",
+    ()=>__awaiter,
+    "__classPrivateFieldGet",
+    ()=>__classPrivateFieldGet,
+    "__classPrivateFieldIn",
+    ()=>__classPrivateFieldIn,
+    "__classPrivateFieldSet",
+    ()=>__classPrivateFieldSet,
+    "__createBinding",
+    ()=>__createBinding,
+    "__decorate",
+    ()=>__decorate,
+    "__disposeResources",
+    ()=>__disposeResources,
+    "__esDecorate",
+    ()=>__esDecorate,
+    "__exportStar",
+    ()=>__exportStar,
+    "__extends",
+    ()=>__extends,
+    "__generator",
+    ()=>__generator,
+    "__importDefault",
+    ()=>__importDefault,
+    "__importStar",
+    ()=>__importStar,
+    "__makeTemplateObject",
+    ()=>__makeTemplateObject,
+    "__metadata",
+    ()=>__metadata,
+    "__param",
+    ()=>__param,
+    "__propKey",
+    ()=>__propKey,
+    "__read",
+    ()=>__read,
+    "__rest",
+    ()=>__rest,
+    "__rewriteRelativeImportExtension",
+    ()=>__rewriteRelativeImportExtension,
+    "__runInitializers",
+    ()=>__runInitializers,
+    "__setFunctionName",
+    ()=>__setFunctionName,
+    "__spread",
+    ()=>__spread,
+    "__spreadArray",
+    ()=>__spreadArray,
+    "__spreadArrays",
+    ()=>__spreadArrays,
+    "__values",
+    ()=>__values,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || ({
+        __proto__: []
+    }) instanceof Array && function(d, b) {
+        d.__proto__ = b;
+    } || function(d, b) {
+        for(var p in b)if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
+    };
+    return extendStatics(d, b);
+};
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() {
+        this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+function __rest(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++){
+        if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+}
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+function __param(paramIndex, decorator) {
+    return function(target, key) {
+        decorator(target, key, paramIndex);
+    };
+}
+function __esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
+    function accept(f) {
+        if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected");
+        return f;
+    }
+    var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
+    var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
+    var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
+    var _, done = false;
+    for(var i = decorators.length - 1; i >= 0; i--){
+        var context = {};
+        for(var p in contextIn)context[p] = p === "access" ? {} : contextIn[p];
+        for(var p in contextIn.access)context.access[p] = contextIn.access[p];
+        context.addInitializer = function(f) {
+            if (done) throw new TypeError("Cannot add initializers after decoration has completed");
+            extraInitializers.push(accept(f || null));
+        };
+        var result = (0, decorators[i])(kind === "accessor" ? {
+            get: descriptor.get,
+            set: descriptor.set
+        } : descriptor[key], context);
+        if (kind === "accessor") {
+            if (result === void 0) continue;
+            if (result === null || typeof result !== "object") throw new TypeError("Object expected");
+            if (_ = accept(result.get)) descriptor.get = _;
+            if (_ = accept(result.set)) descriptor.set = _;
+            if (_ = accept(result.init)) initializers.unshift(_);
+        } else if (_ = accept(result)) {
+            if (kind === "field") initializers.unshift(_);
+            else descriptor[key] = _;
+        }
+    }
+    if (target) Object.defineProperty(target, contextIn.name, descriptor);
+    done = true;
+}
+;
+function __runInitializers(thisArg, initializers, value) {
+    var useValue = arguments.length > 2;
+    for(var i = 0; i < initializers.length; i++){
+        value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
+    }
+    return useValue ? value : void 0;
+}
+;
+function __propKey(x) {
+    return typeof x === "symbol" ? x : "".concat(x);
+}
+;
+function __setFunctionName(f, name, prefix) {
+    if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
+    return Object.defineProperty(f, "name", {
+        configurable: true,
+        value: prefix ? "".concat(prefix, " ", name) : name
+    });
+}
+;
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+            resolve(value);
+        });
+    }
+    return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+            try {
+                step(generator.next(value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function rejected(value) {
+            try {
+                step(generator["throw"](value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function step(result) {
+            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+function __generator(thisArg, body) {
+    var _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
+    return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g;
+    //TURBOPACK unreachable
+    ;
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(g && (g = 0, op[0] && (_ = 0)), _)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+var __createBinding = Object.create ? function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = {
+            enumerable: true,
+            get: function() {
+                return m[k];
+            }
+        };
+    }
+    Object.defineProperty(o, k2, desc);
+} : function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+};
+function __exportStar(m, o) {
+    for(var p in m)if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function() {
+            if (o && i >= o.length) o = void 0;
+            return {
+                value: o && o[i++],
+                done: !o
+            };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while((n === void 0 || n-- > 0) && !(r = i.next()).done)ar.push(r.value);
+    } catch (error) {
+        e = {
+            error: error
+        };
+    } finally{
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        } finally{
+            if (e) throw e.error;
+        }
+    }
+    return ar;
+}
+function __spread() {
+    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+function __spreadArrays() {
+    for(var s = 0, i = 0, il = arguments.length; i < il; i++)s += arguments[i].length;
+    for(var r = Array(s), k = 0, i = 0; i < il; i++)for(var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)r[k] = a[j];
+    return r;
+}
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) for(var i = 0, l = from.length, ar; i < l; i++){
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i;
+    //TURBOPACK unreachable
+    ;
+    function awaitReturn(f) {
+        return function(v) {
+            return Promise.resolve(v).then(f, reject);
+        };
+    }
+    function verb(n, f) {
+        if (g[n]) {
+            i[n] = function(v) {
+                return new Promise(function(a, b) {
+                    q.push([
+                        n,
+                        v,
+                        a,
+                        b
+                    ]) > 1 || resume(n, v);
+                });
+            };
+            if (f) i[n] = f(i[n]);
+        }
+    }
+    function resume(n, v) {
+        try {
+            step(g[n](v));
+        } catch (e) {
+            settle(q[0][3], e);
+        }
+    }
+    function step(r) {
+        r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+    }
+    function fulfill(value) {
+        resume("next", value);
+    }
+    function reject(value) {
+        resume("throw", value);
+    }
+    function settle(f, v) {
+        if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
+    }
+}
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function(e) {
+        throw e;
+    }), verb("return"), i[Symbol.iterator] = function() {
+        return this;
+    }, i;
+    //TURBOPACK unreachable
+    ;
+    function verb(n, f) {
+        i[n] = o[n] ? function(v) {
+            return (p = !p) ? {
+                value: __await(o[n](v)),
+                done: false
+            } : f ? f(v) : v;
+        } : f;
+    }
+}
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i);
+    //TURBOPACK unreachable
+    ;
+    function verb(n) {
+        i[n] = o[n] && function(v) {
+            return new Promise(function(resolve, reject) {
+                v = o[n](v), settle(resolve, reject, v.done, v.value);
+            });
+        };
+    }
+    function settle(resolve, reject, d, v) {
+        Promise.resolve(v).then(function(v) {
+            resolve({
+                value: v,
+                done: d
+            });
+        }, reject);
+    }
+}
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) {
+        Object.defineProperty(cooked, "raw", {
+            value: raw
+        });
+    } else {
+        cooked.raw = raw;
+    }
+    return cooked;
+}
+;
+var __setModuleDefault = Object.create ? function(o, v) {
+    Object.defineProperty(o, "default", {
+        enumerable: true,
+        value: v
+    });
+} : function(o, v) {
+    o["default"] = v;
+};
+var ownKeys = function(o) {
+    ownKeys = Object.getOwnPropertyNames || function(o) {
+        var ar = [];
+        for(var k in o)if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+        return ar;
+    };
+    return ownKeys(o);
+};
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) {
+        for(var k = ownKeys(mod), i = 0; i < k.length; i++)if (k[i] !== "default") __createBinding(result, mod, k[i]);
+    }
+    __setModuleDefault(result, mod);
+    return result;
+}
+function __importDefault(mod) {
+    return mod && mod.__esModule ? mod : {
+        default: mod
+    };
+}
+function __classPrivateFieldGet(receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
+}
+function __classPrivateFieldIn(state, receiver) {
+    if (receiver === null || typeof receiver !== "object" && typeof receiver !== "function") throw new TypeError("Cannot use 'in' operator on non-object");
+    return typeof state === "function" ? receiver === state : state.has(receiver);
+}
+function __addDisposableResource(env, value, async) {
+    if (value !== null && value !== void 0) {
+        if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
+        var dispose, inner;
+        if (async) {
+            if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
+            dispose = value[Symbol.asyncDispose];
+        }
+        if (dispose === void 0) {
+            if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
+            dispose = value[Symbol.dispose];
+            if (async) inner = dispose;
+        }
+        if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
+        if (inner) dispose = function() {
+            try {
+                inner.call(this);
+            } catch (e) {
+                return Promise.reject(e);
+            }
+        };
+        env.stack.push({
+            value: value,
+            dispose: dispose,
+            async: async
+        });
+    } else if (async) {
+        env.stack.push({
+            async: true
+        });
+    }
+    return value;
+}
+var _SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function(error, suppressed, message) {
+    var e = new Error(message);
+    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+};
+function __disposeResources(env) {
+    function fail(e) {
+        env.error = env.hasError ? new _SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
+        env.hasError = true;
+    }
+    var r, s = 0;
+    function next() {
+        while(r = env.stack.pop()){
+            try {
+                if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
+                if (r.dispose) {
+                    var result = r.dispose.call(r.value);
+                    if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) {
+                        fail(e);
+                        return next();
+                    });
+                } else s |= 1;
+            } catch (e) {
+                fail(e);
+            }
+        }
+        if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
+        if (env.hasError) throw env.error;
+    }
+    return next();
+}
+function __rewriteRelativeImportExtension(path, preserveJsx) {
+    if (typeof path === "string" && /^\.\.?\//.test(path)) {
+        return path.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, function(m, tsx, d, ext, cm) {
+            return tsx ? preserveJsx ? ".jsx" : ".js" : d && (!ext || !cm) ? m : d + ext + "." + cm.toLowerCase() + "js";
+        });
+    }
+    return path;
+}
+const __TURBOPACK__default__export__ = {
+    __extends,
+    __assign,
+    __rest,
+    __decorate,
+    __param,
+    __esDecorate,
+    __runInitializers,
+    __propKey,
+    __setFunctionName,
+    __metadata,
+    __awaiter,
+    __generator,
+    __createBinding,
+    __exportStar,
+    __values,
+    __read,
+    __spread,
+    __spreadArrays,
+    __spreadArray,
+    __await,
+    __asyncGenerator,
+    __asyncDelegator,
+    __asyncValues,
+    __makeTemplateObject,
+    __importStar,
+    __importDefault,
+    __classPrivateFieldGet,
+    __classPrivateFieldSet,
+    __classPrivateFieldIn,
+    __addDisposableResource,
+    __disposeResources,
+    __rewriteRelativeImportExtension
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/constants.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "fullWidthClassName",
+    ()=>fullWidthClassName,
+    "noScrollbarsClassName",
+    ()=>noScrollbarsClassName,
+    "removedBarSizeVariable",
+    ()=>removedBarSizeVariable,
+    "zeroRightClassName",
+    ()=>zeroRightClassName
+]);
+var zeroRightClassName = 'right-scroll-bar-position';
+var fullWidthClassName = 'width-before-scroll-bar';
+var noScrollbarsClassName = 'with-scroll-bars-hidden';
+var removedBarSizeVariable = '--removed-body-scroll-bar-size';
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/utils.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getGapWidth",
+    ()=>getGapWidth,
+    "zeroGap",
+    ()=>zeroGap
+]);
+var zeroGap = {
+    left: 0,
+    top: 0,
+    right: 0,
+    gap: 0
+};
+var parse = function(x) {
+    return parseInt(x || '', 10) || 0;
+};
+var getOffset = function(gapMode) {
+    var cs = window.getComputedStyle(document.body);
+    var left = cs[gapMode === 'padding' ? 'paddingLeft' : 'marginLeft'];
+    var top = cs[gapMode === 'padding' ? 'paddingTop' : 'marginTop'];
+    var right = cs[gapMode === 'padding' ? 'paddingRight' : 'marginRight'];
+    return [
+        parse(left),
+        parse(top),
+        parse(right)
+    ];
+};
+var getGapWidth = function(gapMode) {
+    if (gapMode === void 0) {
+        gapMode = 'margin';
+    }
+    if ("TURBOPACK compile-time truthy", 1) {
+        return zeroGap;
+    }
+    //TURBOPACK unreachable
+    ;
+    var offsets;
+    var documentWidth;
+    var windowWidth;
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/component.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "RemoveScrollBar",
+    ()=>RemoveScrollBar,
+    "lockAttribute",
+    ()=>lockAttribute,
+    "useLockAttribute",
+    ()=>useLockAttribute
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/index.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$component$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/component.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/constants.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/utils.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+var Style = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$component$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["styleSingleton"])();
+var lockAttribute = 'data-scroll-locked';
+// important tip - once we measure scrollBar width and remove them
+// we could not repeat this operation
+// thus we are using style-singleton - only the first "yet correct" style will be applied.
+var getStyles = function(_a, allowRelative, gapMode, important) {
+    var left = _a.left, top = _a.top, right = _a.right, gap = _a.gap;
+    if (gapMode === void 0) {
+        gapMode = 'margin';
+    }
+    return "\n  .".concat(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noScrollbarsClassName"], " {\n   overflow: hidden ").concat(important, ";\n   padding-right: ").concat(gap, "px ").concat(important, ";\n  }\n  body[").concat(lockAttribute, "] {\n    overflow: hidden ").concat(important, ";\n    overscroll-behavior: contain;\n    ").concat([
+        allowRelative && "position: relative ".concat(important, ";"),
+        gapMode === 'margin' && "\n    padding-left: ".concat(left, "px;\n    padding-top: ").concat(top, "px;\n    padding-right: ").concat(right, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(gap, "px ").concat(important, ";\n    "),
+        gapMode === 'padding' && "padding-right: ".concat(gap, "px ").concat(important, ";")
+    ].filter(Boolean).join(''), "\n  }\n  \n  .").concat(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["zeroRightClassName"], " {\n    right: ").concat(gap, "px ").concat(important, ";\n  }\n  \n  .").concat(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fullWidthClassName"], " {\n    margin-right: ").concat(gap, "px ").concat(important, ";\n  }\n  \n  .").concat(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["zeroRightClassName"], " .").concat(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["zeroRightClassName"], " {\n    right: 0 ").concat(important, ";\n  }\n  \n  .").concat(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fullWidthClassName"], " .").concat(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fullWidthClassName"], " {\n    margin-right: 0 ").concat(important, ";\n  }\n  \n  body[").concat(lockAttribute, "] {\n    ").concat(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["removedBarSizeVariable"], ": ").concat(gap, "px;\n  }\n");
+};
+var getCurrentUseCounter = function() {
+    var counter = parseInt(document.body.getAttribute(lockAttribute) || '0', 10);
+    return isFinite(counter) ? counter : 0;
+};
+var useLockAttribute = function() {
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](function() {
+        document.body.setAttribute(lockAttribute, (getCurrentUseCounter() + 1).toString());
+        return function() {
+            var newCounter = getCurrentUseCounter() - 1;
+            if (newCounter <= 0) {
+                document.body.removeAttribute(lockAttribute);
+            } else {
+                document.body.setAttribute(lockAttribute, newCounter.toString());
+            }
+        };
+    }, []);
+};
+var RemoveScrollBar = function(_a) {
+    var noRelative = _a.noRelative, noImportant = _a.noImportant, _b = _a.gapMode, gapMode = _b === void 0 ? 'margin' : _b;
+    useLockAttribute();
+    /*
+     gap will be measured on every component mount
+     however it will be used only by the "first" invocation
+     due to singleton nature of <Style
+     */ var gap = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"](function() {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getGapWidth"])(gapMode);
+    }, [
+        gapMode
+    ]);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](Style, {
+        styles: getStyles(gap, !noRelative, gapMode, !noImportant ? '!important' : '')
+    });
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/index.js [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$component$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/component.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/constants.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/utils.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-callback-ref/dist/es2015/assignRef.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Assigns a value for a given ref, no matter of the ref format
+ * @param {RefObject} ref - a callback function or ref object
+ * @param value - a new value
+ *
+ * @see https://github.com/theKashey/use-callback-ref#assignref
+ * @example
+ * const refObject = useRef();
+ * const refFn = (ref) => {....}
+ *
+ * assignRef(refObject, "refValue");
+ * assignRef(refFn, "refValue");
+ */ __turbopack_context__.s([
+    "assignRef",
+    ()=>assignRef
+]);
+function assignRef(ref, value) {
+    if (typeof ref === 'function') {
+        ref(value);
+    } else if (ref) {
+        ref.current = value;
+    }
+    return ref;
+}
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-callback-ref/dist/es2015/useRef.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useCallbackRef",
+    ()=>useCallbackRef
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+function useCallbackRef(initialValue, callback) {
+    var ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(function() {
+        return {
+            // value
+            value: initialValue,
+            // last callback
+            callback: callback,
+            // "memoized" public interface
+            facade: {
+                get current () {
+                    return ref.value;
+                },
+                set current (value){
+                    var last = ref.value;
+                    if (last !== value) {
+                        ref.value = value;
+                        ref.callback(value, last);
+                    }
+                }
+            }
+        };
+    })[0];
+    // update callback
+    ref.callback = callback;
+    return ref.facade;
+}
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-callback-ref/dist/es2015/useMergeRef.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useMergeRefs",
+    ()=>useMergeRefs
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$callback$2d$ref$2f$dist$2f$es2015$2f$assignRef$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-callback-ref/dist/es2015/assignRef.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$callback$2d$ref$2f$dist$2f$es2015$2f$useRef$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-callback-ref/dist/es2015/useRef.js [app-ssr] (ecmascript)");
+;
+;
+;
+var useIsomorphicLayoutEffect = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"];
+var currentValues = new WeakMap();
+function useMergeRefs(refs, defaultValue) {
+    var callbackRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$callback$2d$ref$2f$dist$2f$es2015$2f$useRef$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallbackRef"])(defaultValue || null, function(newValue) {
+        return refs.forEach(function(ref) {
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$callback$2d$ref$2f$dist$2f$es2015$2f$assignRef$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["assignRef"])(ref, newValue);
+        });
+    });
+    // handle refs changes - added or removed
+    useIsomorphicLayoutEffect(function() {
+        var oldValue = currentValues.get(callbackRef);
+        if (oldValue) {
+            var prevRefs_1 = new Set(oldValue);
+            var nextRefs_1 = new Set(refs);
+            var current_1 = callbackRef.current;
+            prevRefs_1.forEach(function(ref) {
+                if (!nextRefs_1.has(ref)) {
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$callback$2d$ref$2f$dist$2f$es2015$2f$assignRef$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["assignRef"])(ref, null);
+                }
+            });
+            nextRefs_1.forEach(function(ref) {
+                if (!prevRefs_1.has(ref)) {
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$callback$2d$ref$2f$dist$2f$es2015$2f$assignRef$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["assignRef"])(ref, current_1);
+                }
+            });
+        }
+        currentValues.set(callbackRef, refs);
+    }, [
+        refs
+    ]);
+    return callbackRef;
+}
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-sidecar/dist/es2015/medium.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createMedium",
+    ()=>createMedium,
+    "createSidecarMedium",
+    ()=>createSidecarMedium
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/tslib/tslib.es6.mjs [app-ssr] (ecmascript)");
+;
+function ItoI(a) {
+    return a;
+}
+function innerCreateMedium(defaults, middleware) {
+    if (middleware === void 0) {
+        middleware = ItoI;
+    }
+    var buffer = [];
+    var assigned = false;
+    var medium = {
+        read: function() {
+            if (assigned) {
+                throw new Error('Sidecar: could not `read` from an `assigned` medium. `read` could be used only with `useMedium`.');
+            }
+            if (buffer.length) {
+                return buffer[buffer.length - 1];
+            }
+            return defaults;
+        },
+        useMedium: function(data) {
+            var item = middleware(data, assigned);
+            buffer.push(item);
+            return function() {
+                buffer = buffer.filter(function(x) {
+                    return x !== item;
+                });
+            };
+        },
+        assignSyncMedium: function(cb) {
+            assigned = true;
+            while(buffer.length){
+                var cbs = buffer;
+                buffer = [];
+                cbs.forEach(cb);
+            }
+            buffer = {
+                push: function(x) {
+                    return cb(x);
+                },
+                filter: function() {
+                    return buffer;
+                }
+            };
+        },
+        assignMedium: function(cb) {
+            assigned = true;
+            var pendingQueue = [];
+            if (buffer.length) {
+                var cbs = buffer;
+                buffer = [];
+                cbs.forEach(cb);
+                pendingQueue = buffer;
+            }
+            var executeQueue = function() {
+                var cbs = pendingQueue;
+                pendingQueue = [];
+                cbs.forEach(cb);
+            };
+            var cycle = function() {
+                return Promise.resolve().then(executeQueue);
+            };
+            cycle();
+            buffer = {
+                push: function(x) {
+                    pendingQueue.push(x);
+                    cycle();
+                },
+                filter: function(filter) {
+                    pendingQueue = pendingQueue.filter(filter);
+                    return buffer;
+                }
+            };
+        }
+    };
+    return medium;
+}
+function createMedium(defaults, middleware) {
+    if (middleware === void 0) {
+        middleware = ItoI;
+    }
+    return innerCreateMedium(defaults, middleware);
+}
+function createSidecarMedium(options) {
+    if (options === void 0) {
+        options = {};
+    }
+    var medium = innerCreateMedium(null);
+    medium.options = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__assign"])({
+        async: true,
+        ssr: false
+    }, options);
+    return medium;
+}
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-sidecar/dist/es2015/exports.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "exportSidecar",
+    ()=>exportSidecar
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/tslib/tslib.es6.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+;
+;
+var SideCar = function(_a) {
+    var sideCar = _a.sideCar, rest = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__rest"])(_a, [
+        "sideCar"
+    ]);
+    if (!sideCar) {
+        throw new Error('Sidecar: please provide `sideCar` property to import the right car');
+    }
+    var Target = sideCar.read();
+    if (!Target) {
+        throw new Error('Sidecar medium not found');
+    }
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](Target, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__assign"])({}, rest));
+};
+SideCar.isSideCarExport = true;
+function exportSidecar(medium, exported) {
+    medium.useMedium(exported);
+    return SideCar;
+}
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/medium.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "effectCar",
+    ()=>effectCar
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$sidecar$2f$dist$2f$es2015$2f$medium$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-sidecar/dist/es2015/medium.js [app-ssr] (ecmascript)");
+;
+var effectCar = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$sidecar$2f$dist$2f$es2015$2f$medium$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createSidecarMedium"])();
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/UI.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "RemoveScroll",
+    ()=>RemoveScroll
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/tslib/tslib.es6.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/constants.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$callback$2d$ref$2f$dist$2f$es2015$2f$useMergeRef$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-callback-ref/dist/es2015/useMergeRef.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$medium$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/medium.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+var nothing = function() {
+    return;
+};
+/**
+ * Removes scrollbar from the page and contain the scroll within the Lock
+ */ var RemoveScroll = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"](function(props, parentRef) {
+    var ref = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    var _a = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"]({
+        onScrollCapture: nothing,
+        onWheelCapture: nothing,
+        onTouchMoveCapture: nothing
+    }), callbacks = _a[0], setCallbacks = _a[1];
+    var forwardProps = props.forwardProps, children = props.children, className = props.className, removeScrollBar = props.removeScrollBar, enabled = props.enabled, shards = props.shards, sideCar = props.sideCar, noRelative = props.noRelative, noIsolation = props.noIsolation, inert = props.inert, allowPinchZoom = props.allowPinchZoom, _b = props.as, Container = _b === void 0 ? 'div' : _b, gapMode = props.gapMode, rest = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__rest"])(props, [
+        "forwardProps",
+        "children",
+        "className",
+        "removeScrollBar",
+        "enabled",
+        "shards",
+        "sideCar",
+        "noRelative",
+        "noIsolation",
+        "inert",
+        "allowPinchZoom",
+        "as",
+        "gapMode"
+    ]);
+    var SideCar = sideCar;
+    var containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$callback$2d$ref$2f$dist$2f$es2015$2f$useMergeRef$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMergeRefs"])([
+        ref,
+        parentRef
+    ]);
+    var containerProps = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__assign"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__assign"])({}, rest), callbacks);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], null, enabled && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](SideCar, {
+        sideCar: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$medium$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["effectCar"],
+        removeScrollBar: removeScrollBar,
+        shards: shards,
+        noRelative: noRelative,
+        noIsolation: noIsolation,
+        inert: inert,
+        setCallbacks: setCallbacks,
+        allowPinchZoom: !!allowPinchZoom,
+        lockRef: ref,
+        gapMode: gapMode
+    }), forwardProps ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cloneElement"](__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].only(children), (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__assign"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__assign"])({}, containerProps), {
+        ref: containerRef
+    })) : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](Container, (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__assign"])({}, containerProps, {
+        className: className,
+        ref: containerRef
+    }), children));
+});
+RemoveScroll.defaultProps = {
+    enabled: true,
+    removeScrollBar: true,
+    inert: false
+};
+RemoveScroll.classNames = {
+    fullWidth: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["fullWidthClassName"],
+    zeroRight: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$constants$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["zeroRightClassName"]
+};
+;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "nonPassive",
+    ()=>nonPassive
+]);
+var passiveSupported = false;
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+{
+    var options;
+}
+var nonPassive = passiveSupported ? {
+    passive: false
+} : false;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/handleScroll.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "handleScroll",
+    ()=>handleScroll,
+    "locationCouldBeScrolled",
+    ()=>locationCouldBeScrolled
+]);
+var alwaysContainsScroll = function(node) {
+    // textarea will always _contain_ scroll inside self. It only can be hidden
+    return node.tagName === 'TEXTAREA';
+};
+var elementCanBeScrolled = function(node, overflow) {
+    if (!(node instanceof Element)) {
+        return false;
+    }
+    var styles = window.getComputedStyle(node);
+    return(// not-not-scrollable
+    styles[overflow] !== 'hidden' && // contains scroll inside self
+    !(styles.overflowY === styles.overflowX && !alwaysContainsScroll(node) && styles[overflow] === 'visible'));
+};
+var elementCouldBeVScrolled = function(node) {
+    return elementCanBeScrolled(node, 'overflowY');
+};
+var elementCouldBeHScrolled = function(node) {
+    return elementCanBeScrolled(node, 'overflowX');
+};
+var locationCouldBeScrolled = function(axis, node) {
+    var ownerDocument = node.ownerDocument;
+    var current = node;
+    do {
+        // Skip over shadow root
+        if (typeof ShadowRoot !== 'undefined' && current instanceof ShadowRoot) {
+            current = current.host;
+        }
+        var isScrollable = elementCouldBeScrolled(axis, current);
+        if (isScrollable) {
+            var _a = getScrollVariables(axis, current), scrollHeight = _a[1], clientHeight = _a[2];
+            if (scrollHeight > clientHeight) {
+                return true;
+            }
+        }
+        current = current.parentNode;
+    }while (current && current !== ownerDocument.body)
+    return false;
+};
+var getVScrollVariables = function(_a) {
+    var scrollTop = _a.scrollTop, scrollHeight = _a.scrollHeight, clientHeight = _a.clientHeight;
+    return [
+        scrollTop,
+        scrollHeight,
+        clientHeight
+    ];
+};
+var getHScrollVariables = function(_a) {
+    var scrollLeft = _a.scrollLeft, scrollWidth = _a.scrollWidth, clientWidth = _a.clientWidth;
+    return [
+        scrollLeft,
+        scrollWidth,
+        clientWidth
+    ];
+};
+var elementCouldBeScrolled = function(axis, node) {
+    return axis === 'v' ? elementCouldBeVScrolled(node) : elementCouldBeHScrolled(node);
+};
+var getScrollVariables = function(axis, node) {
+    return axis === 'v' ? getVScrollVariables(node) : getHScrollVariables(node);
+};
+var getDirectionFactor = function(axis, direction) {
+    /**
+     * If the element's direction is rtl (right-to-left), then scrollLeft is 0 when the scrollbar is at its rightmost position,
+     * and then increasingly negative as you scroll towards the end of the content.
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft
+     */ return axis === 'h' && direction === 'rtl' ? -1 : 1;
+};
+var handleScroll = function(axis, endTarget, event, sourceDelta, noOverscroll) {
+    var directionFactor = getDirectionFactor(axis, window.getComputedStyle(endTarget).direction);
+    var delta = directionFactor * sourceDelta;
+    // find scrollable target
+    var target = event.target;
+    var targetInLock = endTarget.contains(target);
+    var shouldCancelScroll = false;
+    var isDeltaPositive = delta > 0;
+    var availableScroll = 0;
+    var availableScrollTop = 0;
+    do {
+        if (!target) {
+            break;
+        }
+        var _a = getScrollVariables(axis, target), position = _a[0], scroll_1 = _a[1], capacity = _a[2];
+        var elementScroll = scroll_1 - capacity - directionFactor * position;
+        if (position || elementScroll) {
+            if (elementCouldBeScrolled(axis, target)) {
+                availableScroll += elementScroll;
+                availableScrollTop += position;
+            }
+        }
+        var parent_1 = target.parentNode;
+        // we will "bubble" from ShadowDom in case we are, or just to the parent in normal case
+        // this is the same logic used in focus-lock
+        target = parent_1 && parent_1.nodeType === Node.DOCUMENT_FRAGMENT_NODE ? parent_1.host : parent_1;
+    }while (// portaled content
+    !targetInLock && target !== document.body || targetInLock && (endTarget.contains(target) || endTarget === target))
+    // handle epsilon around 0 (non standard zoom levels)
+    if (isDeltaPositive && (noOverscroll && Math.abs(availableScroll) < 1 || !noOverscroll && delta > availableScroll)) {
+        shouldCancelScroll = true;
+    } else if (!isDeltaPositive && (noOverscroll && Math.abs(availableScrollTop) < 1 || !noOverscroll && -delta > availableScrollTop)) {
+        shouldCancelScroll = true;
+    }
+    return shouldCancelScroll;
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/SideEffect.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "RemoveScrollSideCar",
+    ()=>RemoveScrollSideCar,
+    "getDeltaXY",
+    ()=>getDeltaXY,
+    "getTouchXY",
+    ()=>getTouchXY
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/tslib/tslib.es6.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/index.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$component$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll-bar/dist/es2015/component.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/index.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$component$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/component.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$aggresiveCapture$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$handleScroll$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/handleScroll.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+var getTouchXY = function(event) {
+    return 'changedTouches' in event ? [
+        event.changedTouches[0].clientX,
+        event.changedTouches[0].clientY
+    ] : [
+        0,
+        0
+    ];
+};
+var getDeltaXY = function(event) {
+    return [
+        event.deltaX,
+        event.deltaY
+    ];
+};
+var extractRef = function(ref) {
+    return ref && 'current' in ref ? ref.current : ref;
+};
+var deltaCompare = function(x, y) {
+    return x[0] === y[0] && x[1] === y[1];
+};
+var generateStyle = function(id) {
+    return "\n  .block-interactivity-".concat(id, " {pointer-events: none;}\n  .allow-interactivity-").concat(id, " {pointer-events: all;}\n");
+};
+var idCounter = 0;
+var lockStack = [];
+function RemoveScrollSideCar(props) {
+    var shouldPreventQueue = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"]([]);
+    var touchStartRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"]([
+        0,
+        0
+    ]);
+    var activeAxis = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"]();
+    var id = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](idCounter++)[0];
+    var Style = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"](__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$component$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["styleSingleton"])[0];
+    var lastProps = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](props);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](function() {
+        lastProps.current = props;
+    }, [
+        props
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](function() {
+        if (props.inert) {
+            document.body.classList.add("block-interactivity-".concat(id));
+            var allow_1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__spreadArray"])([
+                props.lockRef.current
+            ], (props.shards || []).map(extractRef), true).filter(Boolean);
+            allow_1.forEach(function(el) {
+                return el.classList.add("allow-interactivity-".concat(id));
+            });
+            return function() {
+                document.body.classList.remove("block-interactivity-".concat(id));
+                allow_1.forEach(function(el) {
+                    return el.classList.remove("allow-interactivity-".concat(id));
+                });
+            };
+        }
+        return;
+    }, [
+        props.inert,
+        props.lockRef.current,
+        props.shards
+    ]);
+    var shouldCancelEvent = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](function(event, parent) {
+        if ('touches' in event && event.touches.length === 2 || event.type === 'wheel' && event.ctrlKey) {
+            return !lastProps.current.allowPinchZoom;
+        }
+        var touch = getTouchXY(event);
+        var touchStart = touchStartRef.current;
+        var deltaX = 'deltaX' in event ? event.deltaX : touchStart[0] - touch[0];
+        var deltaY = 'deltaY' in event ? event.deltaY : touchStart[1] - touch[1];
+        var currentAxis;
+        var target = event.target;
+        var moveDirection = Math.abs(deltaX) > Math.abs(deltaY) ? 'h' : 'v';
+        // allow horizontal touch move on Range inputs. They will not cause any scroll
+        if ('touches' in event && moveDirection === 'h' && target.type === 'range') {
+            return false;
+        }
+        // allow drag selection (iOS); check if selection's anchorNode is the same as target or contains target
+        var selection = window.getSelection();
+        var anchorNode = selection && selection.anchorNode;
+        var isTouchingSelection = anchorNode ? anchorNode === target || anchorNode.contains(target) : false;
+        if (isTouchingSelection) {
+            return false;
+        }
+        var canBeScrolledInMainDirection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$handleScroll$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["locationCouldBeScrolled"])(moveDirection, target);
+        if (!canBeScrolledInMainDirection) {
+            return true;
+        }
+        if (canBeScrolledInMainDirection) {
+            currentAxis = moveDirection;
+        } else {
+            currentAxis = moveDirection === 'v' ? 'h' : 'v';
+            canBeScrolledInMainDirection = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$handleScroll$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["locationCouldBeScrolled"])(moveDirection, target);
+        // other axis might be not scrollable
+        }
+        if (!canBeScrolledInMainDirection) {
+            return false;
+        }
+        if (!activeAxis.current && 'changedTouches' in event && (deltaX || deltaY)) {
+            activeAxis.current = currentAxis;
+        }
+        if (!currentAxis) {
+            return true;
+        }
+        var cancelingAxis = activeAxis.current || currentAxis;
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$handleScroll$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["handleScroll"])(cancelingAxis, parent, event, cancelingAxis === 'h' ? deltaX : deltaY, true);
+    }, []);
+    var shouldPrevent = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](function(_event) {
+        var event = _event;
+        if (!lockStack.length || lockStack[lockStack.length - 1] !== Style) {
+            // not the last active
+            return;
+        }
+        var delta = 'deltaY' in event ? getDeltaXY(event) : getTouchXY(event);
+        var sourceEvent = shouldPreventQueue.current.filter(function(e) {
+            return e.name === event.type && (e.target === event.target || event.target === e.shadowParent) && deltaCompare(e.delta, delta);
+        })[0];
+        // self event, and should be canceled
+        if (sourceEvent && sourceEvent.should) {
+            if (event.cancelable) {
+                event.preventDefault();
+            }
+            return;
+        }
+        // outside or shard event
+        if (!sourceEvent) {
+            var shardNodes = (lastProps.current.shards || []).map(extractRef).filter(Boolean).filter(function(node) {
+                return node.contains(event.target);
+            });
+            var shouldStop = shardNodes.length > 0 ? shouldCancelEvent(event, shardNodes[0]) : !lastProps.current.noIsolation;
+            if (shouldStop) {
+                if (event.cancelable) {
+                    event.preventDefault();
+                }
+            }
+        }
+    }, []);
+    var shouldCancel = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](function(name, delta, target, should) {
+        var event = {
+            name: name,
+            delta: delta,
+            target: target,
+            should: should,
+            shadowParent: getOutermostShadowParent(target)
+        };
+        shouldPreventQueue.current.push(event);
+        setTimeout(function() {
+            shouldPreventQueue.current = shouldPreventQueue.current.filter(function(e) {
+                return e !== event;
+            });
+        }, 1);
+    }, []);
+    var scrollTouchStart = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](function(event) {
+        touchStartRef.current = getTouchXY(event);
+        activeAxis.current = undefined;
+    }, []);
+    var scrollWheel = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](function(event) {
+        shouldCancel(event.type, getDeltaXY(event), event.target, shouldCancelEvent(event, props.lockRef.current));
+    }, []);
+    var scrollTouchMove = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](function(event) {
+        shouldCancel(event.type, getTouchXY(event), event.target, shouldCancelEvent(event, props.lockRef.current));
+    }, []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](function() {
+        lockStack.push(Style);
+        props.setCallbacks({
+            onScrollCapture: scrollWheel,
+            onWheelCapture: scrollWheel,
+            onTouchMoveCapture: scrollTouchMove
+        });
+        document.addEventListener('wheel', shouldPrevent, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$aggresiveCapture$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["nonPassive"]);
+        document.addEventListener('touchmove', shouldPrevent, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$aggresiveCapture$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["nonPassive"]);
+        document.addEventListener('touchstart', scrollTouchStart, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$aggresiveCapture$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["nonPassive"]);
+        return function() {
+            lockStack = lockStack.filter(function(inst) {
+                return inst !== Style;
+            });
+            document.removeEventListener('wheel', shouldPrevent, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$aggresiveCapture$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["nonPassive"]);
+            document.removeEventListener('touchmove', shouldPrevent, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$aggresiveCapture$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["nonPassive"]);
+            document.removeEventListener('touchstart', scrollTouchStart, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$aggresiveCapture$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["nonPassive"]);
+        };
+    }, []);
+    var removeScrollBar = props.removeScrollBar, inert = props.inert;
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], null, inert ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](Style, {
+        styles: generateStyle(id)
+    }) : null, removeScrollBar ? __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2d$bar$2f$dist$2f$es2015$2f$component$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RemoveScrollBar"], {
+        noRelative: props.noRelative,
+        gapMode: props.gapMode
+    }) : null);
+}
+function getOutermostShadowParent(node) {
+    var shadowParent = null;
+    while(node !== null){
+        if (node instanceof ShadowRoot) {
+            shadowParent = node.host;
+            node = node.host;
+        }
+        node = node.parentNode;
+    }
+    return shadowParent;
+}
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/sidecar.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$sidecar$2f$dist$2f$es2015$2f$exports$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/use-sidecar/dist/es2015/exports.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$SideEffect$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/SideEffect.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$medium$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/medium.js [app-ssr] (ecmascript)");
+;
+;
+;
+const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$use$2d$sidecar$2f$dist$2f$es2015$2f$exports$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["exportSidecar"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$medium$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["effectCar"], __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$SideEffect$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RemoveScrollSideCar"]);
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/Combination.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/tslib/tslib.es6.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$UI$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/UI.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$sidecar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/sidecar.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+var ReactRemoveScroll = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"](function(props, ref) {
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createElement"](__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$UI$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RemoveScroll"], (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$tslib$2f$tslib$2e$es6$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["__assign"])({}, props, {
+        ref: ref,
+        sideCar: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$sidecar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+    }));
+});
+ReactRemoveScroll.classNames = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$UI$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RemoveScroll"].classNames;
+const __TURBOPACK__default__export__ = ReactRemoveScroll;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/Combination.js [app-ssr] (ecmascript) <export default as RemoveScroll>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "RemoveScroll",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$Combination$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$Combination$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/Combination.js [app-ssr] (ecmascript)");
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/get-nonce/dist/es2015/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getNonce",
+    ()=>getNonce,
+    "setNonce",
+    ()=>setNonce
+]);
+var currentNonce;
+var setNonce = function(nonce) {
+    currentNonce = nonce;
+};
+var getNonce = function() {
+    if (currentNonce) {
+        return currentNonce;
+    }
+    if (typeof __webpack_nonce__ !== 'undefined') {
+        return __webpack_nonce__;
+    }
+    return undefined;
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/singleton.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "stylesheetSingleton",
+    ()=>stylesheetSingleton
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$get$2d$nonce$2f$dist$2f$es2015$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/get-nonce/dist/es2015/index.js [app-ssr] (ecmascript)");
+;
+function makeStyleTag() {
+    if (!document) return null;
+    var tag = document.createElement('style');
+    tag.type = 'text/css';
+    var nonce = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$get$2d$nonce$2f$dist$2f$es2015$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getNonce"])();
+    if (nonce) {
+        tag.setAttribute('nonce', nonce);
+    }
+    return tag;
+}
+function injectStyles(tag, css) {
+    // @ts-ignore
+    if (tag.styleSheet) {
+        // @ts-ignore
+        tag.styleSheet.cssText = css;
+    } else {
+        tag.appendChild(document.createTextNode(css));
+    }
+}
+function insertStyleTag(tag) {
+    var head = document.head || document.getElementsByTagName('head')[0];
+    head.appendChild(tag);
+}
+var stylesheetSingleton = function() {
+    var counter = 0;
+    var stylesheet = null;
+    return {
+        add: function(style) {
+            if (counter == 0) {
+                if (stylesheet = makeStyleTag()) {
+                    injectStyles(stylesheet, style);
+                    insertStyleTag(stylesheet);
+                }
+            }
+            counter++;
+        },
+        remove: function() {
+            counter--;
+            if (!counter && stylesheet) {
+                stylesheet.parentNode && stylesheet.parentNode.removeChild(stylesheet);
+                stylesheet = null;
+            }
+        }
+    };
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/hook.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "styleHookSingleton",
+    ()=>styleHookSingleton
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$singleton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/singleton.js [app-ssr] (ecmascript)");
+;
+;
+var styleHookSingleton = function() {
+    var sheet = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$singleton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["stylesheetSingleton"])();
+    return function(styles, isDynamic) {
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](function() {
+            sheet.add(styles);
+            return function() {
+                sheet.remove();
+            };
+        }, [
+            styles && isDynamic
+        ]);
+    };
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/component.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "styleSingleton",
+    ()=>styleSingleton
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$hook$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/hook.js [app-ssr] (ecmascript)");
+;
+var styleSingleton = function() {
+    var useStyle = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$hook$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["styleHookSingleton"])();
+    var Sheet = function(_a) {
+        var styles = _a.styles, dynamic = _a.dynamic;
+        useStyle(styles, dynamic);
+        return null;
+    };
+    return Sheet;
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/index.js [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$component$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/component.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$singleton$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/singleton.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$style$2d$singleton$2f$dist$2f$es2015$2f$hook$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-style-singleton/dist/es2015/hook.js [app-ssr] (ecmascript)");
+;
+;
+;
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/aria-hidden/dist/es2015/index.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "hideOthers",
+    ()=>hideOthers,
+    "inertOthers",
+    ()=>inertOthers,
+    "supportsInert",
+    ()=>supportsInert,
+    "suppressOthers",
+    ()=>suppressOthers
+]);
+var getDefaultParent = function(originalTarget) {
+    if (typeof document === 'undefined') {
+        return null;
+    }
+    var sampleTarget = Array.isArray(originalTarget) ? originalTarget[0] : originalTarget;
+    return sampleTarget.ownerDocument.body;
+};
+var counterMap = new WeakMap();
+var uncontrolledNodes = new WeakMap();
+var markerMap = {};
+var lockCount = 0;
+var unwrapHost = function(node) {
+    return node && (node.host || unwrapHost(node.parentNode));
+};
+var correctTargets = function(parent, targets) {
+    return targets.map(function(target) {
+        if (parent.contains(target)) {
+            return target;
+        }
+        var correctedTarget = unwrapHost(target);
+        if (correctedTarget && parent.contains(correctedTarget)) {
+            return correctedTarget;
+        }
+        console.error('aria-hidden', target, 'in not contained inside', parent, '. Doing nothing');
+        return null;
+    }).filter(function(x) {
+        return Boolean(x);
+    });
+};
+/**
+ * Marks everything except given node(or nodes) as aria-hidden
+ * @param {Element | Element[]} originalTarget - elements to keep on the page
+ * @param [parentNode] - top element, defaults to document.body
+ * @param {String} [markerName] - a special attribute to mark every node
+ * @param {String} [controlAttribute] - html Attribute to control
+ * @return {Undo} undo command
+ */ var applyAttributeToOthers = function(originalTarget, parentNode, markerName, controlAttribute) {
+    var targets = correctTargets(parentNode, Array.isArray(originalTarget) ? originalTarget : [
+        originalTarget
+    ]);
+    if (!markerMap[markerName]) {
+        markerMap[markerName] = new WeakMap();
+    }
+    var markerCounter = markerMap[markerName];
+    var hiddenNodes = [];
+    var elementsToKeep = new Set();
+    var elementsToStop = new Set(targets);
+    var keep = function(el) {
+        if (!el || elementsToKeep.has(el)) {
+            return;
+        }
+        elementsToKeep.add(el);
+        keep(el.parentNode);
+    };
+    targets.forEach(keep);
+    var deep = function(parent) {
+        if (!parent || elementsToStop.has(parent)) {
+            return;
+        }
+        Array.prototype.forEach.call(parent.children, function(node) {
+            if (elementsToKeep.has(node)) {
+                deep(node);
+            } else {
+                try {
+                    var attr = node.getAttribute(controlAttribute);
+                    var alreadyHidden = attr !== null && attr !== 'false';
+                    var counterValue = (counterMap.get(node) || 0) + 1;
+                    var markerValue = (markerCounter.get(node) || 0) + 1;
+                    counterMap.set(node, counterValue);
+                    markerCounter.set(node, markerValue);
+                    hiddenNodes.push(node);
+                    if (counterValue === 1 && alreadyHidden) {
+                        uncontrolledNodes.set(node, true);
+                    }
+                    if (markerValue === 1) {
+                        node.setAttribute(markerName, 'true');
+                    }
+                    if (!alreadyHidden) {
+                        node.setAttribute(controlAttribute, 'true');
+                    }
+                } catch (e) {
+                    console.error('aria-hidden: cannot operate on ', node, e);
+                }
+            }
+        });
+    };
+    deep(parentNode);
+    elementsToKeep.clear();
+    lockCount++;
+    return function() {
+        hiddenNodes.forEach(function(node) {
+            var counterValue = counterMap.get(node) - 1;
+            var markerValue = markerCounter.get(node) - 1;
+            counterMap.set(node, counterValue);
+            markerCounter.set(node, markerValue);
+            if (!counterValue) {
+                if (!uncontrolledNodes.has(node)) {
+                    node.removeAttribute(controlAttribute);
+                }
+                uncontrolledNodes.delete(node);
+            }
+            if (!markerValue) {
+                node.removeAttribute(markerName);
+            }
+        });
+        lockCount--;
+        if (!lockCount) {
+            // clear
+            counterMap = new WeakMap();
+            counterMap = new WeakMap();
+            uncontrolledNodes = new WeakMap();
+            markerMap = {};
+        }
+    };
+};
+var hideOthers = function(originalTarget, parentNode, markerName) {
+    if (markerName === void 0) {
+        markerName = 'data-aria-hidden';
+    }
+    var targets = Array.from(Array.isArray(originalTarget) ? originalTarget : [
+        originalTarget
+    ]);
+    var activeParentNode = parentNode || getDefaultParent(originalTarget);
+    if (!activeParentNode) {
+        return function() {
+            return null;
+        };
+    }
+    // we should not hide aria-live elements - https://github.com/theKashey/aria-hidden/issues/10
+    // and script elements, as they have no impact on accessibility.
+    targets.push.apply(targets, Array.from(activeParentNode.querySelectorAll('[aria-live], script')));
+    return applyAttributeToOthers(targets, activeParentNode, markerName, 'aria-hidden');
+};
+var inertOthers = function(originalTarget, parentNode, markerName) {
+    if (markerName === void 0) {
+        markerName = 'data-inert-ed';
+    }
+    var activeParentNode = parentNode || getDefaultParent(originalTarget);
+    if (!activeParentNode) {
+        return function() {
+            return null;
+        };
+    }
+    return applyAttributeToOthers(originalTarget, activeParentNode, markerName, 'inert');
+};
+var supportsInert = function() {
+    return typeof HTMLElement !== 'undefined' && HTMLElement.prototype.hasOwnProperty('inert');
+};
+var suppressOthers = function(originalTarget, parentNode, markerName) {
+    if (markerName === void 0) {
+        markerName = 'data-suppressed';
+    }
+    return (supportsInert() ? inertOthers : hideOthers)(originalTarget, parentNode, markerName);
+};
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-dialog/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Close",
+    ()=>Close,
+    "Content",
+    ()=>Content,
+    "Description",
+    ()=>Description,
+    "Dialog",
+    ()=>Dialog,
+    "DialogClose",
+    ()=>DialogClose,
+    "DialogContent",
+    ()=>DialogContent,
+    "DialogDescription",
+    ()=>DialogDescription,
+    "DialogOverlay",
+    ()=>DialogOverlay,
+    "DialogPortal",
+    ()=>DialogPortal,
+    "DialogTitle",
+    ()=>DialogTitle,
+    "DialogTrigger",
+    ()=>DialogTrigger,
+    "Overlay",
+    ()=>Overlay,
+    "Portal",
+    ()=>Portal,
+    "Root",
+    ()=>Root,
+    "Title",
+    ()=>Title,
+    "Trigger",
+    ()=>Trigger,
+    "WarningProvider",
+    ()=>WarningProvider,
+    "createDialogScope",
+    ()=>createDialogScope
+]);
+// packages/react/dialog/src/Dialog.tsx
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/primitive/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-compose-refs/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$context$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-context/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$id$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-id/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$controllable$2d$state$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dismissable$2d$layer$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$focus$2d$scope$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-focus-scope/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$portal$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-portal/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$presence$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-presence/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-primitive/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$focus$2d$guards$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-focus-guards/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$Combination$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RemoveScroll$3e$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/react-remove-scroll/dist/es2015/Combination.js [app-ssr] (ecmascript) <export default as RemoveScroll>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$aria$2d$hidden$2f$dist$2f$es2015$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/aria-hidden/dist/es2015/index.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-slot/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-runtime.js [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+var DIALOG_NAME = "Dialog";
+var [createDialogContext, createDialogScope] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$context$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContextScope"])(DIALOG_NAME);
+var [DialogProvider, useDialogContext] = createDialogContext(DIALOG_NAME);
+var Dialog = (props)=>{
+    const { __scopeDialog, children, open: openProp, defaultOpen, onOpenChange, modal = true } = props;
+    const triggerRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const contentRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const [open = false, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$use$2d$controllable$2d$state$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useControllableState"])({
+        prop: openProp,
+        defaultProp: defaultOpen,
+        onChange: onOpenChange
+    });
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(DialogProvider, {
+        scope: __scopeDialog,
+        triggerRef,
+        contentRef,
+        contentId: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$id$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])(),
+        titleId: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$id$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])(),
+        descriptionId: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$id$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useId"])(),
+        open,
+        onOpenChange: setOpen,
+        onOpenToggle: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](()=>setOpen((prevOpen)=>!prevOpen), [
+            setOpen
+        ]),
+        modal,
+        children
+    });
+};
+Dialog.displayName = DIALOG_NAME;
+var TRIGGER_NAME = "DialogTrigger";
+var DialogTrigger = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { __scopeDialog, ...triggerProps } = props;
+    const context = useDialogContext(TRIGGER_NAME, __scopeDialog);
+    const composedTriggerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useComposedRefs"])(forwardedRef, context.triggerRef);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].button, {
+        type: "button",
+        "aria-haspopup": "dialog",
+        "aria-expanded": context.open,
+        "aria-controls": context.contentId,
+        "data-state": getState(context.open),
+        ...triggerProps,
+        ref: composedTriggerRef,
+        onClick: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeEventHandlers"])(props.onClick, context.onOpenToggle)
+    });
+});
+DialogTrigger.displayName = TRIGGER_NAME;
+var PORTAL_NAME = "DialogPortal";
+var [PortalProvider, usePortalContext] = createDialogContext(PORTAL_NAME, {
+    forceMount: void 0
+});
+var DialogPortal = (props)=>{
+    const { __scopeDialog, forceMount, children, container } = props;
+    const context = useDialogContext(PORTAL_NAME, __scopeDialog);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(PortalProvider, {
+        scope: __scopeDialog,
+        forceMount,
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Children"].map(children, (child)=>/* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$presence$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Presence"], {
+                present: forceMount || context.open,
+                children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$portal$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Portal"], {
+                    asChild: true,
+                    container,
+                    children: child
+                })
+            }))
+    });
+};
+DialogPortal.displayName = PORTAL_NAME;
+var OVERLAY_NAME = "DialogOverlay";
+var DialogOverlay = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const portalContext = usePortalContext(OVERLAY_NAME, props.__scopeDialog);
+    const { forceMount = portalContext.forceMount, ...overlayProps } = props;
+    const context = useDialogContext(OVERLAY_NAME, props.__scopeDialog);
+    return context.modal ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$presence$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Presence"], {
+        present: forceMount || context.open,
+        children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(DialogOverlayImpl, {
+            ...overlayProps,
+            ref: forwardedRef
+        })
+    }) : null;
+});
+DialogOverlay.displayName = OVERLAY_NAME;
+var DialogOverlayImpl = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { __scopeDialog, ...overlayProps } = props;
+    const context = useDialogContext(OVERLAY_NAME, __scopeDialog);
+    return(// Make sure `Content` is scrollable even when it doesn't live inside `RemoveScroll`
+    // ie. when `Overlay` and `Content` are siblings
+    /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$react$2d$remove$2d$scroll$2f$dist$2f$es2015$2f$Combination$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__RemoveScroll$3e$__["RemoveScroll"], {
+        as: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Slot"],
+        allowPinchZoom: true,
+        shards: [
+            context.contentRef
+        ],
+        children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].div, {
+            "data-state": getState(context.open),
+            ...overlayProps,
+            ref: forwardedRef,
+            style: {
+                pointerEvents: "auto",
+                ...overlayProps.style
+            }
+        })
+    }));
+});
+var CONTENT_NAME = "DialogContent";
+var DialogContent = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const portalContext = usePortalContext(CONTENT_NAME, props.__scopeDialog);
+    const { forceMount = portalContext.forceMount, ...contentProps } = props;
+    const context = useDialogContext(CONTENT_NAME, props.__scopeDialog);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$presence$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Presence"], {
+        present: forceMount || context.open,
+        children: context.modal ? /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(DialogContentModal, {
+            ...contentProps,
+            ref: forwardedRef
+        }) : /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(DialogContentNonModal, {
+            ...contentProps,
+            ref: forwardedRef
+        })
+    });
+});
+DialogContent.displayName = CONTENT_NAME;
+var DialogContentModal = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const context = useDialogContext(CONTENT_NAME, props.__scopeDialog);
+    const contentRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const composedRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useComposedRefs"])(forwardedRef, context.contentRef, contentRef);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const content = contentRef.current;
+        if (content) return (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$aria$2d$hidden$2f$dist$2f$es2015$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hideOthers"])(content);
+    }, []);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(DialogContentImpl, {
+        ...props,
+        ref: composedRefs,
+        trapFocus: context.open,
+        disableOutsidePointerEvents: true,
+        onCloseAutoFocus: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeEventHandlers"])(props.onCloseAutoFocus, (event)=>{
+            event.preventDefault();
+            context.triggerRef.current?.focus();
+        }),
+        onPointerDownOutside: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeEventHandlers"])(props.onPointerDownOutside, (event)=>{
+            const originalEvent = event.detail.originalEvent;
+            const ctrlLeftClick = originalEvent.button === 0 && originalEvent.ctrlKey === true;
+            const isRightClick = originalEvent.button === 2 || ctrlLeftClick;
+            if (isRightClick) event.preventDefault();
+        }),
+        onFocusOutside: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeEventHandlers"])(props.onFocusOutside, (event)=>event.preventDefault())
+    });
+});
+var DialogContentNonModal = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const context = useDialogContext(CONTENT_NAME, props.__scopeDialog);
+    const hasInteractedOutsideRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](false);
+    const hasPointerDownOutsideRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](false);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(DialogContentImpl, {
+        ...props,
+        ref: forwardedRef,
+        trapFocus: false,
+        disableOutsidePointerEvents: false,
+        onCloseAutoFocus: (event)=>{
+            props.onCloseAutoFocus?.(event);
+            if (!event.defaultPrevented) {
+                if (!hasInteractedOutsideRef.current) context.triggerRef.current?.focus();
+                event.preventDefault();
+            }
+            hasInteractedOutsideRef.current = false;
+            hasPointerDownOutsideRef.current = false;
+        },
+        onInteractOutside: (event)=>{
+            props.onInteractOutside?.(event);
+            if (!event.defaultPrevented) {
+                hasInteractedOutsideRef.current = true;
+                if (event.detail.originalEvent.type === "pointerdown") {
+                    hasPointerDownOutsideRef.current = true;
+                }
+            }
+            const target = event.target;
+            const targetIsTrigger = context.triggerRef.current?.contains(target);
+            if (targetIsTrigger) event.preventDefault();
+            if (event.detail.originalEvent.type === "focusin" && hasPointerDownOutsideRef.current) {
+                event.preventDefault();
+            }
+        }
+    });
+});
+var DialogContentImpl = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { __scopeDialog, trapFocus, onOpenAutoFocus, onCloseAutoFocus, ...contentProps } = props;
+    const context = useDialogContext(CONTENT_NAME, __scopeDialog);
+    const contentRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"](null);
+    const composedRefs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$compose$2d$refs$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useComposedRefs"])(forwardedRef, contentRef);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$focus$2d$guards$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useFocusGuards"])();
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$focus$2d$scope$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FocusScope"], {
+                asChild: true,
+                loop: true,
+                trapped: trapFocus,
+                onMountAutoFocus: onOpenAutoFocus,
+                onUnmountAutoFocus: onCloseAutoFocus,
+                children: /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dismissable$2d$layer$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DismissableLayer"], {
+                    role: "dialog",
+                    id: context.contentId,
+                    "aria-describedby": context.descriptionId,
+                    "aria-labelledby": context.titleId,
+                    "data-state": getState(context.open),
+                    ...contentProps,
+                    ref: composedRefs,
+                    onDismiss: ()=>context.onOpenChange(false)
+                })
+            }),
+            /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxs"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+                children: [
+                    /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(TitleWarning, {
+                        titleId: context.titleId
+                    }),
+                    /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(DescriptionWarning, {
+                        contentRef,
+                        descriptionId: context.descriptionId
+                    })
+                ]
+            })
+        ]
+    });
+});
+var TITLE_NAME = "DialogTitle";
+var DialogTitle = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { __scopeDialog, ...titleProps } = props;
+    const context = useDialogContext(TITLE_NAME, __scopeDialog);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].h2, {
+        id: context.titleId,
+        ...titleProps,
+        ref: forwardedRef
+    });
+});
+DialogTitle.displayName = TITLE_NAME;
+var DESCRIPTION_NAME = "DialogDescription";
+var DialogDescription = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { __scopeDialog, ...descriptionProps } = props;
+    const context = useDialogContext(DESCRIPTION_NAME, __scopeDialog);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].p, {
+        id: context.descriptionId,
+        ...descriptionProps,
+        ref: forwardedRef
+    });
+});
+DialogDescription.displayName = DESCRIPTION_NAME;
+var CLOSE_NAME = "DialogClose";
+var DialogClose = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"]((props, forwardedRef)=>{
+    const { __scopeDialog, ...closeProps } = props;
+    const context = useDialogContext(CLOSE_NAME, __scopeDialog);
+    return /* @__PURE__ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsx"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Primitive"].button, {
+        type: "button",
+        ...closeProps,
+        ref: forwardedRef,
+        onClick: (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$primitive$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["composeEventHandlers"])(props.onClick, ()=>context.onOpenChange(false))
+    });
+});
+DialogClose.displayName = CLOSE_NAME;
+function getState(open) {
+    return open ? "open" : "closed";
+}
+var TITLE_WARNING_NAME = "DialogTitleWarning";
+var [WarningProvider, useWarningContext] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$context$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])(TITLE_WARNING_NAME, {
+    contentName: CONTENT_NAME,
+    titleName: TITLE_NAME,
+    docsSlug: "dialog"
+});
+var TitleWarning = ({ titleId })=>{
+    const titleWarningContext = useWarningContext(TITLE_WARNING_NAME);
+    const MESSAGE = `\`${titleWarningContext.contentName}\` requires a \`${titleWarningContext.titleName}\` for the component to be accessible for screen reader users.
+
+If you want to hide the \`${titleWarningContext.titleName}\`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/${titleWarningContext.docsSlug}`;
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        if (titleId) {
+            const hasTitle = document.getElementById(titleId);
+            if (!hasTitle) console.error(MESSAGE);
+        }
+    }, [
+        MESSAGE,
+        titleId
+    ]);
+    return null;
+};
+var DESCRIPTION_WARNING_NAME = "DialogDescriptionWarning";
+var DescriptionWarning = ({ contentRef, descriptionId })=>{
+    const descriptionWarningContext = useWarningContext(DESCRIPTION_WARNING_NAME);
+    const MESSAGE = `Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${descriptionWarningContext.contentName}}.`;
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"](()=>{
+        const describedById = contentRef.current?.getAttribute("aria-describedby");
+        if (descriptionId && describedById) {
+            const hasDescription = document.getElementById(descriptionId);
+            if (!hasDescription) console.warn(MESSAGE);
+        }
+    }, [
+        MESSAGE,
+        contentRef,
+        descriptionId
+    ]);
+    return null;
+};
+var Root = Dialog;
+var Trigger = DialogTrigger;
+var Portal = DialogPortal;
+var Overlay = DialogOverlay;
+var Content = DialogContent;
+var Title = DialogTitle;
+var Description = DialogDescription;
+var Close = DialogClose;
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/Desktop/Lizo/cleaning-website-design/node_modules/vaul/dist/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Content",
+    ()=>Content,
+    "Drawer",
+    ()=>Drawer,
+    "Handle",
+    ()=>Handle,
+    "NestedRoot",
+    ()=>NestedRoot,
+    "Overlay",
+    ()=>Overlay,
+    "Portal",
+    ()=>Portal,
+    "Root",
+    ()=>Root
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/@radix-ui/react-dialog/dist/index.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/Lizo/cleaning-website-design/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+'use client';
+function __insertCSS(code) {
+    if (!code || typeof document == 'undefined') return;
+    let head = document.head || document.getElementsByTagName('head')[0];
+    let style = document.createElement('style');
+    style.type = 'text/css';
+    head.appendChild(style);
+    style.styleSheet ? style.styleSheet.cssText = code : style.appendChild(document.createTextNode(code));
+}
+;
+;
+;
+const DrawerContext = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createContext({
+    drawerRef: {
+        current: null
+    },
+    overlayRef: {
+        current: null
+    },
+    onPress: ()=>{},
+    onRelease: ()=>{},
+    onDrag: ()=>{},
+    onNestedDrag: ()=>{},
+    onNestedOpenChange: ()=>{},
+    onNestedRelease: ()=>{},
+    openProp: undefined,
+    dismissible: false,
+    isOpen: false,
+    isDragging: false,
+    keyboardIsOpen: {
+        current: false
+    },
+    snapPointsOffset: null,
+    snapPoints: null,
+    handleOnly: false,
+    modal: false,
+    shouldFade: false,
+    activeSnapPoint: null,
+    onOpenChange: ()=>{},
+    setActiveSnapPoint: ()=>{},
+    closeDrawer: ()=>{},
+    direction: 'bottom',
+    shouldAnimate: {
+        current: true
+    },
+    shouldScaleBackground: false,
+    setBackgroundColorOnScale: true,
+    noBodyStyles: false,
+    container: null,
+    autoFocus: false
+});
+const useDrawerContext = ()=>{
+    const context = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useContext(DrawerContext);
+    if (!context) {
+        throw new Error('useDrawerContext must be used within a Drawer.Root');
+    }
+    return context;
+};
+__insertCSS("[data-vaul-drawer]{touch-action:none;will-change:transform;transition:transform .5s cubic-bezier(.32, .72, 0, 1);animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=open]{animation-name:slideFromBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=closed]{animation-name:slideToBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=open]{animation-name:slideFromTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=closed]{animation-name:slideToTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=open]{animation-name:slideFromLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=closed]{animation-name:slideToLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=open]{animation-name:slideFromRight}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=closed]{animation-name:slideToRight}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--initial-transform,100%),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--initial-transform,100%),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-overlay][data-vaul-snap-points=false]{animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-overlay][data-vaul-snap-points=false][data-state=open]{animation-name:fadeIn}[data-vaul-overlay][data-state=closed]{animation-name:fadeOut}[data-vaul-animate=false]{animation:none!important}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:0;transition:opacity .5s cubic-bezier(.32, .72, 0, 1)}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:1}[data-vaul-drawer]:not([data-vaul-custom-container=true])::after{content:'';position:absolute;background:inherit;background-color:inherit}[data-vaul-drawer][data-vaul-drawer-direction=top]::after{top:initial;bottom:100%;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=bottom]::after{top:100%;bottom:initial;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=left]::after{left:initial;right:100%;top:0;bottom:0;width:200%}[data-vaul-drawer][data-vaul-drawer-direction=right]::after{left:100%;right:initial;top:0;bottom:0;width:200%}[data-vaul-overlay][data-vaul-snap-points=true]:not([data-vaul-snap-points-overlay=true]):not(\n[data-state=closed]\n){opacity:0}[data-vaul-overlay][data-vaul-snap-points-overlay=true]{opacity:1}[data-vaul-handle]{display:block;position:relative;opacity:.7;background:#e2e2e4;margin-left:auto;margin-right:auto;height:5px;width:32px;border-radius:1rem;touch-action:pan-y}[data-vaul-handle]:active,[data-vaul-handle]:hover{opacity:1}[data-vaul-handle-hitarea]{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max(100%,2.75rem);height:max(100%,2.75rem);touch-action:inherit}@media (hover:hover) and (pointer:fine){[data-vaul-drawer]{user-select:none}}@media (pointer:fine){[data-vaul-handle-hitarea]:{width:100%;height:100%}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeOut{to{opacity:0}}@keyframes slideFromBottom{from{transform:translate3d(0,var(--initial-transform,100%),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToBottom{to{transform:translate3d(0,var(--initial-transform,100%),0)}}@keyframes slideFromTop{from{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToTop{to{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}}@keyframes slideFromLeft{from{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToLeft{to{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}}@keyframes slideFromRight{from{transform:translate3d(var(--initial-transform,100%),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToRight{to{transform:translate3d(var(--initial-transform,100%),0,0)}}");
+function isMobileFirefox() {
+    const userAgent = navigator.userAgent;
+    return ("TURBOPACK compile-time value", "undefined") !== 'undefined' && (/Firefox/.test(userAgent) && /Mobile/.test(userAgent) || // Android Firefox
+    /FxiOS/.test(userAgent) // iOS Firefox
+    );
+}
+function isMac() {
+    return testPlatform(/^Mac/);
+}
+function isIPhone() {
+    return testPlatform(/^iPhone/);
+}
+function isSafari() {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+}
+function isIPad() {
+    return testPlatform(/^iPad/) || // iPadOS 13 lies and says it's a Mac, but we can distinguish by detecting touch support.
+    isMac() && navigator.maxTouchPoints > 1;
+}
+function isIOS() {
+    return isIPhone() || isIPad();
+}
+function testPlatform(re) {
+    return ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : undefined;
+}
+// This code comes from https://github.com/adobe/react-spectrum/blob/main/packages/%40react-aria/overlays/src/usePreventScroll.ts
+const KEYBOARD_BUFFER = 24;
+const useIsomorphicLayoutEffect = ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"];
+function chain$1(...callbacks) {
+    return (...args)=>{
+        for (let callback of callbacks){
+            if (typeof callback === 'function') {
+                callback(...args);
+            }
+        }
+    };
+}
+// @ts-ignore
+const visualViewport = typeof document !== 'undefined' && window.visualViewport;
+function isScrollable(node) {
+    let style = window.getComputedStyle(node);
+    return /(auto|scroll)/.test(style.overflow + style.overflowX + style.overflowY);
+}
+function getScrollParent(node) {
+    if (isScrollable(node)) {
+        node = node.parentElement;
+    }
+    while(node && !isScrollable(node)){
+        node = node.parentElement;
+    }
+    return node || document.scrollingElement || document.documentElement;
+}
+// HTML input types that do not cause the software keyboard to appear.
+const nonTextInputTypes = new Set([
+    'checkbox',
+    'radio',
+    'range',
+    'color',
+    'file',
+    'image',
+    'button',
+    'submit',
+    'reset'
+]);
+// The number of active usePreventScroll calls. Used to determine whether to revert back to the original page style/scroll position
+let preventScrollCount = 0;
+let restore;
+/**
+ * Prevents scrolling on the document body on mount, and
+ * restores it on unmount. Also ensures that content does not
+ * shift due to the scrollbars disappearing.
+ */ function usePreventScroll(options = {}) {
+    let { isDisabled } = options;
+    useIsomorphicLayoutEffect(()=>{
+        if (isDisabled) {
+            return;
+        }
+        preventScrollCount++;
+        if (preventScrollCount === 1) {
+            if (isIOS()) //TURBOPACK unreachable
+            ;
+        }
+        return ()=>{
+            preventScrollCount--;
+            if (preventScrollCount === 0) {
+                restore == null ? void 0 : restore();
+            }
+        };
+    }, [
+        isDisabled
+    ]);
+}
+// Mobile Safari is a whole different beast. Even with overflow: hidden,
+// it still scrolls the page in many situations:
+//
+// 1. When the bottom toolbar and address bar are collapsed, page scrolling is always allowed.
+// 2. When the keyboard is visible, the viewport does not resize. Instead, the keyboard covers part of
+//    it, so it becomes scrollable.
+// 3. When tapping on an input, the page always scrolls so that the input is centered in the visual viewport.
+//    This may cause even fixed position elements to scroll off the screen.
+// 4. When using the next/previous buttons in the keyboard to navigate between inputs, the whole page always
+//    scrolls, even if the input is inside a nested scrollable element that could be scrolled instead.
+//
+// In order to work around these cases, and prevent scrolling without jankiness, we do a few things:
+//
+// 1. Prevent default on `touchmove` events that are not in a scrollable element. This prevents touch scrolling
+//    on the window.
+// 2. Prevent default on `touchmove` events inside a scrollable element when the scroll position is at the
+//    top or bottom. This avoids the whole page scrolling instead, but does prevent overscrolling.
+// 3. Prevent default on `touchend` events on input elements and handle focusing the element ourselves.
+// 4. When focusing an input, apply a transform to trick Safari into thinking the input is at the top
+//    of the page, which prevents it from scrolling the page. After the input is focused, scroll the element
+//    into view ourselves, without scrolling the whole page.
+// 5. Offset the body by the scroll position using a negative margin and scroll to the top. This should appear the
+//    same visually, but makes the actual scroll position always zero. This is required to make all of the
+//    above work or Safari will still try to scroll the page when focusing an input.
+// 6. As a last resort, handle window scroll events, and scroll back to the top. This can happen when attempting
+//    to navigate to an input with the next/previous buttons that's outside a modal.
+function preventScrollMobileSafari() {
+    let scrollable;
+    let lastY = 0;
+    let onTouchStart = (e)=>{
+        // Store the nearest scrollable parent element from the element that the user touched.
+        scrollable = getScrollParent(e.target);
+        if (scrollable === document.documentElement && scrollable === document.body) {
+            return;
+        }
+        lastY = e.changedTouches[0].pageY;
+    };
+    let onTouchMove = (e)=>{
+        // Prevent scrolling the window.
+        if (!scrollable || scrollable === document.documentElement || scrollable === document.body) {
+            e.preventDefault();
+            return;
+        }
+        // Prevent scrolling up when at the top and scrolling down when at the bottom
+        // of a nested scrollable area, otherwise mobile Safari will start scrolling
+        // the window instead. Unfortunately, this disables bounce scrolling when at
+        // the top but it's the best we can do.
+        let y = e.changedTouches[0].pageY;
+        let scrollTop = scrollable.scrollTop;
+        let bottom = scrollable.scrollHeight - scrollable.clientHeight;
+        if (bottom === 0) {
+            return;
+        }
+        if (scrollTop <= 0 && y > lastY || scrollTop >= bottom && y < lastY) {
+            e.preventDefault();
+        }
+        lastY = y;
+    };
+    let onTouchEnd = (e)=>{
+        let target = e.target;
+        // Apply this change if we're not already focused on the target element
+        if (isInput(target) && target !== document.activeElement) {
+            e.preventDefault();
+            // Apply a transform to trick Safari into thinking the input is at the top of the page
+            // so it doesn't try to scroll it into view. When tapping on an input, this needs to
+            // be done before the "focus" event, so we have to focus the element ourselves.
+            target.style.transform = 'translateY(-2000px)';
+            target.focus();
+            requestAnimationFrame(()=>{
+                target.style.transform = '';
+            });
+        }
+    };
+    let onFocus = (e)=>{
+        let target = e.target;
+        if (isInput(target)) {
+            // Transform also needs to be applied in the focus event in cases where focus moves
+            // other than tapping on an input directly, e.g. the next/previous buttons in the
+            // software keyboard. In these cases, it seems applying the transform in the focus event
+            // is good enough, whereas when tapping an input, it must be done before the focus event. 🤷‍♂️
+            target.style.transform = 'translateY(-2000px)';
+            requestAnimationFrame(()=>{
+                target.style.transform = '';
+                // This will have prevented the browser from scrolling the focused element into view,
+                // so we need to do this ourselves in a way that doesn't cause the whole page to scroll.
+                if (visualViewport) {
+                    if (visualViewport.height < window.innerHeight) {
+                        // If the keyboard is already visible, do this after one additional frame
+                        // to wait for the transform to be removed.
+                        requestAnimationFrame(()=>{
+                            scrollIntoView(target);
+                        });
+                    } else {
+                        // Otherwise, wait for the visual viewport to resize before scrolling so we can
+                        // measure the correct position to scroll to.
+                        visualViewport.addEventListener('resize', ()=>scrollIntoView(target), {
+                            once: true
+                        });
+                    }
+                }
+            });
+        }
+    };
+    let onWindowScroll = ()=>{
+        // Last resort. If the window scrolled, scroll it back to the top.
+        // It should always be at the top because the body will have a negative margin (see below).
+        window.scrollTo(0, 0);
+    };
+    // Record the original scroll position so we can restore it.
+    // Then apply a negative margin to the body to offset it by the scroll position. This will
+    // enable us to scroll the window to the top, which is required for the rest of this to work.
+    let scrollX = window.pageXOffset;
+    let scrollY = window.pageYOffset;
+    let restoreStyles = chain$1(setStyle(document.documentElement, 'paddingRight', `${window.innerWidth - document.documentElement.clientWidth}px`));
+    // Scroll to the top. The negative margin on the body will make this appear the same.
+    window.scrollTo(0, 0);
+    let removeEvents = chain$1(addEvent(document, 'touchstart', onTouchStart, {
+        passive: false,
+        capture: true
+    }), addEvent(document, 'touchmove', onTouchMove, {
+        passive: false,
+        capture: true
+    }), addEvent(document, 'touchend', onTouchEnd, {
+        passive: false,
+        capture: true
+    }), addEvent(document, 'focus', onFocus, true), addEvent(window, 'scroll', onWindowScroll));
+    return ()=>{
+        // Restore styles and scroll the page back to where it was.
+        restoreStyles();
+        removeEvents();
+        window.scrollTo(scrollX, scrollY);
+    };
+}
+// Sets a CSS property on an element, and returns a function to revert it to the previous value.
+function setStyle(element, style, value) {
+    // https://github.com/microsoft/TypeScript/issues/17827#issuecomment-391663310
+    // @ts-ignore
+    let cur = element.style[style];
+    // @ts-ignore
+    element.style[style] = value;
+    return ()=>{
+        // @ts-ignore
+        element.style[style] = cur;
+    };
+}
+// Adds an event listener to an element, and returns a function to remove it.
+function addEvent(target, event, handler, options) {
+    // @ts-ignore
+    target.addEventListener(event, handler, options);
+    return ()=>{
+        // @ts-ignore
+        target.removeEventListener(event, handler, options);
+    };
+}
+function scrollIntoView(target) {
+    let root = document.scrollingElement || document.documentElement;
+    while(target && target !== root){
+        // Find the parent scrollable element and adjust the scroll position if the target is not already in view.
+        let scrollable = getScrollParent(target);
+        if (scrollable !== document.documentElement && scrollable !== document.body && scrollable !== target) {
+            let scrollableTop = scrollable.getBoundingClientRect().top;
+            let targetTop = target.getBoundingClientRect().top;
+            let targetBottom = target.getBoundingClientRect().bottom;
+            // Buffer is needed for some edge cases
+            const keyboardHeight = scrollable.getBoundingClientRect().bottom + KEYBOARD_BUFFER;
+            if (targetBottom > keyboardHeight) {
+                scrollable.scrollTop += targetTop - scrollableTop;
+            }
+        }
+        // @ts-ignore
+        target = scrollable.parentElement;
+    }
+}
+function isInput(target) {
+    return target instanceof HTMLInputElement && !nonTextInputTypes.has(target.type) || target instanceof HTMLTextAreaElement || target instanceof HTMLElement && target.isContentEditable;
+}
+// This code comes from https://github.com/radix-ui/primitives/tree/main/packages/react/compose-refs
+/**
+ * Set a given ref to a given value
+ * This utility takes care of different types of refs: callback refs and RefObject(s)
+ */ function setRef(ref, value) {
+    if (typeof ref === 'function') {
+        ref(value);
+    } else if (ref !== null && ref !== undefined) {
+        ref.current = value;
+    }
+}
+/**
+ * A utility to compose multiple refs together
+ * Accepts callback refs and RefObject(s)
+ */ function composeRefs(...refs) {
+    return (node)=>refs.forEach((ref)=>setRef(ref, node));
+}
+/**
+ * A custom hook that composes multiple refs
+ * Accepts callback refs and RefObject(s)
+ */ function useComposedRefs(...refs) {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"](composeRefs(...refs), refs);
+}
+const cache = new WeakMap();
+function set(el, styles, ignoreCache = false) {
+    if (!el || !(el instanceof HTMLElement)) return;
+    let originalStyles = {};
+    Object.entries(styles).forEach(([key, value])=>{
+        if (key.startsWith('--')) {
+            el.style.setProperty(key, value);
+            return;
+        }
+        originalStyles[key] = el.style[key];
+        el.style[key] = value;
+    });
+    if (ignoreCache) return;
+    cache.set(el, originalStyles);
+}
+function reset(el, prop) {
+    if (!el || !(el instanceof HTMLElement)) return;
+    let originalStyles = cache.get(el);
+    if (!originalStyles) {
+        return;
+    }
+    {
+        el.style[prop] = originalStyles[prop];
+    }
+}
+const isVertical = (direction)=>{
+    switch(direction){
+        case 'top':
+        case 'bottom':
+            return true;
+        case 'left':
+        case 'right':
+            return false;
+        default:
+            return direction;
+    }
+};
+function getTranslate(element, direction) {
+    if (!element) {
+        return null;
+    }
+    const style = window.getComputedStyle(element);
+    const transform = style.transform || style.webkitTransform || style.mozTransform;
+    let mat = transform.match(/^matrix3d\((.+)\)$/);
+    if (mat) {
+        // https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d
+        return parseFloat(mat[1].split(', ')[isVertical(direction) ? 13 : 12]);
+    }
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix
+    mat = transform.match(/^matrix\((.+)\)$/);
+    return mat ? parseFloat(mat[1].split(', ')[isVertical(direction) ? 5 : 4]) : null;
+}
+function dampenValue(v) {
+    return 8 * (Math.log(v + 1) - 2);
+}
+function assignStyle(element, style) {
+    if (!element) return ()=>{};
+    const prevStyle = element.style.cssText;
+    Object.assign(element.style, style);
+    return ()=>{
+        element.style.cssText = prevStyle;
+    };
+}
+/**
+ * Receives functions as arguments and returns a new function that calls all.
+ */ function chain(...fns) {
+    return (...args)=>{
+        for (const fn of fns){
+            if (typeof fn === 'function') {
+                // @ts-ignore
+                fn(...args);
+            }
+        }
+    };
+}
+const TRANSITIONS = {
+    DURATION: 0.5,
+    EASE: [
+        0.32,
+        0.72,
+        0,
+        1
+    ]
+};
+const VELOCITY_THRESHOLD = 0.4;
+const CLOSE_THRESHOLD = 0.25;
+const SCROLL_LOCK_TIMEOUT = 100;
+const BORDER_RADIUS = 8;
+const NESTED_DISPLACEMENT = 16;
+const WINDOW_TOP_OFFSET = 26;
+const DRAG_CLASS = 'vaul-dragging';
+// This code comes from https://github.com/radix-ui/primitives/blob/main/packages/react/use-controllable-state/src/useControllableState.tsx
+function useCallbackRef(callback) {
+    const callbackRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(callback);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        callbackRef.current = callback;
+    });
+    // https://github.com/facebook/react/issues/19240
+    return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>(...args)=>callbackRef.current == null ? void 0 : callbackRef.current.call(callbackRef, ...args), []);
+}
+function useUncontrolledState({ defaultProp, onChange }) {
+    const uncontrolledState = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(defaultProp);
+    const [value] = uncontrolledState;
+    const prevValueRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(value);
+    const handleChange = useCallbackRef(onChange);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (prevValueRef.current !== value) {
+            handleChange(value);
+            prevValueRef.current = value;
+        }
+    }, [
+        value,
+        prevValueRef,
+        handleChange
+    ]);
+    return uncontrolledState;
+}
+function useControllableState({ prop, defaultProp, onChange = ()=>{} }) {
+    const [uncontrolledProp, setUncontrolledProp] = useUncontrolledState({
+        defaultProp,
+        onChange
+    });
+    const isControlled = prop !== undefined;
+    const value = isControlled ? prop : uncontrolledProp;
+    const handleChange = useCallbackRef(onChange);
+    const setValue = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useCallback((nextValue)=>{
+        if (isControlled) {
+            const setter = nextValue;
+            const value = typeof nextValue === 'function' ? setter(prop) : nextValue;
+            if (value !== prop) handleChange(value);
+        } else {
+            setUncontrolledProp(nextValue);
+        }
+    }, [
+        isControlled,
+        prop,
+        setUncontrolledProp,
+        handleChange
+    ]);
+    return [
+        value,
+        setValue
+    ];
+}
+function useSnapPoints({ activeSnapPointProp, setActiveSnapPointProp, snapPoints, drawerRef, overlayRef, fadeFromIndex, onSnapPointChange, direction = 'bottom', container, snapToSequentialPoint }) {
+    const [activeSnapPoint, setActiveSnapPoint] = useControllableState({
+        prop: activeSnapPointProp,
+        defaultProp: snapPoints == null ? void 0 : snapPoints[0],
+        onChange: setActiveSnapPointProp
+    });
+    const [windowDimensions, setWindowDimensions] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : undefined);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        function onResize() {
+            setWindowDimensions({
+                innerWidth: window.innerWidth,
+                innerHeight: window.innerHeight
+            });
+        }
+        window.addEventListener('resize', onResize);
+        return ()=>window.removeEventListener('resize', onResize);
+    }, []);
+    const isLastSnapPoint = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>activeSnapPoint === (snapPoints == null ? void 0 : snapPoints[snapPoints.length - 1]) || null, [
+        snapPoints,
+        activeSnapPoint
+    ]);
+    const activeSnapPointIndex = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>{
+        var _snapPoints_findIndex;
+        return (_snapPoints_findIndex = snapPoints == null ? void 0 : snapPoints.findIndex((snapPoint)=>snapPoint === activeSnapPoint)) != null ? _snapPoints_findIndex : null;
+    }, [
+        snapPoints,
+        activeSnapPoint
+    ]);
+    const shouldFade = snapPoints && snapPoints.length > 0 && (fadeFromIndex || fadeFromIndex === 0) && !Number.isNaN(fadeFromIndex) && snapPoints[fadeFromIndex] === activeSnapPoint || !snapPoints;
+    const snapPointsOffset = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>{
+        const containerSize = container ? {
+            width: container.getBoundingClientRect().width,
+            height: container.getBoundingClientRect().height
+        } : ("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : {
+            width: 0,
+            height: 0
+        };
+        var _snapPoints_map;
+        return (_snapPoints_map = snapPoints == null ? void 0 : snapPoints.map((snapPoint)=>{
+            const isPx = typeof snapPoint === 'string';
+            let snapPointAsNumber = 0;
+            if (isPx) {
+                snapPointAsNumber = parseInt(snapPoint, 10);
+            }
+            if (isVertical(direction)) {
+                const height = isPx ? snapPointAsNumber : windowDimensions ? snapPoint * containerSize.height : 0;
+                if (windowDimensions) {
+                    return direction === 'bottom' ? containerSize.height - height : -containerSize.height + height;
+                }
+                return height;
+            }
+            const width = isPx ? snapPointAsNumber : windowDimensions ? snapPoint * containerSize.width : 0;
+            if (windowDimensions) {
+                return direction === 'right' ? containerSize.width - width : -containerSize.width + width;
+            }
+            return width;
+        })) != null ? _snapPoints_map : [];
+    }, [
+        snapPoints,
+        windowDimensions,
+        container
+    ]);
+    const activeSnapPointOffset = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useMemo(()=>activeSnapPointIndex !== null ? snapPointsOffset == null ? void 0 : snapPointsOffset[activeSnapPointIndex] : null, [
+        snapPointsOffset,
+        activeSnapPointIndex
+    ]);
+    const snapToPoint = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useCallback((dimension)=>{
+        var _snapPointsOffset_findIndex;
+        const newSnapPointIndex = (_snapPointsOffset_findIndex = snapPointsOffset == null ? void 0 : snapPointsOffset.findIndex((snapPointDim)=>snapPointDim === dimension)) != null ? _snapPointsOffset_findIndex : null;
+        onSnapPointChange(newSnapPointIndex);
+        set(drawerRef.current, {
+            transition: `transform ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(',')})`,
+            transform: isVertical(direction) ? `translate3d(0, ${dimension}px, 0)` : `translate3d(${dimension}px, 0, 0)`
+        });
+        if (snapPointsOffset && newSnapPointIndex !== snapPointsOffset.length - 1 && fadeFromIndex !== undefined && newSnapPointIndex !== fadeFromIndex && newSnapPointIndex < fadeFromIndex) {
+            set(overlayRef.current, {
+                transition: `opacity ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(',')})`,
+                opacity: '0'
+            });
+        } else {
+            set(overlayRef.current, {
+                transition: `opacity ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(',')})`,
+                opacity: '1'
+            });
+        }
+        setActiveSnapPoint(snapPoints == null ? void 0 : snapPoints[Math.max(newSnapPointIndex, 0)]);
+    }, [
+        drawerRef.current,
+        snapPoints,
+        snapPointsOffset,
+        fadeFromIndex,
+        overlayRef,
+        setActiveSnapPoint
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (activeSnapPoint || activeSnapPointProp) {
+            var _snapPoints_findIndex;
+            const newIndex = (_snapPoints_findIndex = snapPoints == null ? void 0 : snapPoints.findIndex((snapPoint)=>snapPoint === activeSnapPointProp || snapPoint === activeSnapPoint)) != null ? _snapPoints_findIndex : -1;
+            if (snapPointsOffset && newIndex !== -1 && typeof snapPointsOffset[newIndex] === 'number') {
+                snapToPoint(snapPointsOffset[newIndex]);
+            }
+        }
+    }, [
+        activeSnapPoint,
+        activeSnapPointProp,
+        snapPoints,
+        snapPointsOffset,
+        snapToPoint
+    ]);
+    function onRelease({ draggedDistance, closeDrawer, velocity, dismissible }) {
+        if (fadeFromIndex === undefined) return;
+        const currentPosition = direction === 'bottom' || direction === 'right' ? (activeSnapPointOffset != null ? activeSnapPointOffset : 0) - draggedDistance : (activeSnapPointOffset != null ? activeSnapPointOffset : 0) + draggedDistance;
+        const isOverlaySnapPoint = activeSnapPointIndex === fadeFromIndex - 1;
+        const isFirst = activeSnapPointIndex === 0;
+        const hasDraggedUp = draggedDistance > 0;
+        if (isOverlaySnapPoint) {
+            set(overlayRef.current, {
+                transition: `opacity ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(',')})`
+            });
+        }
+        if (!snapToSequentialPoint && velocity > 2 && !hasDraggedUp) {
+            if (dismissible) closeDrawer();
+            else snapToPoint(snapPointsOffset[0]); // snap to initial point
+            return;
+        }
+        if (!snapToSequentialPoint && velocity > 2 && hasDraggedUp && snapPointsOffset && snapPoints) {
+            snapToPoint(snapPointsOffset[snapPoints.length - 1]);
+            return;
+        }
+        // Find the closest snap point to the current position
+        const closestSnapPoint = snapPointsOffset == null ? void 0 : snapPointsOffset.reduce((prev, curr)=>{
+            if (typeof prev !== 'number' || typeof curr !== 'number') return prev;
+            return Math.abs(curr - currentPosition) < Math.abs(prev - currentPosition) ? curr : prev;
+        });
+        const dim = isVertical(direction) ? window.innerHeight : window.innerWidth;
+        if (velocity > VELOCITY_THRESHOLD && Math.abs(draggedDistance) < dim * 0.4) {
+            const dragDirection = hasDraggedUp ? 1 : -1; // 1 = up, -1 = down
+            // Don't do anything if we swipe upwards while being on the last snap point
+            if (dragDirection > 0 && isLastSnapPoint && snapPoints) {
+                snapToPoint(snapPointsOffset[snapPoints.length - 1]);
+                return;
+            }
+            if (isFirst && dragDirection < 0 && dismissible) {
+                closeDrawer();
+            }
+            if (activeSnapPointIndex === null) return;
+            snapToPoint(snapPointsOffset[activeSnapPointIndex + dragDirection]);
+            return;
+        }
+        snapToPoint(closestSnapPoint);
+    }
+    function onDrag({ draggedDistance }) {
+        if (activeSnapPointOffset === null) return;
+        const newValue = direction === 'bottom' || direction === 'right' ? activeSnapPointOffset - draggedDistance : activeSnapPointOffset + draggedDistance;
+        // Don't do anything if we exceed the last(biggest) snap point
+        if ((direction === 'bottom' || direction === 'right') && newValue < snapPointsOffset[snapPointsOffset.length - 1]) {
+            return;
+        }
+        if ((direction === 'top' || direction === 'left') && newValue > snapPointsOffset[snapPointsOffset.length - 1]) {
+            return;
+        }
+        set(drawerRef.current, {
+            transform: isVertical(direction) ? `translate3d(0, ${newValue}px, 0)` : `translate3d(${newValue}px, 0, 0)`
+        });
+    }
+    function getPercentageDragged(absDraggedDistance, isDraggingDown) {
+        if (!snapPoints || typeof activeSnapPointIndex !== 'number' || !snapPointsOffset || fadeFromIndex === undefined) return null;
+        // If this is true we are dragging to a snap point that is supposed to have an overlay
+        const isOverlaySnapPoint = activeSnapPointIndex === fadeFromIndex - 1;
+        const isOverlaySnapPointOrHigher = activeSnapPointIndex >= fadeFromIndex;
+        if (isOverlaySnapPointOrHigher && isDraggingDown) {
+            return 0;
+        }
+        // Don't animate, but still use this one if we are dragging away from the overlaySnapPoint
+        if (isOverlaySnapPoint && !isDraggingDown) return 1;
+        if (!shouldFade && !isOverlaySnapPoint) return null;
+        // Either fadeFrom index or the one before
+        const targetSnapPointIndex = isOverlaySnapPoint ? activeSnapPointIndex + 1 : activeSnapPointIndex - 1;
+        // Get the distance from overlaySnapPoint to the one before or vice-versa to calculate the opacity percentage accordingly
+        const snapPointDistance = isOverlaySnapPoint ? snapPointsOffset[targetSnapPointIndex] - snapPointsOffset[targetSnapPointIndex - 1] : snapPointsOffset[targetSnapPointIndex + 1] - snapPointsOffset[targetSnapPointIndex];
+        const percentageDragged = absDraggedDistance / Math.abs(snapPointDistance);
+        if (isOverlaySnapPoint) {
+            return 1 - percentageDragged;
+        } else {
+            return percentageDragged;
+        }
+    }
+    return {
+        isLastSnapPoint,
+        activeSnapPoint,
+        shouldFade,
+        getPercentageDragged,
+        setActiveSnapPoint,
+        activeSnapPointIndex,
+        onRelease,
+        onDrag,
+        snapPointsOffset
+    };
+}
+const noop = ()=>()=>{};
+function useScaleBackground() {
+    const { direction, isOpen, shouldScaleBackground, setBackgroundColorOnScale, noBodyStyles } = useDrawerContext();
+    const timeoutIdRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const initialBackgroundColor = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>document.body.style.backgroundColor, []);
+    function getScale() {
+        return (window.innerWidth - WINDOW_TOP_OFFSET) / window.innerWidth;
+    }
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (isOpen && shouldScaleBackground) {
+            if (timeoutIdRef.current) clearTimeout(timeoutIdRef.current);
+            const wrapper = document.querySelector('[data-vaul-drawer-wrapper]') || document.querySelector('[vaul-drawer-wrapper]');
+            if (!wrapper) return;
+            chain(setBackgroundColorOnScale && !noBodyStyles ? assignStyle(document.body, {
+                background: 'black'
+            }) : noop, assignStyle(wrapper, {
+                transformOrigin: isVertical(direction) ? 'top' : 'left',
+                transitionProperty: 'transform, border-radius',
+                transitionDuration: `${TRANSITIONS.DURATION}s`,
+                transitionTimingFunction: `cubic-bezier(${TRANSITIONS.EASE.join(',')})`
+            }));
+            const wrapperStylesCleanup = assignStyle(wrapper, {
+                borderRadius: `${BORDER_RADIUS}px`,
+                overflow: 'hidden',
+                ...isVertical(direction) ? {
+                    transform: `scale(${getScale()}) translate3d(0, calc(env(safe-area-inset-top) + 14px), 0)`
+                } : {
+                    transform: `scale(${getScale()}) translate3d(calc(env(safe-area-inset-top) + 14px), 0, 0)`
+                }
+            });
+            return ()=>{
+                wrapperStylesCleanup();
+                timeoutIdRef.current = window.setTimeout(()=>{
+                    if (initialBackgroundColor) {
+                        document.body.style.background = initialBackgroundColor;
+                    } else {
+                        document.body.style.removeProperty('background');
+                    }
+                }, TRANSITIONS.DURATION * 1000);
+            };
+        }
+    }, [
+        isOpen,
+        shouldScaleBackground,
+        initialBackgroundColor
+    ]);
+}
+let previousBodyPosition = null;
+/**
+ * This hook is necessary to prevent buggy behavior on iOS devices (need to test on Android).
+ * I won't get into too much detail about what bugs it solves, but so far I've found that setting the body to `position: fixed` is the most reliable way to prevent those bugs.
+ * Issues that this hook solves:
+ * https://github.com/emilkowalski/vaul/issues/435
+ * https://github.com/emilkowalski/vaul/issues/433
+ * And more that I discovered, but were just not reported.
+ */ function usePositionFixed({ isOpen, modal, nested, hasBeenOpened, preventScrollRestoration, noBodyStyles }) {
+    const [activeUrl, setActiveUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(()=>("TURBOPACK compile-time falsy", 0) ? "TURBOPACK unreachable" : '');
+    const scrollPos = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(0);
+    const setPositionFixed = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useCallback(()=>{
+        // All browsers on iOS will return true here.
+        if (!isSafari()) return;
+        // If previousBodyPosition is already set, don't set it again.
+        if (previousBodyPosition === null && isOpen && !noBodyStyles) {
+            previousBodyPosition = {
+                position: document.body.style.position,
+                top: document.body.style.top,
+                left: document.body.style.left,
+                height: document.body.style.height,
+                right: 'unset'
+            };
+            // Update the dom inside an animation frame
+            const { scrollX, innerHeight } = window;
+            document.body.style.setProperty('position', 'fixed', 'important');
+            Object.assign(document.body.style, {
+                top: `${-scrollPos.current}px`,
+                left: `${-scrollX}px`,
+                right: '0px',
+                height: 'auto'
+            });
+            window.setTimeout(()=>window.requestAnimationFrame(()=>{
+                    // Attempt to check if the bottom bar appeared due to the position change
+                    const bottomBarHeight = innerHeight - window.innerHeight;
+                    if (bottomBarHeight && scrollPos.current >= innerHeight) {
+                        // Move the content further up so that the bottom bar doesn't hide it
+                        document.body.style.top = `${-(scrollPos.current + bottomBarHeight)}px`;
+                    }
+                }), 300);
+        }
+    }, [
+        isOpen
+    ]);
+    const restorePositionSetting = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useCallback(()=>{
+        // All browsers on iOS will return true here.
+        if (!isSafari()) return;
+        if (previousBodyPosition !== null && !noBodyStyles) {
+            // Convert the position from "px" to Int
+            const y = -parseInt(document.body.style.top, 10);
+            const x = -parseInt(document.body.style.left, 10);
+            // Restore styles
+            Object.assign(document.body.style, previousBodyPosition);
+            window.requestAnimationFrame(()=>{
+                if (preventScrollRestoration && activeUrl !== window.location.href) {
+                    setActiveUrl(window.location.href);
+                    return;
+                }
+                window.scrollTo(x, y);
+            });
+            previousBodyPosition = null;
+        }
+    }, [
+        activeUrl
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        function onScroll() {
+            scrollPos.current = window.scrollY;
+        }
+        onScroll();
+        window.addEventListener('scroll', onScroll);
+        return ()=>{
+            window.removeEventListener('scroll', onScroll);
+        };
+    }, []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (!modal) return;
+        return ()=>{
+            if (typeof document === 'undefined') return;
+            // Another drawer is opened, safe to ignore the execution
+            const hasDrawerOpened = !!document.querySelector('[data-vaul-drawer]');
+            if (hasDrawerOpened) return;
+            restorePositionSetting();
+        };
+    }, [
+        modal,
+        restorePositionSetting
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (nested || !hasBeenOpened) return;
+        // This is needed to force Safari toolbar to show **before** the drawer starts animating to prevent a gnarly shift from happening
+        if (isOpen) {
+            // avoid for standalone mode (PWA)
+            const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+            !isStandalone && setPositionFixed();
+            if (!modal) {
+                window.setTimeout(()=>{
+                    restorePositionSetting();
+                }, 500);
+            }
+        } else {
+            restorePositionSetting();
+        }
+    }, [
+        isOpen,
+        hasBeenOpened,
+        activeUrl,
+        modal,
+        nested,
+        setPositionFixed,
+        restorePositionSetting
+    ]);
+    return {
+        restorePositionSetting
+    };
+}
+function Root({ open: openProp, onOpenChange, children, onDrag: onDragProp, onRelease: onReleaseProp, snapPoints, shouldScaleBackground = false, setBackgroundColorOnScale = true, closeThreshold = CLOSE_THRESHOLD, scrollLockTimeout = SCROLL_LOCK_TIMEOUT, dismissible = true, handleOnly = false, fadeFromIndex = snapPoints && snapPoints.length - 1, activeSnapPoint: activeSnapPointProp, setActiveSnapPoint: setActiveSnapPointProp, fixed, modal = true, onClose, nested, noBodyStyles = false, direction = 'bottom', defaultOpen = false, disablePreventScroll = true, snapToSequentialPoint = false, preventScrollRestoration = false, repositionInputs = true, onAnimationEnd, container, autoFocus = false }) {
+    var _drawerRef_current, _drawerRef_current1;
+    const [isOpen = false, setIsOpen] = useControllableState({
+        defaultProp: defaultOpen,
+        prop: openProp,
+        onChange: (o)=>{
+            onOpenChange == null ? void 0 : onOpenChange(o);
+            if (!o && !nested) {
+                restorePositionSetting();
+            }
+            setTimeout(()=>{
+                onAnimationEnd == null ? void 0 : onAnimationEnd(o);
+            }, TRANSITIONS.DURATION * 1000);
+            if (o && !modal) {
+                if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+                ;
+            }
+            if (!o) {
+                // This will be removed when the exit animation ends (`500ms`)
+                document.body.style.pointerEvents = 'auto';
+            }
+        }
+    });
+    const [hasBeenOpened, setHasBeenOpened] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [isDragging, setIsDragging] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const [justReleased, setJustReleased] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const overlayRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const openTime = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const dragStartTime = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const dragEndTime = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const lastTimeDragPrevented = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const isAllowedToDrag = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(false);
+    const nestedOpenChangeTimer = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const pointerStart = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(0);
+    const keyboardIsOpen = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(false);
+    const shouldAnimate = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(!defaultOpen);
+    const previousDiffFromInitial = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(0);
+    const drawerRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const drawerHeightRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(((_drawerRef_current = drawerRef.current) == null ? void 0 : _drawerRef_current.getBoundingClientRect().height) || 0);
+    const drawerWidthRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(((_drawerRef_current1 = drawerRef.current) == null ? void 0 : _drawerRef_current1.getBoundingClientRect().width) || 0);
+    const initialDrawerHeight = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(0);
+    const onSnapPointChange = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useCallback((activeSnapPointIndex)=>{
+        // Change openTime ref when we reach the last snap point to prevent dragging for 500ms incase it's scrollable.
+        if (snapPoints && activeSnapPointIndex === snapPointsOffset.length - 1) openTime.current = new Date();
+    }, []);
+    const { activeSnapPoint, activeSnapPointIndex, setActiveSnapPoint, onRelease: onReleaseSnapPoints, snapPointsOffset, onDrag: onDragSnapPoints, shouldFade, getPercentageDragged: getSnapPointsPercentageDragged } = useSnapPoints({
+        snapPoints,
+        activeSnapPointProp,
+        setActiveSnapPointProp,
+        drawerRef,
+        fadeFromIndex,
+        overlayRef,
+        onSnapPointChange,
+        direction,
+        container,
+        snapToSequentialPoint
+    });
+    usePreventScroll({
+        isDisabled: !isOpen || isDragging || !modal || justReleased || !hasBeenOpened || !repositionInputs || !disablePreventScroll
+    });
+    const { restorePositionSetting } = usePositionFixed({
+        isOpen,
+        modal,
+        nested: nested != null ? nested : false,
+        hasBeenOpened,
+        preventScrollRestoration,
+        noBodyStyles
+    });
+    function getScale() {
+        return (window.innerWidth - WINDOW_TOP_OFFSET) / window.innerWidth;
+    }
+    function onPress(event) {
+        var _drawerRef_current, _drawerRef_current1;
+        if (!dismissible && !snapPoints) return;
+        if (drawerRef.current && !drawerRef.current.contains(event.target)) return;
+        drawerHeightRef.current = ((_drawerRef_current = drawerRef.current) == null ? void 0 : _drawerRef_current.getBoundingClientRect().height) || 0;
+        drawerWidthRef.current = ((_drawerRef_current1 = drawerRef.current) == null ? void 0 : _drawerRef_current1.getBoundingClientRect().width) || 0;
+        setIsDragging(true);
+        dragStartTime.current = new Date();
+        // iOS doesn't trigger mouseUp after scrolling so we need to listen to touched in order to disallow dragging
+        if (isIOS()) //TURBOPACK unreachable
+        ;
+        // Ensure we maintain correct pointer capture even when going outside of the drawer
+        event.target.setPointerCapture(event.pointerId);
+        pointerStart.current = isVertical(direction) ? event.pageY : event.pageX;
+    }
+    function shouldDrag(el, isDraggingInDirection) {
+        var _window_getSelection;
+        let element = el;
+        const highlightedText = (_window_getSelection = window.getSelection()) == null ? void 0 : _window_getSelection.toString();
+        const swipeAmount = drawerRef.current ? getTranslate(drawerRef.current, direction) : null;
+        const date = new Date();
+        // Fixes https://github.com/emilkowalski/vaul/issues/483
+        if (element.tagName === 'SELECT') {
+            return false;
+        }
+        if (element.hasAttribute('data-vaul-no-drag') || element.closest('[data-vaul-no-drag]')) {
+            return false;
+        }
+        if (direction === 'right' || direction === 'left') {
+            return true;
+        }
+        // Allow scrolling when animating
+        if (openTime.current && date.getTime() - openTime.current.getTime() < 500) {
+            return false;
+        }
+        if (swipeAmount !== null) {
+            if (direction === 'bottom' ? swipeAmount > 0 : swipeAmount < 0) {
+                return true;
+            }
+        }
+        // Don't drag if there's highlighted text
+        if (highlightedText && highlightedText.length > 0) {
+            return false;
+        }
+        // Disallow dragging if drawer was scrolled within `scrollLockTimeout`
+        if (lastTimeDragPrevented.current && date.getTime() - lastTimeDragPrevented.current.getTime() < scrollLockTimeout && swipeAmount === 0) {
+            lastTimeDragPrevented.current = date;
+            return false;
+        }
+        if (isDraggingInDirection) {
+            lastTimeDragPrevented.current = date;
+            // We are dragging down so we should allow scrolling
+            return false;
+        }
+        // Keep climbing up the DOM tree as long as there's a parent
+        while(element){
+            // Check if the element is scrollable
+            if (element.scrollHeight > element.clientHeight) {
+                if (element.scrollTop !== 0) {
+                    lastTimeDragPrevented.current = new Date();
+                    // The element is scrollable and not scrolled to the top, so don't drag
+                    return false;
+                }
+                if (element.getAttribute('role') === 'dialog') {
+                    return true;
+                }
+            }
+            // Move up to the parent element
+            element = element.parentNode;
+        }
+        // No scrollable parents not scrolled to the top found, so drag
+        return true;
+    }
+    function onDrag(event) {
+        if (!drawerRef.current) {
+            return;
+        }
+        // We need to know how much of the drawer has been dragged in percentages so that we can transform background accordingly
+        if (isDragging) {
+            const directionMultiplier = direction === 'bottom' || direction === 'right' ? 1 : -1;
+            const draggedDistance = (pointerStart.current - (isVertical(direction) ? event.pageY : event.pageX)) * directionMultiplier;
+            const isDraggingInDirection = draggedDistance > 0;
+            // Pre condition for disallowing dragging in the close direction.
+            const noCloseSnapPointsPreCondition = snapPoints && !dismissible && !isDraggingInDirection;
+            // Disallow dragging down to close when first snap point is the active one and dismissible prop is set to false.
+            if (noCloseSnapPointsPreCondition && activeSnapPointIndex === 0) return;
+            // We need to capture last time when drag with scroll was triggered and have a timeout between
+            const absDraggedDistance = Math.abs(draggedDistance);
+            const wrapper = document.querySelector('[data-vaul-drawer-wrapper]');
+            const drawerDimension = direction === 'bottom' || direction === 'top' ? drawerHeightRef.current : drawerWidthRef.current;
+            // Calculate the percentage dragged, where 1 is the closed position
+            let percentageDragged = absDraggedDistance / drawerDimension;
+            const snapPointPercentageDragged = getSnapPointsPercentageDragged(absDraggedDistance, isDraggingInDirection);
+            if (snapPointPercentageDragged !== null) {
+                percentageDragged = snapPointPercentageDragged;
+            }
+            // Disallow close dragging beyond the smallest snap point.
+            if (noCloseSnapPointsPreCondition && percentageDragged >= 1) {
+                return;
+            }
+            if (!isAllowedToDrag.current && !shouldDrag(event.target, isDraggingInDirection)) return;
+            drawerRef.current.classList.add(DRAG_CLASS);
+            // If shouldDrag gave true once after pressing down on the drawer, we set isAllowedToDrag to true and it will remain true until we let go, there's no reason to disable dragging mid way, ever, and that's the solution to it
+            isAllowedToDrag.current = true;
+            set(drawerRef.current, {
+                transition: 'none'
+            });
+            set(overlayRef.current, {
+                transition: 'none'
+            });
+            if (snapPoints) {
+                onDragSnapPoints({
+                    draggedDistance
+                });
+            }
+            // Run this only if snapPoints are not defined or if we are at the last snap point (highest one)
+            if (isDraggingInDirection && !snapPoints) {
+                const dampenedDraggedDistance = dampenValue(draggedDistance);
+                const translateValue = Math.min(dampenedDraggedDistance * -1, 0) * directionMultiplier;
+                set(drawerRef.current, {
+                    transform: isVertical(direction) ? `translate3d(0, ${translateValue}px, 0)` : `translate3d(${translateValue}px, 0, 0)`
+                });
+                return;
+            }
+            const opacityValue = 1 - percentageDragged;
+            if (shouldFade || fadeFromIndex && activeSnapPointIndex === fadeFromIndex - 1) {
+                onDragProp == null ? void 0 : onDragProp(event, percentageDragged);
+                set(overlayRef.current, {
+                    opacity: `${opacityValue}`,
+                    transition: 'none'
+                }, true);
+            }
+            if (wrapper && overlayRef.current && shouldScaleBackground) {
+                // Calculate percentageDragged as a fraction (0 to 1)
+                const scaleValue = Math.min(getScale() + percentageDragged * (1 - getScale()), 1);
+                const borderRadiusValue = 8 - percentageDragged * 8;
+                const translateValue = Math.max(0, 14 - percentageDragged * 14);
+                set(wrapper, {
+                    borderRadius: `${borderRadiusValue}px`,
+                    transform: isVertical(direction) ? `scale(${scaleValue}) translate3d(0, ${translateValue}px, 0)` : `scale(${scaleValue}) translate3d(${translateValue}px, 0, 0)`,
+                    transition: 'none'
+                }, true);
+            }
+            if (!snapPoints) {
+                const translateValue = absDraggedDistance * directionMultiplier;
+                set(drawerRef.current, {
+                    transform: isVertical(direction) ? `translate3d(0, ${translateValue}px, 0)` : `translate3d(${translateValue}px, 0, 0)`
+                });
+            }
+        }
+    }
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        window.requestAnimationFrame(()=>{
+            shouldAnimate.current = true;
+        });
+    }, []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        var _window_visualViewport;
+        function onVisualViewportChange() {
+            if (!drawerRef.current || !repositionInputs) return;
+            const focusedElement = document.activeElement;
+            if (isInput(focusedElement) || keyboardIsOpen.current) {
+                var _window_visualViewport;
+                const visualViewportHeight = ((_window_visualViewport = window.visualViewport) == null ? void 0 : _window_visualViewport.height) || 0;
+                const totalHeight = window.innerHeight;
+                // This is the height of the keyboard
+                let diffFromInitial = totalHeight - visualViewportHeight;
+                const drawerHeight = drawerRef.current.getBoundingClientRect().height || 0;
+                // Adjust drawer height only if it's tall enough
+                const isTallEnough = drawerHeight > totalHeight * 0.8;
+                if (!initialDrawerHeight.current) {
+                    initialDrawerHeight.current = drawerHeight;
+                }
+                const offsetFromTop = drawerRef.current.getBoundingClientRect().top;
+                // visualViewport height may change due to somq e subtle changes to the keyboard. Checking if the height changed by 60 or more will make sure that they keyboard really changed its open state.
+                if (Math.abs(previousDiffFromInitial.current - diffFromInitial) > 60) {
+                    keyboardIsOpen.current = !keyboardIsOpen.current;
+                }
+                if (snapPoints && snapPoints.length > 0 && snapPointsOffset && activeSnapPointIndex) {
+                    const activeSnapPointHeight = snapPointsOffset[activeSnapPointIndex] || 0;
+                    diffFromInitial += activeSnapPointHeight;
+                }
+                previousDiffFromInitial.current = diffFromInitial;
+                // We don't have to change the height if the input is in view, when we are here we are in the opened keyboard state so we can correctly check if the input is in view
+                if (drawerHeight > visualViewportHeight || keyboardIsOpen.current) {
+                    const height = drawerRef.current.getBoundingClientRect().height;
+                    let newDrawerHeight = height;
+                    if (height > visualViewportHeight) {
+                        newDrawerHeight = visualViewportHeight - (isTallEnough ? offsetFromTop : WINDOW_TOP_OFFSET);
+                    }
+                    // When fixed, don't move the drawer upwards if there's space, but rather only change it's height so it's fully scrollable when the keyboard is open
+                    if (fixed) {
+                        drawerRef.current.style.height = `${height - Math.max(diffFromInitial, 0)}px`;
+                    } else {
+                        drawerRef.current.style.height = `${Math.max(newDrawerHeight, visualViewportHeight - offsetFromTop)}px`;
+                    }
+                } else if (!isMobileFirefox()) {
+                    drawerRef.current.style.height = `${initialDrawerHeight.current}px`;
+                }
+                if (snapPoints && snapPoints.length > 0 && !keyboardIsOpen.current) {
+                    drawerRef.current.style.bottom = `0px`;
+                } else {
+                    // Negative bottom value would never make sense
+                    drawerRef.current.style.bottom = `${Math.max(diffFromInitial, 0)}px`;
+                }
+            }
+        }
+        (_window_visualViewport = window.visualViewport) == null ? void 0 : _window_visualViewport.addEventListener('resize', onVisualViewportChange);
+        return ()=>{
+            var _window_visualViewport;
+            return (_window_visualViewport = window.visualViewport) == null ? void 0 : _window_visualViewport.removeEventListener('resize', onVisualViewportChange);
+        };
+    }, [
+        activeSnapPointIndex,
+        snapPoints,
+        snapPointsOffset
+    ]);
+    function closeDrawer(fromWithin) {
+        cancelDrag();
+        onClose == null ? void 0 : onClose();
+        if (!fromWithin) {
+            setIsOpen(false);
+        }
+        setTimeout(()=>{
+            if (snapPoints) {
+                setActiveSnapPoint(snapPoints[0]);
+            }
+        }, TRANSITIONS.DURATION * 1000); // seconds to ms
+    }
+    function resetDrawer() {
+        if (!drawerRef.current) return;
+        const wrapper = document.querySelector('[data-vaul-drawer-wrapper]');
+        const currentSwipeAmount = getTranslate(drawerRef.current, direction);
+        set(drawerRef.current, {
+            transform: 'translate3d(0, 0, 0)',
+            transition: `transform ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(',')})`
+        });
+        set(overlayRef.current, {
+            transition: `opacity ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(',')})`,
+            opacity: '1'
+        });
+        // Don't reset background if swiped upwards
+        if (shouldScaleBackground && currentSwipeAmount && currentSwipeAmount > 0 && isOpen) {
+            set(wrapper, {
+                borderRadius: `${BORDER_RADIUS}px`,
+                overflow: 'hidden',
+                ...isVertical(direction) ? {
+                    transform: `scale(${getScale()}) translate3d(0, calc(env(safe-area-inset-top) + 14px), 0)`,
+                    transformOrigin: 'top'
+                } : {
+                    transform: `scale(${getScale()}) translate3d(calc(env(safe-area-inset-top) + 14px), 0, 0)`,
+                    transformOrigin: 'left'
+                },
+                transitionProperty: 'transform, border-radius',
+                transitionDuration: `${TRANSITIONS.DURATION}s`,
+                transitionTimingFunction: `cubic-bezier(${TRANSITIONS.EASE.join(',')})`
+            }, true);
+        }
+    }
+    function cancelDrag() {
+        if (!isDragging || !drawerRef.current) return;
+        drawerRef.current.classList.remove(DRAG_CLASS);
+        isAllowedToDrag.current = false;
+        setIsDragging(false);
+        dragEndTime.current = new Date();
+    }
+    function onRelease(event) {
+        if (!isDragging || !drawerRef.current) return;
+        drawerRef.current.classList.remove(DRAG_CLASS);
+        isAllowedToDrag.current = false;
+        setIsDragging(false);
+        dragEndTime.current = new Date();
+        const swipeAmount = getTranslate(drawerRef.current, direction);
+        if (!event || !shouldDrag(event.target, false) || !swipeAmount || Number.isNaN(swipeAmount)) return;
+        if (dragStartTime.current === null) return;
+        const timeTaken = dragEndTime.current.getTime() - dragStartTime.current.getTime();
+        const distMoved = pointerStart.current - (isVertical(direction) ? event.pageY : event.pageX);
+        const velocity = Math.abs(distMoved) / timeTaken;
+        if (velocity > 0.05) {
+            // `justReleased` is needed to prevent the drawer from focusing on an input when the drag ends, as it's not the intent most of the time.
+            setJustReleased(true);
+            setTimeout(()=>{
+                setJustReleased(false);
+            }, 200);
+        }
+        if (snapPoints) {
+            const directionMultiplier = direction === 'bottom' || direction === 'right' ? 1 : -1;
+            onReleaseSnapPoints({
+                draggedDistance: distMoved * directionMultiplier,
+                closeDrawer,
+                velocity,
+                dismissible
+            });
+            onReleaseProp == null ? void 0 : onReleaseProp(event, true);
+            return;
+        }
+        // Moved upwards, don't do anything
+        if (direction === 'bottom' || direction === 'right' ? distMoved > 0 : distMoved < 0) {
+            resetDrawer();
+            onReleaseProp == null ? void 0 : onReleaseProp(event, true);
+            return;
+        }
+        if (velocity > VELOCITY_THRESHOLD) {
+            closeDrawer();
+            onReleaseProp == null ? void 0 : onReleaseProp(event, false);
+            return;
+        }
+        var _drawerRef_current_getBoundingClientRect_height;
+        const visibleDrawerHeight = Math.min((_drawerRef_current_getBoundingClientRect_height = drawerRef.current.getBoundingClientRect().height) != null ? _drawerRef_current_getBoundingClientRect_height : 0, window.innerHeight);
+        var _drawerRef_current_getBoundingClientRect_width;
+        const visibleDrawerWidth = Math.min((_drawerRef_current_getBoundingClientRect_width = drawerRef.current.getBoundingClientRect().width) != null ? _drawerRef_current_getBoundingClientRect_width : 0, window.innerWidth);
+        const isHorizontalSwipe = direction === 'left' || direction === 'right';
+        if (Math.abs(swipeAmount) >= (isHorizontalSwipe ? visibleDrawerWidth : visibleDrawerHeight) * closeThreshold) {
+            closeDrawer();
+            onReleaseProp == null ? void 0 : onReleaseProp(event, false);
+            return;
+        }
+        onReleaseProp == null ? void 0 : onReleaseProp(event, true);
+        resetDrawer();
+    }
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        // Trigger enter animation without using CSS animation
+        if (isOpen) {
+            set(document.documentElement, {
+                scrollBehavior: 'auto'
+            });
+            openTime.current = new Date();
+        }
+        return ()=>{
+            reset(document.documentElement, 'scrollBehavior');
+        };
+    }, [
+        isOpen
+    ]);
+    function onNestedOpenChange(o) {
+        const scale = o ? (window.innerWidth - NESTED_DISPLACEMENT) / window.innerWidth : 1;
+        const initialTranslate = o ? -NESTED_DISPLACEMENT : 0;
+        if (nestedOpenChangeTimer.current) {
+            window.clearTimeout(nestedOpenChangeTimer.current);
+        }
+        set(drawerRef.current, {
+            transition: `transform ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(',')})`,
+            transform: isVertical(direction) ? `scale(${scale}) translate3d(0, ${initialTranslate}px, 0)` : `scale(${scale}) translate3d(${initialTranslate}px, 0, 0)`
+        });
+        if (!o && drawerRef.current) {
+            nestedOpenChangeTimer.current = setTimeout(()=>{
+                const translateValue = getTranslate(drawerRef.current, direction);
+                set(drawerRef.current, {
+                    transition: 'none',
+                    transform: isVertical(direction) ? `translate3d(0, ${translateValue}px, 0)` : `translate3d(${translateValue}px, 0, 0)`
+                });
+            }, 500);
+        }
+    }
+    function onNestedDrag(_event, percentageDragged) {
+        if (percentageDragged < 0) return;
+        const initialScale = (window.innerWidth - NESTED_DISPLACEMENT) / window.innerWidth;
+        const newScale = initialScale + percentageDragged * (1 - initialScale);
+        const newTranslate = -NESTED_DISPLACEMENT + percentageDragged * NESTED_DISPLACEMENT;
+        set(drawerRef.current, {
+            transform: isVertical(direction) ? `scale(${newScale}) translate3d(0, ${newTranslate}px, 0)` : `scale(${newScale}) translate3d(${newTranslate}px, 0, 0)`,
+            transition: 'none'
+        });
+    }
+    function onNestedRelease(_event, o) {
+        const dim = isVertical(direction) ? window.innerHeight : window.innerWidth;
+        const scale = o ? (dim - NESTED_DISPLACEMENT) / dim : 1;
+        const translate = o ? -NESTED_DISPLACEMENT : 0;
+        if (o) {
+            set(drawerRef.current, {
+                transition: `transform ${TRANSITIONS.DURATION}s cubic-bezier(${TRANSITIONS.EASE.join(',')})`,
+                transform: isVertical(direction) ? `scale(${scale}) translate3d(0, ${translate}px, 0)` : `scale(${scale}) translate3d(${translate}px, 0, 0)`
+            });
+        }
+    }
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (!modal) {
+            // Need to do this manually unfortunately
+            window.requestAnimationFrame(()=>{
+                document.body.style.pointerEvents = 'auto';
+            });
+        }
+    }, [
+        modal
+    ]);
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Root"], {
+        defaultOpen: defaultOpen,
+        onOpenChange: (open)=>{
+            if (!dismissible && !open) return;
+            if (open) {
+                setHasBeenOpened(true);
+            } else {
+                closeDrawer(true);
+            }
+            setIsOpen(open);
+        },
+        open: isOpen
+    }, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(DrawerContext.Provider, {
+        value: {
+            activeSnapPoint,
+            snapPoints,
+            setActiveSnapPoint,
+            drawerRef,
+            overlayRef,
+            onOpenChange,
+            onPress,
+            onRelease,
+            onDrag,
+            dismissible,
+            shouldAnimate,
+            handleOnly,
+            isOpen,
+            isDragging,
+            shouldFade,
+            closeDrawer,
+            onNestedDrag,
+            onNestedOpenChange,
+            onNestedRelease,
+            keyboardIsOpen,
+            modal,
+            snapPointsOffset,
+            activeSnapPointIndex,
+            direction,
+            shouldScaleBackground,
+            setBackgroundColorOnScale,
+            noBodyStyles,
+            container,
+            autoFocus
+        }
+    }, children));
+}
+const Overlay = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].forwardRef(function({ ...rest }, ref) {
+    const { overlayRef, snapPoints, onRelease, shouldFade, isOpen, modal, shouldAnimate } = useDrawerContext();
+    const composedRef = useComposedRefs(ref, overlayRef);
+    const hasSnapPoints = snapPoints && snapPoints.length > 0;
+    // Overlay is the component that is locking scroll, removing it will unlock the scroll without having to dig into Radix's Dialog library
+    if (!modal) {
+        return null;
+    }
+    const onMouseUp = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useCallback((event)=>onRelease(event), [
+        onRelease
+    ]);
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Overlay"], {
+        onMouseUp: onMouseUp,
+        ref: composedRef,
+        "data-vaul-overlay": "",
+        "data-vaul-snap-points": isOpen && hasSnapPoints ? 'true' : 'false',
+        "data-vaul-snap-points-overlay": isOpen && shouldFade ? 'true' : 'false',
+        "data-vaul-animate": (shouldAnimate == null ? void 0 : shouldAnimate.current) ? 'true' : 'false',
+        ...rest
+    });
+});
+Overlay.displayName = 'Drawer.Overlay';
+const Content = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].forwardRef(function({ onPointerDownOutside, style, onOpenAutoFocus, ...rest }, ref) {
+    const { drawerRef, onPress, onRelease, onDrag, keyboardIsOpen, snapPointsOffset, activeSnapPointIndex, modal, isOpen, direction, snapPoints, container, handleOnly, shouldAnimate, autoFocus } = useDrawerContext();
+    // Needed to use transition instead of animations
+    const [delayedSnapPoints, setDelayedSnapPoints] = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const composedRef = useComposedRefs(ref, drawerRef);
+    const pointerStartRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const lastKnownPointerEventRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const wasBeyondThePointRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(false);
+    const hasSnapPoints = snapPoints && snapPoints.length > 0;
+    useScaleBackground();
+    const isDeltaInDirection = (delta, direction, threshold = 0)=>{
+        if (wasBeyondThePointRef.current) return true;
+        const deltaY = Math.abs(delta.y);
+        const deltaX = Math.abs(delta.x);
+        const isDeltaX = deltaX > deltaY;
+        const dFactor = [
+            'bottom',
+            'right'
+        ].includes(direction) ? 1 : -1;
+        if (direction === 'left' || direction === 'right') {
+            const isReverseDirection = delta.x * dFactor < 0;
+            if (!isReverseDirection && deltaX >= 0 && deltaX <= threshold) {
+                return isDeltaX;
+            }
+        } else {
+            const isReverseDirection = delta.y * dFactor < 0;
+            if (!isReverseDirection && deltaY >= 0 && deltaY <= threshold) {
+                return !isDeltaX;
+            }
+        }
+        wasBeyondThePointRef.current = true;
+        return true;
+    };
+    __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useEffect(()=>{
+        if (hasSnapPoints) {
+            window.requestAnimationFrame(()=>{
+                setDelayedSnapPoints(true);
+            });
+        }
+    }, []);
+    function handleOnPointerUp(event) {
+        pointerStartRef.current = null;
+        wasBeyondThePointRef.current = false;
+        onRelease(event);
+    }
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Content"], {
+        "data-vaul-drawer-direction": direction,
+        "data-vaul-drawer": "",
+        "data-vaul-delayed-snap-points": delayedSnapPoints ? 'true' : 'false',
+        "data-vaul-snap-points": isOpen && hasSnapPoints ? 'true' : 'false',
+        "data-vaul-custom-container": container ? 'true' : 'false',
+        "data-vaul-animate": (shouldAnimate == null ? void 0 : shouldAnimate.current) ? 'true' : 'false',
+        ...rest,
+        ref: composedRef,
+        style: snapPointsOffset && snapPointsOffset.length > 0 ? {
+            '--snap-point-height': `${snapPointsOffset[activeSnapPointIndex != null ? activeSnapPointIndex : 0]}px`,
+            ...style
+        } : style,
+        onPointerDown: (event)=>{
+            if (handleOnly) return;
+            rest.onPointerDown == null ? void 0 : rest.onPointerDown.call(rest, event);
+            pointerStartRef.current = {
+                x: event.pageX,
+                y: event.pageY
+            };
+            onPress(event);
+        },
+        onOpenAutoFocus: (e)=>{
+            onOpenAutoFocus == null ? void 0 : onOpenAutoFocus(e);
+            if (!autoFocus) {
+                e.preventDefault();
+            }
+        },
+        onPointerDownOutside: (e)=>{
+            onPointerDownOutside == null ? void 0 : onPointerDownOutside(e);
+            if (!modal || e.defaultPrevented) {
+                e.preventDefault();
+                return;
+            }
+            if (keyboardIsOpen.current) {
+                keyboardIsOpen.current = false;
+            }
+        },
+        onFocusOutside: (e)=>{
+            if (!modal) {
+                e.preventDefault();
+                return;
+            }
+        },
+        onPointerMove: (event)=>{
+            lastKnownPointerEventRef.current = event;
+            if (handleOnly) return;
+            rest.onPointerMove == null ? void 0 : rest.onPointerMove.call(rest, event);
+            if (!pointerStartRef.current) return;
+            const yPosition = event.pageY - pointerStartRef.current.y;
+            const xPosition = event.pageX - pointerStartRef.current.x;
+            const swipeStartThreshold = event.pointerType === 'touch' ? 10 : 2;
+            const delta = {
+                x: xPosition,
+                y: yPosition
+            };
+            const isAllowedToSwipe = isDeltaInDirection(delta, direction, swipeStartThreshold);
+            if (isAllowedToSwipe) onDrag(event);
+            else if (Math.abs(xPosition) > swipeStartThreshold || Math.abs(yPosition) > swipeStartThreshold) {
+                pointerStartRef.current = null;
+            }
+        },
+        onPointerUp: (event)=>{
+            rest.onPointerUp == null ? void 0 : rest.onPointerUp.call(rest, event);
+            pointerStartRef.current = null;
+            wasBeyondThePointRef.current = false;
+            onRelease(event);
+        },
+        onPointerOut: (event)=>{
+            rest.onPointerOut == null ? void 0 : rest.onPointerOut.call(rest, event);
+            handleOnPointerUp(lastKnownPointerEventRef.current);
+        },
+        onContextMenu: (event)=>{
+            rest.onContextMenu == null ? void 0 : rest.onContextMenu.call(rest, event);
+            if (lastKnownPointerEventRef.current) {
+                handleOnPointerUp(lastKnownPointerEventRef.current);
+            }
+        }
+    });
+});
+Content.displayName = 'Drawer.Content';
+const LONG_HANDLE_PRESS_TIMEOUT = 250;
+const DOUBLE_TAP_TIMEOUT = 120;
+const Handle = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].forwardRef(function({ preventCycle = false, children, ...rest }, ref) {
+    const { closeDrawer, isDragging, snapPoints, activeSnapPoint, setActiveSnapPoint, dismissible, handleOnly, isOpen, onPress, onDrag } = useDrawerContext();
+    const closeTimeoutIdRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(null);
+    const shouldCancelInteractionRef = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useRef(false);
+    function handleStartCycle() {
+        // Stop if this is the second click of a double click
+        if (shouldCancelInteractionRef.current) {
+            handleCancelInteraction();
+            return;
+        }
+        window.setTimeout(()=>{
+            handleCycleSnapPoints();
+        }, DOUBLE_TAP_TIMEOUT);
+    }
+    function handleCycleSnapPoints() {
+        // Prevent accidental taps while resizing drawer
+        if (isDragging || preventCycle || shouldCancelInteractionRef.current) {
+            handleCancelInteraction();
+            return;
+        }
+        // Make sure to clear the timeout id if the user releases the handle before the cancel timeout
+        handleCancelInteraction();
+        if (!snapPoints || snapPoints.length === 0) {
+            if (!dismissible) {
+                closeDrawer();
+            }
+            return;
+        }
+        const isLastSnapPoint = activeSnapPoint === snapPoints[snapPoints.length - 1];
+        if (isLastSnapPoint && dismissible) {
+            closeDrawer();
+            return;
+        }
+        const currentSnapIndex = snapPoints.findIndex((point)=>point === activeSnapPoint);
+        if (currentSnapIndex === -1) return; // activeSnapPoint not found in snapPoints
+        const nextSnapPoint = snapPoints[currentSnapIndex + 1];
+        setActiveSnapPoint(nextSnapPoint);
+    }
+    function handleStartInteraction() {
+        closeTimeoutIdRef.current = window.setTimeout(()=>{
+            // Cancel click interaction on a long press
+            shouldCancelInteractionRef.current = true;
+        }, LONG_HANDLE_PRESS_TIMEOUT);
+    }
+    function handleCancelInteraction() {
+        if (closeTimeoutIdRef.current) {
+            window.clearTimeout(closeTimeoutIdRef.current);
+        }
+        shouldCancelInteractionRef.current = false;
+    }
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("div", {
+        onClick: handleStartCycle,
+        onPointerCancel: handleCancelInteraction,
+        onPointerDown: (e)=>{
+            if (handleOnly) onPress(e);
+            handleStartInteraction();
+        },
+        onPointerMove: (e)=>{
+            if (handleOnly) onDrag(e);
+        },
+        // onPointerUp is already handled by the content component
+        ref: ref,
+        "data-vaul-drawer-visible": isOpen ? 'true' : 'false',
+        "data-vaul-handle": "",
+        "aria-hidden": "true",
+        ...rest
+    }, /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement("span", {
+        "data-vaul-handle-hitarea": "",
+        "aria-hidden": "true"
+    }, children));
+});
+Handle.displayName = 'Drawer.Handle';
+function NestedRoot({ onDrag, onOpenChange, open: nestedIsOpen, ...rest }) {
+    const { onNestedDrag, onNestedOpenChange, onNestedRelease } = useDrawerContext();
+    if (!onNestedDrag) {
+        throw new Error('Drawer.NestedRoot must be placed in another drawer');
+    }
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(Root, {
+        nested: true,
+        open: nestedIsOpen,
+        onClose: ()=>{
+            onNestedOpenChange(false);
+        },
+        onDrag: (e, p)=>{
+            onNestedDrag(e, p);
+            onDrag == null ? void 0 : onDrag(e, p);
+        },
+        onOpenChange: (o)=>{
+            if (o) {
+                onNestedOpenChange(o);
+            }
+            onOpenChange == null ? void 0 : onOpenChange(o);
+        },
+        onRelease: onNestedRelease,
+        ...rest
+    });
+}
+function Portal(props) {
+    const context = useDrawerContext();
+    const { container = context.container, ...portalProps } = props;
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].createElement(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Portal"], {
+        container: container,
+        ...portalProps
+    });
+}
+const Drawer = {
+    Root,
+    NestedRoot,
+    Content,
+    Overlay,
+    Trigger: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Trigger"],
+    Portal,
+    Handle,
+    Close: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Close"],
+    Title: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Title"],
+    Description: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$Lizo$2f$cleaning$2d$website$2d$design$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Description"]
+};
+;
+}),
+];
+
+//# sourceMappingURL=f1a15_35042a4f._.js.map

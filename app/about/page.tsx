@@ -44,20 +44,20 @@ export default function About() {
       <section className="relative pt-24 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Abstract Background Blobs */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl -z-10 opacity-30 pointer-events-none">
-            <motion.div 
-                animate={{ rotate: 360, scale: [1, 1.1, 1] }} 
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute top-10 left-10 w-96 h-96 bg-primary rounded-full blur-[100px]" 
-            />
-            <motion.div 
-                animate={{ rotate: -360, scale: [1, 1.2, 1] }} 
-                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                className="absolute bottom-10 right-10 w-80 h-80 bg-blue-400 rounded-full blur-[100px]" 
-            />
+          <motion.div
+            animate={{ rotate: 360, scale: [1, 1.1, 1] }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            className="absolute top-10 left-10 w-96 h-96 bg-primary rounded-full blur-[100px]"
+          />
+          <motion.div
+            animate={{ rotate: -360, scale: [1, 1.2, 1] }}
+            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+            className="absolute bottom-10 right-10 w-80 h-80 bg-blue-400 rounded-full blur-[100px]"
+          />
         </div>
 
         <div className="max-w-7xl mx-auto text-center">
-          <motion.h1 
+          <motion.h1
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
@@ -65,7 +65,7 @@ export default function About() {
           >
             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">Lizzo Cleaning</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -80,9 +80,9 @@ export default function About() {
       <section className=" px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            
+
             {/* Image Side */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -91,16 +91,16 @@ export default function About() {
             >
               <div className="absolute inset-0 bg-primary/20 rounded-2xl transform translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
               <div className="rounded-2xl overflow-hidden h-80 sm:h-[500px] shadow-2xl">
-                 <img 
-                  src="/professional-cleaning-team-happy.jpg" 
-                  alt="Our Team" 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                <img
+                  src="/professional-cleaning-team-happy.jpg"
+                  alt="Our Team"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
             </motion.div>
 
             {/* Text Side */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -130,7 +130,7 @@ export default function About() {
       {/* --- VALUES SECTION (Staggered Cards) --- */}
       <section className="py-10 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -140,7 +140,7 @@ export default function About() {
             <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
@@ -153,8 +153,8 @@ export default function About() {
               { title: "Detail", description: "We pay attention to every corner.", icon: Star },
               { title: "Care", description: "We clean like it is our own home.", icon: Heart },
             ].map((value, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 variants={cardVariant}
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
                 className="p-8 rounded-2xl bg-background border border-border/50 shadow-lg hover:shadow-xl transition-shadow"
@@ -174,9 +174,9 @@ export default function About() {
       <section id="contact" className="py-12 px-4 sm:px-6 lg:px-8 relative scroll-mt-10">
         {/* Background Gradient Mesh */}
         <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-blue-500/5 -z-10"></div>
-        
+
         <div className="max-w-7xl mx-auto">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -187,9 +187,9 @@ export default function About() {
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            
+
             {/* Left Side: Info */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -198,7 +198,7 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-6">Contact Details</h3>
                 <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                  Whether you need a quick quote for a one-time clean or want to discuss a 
+                  Whether you need a quick quote for a one-time clean or want to discuss a
                   recurring schedule for your office, we are here to help.
                 </p>
 
@@ -208,7 +208,7 @@ export default function About() {
                     { title: "Email", value: "hello@lizzo.ca", link: "mailto:hello@lizzo.ca", icon: Mail },
                     { title: "Service Areas", value: "Ottawa & Surrounding Regions", link: null, icon: MapPin },
                   ].map((item, i) => (
-                    <motion.div 
+                    <motion.div
                       key={i}
                       whileHover={{ x: 10 }}
                       className="flex items-center gap-6 group"
@@ -233,7 +233,7 @@ export default function About() {
             </motion.div>
 
             {/* Right Side: Form */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -244,9 +244,9 @@ export default function About() {
               <div className="absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
 
               <h2 className="text-2xl font-bold text-foreground mb-8">Request a Free Quote</h2>
-              
+
               {formStatus === "success" ? (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="h-96 flex flex-col items-center justify-center text-center space-y-6"
@@ -256,7 +256,7 @@ export default function About() {
                   </div>
                   <h3 className="text-3xl font-bold text-foreground">Message Sent!</h3>
                   <p className="text-foreground/60 text-lg">Thank you for contacting Lizzo Cleaning. We will get back to you within 24 hours.</p>
-                  <button 
+                  <button
                     onClick={() => setFormStatus("idle")}
                     className="mt-4 text-primary font-medium hover:underline"
                   >
@@ -268,20 +268,20 @@ export default function About() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-foreground">First Name</label>
-                      <input 
+                      <input
                         required
-                        type="text" 
-                        id="firstName" 
+                        type="text"
+                        id="firstName"
                         className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                         placeholder="Jane"
                       />
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-foreground">Last Name</label>
-                      <input 
+                      <input
                         required
-                        type="text" 
-                        id="lastName" 
+                        type="text"
+                        id="lastName"
                         className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                         placeholder="Doe"
                       />
@@ -290,10 +290,10 @@ export default function About() {
 
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground">Email</label>
-                    <input 
+                    <input
                       required
-                      type="email" 
-                      id="email" 
+                      type="email"
+                      id="email"
                       className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       placeholder="jane@example.com"
                     />
@@ -301,9 +301,9 @@ export default function About() {
 
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground">Phone Number</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
+                    <input
+                      type="tel"
+                      id="phone"
                       className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       placeholder="+1 (555) 000-0000"
                     />
@@ -311,32 +311,63 @@ export default function About() {
 
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground">Service Type</label>
-                    <select 
-                      id="service" 
+                    <select
+                      id="service"
                       className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                     >
-                      <option value="">Select a service...</option>
-                      <option value="standard">Standard Residential Cleaning</option>
-                      <option value="deep">Deep Cleaning / Move-in Move-out</option>
-                      <option value="office">Office / Commercial Cleaning</option>
-                      <option value="airbnb">Airbnb / Short-term Rental</option>
+                      <option value="">Select service.</option>
+                      <option value="standard">Residential Cleaning</option>
+                      <option value="deep">Deep Cleaning</option>
+                      <option value="deep"> Move-in / Move-out Cleaning</option>
+                      <option value="office"> Commercial & Office  Cleaning</option>
+                      <option value="airbnb">Airbnb & Rental Turnover Cleaning</option>
                     </select>
                   </div>
 
                   <div className="space-y-2">
+                    <label className="text-sm font-medium text-foreground">Service Area</label>
+                    <select
+                      id="serviceArea"
+                      className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                    >
+                      <option value="">Select area.</option>
+                      <option id="Ottawa" value="Ottawa">Ottawa</option>
+                      <option id="Kanata" value="Kanata">Kanata</option>
+                      <option id="Vanier" value="Vanier">Vanier</option>
+                      <option id="Stittsville" value="Stittsville">Stittsville</option>
+                      <option id="Nepean" value="Nepean">Nepean</option>
+                      <option id="Alta_Visa" value="Alta Visa">Alta Visa</option>
+                      <option id="Riverside_South" value="Riverside South">Riverside South</option>
+                      <option id="Findlay_Creek" value="Findlay Creek">Findlay Creek</option>
+                      <option id="Orleans" value="Orleans">Orleans</option>
+                      <option id="Westboro" value="Westboro">Westboro</option>
+                      <option id="Manotick" value="Manotick">Manotick</option>
+                      <option id="Crystal_Beach" value="Crystal Beach">Crystal Beach</option>
+                      <option id="Kanata_2" value="Kanata">Kanata</option>
+                      <option id="Greely" value="Greely">Greely</option>
+                      <option id="Barrhaven" value="Barrhaven">Barrhaven</option>
+                      <option id="Bells_Corners" value="Bells Corners">Bells Corners</option>
+                      <option id="Smithfall" value="Smithfall">Smithfall</option>
+                      <option value="other">Other (Not Listed)</option>
+
+                    </select>
+                  </div>
+
+
+                  <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground">Message / Details</label>
-                    <textarea 
-                      id="message" 
+                    <textarea
+                      id="message"
                       rows={4}
                       className="flex w-full rounded-xl border border-input bg-background/50 px-4 py-3 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none"
                       placeholder="Tell us about your space (sq ft, number of bedrooms/bathrooms)..."
                     />
                   </div>
 
-                  <motion.button 
+                  <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    type="submit" 
+                    type="submit"
                     disabled={formStatus === "submitting"}
                     className="w-full inline-flex items-center justify-center rounded-xl text-base font-bold transition-colors disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-14 shadow-lg shadow-primary/25"
                   >

@@ -111,19 +111,41 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services" className="text-card/80 hover:text-card transition-colors">
-                  Commercial Cleaning
+                   Deep Cleaning
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-card/80 hover:text-card transition-colors">
-                  Deep Cleaning
+                 
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-card/80 hover:text-card transition-colors">
-                  Move-In/Out
+                  Move-In/Move-Out
                 </Link>
               </li>
+
+               <li>
+                <Link href="/services" className="text-card/80 hover:text-card transition-colors">
+                  Commercial & Office
+                </Link>
+              </li>
+
+               <li>
+                <Link href="/services" className="text-card/80 hover:text-card transition-colors">
+               Airbnb & Turnover
+                </Link>
+              </li>
+
+               <li>
+                <Link href="/services" className="text-card/80 hover:text-card transition-colors">
+                  Post-Renovation
+                </Link>
+              </li>
+
+
+
+
             </ul>
           </div>
 

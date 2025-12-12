@@ -3,7 +3,7 @@
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import Link from "next/link"
-import { Check, ArrowRight, Users, Award, Clock, Zap, Shield, MapPin ,ArrowUpRight  } from "lucide-react"
+import { Check, ArrowRight, Users, Award, Clock, Zap, Shield, MapPin, ArrowUpRight } from "lucide-react"
 import { useState, useEffect } from "react"
 import { motion } from 'framer-motion';
 
@@ -53,41 +53,26 @@ export default function Home() {
     { number: "5 Yrs", label: "Experience", icon: Clock },
   ]
 
-  const serviceAreas = [
-    "Ottawa",
-    "Kanata",
-    "Vanier",
-    "Nepean",
-    "Barrhaven",
-    "Orleans",
-    "Stittsville",
-    "Riverside South",
-    "Findlay Creek",
-    "Greely",
-    "Westboro",
-    "Manotick",
-    "Crystal Beach",
-    "Bells Corners",
-    "Smiths Falls",
-    "Alta Vista",
-  ];
+  const serviceAreas = ["Ottawa", "Kanata", "Vanier", "Stittsville", 
+    "Nepean", "Alta Visa", "Riverside South", "Findlay Creek", "Orleans", "Westboro", "Manotick", "Crystal Beach", "Kanata",
+     "Greely", "Barrhaven", "Bells Corners", "Smithfall"]
 
 
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1, // Delays each child animation
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1, // Delays each child animation
+      },
     },
-  },
-};
+  };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
-};
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
+  };
 
 
 
@@ -108,19 +93,45 @@ const itemVariants = {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-in-left">
-              <h1 className="text-6xl md:text-7xl font-bold text-foreground leading-tight mb-6">
-                Ottawa's #1 House Cleaning Service
+
+              {/* 1. Main Heading */}
+              <h1 className="text-6xl md:text-7xl font-bold text-foreground leading-tight ">
+                Lizzo Cleaning
               </h1>
-              <p className="text-lg text-foreground/70 mb-8 leading-relaxed max-w-lg">
-                Professional residential and commercial cleaning. We deliver immaculate results and get the job done
-                right. Trusted by hundreds of families and businesses across Ottawa.
+
+              {/* 2. Slogan */}
+              <h2 className="text-2xl md:text-3xl font-medium text-primary mb-6">
+                Sparkling Spaces. Zero Stress.
+              </h2>
+
+              {/* 3. Paragraph */}
+              <p className="text-lg text-foreground/70 mb-6 leading-relaxed max-w-lg">
+                Lizzo Cleaning is your trusted local cleaning service for homes, offices, and rentals. We show up on time, pay attention to the details, and leave every space fresh, organized, and guest-ready.
               </p>
+
+              {/* 4. Checklist (Moved above buttons as per document flow) */}
+              <ul className="space-y-3 mb-2">
+                <li className="flex items-center gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Trained, trusted cleaners</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Flexible scheduling</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Transparent pricing</span>
+                </li>
+              </ul>
+
+              {/* 5. Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Link
                   href="/contact"
                   className="px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2"
                 >
-                  Get A Quote <ArrowRight size={20} />
+                  Book Your Cleaning <ArrowRight size={20} />
                 </Link>
                 <a
                   href="tel:+1 (613) 854-7507"
@@ -129,22 +140,10 @@ const itemVariants = {
                   Call Now
                 </a>
               </div>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium">Trained, professional cleaners</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium">Flexible scheduling & recurring options</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium">Transparent pricing, no hidden fees</span>
-                </li>
-              </ul>
+
             </div>
 
+            {/* Right Side Image (Unchanged) */}
             <div className="animate-slide-in-right hidden lg:block">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/10 rounded-3xl blur-3xl" />
@@ -307,96 +306,96 @@ const itemVariants = {
 
 
 
-     <section className="py-8 relative overflow-hidden bg-slate-50/50">
-      
-      {/* 1. Modern Grid Background Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-      
-      {/* 2. Soft Gradient Blurs */}
-      <div className="absolute left-0 top-0 -ml-[20%] -mt-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-      <div className="absolute right-0 bottom-0 -mr-[20%] -mb-[10%] w-[50%] h-[50%] rounded-full bg-blue-400/5 blur-3xl pointer-events-none" />
+      <section className="py-8 relative overflow-hidden bg-slate-50/50">
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
-        
-        {/* Header */}
-        <div className="text-center mb-10 max-w-3xl mx-auto">
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-primary text-xs font-bold uppercase tracking-widest shadow-sm mb-6"
-          >
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-            Service Coverage
-          </motion.div>
-          
-          <motion.h2 
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight"
-          >
-            Bringing the shine to <br className="hidden md:block" />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">Ottawa & Surroundings</span>
-          </motion.h2>
-          
-          <motion.p 
-             initial={{ opacity: 0, y: 10 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ delay: 0.2 }}
-             viewport={{ once: true }}
-             className="text-slate-500 text-lg leading-relaxed"
-          >
-            From downtown condos to suburban family homes, our mobile team covers the entire National Capital Region.
-          </motion.p>
-        </div>
+        {/* 1. Modern Grid Background Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
-        {/* Grid Area */}
-        <motion.div 
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto"
-        >
-          {serviceAreas.map((area, index) => (
+        {/* 2. Soft Gradient Blurs */}
+        <div className="absolute left-0 top-0 -ml-[20%] -mt-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-3xl pointer-events-none" />
+        <div className="absolute right-0 bottom-0 -mr-[20%] -mb-[10%] w-[50%] h-[50%] rounded-full bg-blue-400/5 blur-3xl pointer-events-none" />
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+
+          {/* Header */}
+          <div className="text-center mb-10 max-w-3xl mx-auto">
             <motion.div
-              key={index}
-              variants={itemVariants}
-              whileHover={{ y: -5 }}
-              className="group relative bg-white rounded-xl p-5 border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 cursor-default overflow-hidden"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-primary text-xs font-bold uppercase tracking-widest shadow-sm mb-6"
             >
-              {/* Hover Gradient Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              
-              <div className="relative z-10 flex flex-col items-center justify-center text-center gap-3">
-                <div className="p-3 bg-slate-50 rounded-full group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                  <MapPin size={20} />
-                </div>
-                <span className="font-semibold text-slate-700 group-hover:text-slate-900">{area}</span>
-              </div>
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              Service Coverage
             </motion.div>
-          ))}
-        </motion.div>
 
-        {/* Footer Link */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-16 text-center"
-        >
-          <Link 
-            href="/about#contact" 
-            className="inline-flex items-center gap-1 text-slate-500 hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-0.5"
+            <motion.h2
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight"
+            >
+              Bringing the shine to <br className="hidden md:block" />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">Ottawa & Surroundings</span>
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-slate-500 text-lg leading-relaxed"
+            >
+              From downtown condos to suburban family homes, our mobile team covers the entire National Capital Region.
+            </motion.p>
+          </div>
+
+          {/* Grid Area */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto"
           >
-            Check if we cover your specific street <ArrowUpRight size={16} />
-          </Link>
-        </motion.div>
+            {serviceAreas.map((area, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ y: -5 }}
+                className="group relative bg-white rounded-xl p-5 border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 cursor-default overflow-hidden"
+              >
+                {/* Hover Gradient Background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-      </div>
-    </section>
+                <div className="relative z-10 flex flex-col items-center justify-center text-center gap-3">
+                  <div className="p-3 bg-slate-50 rounded-full group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <MapPin size={20} />
+                  </div>
+                  <span className="font-semibold text-slate-700 group-hover:text-slate-900">{area}</span>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Footer Link */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="mt-16 text-center"
+          >
+            <Link
+              href="/about#contact"
+              className="inline-flex items-center gap-1 text-slate-500 hover:text-primary transition-colors border-b border-transparent hover:border-primary pb-0.5"
+            >
+              Check if we cover your specific street <ArrowUpRight size={16} />
+            </Link>
+          </motion.div>
+
+        </div>
+      </section>
 
 
       {/* CTA Section */}
