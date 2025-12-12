@@ -50,6 +50,7 @@ export default function Services() {
         "https://plus.unsplash.com/premium_photo-1679920025550-75324e59680f?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       url: "/contact",
       includes: [
+        "Standard home cleaning",
         "Dusting and wiping surfaces",
         "Vacuuming and mopping floors",
         "Bathrooms cleaned and sanitized",
@@ -70,6 +71,7 @@ export default function Services() {
         "https://5.imimg.com/data5/IY/VT/WG/SELLER-92734525/bathroom-cleaning-1000x1000.jpg",
       url: "/contact",
       includes: [
+
         "Everything in a standard clean",
         "Baseboards, door frames, & light switches",
         "Inside microwave & oven scrub",
@@ -127,12 +129,15 @@ export default function Services() {
         "https://cdn.prod.website-files.com/66eae7c3f6bec634152a5d82/66fdad7178925f4d926262f9_Cleaning%20Company%20(2).webp",
       url: "/contact",
       includes: [
-        "Guest-ready presentation & staging",
-        "Fresh bedding & towel setup",
-        "Reporting damages or low supplies",
-        "Deep sanitization of high-touch areas",
-        "Laundry service (wash & fold)",
-        "Same-day turnover availability",
+        "Guest-ready cleaning ", 
+        "Bed making & restocking ",
+        "Same-day turnover ",
+
+        "Full cleaning of all rooms",
+        "Bed stripping and remaking",
+        "Basic restocking (soap, toilet paper,etc. if provided)",
+        "Light staging so your listing look great in reviews",
+       
       ],
     },
     {
