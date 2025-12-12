@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
+import { useFormik } from "formik"
 import {
   ChevronRight,
   ChevronLeft,
@@ -13,57 +14,36 @@ import {
   DollarSign,
   MapPin,
   Phone,
+  Loader2,
 } from "lucide-react"
 
 interface FormData {
-  // Step 1: Contact
   fullName: string
   email: string
   phone: string
-
-  // Step 2: Location
   address: string
   city: string
   postalCode: string
-
-  // Step 3: Property Type
   propertyType: "apartment" | "house" | "condo" | "office" | "other"
-
-  // Step 4: Property Size
   bedrooms: string
   bathrooms: string
   squareFeet: string
-
-  // Step 5: Service Type
   serviceType: "regular" | "deep" | "move" | "carpet" | "commercial"
-
-  // Step 6: Service Areas
   areas: {
     kitchen: boolean
     bathrooms: boolean
     bedrooms: boolean
     livingAreas: boolean
-    windows: boolean
-    carpets: boolean
-    baseboards: boolean
   }
-
-  // Step 7: Frequency
   frequency: "one-time" | "weekly" | "biweekly" | "monthly"
-
-  // Step 8: Schedule
   preferredDate: string
   preferredTime: "morning" | "afternoon" | "evening" | "flexible"
-
-  // Step 9: Add-ons
   addOns: {
     insideOvens: boolean
     fridge: boolean
     windows: boolean
     laundry: boolean
   }
-
-  // Step 10: Additional Info
   specialInstructions: string
   petFriendly: boolean
 }
@@ -83,69 +63,104 @@ const STEPS = [
 
 export default function QuoteForm() {
   const [currentStep, setCurrentStep] = useState(1)
-  const [formData, setFormData] = useState<FormData>({
-    fullName: "",
-    email: "",
-    phone: "",
-    address: "",
-    city: "",
-    postalCode: "",
-    propertyType: "house",
-    bedrooms: "",
-    bathrooms: "",
-    squareFeet: "",
-    serviceType: "regular",
-    areas: {
-      kitchen: true,
-      bathrooms: true,
-      bedrooms: true,
-      livingAreas: true,
-      windows: false,
-      carpets: false,
-      baseboards: false,
-    },
-    frequency: "one-time",
-    preferredDate: "",
-    preferredTime: "morning",
-    addOns: {
-      insideOvens: false,
-      fridge: false,
-      windows: false,
-      laundry: false,
-    },
-    specialInstructions: "",
-    petFriendly: false,
-  })
-
+  const [isSending, setIsSending] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { name, value, type } = e.target
-    const inputElement = e.target as HTMLInputElement
+  const formik = useFormik<FormData>({
+    initialValues: {
+      fullName: "",
+      email: "",
+      phone: "",
+      address: "",
+      city: "",
+      postalCode: "",
+      propertyType: "house",
+      bedrooms: "",
+      bathrooms: "",
+      squareFeet: "",
+      serviceType: "regular",
+      areas: {
+        kitchen: true,
+        bathrooms: true,
+        bedrooms: true,
+        livingAreas: true,
+      },
+      frequency: "one-time",
+      preferredDate: "",
+      preferredTime: "morning",
+      addOns: {
+        insideOvens: false,
+        fridge: false,
+        windows: false,
+        laundry: false,
+      },
+      specialInstructions: "",
+      petFriendly: false,
+    },
+    onSubmit: async (values) => {
+      setIsSending(true)
 
-    if (type === "checkbox") {
-      const [category, key] = name.split(".")
-      if (category === "areas" || category === "addOns") {
-        setFormData((prev) => ({
-          ...prev,
-          [category]: {
-            ...prev[category as keyof typeof prev],
-            [key]: inputElement.checked,
-          },
-        }))
-      } else {
-        setFormData((prev) => ({
-          ...prev,
-          [name]: inputElement.checked,
-        }))
+     
+      const selectedAreas = Object.entries(values.areas)
+        .filter(([_, isSelected]) => isSelected)
+        .map(([key]) => key.charAt(0).toUpperCase() + key.slice(1))
+        .join(", ")
+
+      const selectedAddOns = Object.entries(values.addOns)
+        .filter(([_, isSelected]) => isSelected)
+        .map(([key]) => key.charAt(0).toUpperCase() + key.slice(1))
+        .join(", ")
+
+      
+      const payload = {
+        _subject: `New Cleaning Quote: ${values.fullName}`,
+        _template: "table",
+        _captcha: "false",
+        "Full Name": values.fullName,
+        Email: values.email,
+        Phone: values.phone,
+        Address: `${values.address}, ${values.city}, ${values.postalCode}`,
+        "Property Type": values.propertyType,
+        "Size": `${values.bedrooms} Bed, ${values.bathrooms} Bath, ${values.squareFeet} sqft`,
+        "Service Type": values.serviceType,
+        "Areas to Clean": selectedAreas || "None selected",
+        Frequency: values.frequency,
+        "Preferred Schedule": `${values.preferredDate} (${values.preferredTime})`,
+        "Add-Ons": selectedAddOns || "None selected",
+        "Pet Friendly": values.petFriendly ? "Yes" : "No",
+        message: values.specialInstructions, // Optional notes
       }
-    } else {
-      setFormData((prev) => ({
-        ...prev,
-        [name]: value,
-      }))
-    }
-  }
+
+      try {
+        
+        const response = await fetch("https://formsubmit.co/ajax/kocebi8671@roastic.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
+        })
+
+        if (response.ok) {
+          console.log("SUCCESS!")
+          setSubmitted(true)
+          setTimeout(() => {
+            setSubmitted(false)
+            setCurrentStep(1)
+            formik.resetForm()
+          }, 3000)
+        } else {
+          throw new Error("Form submission failed")
+        }
+      } catch (error) {
+        console.error("FAILED...", error)
+        alert("Failed to send quote. Please check your internet connection.")
+      } finally {
+        setIsSending(false)
+      }
+    },
+  })
 
   const handleNext = () => {
     if (currentStep < STEPS.length) {
@@ -161,34 +176,26 @@ export default function QuoteForm() {
     }
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    setSubmitted(true)
-    setTimeout(() => {
-      setSubmitted(false)
-      setCurrentStep(1)
-    }, 3000)
-  }
-
+  // Helper to validate steps
   const isStepComplete = (step: number): boolean => {
+    const v = formik.values
     switch (step) {
       case 1:
-        return formData.fullName !== "" && formData.email !== "" && formData.phone !== ""
+        return v.fullName !== "" && v.email !== "" && v.phone !== ""
       case 2:
-        return formData.address !== "" && formData.city !== "" && formData.postalCode !== ""
+        return v.address !== "" && v.city !== "" && v.postalCode !== ""
       case 3:
-        return formData.propertyType !== ""
+        return v.propertyType !== ""
       case 4:
-        return formData.bedrooms !== "" && formData.bathrooms !== ""
+        return v.bedrooms !== "" && v.bathrooms !== ""
       case 5:
-        return formData.serviceType !== ""
+        return v.serviceType !== ""
       case 6:
-        return Object.values(formData.areas).some((v) => v)
+        return Object.values(v.areas).some((val) => val)
       case 7:
-        return formData.frequency !== ""
+        return v.frequency !== ""
       case 8:
-        return formData.preferredDate !== "" && formData.preferredTime !== ""
+        return v.preferredDate !== "" && v.preferredTime !== ""
       case 9:
         return true
       case 10:
@@ -209,9 +216,9 @@ export default function QuoteForm() {
               <input
                 type="text"
                 name="fullName"
-                value={formData.fullName}
-                onChange={handleInputChange}
-                required
+                value={formik.values.fullName}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                 placeholder="John Doe"
               />
@@ -221,9 +228,9 @@ export default function QuoteForm() {
               <input
                 type="email"
                 name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                 placeholder="john@example.com"
               />
@@ -233,9 +240,9 @@ export default function QuoteForm() {
               <input
                 type="tel"
                 name="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-                required
+                value={formik.values.phone}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
                 className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                 placeholder="(555) 123-4567"
               />
@@ -252,9 +259,8 @@ export default function QuoteForm() {
               <input
                 type="text"
                 name="address"
-                value={formData.address}
-                onChange={handleInputChange}
-                required
+                value={formik.values.address}
+                onChange={formik.handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                 placeholder="123 Main Street"
               />
@@ -265,9 +271,8 @@ export default function QuoteForm() {
                 <input
                   type="text"
                   name="city"
-                  value={formData.city}
-                  onChange={handleInputChange}
-                  required
+                  value={formik.values.city}
+                  onChange={formik.handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                   placeholder="Ottawa"
                 />
@@ -277,9 +282,8 @@ export default function QuoteForm() {
                 <input
                   type="text"
                   name="postalCode"
-                  value={formData.postalCode}
-                  onChange={handleInputChange}
-                  required
+                  value={formik.values.postalCode}
+                  onChange={formik.handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                   placeholder="K1A 0A1"
                 />
@@ -301,10 +305,11 @@ export default function QuoteForm() {
                 { value: "other", label: "Other" },
               ].map((type) => (
                 <button
+                  type="button"
                   key={type.value}
-                  onClick={() => setFormData((prev) => ({ ...prev, propertyType: type.value as any }))}
+                  onClick={() => formik.setFieldValue("propertyType", type.value)}
                   className={`p-4 rounded-lg border-2 transition-all font-semibold ${
-                    formData.propertyType === type.value
+                    formik.values.propertyType === type.value
                       ? "border-primary bg-primary/10 text-primary"
                       : "border-border bg-background text-foreground hover:border-primary/50"
                   }`}
@@ -326,8 +331,8 @@ export default function QuoteForm() {
                 <input
                   type="number"
                   name="bedrooms"
-                  value={formData.bedrooms}
-                  onChange={handleInputChange}
+                  value={formik.values.bedrooms}
+                  onChange={formik.handleChange}
                   min="0"
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                   placeholder="2"
@@ -338,8 +343,8 @@ export default function QuoteForm() {
                 <input
                   type="number"
                   name="bathrooms"
-                  value={formData.bathrooms}
-                  onChange={handleInputChange}
+                  value={formik.values.bathrooms}
+                  onChange={formik.handleChange}
                   min="0"
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                   placeholder="1"
@@ -350,8 +355,8 @@ export default function QuoteForm() {
                 <input
                   type="number"
                   name="squareFeet"
-                  value={formData.squareFeet}
-                  onChange={handleInputChange}
+                  value={formik.values.squareFeet}
+                  onChange={formik.handleChange}
                   min="0"
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                   placeholder="1500"
@@ -374,10 +379,11 @@ export default function QuoteForm() {
                 { value: "commercial", label: "Commercial", desc: "Office & commercial spaces" },
               ].map((service) => (
                 <button
+                  type="button"
                   key={service.value}
-                  onClick={() => setFormData((prev) => ({ ...prev, serviceType: service.value as any }))}
+                  onClick={() => formik.setFieldValue("serviceType", service.value)}
                   className={`p-4 rounded-lg border-2 transition-all text-left ${
-                    formData.serviceType === service.value
+                    formik.values.serviceType === service.value
                       ? "border-primary bg-primary/10"
                       : "border-border bg-background hover:border-primary/50"
                   }`}
@@ -400,9 +406,6 @@ export default function QuoteForm() {
                 { key: "bathrooms", label: "Bathrooms" },
                 { key: "bedrooms", label: "Bedrooms" },
                 { key: "livingAreas", label: "Living Areas" },
-                { key: "windows", label: "Windows" },
-                { key: "carpets", label: "Carpets" },
-                { key: "baseboards", label: "Baseboards" },
               ].map((area) => (
                 <label
                   key={area.key}
@@ -411,8 +414,8 @@ export default function QuoteForm() {
                   <input
                     type="checkbox"
                     name={`areas.${area.key}`}
-                    checked={formData.areas[area.key as keyof typeof formData.areas]}
-                    onChange={handleInputChange}
+                    checked={formik.values.areas[area.key as keyof typeof formik.values.areas]}
+                    onChange={formik.handleChange}
                     className="w-5 h-5 rounded border-border"
                   />
                   <span className="ml-3 font-medium text-foreground">{area.label}</span>
@@ -434,10 +437,11 @@ export default function QuoteForm() {
                 { value: "monthly", label: "Monthly" },
               ].map((freq) => (
                 <button
+                  type="button"
                   key={freq.value}
-                  onClick={() => setFormData((prev) => ({ ...prev, frequency: freq.value as any }))}
+                  onClick={() => formik.setFieldValue("frequency", freq.value)}
                   className={`p-4 rounded-lg border-2 transition-all font-semibold ${
-                    formData.frequency === freq.value
+                    formik.values.frequency === freq.value
                       ? "border-primary bg-primary/10 text-primary"
                       : "border-border bg-background text-foreground hover:border-primary/50"
                   }`}
@@ -458,8 +462,8 @@ export default function QuoteForm() {
               <input
                 type="date"
                 name="preferredDate"
-                value={formData.preferredDate}
-                onChange={handleInputChange}
+                value={formik.values.preferredDate}
+                onChange={formik.handleChange}
                 required
                 className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
               />
@@ -474,10 +478,11 @@ export default function QuoteForm() {
                   { value: "flexible", label: "Flexible" },
                 ].map((time) => (
                   <button
+                    type="button"
                     key={time.value}
-                    onClick={() => setFormData((prev) => ({ ...prev, preferredTime: time.value as any }))}
+                    onClick={() => formik.setFieldValue("preferredTime", time.value)}
                     className={`p-3 rounded-lg border-2 transition-all font-medium ${
-                      formData.preferredTime === time.value
+                      formik.values.preferredTime === time.value
                         ? "border-primary bg-primary/10 text-primary"
                         : "border-border bg-background text-foreground hover:border-primary/50"
                     }`}
@@ -496,10 +501,10 @@ export default function QuoteForm() {
             <h2 className="text-2xl font-bold text-foreground">Any add-on services?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                { key: "insideOvens", label: "Inside Ovens", price: "+$50" },
-                { key: "fridge", label: "Inside Fridge", price: "+$40" },
-                { key: "windows", label: "Windows (Interior)", price: "+$60" },
-                { key: "laundry", label: "Laundry Service", price: "+$35" },
+                { key: "insideOvens", label: "Inside Ovens" },
+                { key: "fridge", label: "Inside Fridge" },
+                { key: "windows", label: "Windows (Interior)" },
+                { key: "laundry", label: "Laundry Service" },
               ].map((addon) => (
                 <label
                   key={addon.key}
@@ -508,14 +513,13 @@ export default function QuoteForm() {
                   <input
                     type="checkbox"
                     name={`addOns.${addon.key}`}
-                    checked={formData.addOns[addon.key as keyof typeof formData.addOns]}
-                    onChange={handleInputChange}
+                    checked={formik.values.addOns[addon.key as keyof typeof formik.values.addOns]}
+                    onChange={formik.handleChange}
                     className="w-5 h-5 rounded border-border"
                   />
                   <div className="ml-3 flex-1">
                     <div className="font-medium text-foreground">{addon.label}</div>
                   </div>
-                  <div className="text-sm font-semibold text-primary">{addon.price}</div>
                 </label>
               ))}
             </div>
@@ -524,12 +528,23 @@ export default function QuoteForm() {
                 <input
                   type="checkbox"
                   name="petFriendly"
-                  checked={formData.petFriendly}
-                  onChange={handleInputChange}
+                  checked={formik.values.petFriendly}
+                  onChange={formik.handleChange}
                   className="w-5 h-5 rounded border-border"
                 />
                 <span className="font-medium text-foreground">I have pets in my home</span>
               </label>
+            </div>
+          
+            <div className="mt-4">
+              <label className="block text-sm font-semibold text-foreground mb-2">Special Instructions</label>
+              <textarea
+                name="specialInstructions"
+                value={formik.values.specialInstructions}
+                onChange={formik.handleChange}
+                className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all h-24 resize-none"
+                placeholder="Gate code, parking info, etc..."
+              />
             </div>
           </div>
         )
@@ -541,38 +556,34 @@ export default function QuoteForm() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-4 bg-primary/5 rounded-lg border border-border">
                 <h3 className="font-semibold text-foreground mb-2">Contact</h3>
-                <p className="text-sm text-foreground/70">{formData.fullName}</p>
-                <p className="text-sm text-foreground/70">{formData.email}</p>
-                <p className="text-sm text-foreground/70">{formData.phone}</p>
+                <p className="text-sm text-foreground/70">{formik.values.fullName}</p>
+                <p className="text-sm text-foreground/70">{formik.values.email}</p>
+                <p className="text-sm text-foreground/70">{formik.values.phone}</p>
               </div>
               <div className="p-4 bg-primary/5 rounded-lg border border-border">
                 <h3 className="font-semibold text-foreground mb-2">Location</h3>
-                <p className="text-sm text-foreground/70">{formData.address}</p>
+                <p className="text-sm text-foreground/70">{formik.values.address}</p>
                 <p className="text-sm text-foreground/70">
-                  {formData.city}, {formData.postalCode}
+                  {formik.values.city}, {formik.values.postalCode}
                 </p>
               </div>
               <div className="p-4 bg-primary/5 rounded-lg border border-border">
                 <h3 className="font-semibold text-foreground mb-2">Property</h3>
                 <p className="text-sm text-foreground/70">
-                  {formData.propertyType.charAt(0).toUpperCase() + formData.propertyType.slice(1)}
+                  {formik.values.propertyType.charAt(0).toUpperCase() + formik.values.propertyType.slice(1)}
                 </p>
                 <p className="text-sm text-foreground/70">
-                  {formData.bedrooms} bed, {formData.bathrooms} bath
+                  {formik.values.bedrooms} bed, {formik.values.bathrooms} bath
                 </p>
               </div>
               <div className="p-4 bg-primary/5 rounded-lg border border-border">
                 <h3 className="font-semibold text-foreground mb-2">Service</h3>
                 <p className="text-sm text-foreground/70">
-                  {formData.serviceType.charAt(0).toUpperCase() + formData.serviceType.slice(1)} - {formData.frequency}
+                  {formik.values.serviceType.charAt(0).toUpperCase() + formik.values.serviceType.slice(1)} -{" "}
+                  {formik.values.frequency}
                 </p>
-                <p className="text-sm text-foreground/70">{formData.preferredDate}</p>
+                <p className="text-sm text-foreground/70">{formik.values.preferredDate}</p>
               </div>
-            </div>
-            <div className="p-4 bg-primary/10 border border-primary/30 rounded-lg">
-              <p className="text-sm text-foreground">
-                ✓ We'll contact you within 24 hours with a personalized quote based on your requirements.
-              </p>
             </div>
           </div>
         )
@@ -591,7 +602,7 @@ export default function QuoteForm() {
       )}
 
       <div className="max-w-2xl mx-auto px-4">
-        {/* Progress Bar */}
+      
         <div className="mb-12">
           <div className="flex justify-between mb-4">
             {STEPS.map((step, index) => {
@@ -601,6 +612,7 @@ export default function QuoteForm() {
               return (
                 <div key={step.number} className="flex flex-col items-center flex-1">
                   <button
+                    type="button"
                     onClick={() => setCurrentStep(step.number)}
                     disabled={index >= currentStep && !isComplete}
                     className={`w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all mb-2 ${
@@ -628,39 +640,53 @@ export default function QuoteForm() {
           </div>
         </div>
 
-        {/* Form Content */}
-        <div className="bg-white rounded-2xl p-8 border border-border shadow-lg mb-8 min-h-96">{renderStep()}</div>
+     
+        <form onSubmit={formik.handleSubmit}>
+          <div className="bg-white rounded-2xl p-8 border border-border shadow-lg mb-8 min-h-96">{renderStep()}</div>
 
-        {/* Navigation Buttons */}
-        <div className="flex gap-4 justify-between">
-          <button
-            onClick={handlePrev}
-            disabled={currentStep === 1}
-            className="flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:bg-background disabled:opacity-50 disabled:cursor-not-allowed transition-all font-semibold"
-          >
-            <ChevronLeft size={20} />
-            Back
-          </button>
+          {/* Navigation Buttons */}
+          <div className="flex gap-4 justify-between">
+            <button
+              type="button"
+              onClick={handlePrev}
+              disabled={currentStep === 1}
+              className="flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground hover:bg-background disabled:opacity-50 disabled:cursor-not-allowed transition-all font-semibold"
+            >
+              <ChevronLeft size={20} />
+              Back
+            </button>
 
-          {currentStep === STEPS.length ? (
-            <button
-              onClick={handleSubmit}
-              className="flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-all font-bold text-lg"
-            >
-              <Check size={20} />
-              Get My Quote
-            </button>
-          ) : (
-            <button
-              onClick={handleNext}
-              disabled={!isStepComplete(currentStep)}
-              className="flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all font-bold"
-            >
-              Next
-              <ChevronRight size={20} />
-            </button>
-          )}
-        </div>
+            {currentStep === STEPS.length ? (
+              <button
+                type="submit"
+                disabled={isSending || submitted}
+                className="flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-all font-bold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSending ? (
+                  <>
+                    <Loader2 className="animate-spin" size={20} />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Check size={20} />
+                    Get My Quote
+                  </>
+                )}
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={handleNext}
+                disabled={!isStepComplete(currentStep)}
+                className="flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-white hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all font-bold"
+              >
+                Next
+                <ChevronRight size={20} />
+              </button>
+            )}
+          </div>
+        </form>
 
         <p className="text-center text-sm text-foreground/60 mt-6">
           Step {currentStep} of {STEPS.length}
