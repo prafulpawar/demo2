@@ -274,7 +274,7 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Stats Section */}
+  {/* Stats Secn */}
   <section
     className="
       px-4
