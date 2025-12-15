@@ -203,7 +203,7 @@ export default function Footer() {
 
             <button
               type="submit"
-              className="px-4 py-2 rounded-md bg-card text-foreground flex items-center gap-2"
+              className="px-4 py-2 rounded-md bg-card text-foreground flex items-center gap-2 cursor-pointer"
               disabled={loading}
             >
               {loading ? (
