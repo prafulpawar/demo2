@@ -124,9 +124,7 @@ export default function Home() {
               {/* 1. Main Heading */}
               <h1 className="text-4xl 
                  
-              
-
-               lg:text-7xl md:text-8xl font-bold text-foreground ">
+               lg:text-7xl md:text-8xl  font-bold text-foreground ">
                 Lizzo Cleaning
               </h1>
 
@@ -146,8 +144,8 @@ export default function Home() {
               </p>
 
               {/* 4. Checklist (Moved above buttons as per document flow) */}
-              <ul className="space-y-3 xl:mb-6 2xl:mb-2 md:mb-6 mb-1
-                 
+              <ul className="space-y-3 xl:mb-9 2xl:mb-2 md:mb-6 mb-1
+                    lg:mb-0
               ">
                 <li className="flex items-center gap-3">
                   <Check size={20} className="text-primary flex-shrink-0" />
@@ -172,7 +170,7 @@ export default function Home() {
               </ul>
 
               {/* 5. Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mt-4 2xl:mt-0    ">
+              <div className="flex flex-col sm:flex-row mt-6 gap-4  md:mt-10 2xl:mt-0 lg:mt-2   ">
                 <Link
                   href="/contact"
                   className="px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2"
@@ -203,7 +201,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="px-4 sm:px-6 mt-14 lg:px-8  2xl:mt-0  md:pt-8 ">
+        <section className="px-4 sm:px-6 mt-18 lg:px-8  2xl:mt-0  md:pt-8 ">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {stats.map((stat, index) => {
