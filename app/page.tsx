@@ -108,120 +108,207 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Navbar />
 
-      <section
-        className={`pt-26 pb-18 px-4 sm:px-6 lg:px-8 relative overflow-hidden transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
-      >
+  <section
+  className={`pt-24 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden transition-all duration-1000 ${
+    isLoaded ? "opacity-100" : "opacity-0"
+  }`}
+>
+  <div
+    className="absolute inset-0 z-0"
+    style={{
+      backgroundImage:
+        "linear-gradient(135deg, rgba(60, 100, 180, 0.08) 0%, rgba(60, 100, 180, 0.04) 100%)",
+    }}
+  />
+
+  <div className="max-w-7xl mx-auto relative z-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="animate-slide-in-left">
+
+        {/* 1. Main Heading */}
+        <h1
+          className="
+            text-2xl
+            sm:text-xl
+            md:text-xl
+            lg:text-4xl
+            font-bold
+            text-foreground
+          "
+        >
+          Lizzo Cleaning
+        </h1>
+
+        {/* 2. Slogan */}
+        <h2
+          className="
+            text-sm
+            sm:text-xl
+            md:text-xl
+            lg:text-xl
+            font-medium
+            text-primary
+            mb-2
+          "
+        >
+          Sparkling Spaces. Zero Stress.
+        </h2>
+
+        {/* 3. Paragraph */}
+        <p
+          className="
+            text-xl
+            sm:text-2xl
+            md:text-xl
+            lg:text-sm
+            text-foreground/70
+            mb-2
+            leading-relaxed
+            max-w-lg
+          "
+        >
+          Lizzo Cleaning is your trusted local cleaning service for homes, offices,
+          and rentals. We show up on time, pay attention to the details, and leave
+          every space fresh, organized, and guest-ready.
+        </p>
+
+        {/* 4. Checklist */}
+        <ul
+          className="
+            space-y-3
+            mb-2
+            md:mb-6
+            xl:mb-9
+            2xl:mb-2
+          "
+        >
+          <li className="flex items-center gap-3">
+            <Check size={20} className="text-primary flex-shrink-0" />
+            <span
+              className="
+                text-sm
+                sm:text-xl
+                md:text-xl
+                lg:text-lg
+                font-medium
+                text-foreground
+              "
+            >
+              Trained, trusted cleaners
+            </span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <Check size={20} className="text-primary flex-shrink-0" />
+            <span
+              className="
+                text-sm
+                sm:text-xl
+                md:text-xl
+                lg:text-lg
+                font-medium
+                text-foreground
+              "
+            >
+              Flexible scheduling
+            </span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <Check size={20} className="text-primary flex-shrink-0" />
+            <span
+              className="
+                text-sm
+                sm:text-xl
+                md:text-xl
+                lg:text-lg
+                font-medium
+                text-foreground
+              "
+            >
+              Transparent pricing
+            </span>
+          </li>
+        </ul>
+
+        {/* 5. Buttons */}
         <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `linear-gradient(135deg, rgba(60, 100, 180, 0.08) 0%, rgba(60, 100, 180, 0.04) 100%)`,
-          }}
-        />
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-slide-in-left">
+          className="
+            flex flex-col
+            sm:flex-row
+            gap-4
+            mt-10
+            sm:mt-16
+            md:mt-2
+            lg:mt-0
+            mb-2
+          "
+        >
+          <Link
+            href="/contact"
+            className="px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2"
+          >
+            Book Your Cleaning <ArrowRight size={20} />
+          </Link>
 
-              {/* 1. Main Heading */}
-              <h1 className="text-4xl 
-                 
-               lg:text-7xl md:text-8xl  font-bold text-foreground ">
-                Lizzo Cleaning
-              </h1>
-
-              {/* 2. Slogan */}
-              <h2 className="text-xl md:text-3xl
-                  
-              font-medium text-primary mb-2">
-                Sparkling Spaces. Zero Stress.
-              </h2>
-
-              {/* 3. Paragraph */}
-              <p className="text-lg text-foreground/70 mb-7 leading-relaxed max-w-lg
-                 
-              
-              ">
-                Lizzo Cleaning is your trusted local cleaning service for homes, offices, and rentals. We show up on time, pay attention to the details, and leave every space fresh, organized, and guest-ready.
-              </p>
-
-              {/* 4. Checklist (Moved above buttons as per document flow) */}
-              <ul className="space-y-3 xl:mb-9 2xl:mb-2 md:mb-6 mb-1
-                    lg:mb-0
-              ">
-                <li className="flex items-center gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium
-                         max-[431px]:text-[19px]
-                  ">Trained, trusted cleaners</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0"
-                  
-                  />
-                   <span className="text-foreground font-medium
-                       max-[431px]:text-[19px]
-                  ">Flexible scheduling</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium
-                       max-[431px]:text-[19px]
-                  ">Transparent pricing</span>
-                </li>
-              </ul>
-
-              {/* 5. Buttons */}
-              <div className="flex flex-col sm:flex-row mt-6 gap-4  md:mt-10 2xl:mt-0 lg:mt-2   ">
-                <Link
-                  href="/contact"
-                  className="px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2"
-                >
-                  Book Your Cleaning <ArrowRight size={20} />
-                </Link>
-                <a
-                  href="tel:+1 (613) 854-7507"
-                  className="px-8 py-3.5 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground/5 transition-all font-semibold inline-flex items-center justify-center gap-2"
-                >
-                  Call Now
-                </a>
-              </div>
-
-            </div>
-
-            {/* Right Side Image (Unchanged) */}
-            <div className="animate-slide-in-right hidden lg:block">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/10 rounded-3xl blur-3xl" />
-                <img
-                  src="/professional-cleaning-service-modern-clean.jpg"
-                  alt="Professional cleaning team working"
-                  className="relative rounded-2xl w-[45%] object-cover shadow-2xl ml-40"
-                />
-              </div>
-            </div>
-          </div>
+          <a
+            href="tel:+1 (613) 854-7507"
+            className="px-8 py-3.5 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground/5 transition-all font-semibold inline-flex items-center justify-center gap-2"
+          >
+            Call Now
+          </a>
         </div>
+      </div>
 
-        <section className="px-4 sm:px-6 mt-18 lg:px-8  2xl:mt-0  md:pt-8 ">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {stats.map((stat, index) => {
-                const Icon = stat.icon
-                return (
-                  <div key={index} className="text-center">
-                    <div className="flex justify-center mb-4">
-                      <Icon size={32} className="text-primary" />
-                    </div>
-                    <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
-                    <div className="text-foreground/70 font-medium">{stat.label}</div>
-                  </div>
-                )
-              })}
+      {/* Right Side Image */}
+      <div className="animate-slide-in-right hidden lg:block">
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/10 rounded-3xl blur-3xl" />
+          <img
+            src="/professional-cleaning-service-modern-clean.jpg"
+            alt="Professional cleaning team working"
+            className="relative rounded-2xl lg:w-[40%] xl:w-[45%] object-cover shadow-2xl ml-40"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Stats Section */}
+  <section
+    className="
+      px-4
+      sm:px-6
+      lg:px-8
+      mt-16
+      sm:mt-28
+      md:mt-0
+      lg:mt-2
+      2xl:mt-6
+    "
+  >
+    <div className="max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {stats.map((stat, index) => {
+          const Icon = stat.icon
+          return (
+            <div key={index} className="text-center">
+              <div className="flex justify-center mb-4">
+                <Icon size={32} className="text-primary" />
+              </div>
+              <div className="text-4xl font-bold text-primary mb-2">
+                {stat.number}
+              </div>
+              <div className="text-foreground/70 font-medium">
+                {stat.label}
+              </div>
             </div>
-          </div>
-        </section>
-
-      </section>
-
+          )
+        })}
+      </div>
+    </div>
+  </section>
+</section>
 
 
       {/* How It Works - Scroll animated cards */}
