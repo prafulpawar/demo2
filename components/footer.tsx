@@ -52,7 +52,7 @@ export default function Footer() {
   });
 
   return (
-    <footer className="bg-foreground text-card mt-20">
+    <footer className="bg-foreground text-card ">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 

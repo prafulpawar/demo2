@@ -215,16 +215,16 @@ export default function Services() {
 
       {/* Services Grid */}
       <section className="py-12 md:py-20 px-4 md:px-6 container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
           {serviceDetails.map((service) => {
             const Icon = service.icon;
             return (
               <Card
                 key={service.id}
-                className="group relative flex flex-col overflow-hidden border-border/60 hover:border-primary/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-card"
+                className="group relative flex flex-col  overflow-hidden border-border/60 hover:border-primary/50 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 bg-card p-0"
               >
                 {/* Image Area */}
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative h-56 overflow-hidden ">
                   <img
                     src={service.image}
                     alt={service.title}
@@ -253,7 +253,7 @@ export default function Services() {
                     <Drawer>
                       <DrawerTrigger asChild>
                         <Button
-                          className="w-full group-hover:bg-primary/90 transition-all text-base font-medium"
+                          className="w-full group-hover:bg-primary/90 transition-all text-base font-medium cursor-pointer"
                           variant="outline"
                         >
                           View Details
@@ -275,7 +275,7 @@ export default function Services() {
                               </DrawerTitle>
                             </div>
                             <DrawerClose asChild>
-                              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full">
+                              <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full cursor-pointer">
                                 <X className="h-4 w-4" />
                               </Button>
                             </DrawerClose>
@@ -287,7 +287,7 @@ export default function Services() {
 
                         {/* Body - Scrollable */}
                         <div className="p-4 md:p-6 flex-1 overflow-y-auto md:overflow-hidden max-h-[70vh] md:max-h-none">
-                          <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                          <div className="flex flex-col md:flex-row gap-6 md:gap-8 ">
 
                             {/* Left: Image (Hidden on very small screens if needed, or kept) */}
                             <div className="w-full md:w-1/3 shrink-0">
@@ -328,22 +328,28 @@ export default function Services() {
                         </div>
 
                         {/* Footer - Fixed CTA */}
-                        <DrawerFooter className="border-t border-border/10 pt-4 shrink-0 bg-background">
-                          <div className="flex flex-col sm:flex-row gap-3 w-full max-w-4xl mx-auto">
-                            <DrawerClose asChild>
-                              <Button variant="outline" className="flex-1 sm:flex-none">Close</Button>
-                            </DrawerClose>
-                            <Link href={service.url} className="flex-1">
-                             
-                              <Button
-                                className="w-full text-sm sm:text-base"
-                                size="lg"
-                              >
-                                Book {service.title} Now
-                              </Button>
-                            </Link>
-                          </div>
-                        </DrawerFooter>
+                        <div className="flex flex-col pb-2 m sm:flex-row gap-3 w-full max-w-4xl mx-auto justify-center items-center">
+
+                          <DrawerClose asChild>
+                            <Button
+                              variant="outline"
+                              className="cursor-pointer  sm:w-auto"
+                            >
+                              Close
+                            </Button>
+                          </DrawerClose>
+
+                          <Link href={service.url}>
+                            <Button
+                              className="text-sm sm:text-base cursor-pointer w-full sm:w-auto"
+                              size="lg"
+                            >
+                              Book {service.title} Now
+                            </Button>
+                          </Link>
+
+                        </div>
+
                       </DrawerContent>
                     </Drawer>
                   </div>

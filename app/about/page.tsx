@@ -128,7 +128,7 @@ export default function About() {
       </section>
 
       {/* --- VALUES SECTION (Staggered Cards) --- */}
-      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-muted/30 mt-10">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -369,12 +369,12 @@ export default function About() {
                     whileTap={{ scale: 0.98 }}
                     type="submit"
                     disabled={formStatus === "submitting"}
-                    className="w-full inline-flex items-center justify-center rounded-xl text-base font-bold transition-colors disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-14 shadow-lg shadow-primary/25"
+                    className="w-full inline-flex cursor-pointer items-center justify-center rounded-xl text-base font-bold transition-colors disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-14 shadow-lg shadow-primary/25"
                   >
                     {formStatus === "submitting" ? (
                       "Sending..."
                     ) : (
-                      <>Send Message <Send className="ml-2 w-5 h-5" /></>
+                      <>Send Message <Send className="ml-2 w-5 h-5 cursor-pointer" /></>
                     )}
                   </motion.button>
                 </form>

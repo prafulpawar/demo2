@@ -109,7 +109,7 @@ export default function Home() {
       <Navbar />
 
       <section
-        className={`pt-28 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
+        className={`pt-26 pb-18 px-4 sm:px-6 lg:px-8 relative overflow-hidden transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <div
           className="absolute inset-0 z-0"
@@ -122,38 +122,57 @@ export default function Home() {
             <div className="animate-slide-in-left">
 
               {/* 1. Main Heading */}
-              <h1 className="text-6xl md:text-7xl font-bold text-foreground leading-tight ">
+              <h1 className="text-4xl 
+                 
+              
+
+               lg:text-7xl md:text-8xl font-bold text-foreground ">
                 Lizzo Cleaning
               </h1>
 
               {/* 2. Slogan */}
-              <h2 className="text-2xl md:text-3xl font-medium text-primary mb-6">
+              <h2 className="text-xl md:text-3xl
+                  
+              font-medium text-primary mb-2">
                 Sparkling Spaces. Zero Stress.
               </h2>
 
               {/* 3. Paragraph */}
-              <p className="text-lg text-foreground/70 mb-6 leading-relaxed max-w-lg">
+              <p className="text-lg text-foreground/70 mb-7 leading-relaxed max-w-lg
+                 
+              
+              ">
                 Lizzo Cleaning is your trusted local cleaning service for homes, offices, and rentals. We show up on time, pay attention to the details, and leave every space fresh, organized, and guest-ready.
               </p>
 
               {/* 4. Checklist (Moved above buttons as per document flow) */}
-              <ul className="space-y-3 mb-2">
+              <ul className="space-y-3 xl:mb-6 2xl:mb-2 md:mb-6 mb-1
+                 
+              ">
                 <li className="flex items-center gap-3">
                   <Check size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium">Trained, trusted cleaners</span>
+                  <span className="text-foreground font-medium
+                         max-[431px]:text-[19px]
+                  ">Trained, trusted cleaners</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Check size={20} className="text-primary flex-shrink-0"
+                  
+                  />
+                   <span className="text-foreground font-medium
+                       max-[431px]:text-[19px]
+                  ">Flexible scheduling</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Check size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium">Flexible scheduling</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <Check size={20} className="text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium">Transparent pricing</span>
+                  <span className="text-foreground font-medium
+                       max-[431px]:text-[19px]
+                  ">Transparent pricing</span>
                 </li>
               </ul>
 
               {/* 5. Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 mt-4 2xl:mt-0    ">
                 <Link
                   href="/contact"
                   className="px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2"
@@ -177,35 +196,38 @@ export default function Home() {
                 <img
                   src="/professional-cleaning-service-modern-clean.jpg"
                   alt="Professional cleaning team working"
-                  className="relative rounded-2xl w-full object-cover shadow-2xl"
+                  className="relative rounded-2xl w-[45%] object-cover shadow-2xl ml-40"
                 />
               </div>
             </div>
           </div>
         </div>
+
+        <section className="px-4 sm:px-6 mt-14 lg:px-8  2xl:mt-0  md:pt-8 ">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {stats.map((stat, index) => {
+                const Icon = stat.icon
+                return (
+                  <div key={index} className="text-center">
+                    <div className="flex justify-center mb-4">
+                      <Icon size={32} className="text-primary" />
+                    </div>
+                    <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
+                    <div className="text-foreground/70 font-medium">{stat.label}</div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
       </section>
 
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-primary/5">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {stats.map((stat, index) => {
-              const Icon = stat.icon
-              return (
-                <div key={index} className="text-center">
-                  <div className="flex justify-center mb-4">
-                    <Icon size={32} className="text-primary" />
-                  </div>
-                  <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
-                  <div className="text-foreground/70 font-medium">{stat.label}</div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+
 
       {/* How It Works - Scroll animated cards */}
-      <section className="relative py-14">
+      <section className="relative py-14 ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">How It Works</h2>

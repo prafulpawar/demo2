@@ -5,7 +5,7 @@ import Footer from "@/components/footer"
 
 export default function FAQ() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Header */}
