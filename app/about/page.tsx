@@ -37,7 +37,7 @@ export default function About() {
   }
 
   return (
-    <main className="min-h-screen bg-background overflow-hidden selection:bg-primary/20">
+    <main className="min-h-screen bg-white overflow-hidden selection:bg-primary/20">
       <Navbar />
 
       {/* --- HERO SECTION (Animated Gradient Background) --- */}
@@ -313,7 +313,7 @@ export default function About() {
                     <label className="text-sm font-medium text-foreground">Service Type</label>
                     <select
                       id="service"
-                      className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                      className="flex h-12 w-full cursor-pointer rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                     >
                       <option value="">Select service.</option>
                       <option value="standard">Residential Cleaning</option>
@@ -328,7 +328,7 @@ export default function About() {
                     <label className="text-sm font-medium text-foreground">Service Area</label>
                     <select
                       id="serviceArea"
-                      className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                      className="flex h-12 w-full cursor-pointer rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                     >
                       <option value="">Select area.</option>
                       <option id="Ottawa" value="Ottawa">Ottawa</option>

@@ -203,7 +203,7 @@ export default function Pricing() {
 
                 {/* Action Button */}
                 <Link href="/contact" className="mt-auto">
-                  <button className="w-full py-3 px-4 rounded-xl border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-3">
+                  <button className="w-full cursor-pointer py-3 px-4 rounded-xl border border-primary text-primary font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-3">
                     Request Quote
                     <ArrowRight size={18} />
                   </button>
@@ -236,7 +236,7 @@ export default function Pricing() {
             </div>
             
             <Link href="/contact" className="flex-shrink-0 w-full md:w-auto">
-              <button className="w-full md:w-auto px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2">
+              <button className="w-full cursor-pointer md:w-auto px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2">
                 Book Now
                 <ArrowRight size={18} />
               </button>

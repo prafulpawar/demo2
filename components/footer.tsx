@@ -168,7 +168,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Phone size={16} className="mt-1 flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-card/80 hover:text-card transition-colors">
+                <a href="tel:+1 (613) 854-7507" className="text-card/80 hover:text-card transition-colors">
                   +1 (613) 854-7507
                 </a>
               </li>
