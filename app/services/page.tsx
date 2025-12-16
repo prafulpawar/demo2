@@ -344,7 +344,6 @@ export default function Services() {
                           <Link href={service.url}>
                             <Button
                               className="text-sm sm:text-base cursor-pointer w-full sm:w-auto"
-                              size="lg"
                             >
                               Book {service.title} Now
                             </Button>
@@ -366,7 +365,7 @@ export default function Services() {
 
 
       {/* Add-ons Section */}
-      <section className="py-16 bg-muted/30 border-t border-border">
+      <section className="py-16 bg-white border-t border-border">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-10 md:mb-14">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -381,9 +380,9 @@ export default function Services() {
             {addOns.map((addon, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 p-4 rounded-xl border border-border bg-background shadow-sm hover:shadow-md hover:border-primary/40 hover:bg-primary/5 transition-all duration-200 cursor-default group"
+                className="flex items-center gap-3 p-4 rounded-xl border border-border bg-background shadow-sm hover:shadow-md hover:border-primary/40 hover:bg-primary/5 transition-all duration-200 cursor-default group bg-white"
               >
-                <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform bg-white">
                   <Check size={16} className="text-primary" />
                 </div>
                 <span className="text-foreground font-medium text-sm md:text-base">{addon}</span>

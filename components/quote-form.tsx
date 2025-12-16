@@ -621,7 +621,7 @@ export default function QuoteForm() {
         </div>
 
         {/* Desktop Step Indicator (>= 768px) */}
-        <div className="hidden md:block mb-12">
+        <div className="hidden md:block mb-12 ">
           <div className="flex justify-between mb-4">
             {STEPS.map((step, index) => {
               const isComplete = index < currentStep - 1
