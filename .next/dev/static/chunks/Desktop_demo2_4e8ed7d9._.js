@@ -938,7 +938,7 @@ function About() {
                                     repeat: Infinity,
                                     ease: "linear"
                                 },
-                                className: "absolute top-10 left-10 w-96 h-96 bg-primary rounded-full blur-[100px]"
+                                className: "absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-[100px]"
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/demo2/app/about/page.tsx",
                                 lineNumber: 47,
@@ -1049,7 +1049,7 @@ function About() {
                                 className: "relative group",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-0 bg-primary/20 rounded-2xl transform translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"
+                                        className: "absolute inset-0 bg-white rounded-2xl transform translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/about/page.tsx",
                                         lineNumber: 92,

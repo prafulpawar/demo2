@@ -5,11 +5,11 @@ import Footer from "@/components/footer"
 
 export default function Contact() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-primary/10 to-background">
+      <section className="pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-white-to-b from-white/10 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">Get a Quote</h1>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">

@@ -102,14 +102,13 @@ export default function Home() {
   };
 
 
-
-
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-white">
+
       <Navbar />
 
       <section
-        className={`pt-24 pb-20 px-4 min-h-[100dvh]  sm:px-6 lg:px-8  relative overflow-hidden transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"
+        className={`pt-24 pb-20 px-4 h-screen   sm:px-6 lg:px-8  relative overflow-hidden transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"
           }`}
       >
         <div
@@ -129,7 +128,7 @@ export default function Home() {
                 className="
             text-2xl
             sm:text-xl
-            md:text-xl
+            md:text-7xl
             lg:text-4xl
             font-bold
             text-foreground
@@ -143,7 +142,7 @@ export default function Home() {
                 className="
             text-sm
             sm:text-xl
-            md:text-xl
+            md:text-4xl
             lg:text-xl
             font-medium
             text-primary
@@ -158,7 +157,7 @@ export default function Home() {
                 className="
             text-xl
             sm:text-2xl
-            md:text-xl
+            md:text-4xl
             lg:text-sm
             text-foreground/70
             mb-2
@@ -187,7 +186,7 @@ export default function Home() {
                     className="
                 text-sm
                 sm:text-xl
-                md:text-xl
+                md:text-2xl
                 lg:text-lg
                 font-medium
                 text-foreground
@@ -203,7 +202,7 @@ export default function Home() {
                     className="
                 text-sm
                 sm:text-xl
-                md:text-xl
+                md:text-2xl
                 lg:text-lg
                 font-medium
                 text-foreground
@@ -219,7 +218,7 @@ export default function Home() {
                     className="
                 text-sm
                 sm:text-xl
-                md:text-xl
+                md:text-2xl
                 lg:text-lg
                 font-medium
                 text-foreground
@@ -281,7 +280,7 @@ export default function Home() {
       lg:px-8
       mt-16
       sm:mt-28
-      md:mt-0
+      md:mt-6
       lg:mt-2
       2xl:mt-6
     "
@@ -557,7 +556,7 @@ export default function Home() {
                 Book Now <ArrowRight size={18} />
               </Link>
               <a
-                href="tel:+1234567890"
+                href="tel:++1 (613) 854-7507"
                 className="px-7 py-3.5 text-slate-600 hover:text-primary font-medium transition-colors inline-flex items-center"
               >
                 Call us:  +1 (613) 854-7507

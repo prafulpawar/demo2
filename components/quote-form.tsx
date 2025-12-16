@@ -593,7 +593,7 @@ export default function QuoteForm() {
   }
 
   return (
-    <div className="bg-background   py-4 md:py-8">
+    <div className="bg-white   py-4 md:py-8">
       {submitted && (
         <div className="fixed top-4 left-4 right-4 max-w-md mx-auto bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg shadow-lg animate-fade-in z-50">
           ✓ Thank you! Your quote request has been received. We'll contact you shortly!

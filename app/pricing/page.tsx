@@ -109,13 +109,13 @@ export default function Pricing() {
   }
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Header Section */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-background relative overflow-hidden">
+      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
         {/* Subtle background decoration */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 blur-[100px] rounded-full pointer-events-none" />
         
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.div

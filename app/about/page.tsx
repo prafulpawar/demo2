@@ -47,7 +47,7 @@ export default function About() {
           <motion.div
             animate={{ rotate: 360, scale: [1, 1.1, 1] }}
             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            className="absolute top-10 left-10 w-96 h-96 bg-primary rounded-full blur-[100px]"
+            className="absolute top-10 left-10 w-96 h-96 bg-white rounded-full blur-[100px]"
           />
           <motion.div
             animate={{ rotate: -360, scale: [1, 1.2, 1] }}
@@ -89,7 +89,7 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="relative group"
             >
-              <div className="absolute inset-0 bg-primary/20 rounded-2xl transform translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
+              <div className="absolute inset-0 bg-white rounded-2xl transform translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
               <div className="rounded-2xl overflow-hidden h-80 sm:h-[500px] shadow-2xl">
                 <img
                   src="/professional-cleaning-team-happy.jpg"

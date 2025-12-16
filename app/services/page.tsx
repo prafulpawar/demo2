@@ -189,11 +189,11 @@ export default function Services() {
   ];
 
   return (
-    <main className="min-h-screen bg-background selection:bg-primary/20">
+    <main className="min-h-screen bg-white selection:bg-primary/20">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32  bg-gradient-to-b from-muted/50 to-background">
+      <section className="pt-32  bg-white-to-b from-muted/50 to-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-1.5 animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -253,12 +253,14 @@ export default function Services() {
                     <Drawer>
                       <DrawerTrigger asChild>
                         <Button
-                          className="w-full group-hover:bg-primary/90 transition-all text-base font-medium cursor-pointer"
                           variant="outline"
+                          className="w-full transition-colors text-base font-medium
+             hover:bg-primary hover:text-primary-foreground cursor-pointer"
                         >
                           View Details
-                          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          <ArrowRight className="ml-2 h-4 w-4 transition-transform hover:translate-x-1" />
                         </Button>
+
                       </DrawerTrigger>
 
                       {/* Responsive Scrollable Content */}
