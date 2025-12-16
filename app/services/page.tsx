@@ -264,7 +264,7 @@ export default function Services() {
                       </DrawerTrigger>
 
                       {/* Responsive Scrollable Content */}
-                      <DrawerContent className="max-h-[70vh] flex flex-col fixed bottom-0 left-0 right-0 outline-none">
+                      <DrawerContent className="max-h-[70vh] flex flex-col fixed bottom-0 left-0 right-0 outline-none bg-white">
                         {/* Header - Fixed */}
                         <DrawerHeader className="text-left border-b border-border/10 pb-4 shrink-0">
                           <div className="flex items-center justify-between">
@@ -318,7 +318,7 @@ export default function Services() {
                                 </h4>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                   {service.includes.map((item, idx) => (
-                                    <div key={idx} className="flex items-start gap-2.5 p-3 rounded-lg bg-muted/30 border border-border/40">
+                                    <div key={idx} className="flex items-start gap-2.5 p-3 rounded-lg bg-white border border-border/40">
                                       <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
                                       <span className="text-sm text-foreground/90">{item}</span>
                                     </div>
@@ -335,7 +335,7 @@ export default function Services() {
                           <DrawerClose asChild>
                             <Button
                               variant="outline"
-                              className="cursor-pointer text-sm pt-4 pb-4  sm:text-base    sm:w-auto"
+                              className="cursor-pointer text-sm pt-4 pb-4  sm:text-base  bg-white   sm:w-auto"
                             >
                               Close
                             </Button>

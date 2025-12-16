@@ -127,21 +127,23 @@ export default function Home() {
 
       {/* Tablet-only Hero (with stats, all-in-one) */}
       {isTablet && (
-        <section style={{ minHeight: 'calc(var(--app-vh, 100vh))' }} className="pt-24 pb-0 px-6 relative overflow-hidden flex flex-col transition-all duration-1000 overflow-auto">
+        <section style={{ minHeight: 'calc(var(--app-vh, 100vh))' }} className="pt-20 pb-0 px-6 relative  flex flex-col transition-all duration-1000 overflow-auto">
           <div className="absolute inset-0 z-0" style={{ backgroundImage: "linear-gradient(135deg, rgba(60, 100, 180, 0.08) 0%, rgba(60, 100, 180, 0.04) 100%)" }} />
           <div className="max-w-2xl mx-auto relative z-10 flex flex-col h-full flex-1">
             <div className="flex flex-col flex-1">
               <h1 className="text-5xl font-bold text-foreground mb-2 mt-4">Lizzo Cleaning</h1>
-              <h2 className="text-2xl font-medium text-primary mb-2">Sparkling Spaces. Zero Stress.</h2>
-              <p className="text-lg text-foreground/70 mb-4 leading-relaxed max-w-lg">Lizzo Cleaning is your trusted local cleaning service for homes, offices, and rentals. We show up on time, pay attention to the details, and leave every space fresh, organized, and guest-ready.</p>
+              <h2 className="text-3xl font-medium text-primary mb-2">Sparkling Spaces. Zero Stress.</h2>
+              <p className="text-3xl text-foreground/70 mb-4 leading-relaxed max-w-lg">Lizzo Cleaning is your trusted local cleaning service for homes, offices, and rentals. We show up on time, pay attention to the details, and leave every space fresh, organized, and guest-ready.</p>
               <ul className="space-y-2 mb-6">
-                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-lg font-medium text-foreground">Trained, trusted cleaners</span></li>
-                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-lg font-medium text-foreground">Flexible scheduling</span></li>
-                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-lg font-medium text-foreground">Transparent pricing</span></li>
+                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-2xl font-medium text-foreground">Trained, trusted cleaners</span></li>
+                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-2xl font-medium text-foreground">Flexible scheduling</span></li>
+                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-2xl font-medium text-foreground">Transparent pricing</span></li>
               </ul>
-              <div className="flex flex-row gap-4 mt-4 mb-4">
-                <Link href="/contact" className="px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2">Book Your Cleaning <ArrowRight size={20} /></Link>
-                <a href="tel:+1 (613) 854-7507" className="px-8 py-3.5 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground/5 transition-all font-semibold inline-flex items-center justify-center gap-2">Call Now</a>
+              <div className="flex flex-row gap-4 mt-6">
+                <Link href="/contact" className="w-1/2 px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2">Book Your Cleaning <ArrowRight size={20} /></Link>
+              </div>
+              <div className="flex flex-row gap-4 mt-6 mb-4 ">
+                <a href="tel:+1 (613) 854-7507" className="w-1/2 px-8 py-3.5 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground/5 transition-all font-semibold inline-flex items-center justify-center gap-2">Call Now</a>
               </div>
             </div>
             {/* Stats Section for tablet at bottom */}
@@ -248,7 +250,7 @@ export default function Home() {
                   <Check size={20} className="text-primary flex-shrink-0" />
                   <span
                     className="
-                text-md
+                text-lg
                 sm:text-xl
                 md:text-2xl
                 lg:text-lg
@@ -264,7 +266,7 @@ export default function Home() {
                   <Check size={20} className="text-primary flex-shrink-0" />
                   <span
                     className="
-                text-sm
+                text-lg
                 sm:text-xl
                 md:text-2xl
                 lg:text-lg
@@ -280,7 +282,7 @@ export default function Home() {
                   <Check size={20} className="text-primary flex-shrink-0" />
                   <span
                     className="
-                text-sm
+                text-lg
                 sm:text-xl
                 md:text-2xl
                 lg:text-lg

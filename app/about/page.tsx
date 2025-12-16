@@ -41,7 +41,7 @@ export default function About() {
       <Navbar />
 
       {/* --- HERO SECTION (Animated Gradient Background) --- */}
-      <section className="relative pt-24 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="bg-white relative pt-24 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Abstract Background Blobs */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl -z-10 opacity-30 pointer-events-none">
           <motion.div
@@ -128,7 +128,7 @@ export default function About() {
       </section>
 
       {/* --- VALUES SECTION (Staggered Cards) --- */}
-      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-muted/30 mt-10">
+      <section className="py-10 px-4 sm:px-6 lg:px-8 bg-white mt-10">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -145,7 +145,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 bg-white"
           >
             {[
               { title: "Reliability", description: "We show up on time, every time.", icon: Clock },
@@ -157,7 +157,7 @@ export default function About() {
                 key={index}
                 variants={cardVariant}
                 whileHover={{ y: -10, transition: { duration: 0.2 } }}
-                className="p-8 rounded-2xl bg-background border border-border/50 shadow-lg hover:shadow-xl transition-shadow"
+                className="p-8 rounded-2xl bg-background border border-border/50 shadow-lg hover:shadow-xl transition-shadow bg-white"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
                   <value.icon className="w-6 h-6" />
@@ -213,7 +213,7 @@ export default function About() {
                       whileHover={{ x: 10 }}
                       className="flex items-center gap-6 group"
                     >
-                      <div className="w-14 h-14 rounded-full bg-background border border-border shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      <div className="w-14 h-14 rounded-full bg-white border border-border shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                         <item.icon className="w-6 h-6" />
                       </div>
                       <div>
@@ -238,10 +238,10 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="bg-background/80 backdrop-blur-md border border-border rounded-3xl p-8 sm:p-10 shadow-2xl relative"
+              className="bg-white backdrop-blur-md border border-border rounded-3xl p-8 sm:p-10 shadow-2xl relative"
             >
               {/* Decorative accent */}
-              <div className="absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+              <div className="absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50 bg-white"></div>
 
               <h2 className="text-2xl font-bold text-foreground mb-8">Request a Free Quote</h2>
 
@@ -272,7 +272,7 @@ export default function About() {
                         required
                         type="text"
                         id="firstName"
-                        className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                        className="flex h-12 w-full rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                         placeholder="Jane"
                       />
                     </div>
@@ -282,7 +282,7 @@ export default function About() {
                         required
                         type="text"
                         id="lastName"
-                        className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                        className="flex h-12 w-full rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                         placeholder="Doe"
                       />
                     </div>
@@ -294,7 +294,7 @@ export default function About() {
                       required
                       type="email"
                       id="email"
-                      className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                      className="flex h-12 w-full rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       placeholder="jane@example.com"
                     />
                   </div>
@@ -304,7 +304,7 @@ export default function About() {
                     <input
                       type="tel"
                       id="phone"
-                      className="flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                      className="flex h-12 w-full rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
@@ -313,7 +313,7 @@ export default function About() {
                     <label className="text-sm font-medium text-foreground">Service Type</label>
                     <select
                       id="service"
-                      className="flex h-12 w-full cursor-pointer rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                      className="flex h-12 w-full cursor-pointer rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                     >
                       <option value="">Select service.</option>
                       <option value="standard">Residential Cleaning</option>
@@ -328,7 +328,7 @@ export default function About() {
                     <label className="text-sm font-medium text-foreground">Service Area</label>
                     <select
                       id="serviceArea"
-                      className="flex h-12 w-full cursor-pointer rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                      className="flex h-12 w-full cursor-pointer rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
                     >
                       <option value="">Select area.</option>
                       <option id="Ottawa" value="Ottawa">Ottawa</option>
@@ -359,7 +359,7 @@ export default function About() {
                     <textarea
                       id="message"
                       rows={4}
-                      className="flex w-full rounded-xl border border-input bg-background/50 px-4 py-3 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none"
+                      className="flex w-full rounded-xl border border-input bg-white px-4 py-3 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none"
                       placeholder="Tell us about your space (sq ft, number of bedrooms/bathrooms)..."
                     />
                   </div>
