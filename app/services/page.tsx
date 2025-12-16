@@ -248,13 +248,13 @@ export default function Services() {
                     {service.description}
                   </p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto ">
                     {/* DRAWER IMPLEMENTATION */}
                     <Drawer>
                       <DrawerTrigger asChild>
                         <Button
                           variant="outline"
-                          className="w-full transition-colors text-base font-medium
+                          className="w-full  transition-colors text-base font-medium bg-white
              hover:bg-primary hover:text-primary-foreground cursor-pointer"
                         >
                           View Details
@@ -335,7 +335,7 @@ export default function Services() {
                           <DrawerClose asChild>
                             <Button
                               variant="outline"
-                              className="cursor-pointer  sm:w-auto"
+                              className="cursor-pointer text-sm pt-4 pb-4  sm:text-base    sm:w-auto"
                             >
                               Close
                             </Button>

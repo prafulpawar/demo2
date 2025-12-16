@@ -11,7 +11,15 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    setIsLoaded(true)
+    setIsLoaded(true);
+    // 100dvh fix for mobile browsers
+    const setVh = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--app-vh', `${vh * 100}px`);
+    };
+    setVh();
+    window.addEventListener('resize', setVh);
+    return () => window.removeEventListener('resize', setVh);
   }, [])
 
   const services = [
@@ -101,14 +109,69 @@ export default function Home() {
     visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
   };
 
+  // Tablet media query
+  const [isTablet, setIsTablet] = useState(false);
+  useEffect(() => {
+    const checkTablet = () => {
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+    checkTablet();
+    window.addEventListener('resize', checkTablet);
+    return () => window.removeEventListener('resize', checkTablet);
+  }, []);
 
   return (
     <main className="min-h-screen bg-white">
 
       <Navbar />
 
+      {/* Tablet-only Hero (with stats, all-in-one) */}
+      {isTablet && (
+        <section style={{ minHeight: 'calc(var(--app-vh, 100vh))' }} className="pt-24 pb-0 px-6 relative overflow-hidden flex flex-col transition-all duration-1000 overflow-auto">
+          <div className="absolute inset-0 z-0" style={{ backgroundImage: "linear-gradient(135deg, rgba(60, 100, 180, 0.08) 0%, rgba(60, 100, 180, 0.04) 100%)" }} />
+          <div className="max-w-2xl mx-auto relative z-10 flex flex-col h-full flex-1">
+            <div className="flex flex-col flex-1">
+              <h1 className="text-5xl font-bold text-foreground mb-2 mt-4">Lizzo Cleaning</h1>
+              <h2 className="text-2xl font-medium text-primary mb-2">Sparkling Spaces. Zero Stress.</h2>
+              <p className="text-lg text-foreground/70 mb-4 leading-relaxed max-w-lg">Lizzo Cleaning is your trusted local cleaning service for homes, offices, and rentals. We show up on time, pay attention to the details, and leave every space fresh, organized, and guest-ready.</p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-lg font-medium text-foreground">Trained, trusted cleaners</span></li>
+                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-lg font-medium text-foreground">Flexible scheduling</span></li>
+                <li className="flex items-center gap-3"><Check size={20} className="text-primary flex-shrink-0" /><span className="text-lg font-medium text-foreground">Transparent pricing</span></li>
+              </ul>
+              <div className="flex flex-row gap-4 mt-4 mb-4">
+                <Link href="/contact" className="px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2">Book Your Cleaning <ArrowRight size={20} /></Link>
+                <a href="tel:+1 (613) 854-7507" className="px-8 py-3.5 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground/5 transition-all font-semibold inline-flex items-center justify-center gap-2">Call Now</a>
+              </div>
+            </div>
+            {/* Stats Section for tablet at bottom */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-auto mb-8 flex-shrink-0">
+              {stats.map((stat, index) => {
+                const Icon = stat.icon;
+                return (
+                  <div key={index} className="text-center">
+                    <div className="flex justify-center mb-4">
+                      <Icon size={32} className="text-primary" />
+                    </div>
+                    <div className="text-4xl font-bold text-primary mb-2">
+                      {stat.number}
+                    </div>
+                    <div className="text-foreground/70 font-medium">
+                      {stat.label}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Default Hero (mobile/desktop) */}
+      {!isTablet && (
       <section
-        className={`pt-24 pb-20 px-4 h-screen   sm:px-6 lg:px-8  relative overflow-hidden transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"
+        style={{ minHeight: 'calc(var(--app-vh, 100vh))' }}
+        className={`pt-24 pb-0 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex flex-col transition-all duration-1000 overflow-auto ${isLoaded ? "opacity-100" : "opacity-0"
           }`}
       >
         <div
@@ -119,15 +182,16 @@ export default function Home() {
           }}
         />
 
-        <div className="max-w-7xl mx-auto  relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-slide-in-left">
+        <div className="max-w-7xl mx-auto relative z-10 flex-1 flex flex-col h-full justify-between">
+          {/* Desktop / Tablet hero */}
+          <div className="flex flex-col flex-1 sm:grid sm:grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="animate-slide-in-left flex flex-col flex-1 pb-4 sm:pb-0">
 
               {/* 1. Main Heading */}
               <h1
                 className="
-            text-2xl
-            sm:text-xl
+            text-4xl
+            sm:text-4xl
             md:text-7xl
             lg:text-4xl
             font-bold
@@ -140,7 +204,7 @@ export default function Home() {
               {/* 2. Slogan */}
               <h2
                 className="
-            text-sm
+            text-md
             sm:text-xl
             md:text-4xl
             lg:text-xl
@@ -184,7 +248,7 @@ export default function Home() {
                   <Check size={20} className="text-primary flex-shrink-0" />
                   <span
                     className="
-                text-sm
+                text-md
                 sm:text-xl
                 md:text-2xl
                 lg:text-lg
@@ -235,7 +299,7 @@ export default function Home() {
             flex flex-col
             sm:flex-row
             gap-4
-            mt-10
+            mt-auto
             sm:mt-16
             md:mt-2
             lg:mt-0
@@ -270,22 +334,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Stats Secn */}
-        <section
-          className="
-      px-4
-      sm:px-6
-      lg:px-8
+          {/* Stats Secn */}
+          <section
+            className="
       mt-16
       sm:mt-28
       md:mt-6
       lg:mt-2
       2xl:mt-6
+      hidden sm:block
     "
-        >
-          <div className="max-w-7xl mx-auto">
+          >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {stats.map((stat, index) => {
                 const Icon = stat.icon
@@ -304,10 +364,10 @@ export default function Home() {
                 )
               })}
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </section>
-
+      )}
 
       {/* How It Works - Scroll animated cards */}
       <section className="relative py-14 ">
