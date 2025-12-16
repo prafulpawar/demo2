@@ -224,7 +224,7 @@ export default function Pricing() {
             className="rounded-2xl bg-primary/5 border border-primary/20 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8"
           >
             <div className="flex items-start gap-6">
-              <div className="hidden sm:flex p-4 rounded-full bg-background border border-primary/20 text-primary shadow-sm">
+              <div className="hidden sm:flex p-4 rounded-full bg-background border border-primary/20 text-primary shadow-sm bg-white">
                  <Repeat size={32} />
               </div>
               <div>

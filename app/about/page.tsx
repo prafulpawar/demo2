@@ -258,7 +258,7 @@ export default function About() {
                   <p className="text-foreground/60 text-lg">Thank you for contacting Lizzo Cleaning. We will get back to you within 24 hours.</p>
                   <button
                     onClick={() => setFormStatus("idle")}
-                    className="mt-4 text-primary font-medium hover:underline"
+                    className="mt-4 text-primary font-medium hover:underline cursor-pointer"
                   >
                     Send another message
                   </button>
