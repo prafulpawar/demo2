@@ -1801,44 +1801,26 @@ function Services() {
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "flex flex-row pb-2 m sm:flex-row pb-2  gap-3 w-full max-w-4xl mx-auto justify-center items-center",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$components$2f$ui$2f$drawer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DrawerClose"], {
-                                                                        asChild: true,
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                                                            variant: "outline",
-                                                                            className: "cursor-pointer text-sm pt-4 pb-4  sm:text-base  bg-white   sm:w-auto",
-                                                                            children: "Close"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                                                            lineNumber: 336,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    }, void 0, false, {
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                                    href: service.url,
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                        className: "text-sm sm:text-base cursor-pointer w-full sm:w-auto",
+                                                                        children: [
+                                                                            "Book ",
+                                                                            service.title,
+                                                                            " Now"
+                                                                        ]
+                                                                    }, void 0, true, {
                                                                         fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                                                        lineNumber: 335,
-                                                                        columnNumber: 27
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                                        href: service.url,
-                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                                                            className: "text-sm sm:text-base cursor-pointer w-full sm:w-auto",
-                                                                            children: [
-                                                                                "Book ",
-                                                                                service.title,
-                                                                                " Now"
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                                                            lineNumber: 345,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                                                        lineNumber: 344,
-                                                                        columnNumber: 27
+                                                                        lineNumber: 336,
+                                                                        columnNumber: 29
                                                                     }, this)
-                                                                ]
-                                                            }, void 0, true, {
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/Desktop/demo2/app/services/page.tsx",
+                                                                    lineNumber: 335,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/services/page.tsx",
                                                                 lineNumber: 333,
                                                                 columnNumber: 25
@@ -1896,7 +1878,7 @@ function Services() {
                                     children: "Add-On Services"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                    lineNumber: 371,
+                                    lineNumber: 362,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1904,13 +1886,13 @@ function Services() {
                                     children: "Need a little extra? Add these specialized services to any package to tailor the cleaning to your specific needs."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                    lineNumber: 374,
+                                    lineNumber: 365,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                            lineNumber: 370,
+                            lineNumber: 361,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1925,12 +1907,12 @@ function Services() {
                                                 className: "text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                                lineNumber: 386,
+                                                lineNumber: 377,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                            lineNumber: 385,
+                                            lineNumber: 376,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1938,34 +1920,34 @@ function Services() {
                                             children: addon
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                            lineNumber: 388,
+                                            lineNumber: 379,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                                    lineNumber: 381,
+                                    lineNumber: 372,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                            lineNumber: 379,
+                            lineNumber: 370,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                    lineNumber: 369,
+                    lineNumber: 360,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                lineNumber: 368,
+                lineNumber: 359,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Desktop/demo2/app/services/page.tsx",
-                lineNumber: 395,
+                lineNumber: 386,
                 columnNumber: 7
             }, this)
         ]

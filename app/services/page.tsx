@@ -332,15 +332,6 @@ export default function Services() {
                         {/* Footer - Fixed CTA */}
                         <div className="flex flex-row pb-2 m sm:flex-row pb-2  gap-3 w-full max-w-4xl mx-auto justify-center items-center">
 
-                          <DrawerClose asChild>
-                            <Button
-                              variant="outline"
-                              className="cursor-pointer text-sm pt-4 pb-4  sm:text-base  bg-white   sm:w-auto"
-                            >
-                              Close
-                            </Button>
-                          </DrawerClose>
-
                           <Link href={service.url}>
                             <Button
                               className="text-sm sm:text-base cursor-pointer w-full sm:w-auto"
