@@ -330,17 +330,14 @@ export default function Services() {
                         </div>
 
                         {/* Footer - Fixed CTA */}
-                        <div className="flex flex-row pb-2 m sm:flex-row pb-2  gap-3 w-full max-w-4xl mx-auto justify-center items-center">
-
-                          <Link href={service.url}>
-                            <Button
-                              className="text-sm sm:text-base cursor-pointer w-full sm:w-auto"
-                            >
+                        <div className="flex  pb-2  gap-3 justify-center items-center">
+                          <Link href={service.url} className="w-full">
+                            <Button className="text-sm sm:text-base cursor-pointer w-full">
                               Book {service.title} Now
                             </Button>
                           </Link>
-
                         </div>
+
 
                       </DrawerContent>
                     </Drawer>
