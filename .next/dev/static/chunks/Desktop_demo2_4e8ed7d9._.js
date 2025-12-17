@@ -919,7 +919,7 @@ function About() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative pt-24 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden",
+                className: "bg-white relative pt-24 pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl -z-10 opacity-30 pointer-events-none",
@@ -1156,7 +1156,7 @@ function About() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-10 px-4 sm:px-6 lg:px-8 bg-muted/30 mt-10",
+                className: "py-10 px-4 sm:px-6 lg:px-8 bg-white mt-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto",
                     children: [
@@ -1203,7 +1203,7 @@ function About() {
                                 once: true,
                                 margin: "-100px"
                             },
-                            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8",
+                            className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 bg-white",
                             children: [
                                 {
                                     title: "Reliability",
@@ -1233,7 +1233,7 @@ function About() {
                                             duration: 0.2
                                         }
                                     },
-                                    className: "p-8 rounded-2xl bg-background border border-border/50 shadow-lg hover:shadow-xl transition-shadow",
+                                    className: "p-8 rounded-2xl bg-background border border-border/50 shadow-lg hover:shadow-xl transition-shadow bg-white",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6",
@@ -1399,7 +1399,7 @@ function About() {
                                                             className: "flex items-center gap-6 group",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "w-14 h-14 rounded-full bg-background border border-border shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300",
+                                                                    className: "w-14 h-14 rounded-full bg-white border border-border shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(item.icon, {
                                                                         className: "w-6 h-6"
                                                                     }, void 0, false, {
@@ -1481,10 +1481,10 @@ function About() {
                                         transition: {
                                             delay: 0.2
                                         },
-                                        className: "bg-background/80 backdrop-blur-md border border-border rounded-3xl p-8 sm:p-10 shadow-2xl relative",
+                                        className: "bg-white backdrop-blur-md border border-border rounded-3xl p-8 sm:p-10 shadow-2xl relative",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"
+                                                className: "absolute -top-px left-10 right-10 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-50 bg-white"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/about/page.tsx",
                                                 lineNumber: 244,
@@ -1541,7 +1541,7 @@ function About() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                         onClick: ()=>setFormStatus("idle"),
-                                                        className: "mt-4 text-primary font-medium hover:underline",
+                                                        className: "mt-4 text-primary font-medium hover:underline cursor-pointer",
                                                         children: "Send another message"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/about/page.tsx",
@@ -1575,7 +1575,7 @@ function About() {
                                                                         required: true,
                                                                         type: "text",
                                                                         id: "firstName",
-                                                                        className: "flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
+                                                                        className: "flex h-12 w-full rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
                                                                         placeholder: "Jane"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/demo2/app/about/page.tsx",
@@ -1603,7 +1603,7 @@ function About() {
                                                                         required: true,
                                                                         type: "text",
                                                                         id: "lastName",
-                                                                        className: "flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
+                                                                        className: "flex h-12 w-full rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
                                                                         placeholder: "Doe"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/Desktop/demo2/app/about/page.tsx",
@@ -1637,7 +1637,7 @@ function About() {
                                                                 required: true,
                                                                 type: "email",
                                                                 id: "email",
-                                                                className: "flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
+                                                                className: "flex h-12 w-full rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
                                                                 placeholder: "jane@example.com"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/about/page.tsx",
@@ -1664,7 +1664,7 @@ function About() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                                 type: "tel",
                                                                 id: "phone",
-                                                                className: "flex h-12 w-full rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
+                                                                className: "flex h-12 w-full rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
                                                                 placeholder: "+1 (555) 000-0000"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/about/page.tsx",
@@ -1690,7 +1690,7 @@ function About() {
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                                 id: "service",
-                                                                className: "flex h-12 w-full cursor-pointer rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
+                                                                className: "flex h-12 w-full cursor-pointer rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                         value: "",
@@ -1765,7 +1765,7 @@ function About() {
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                                 id: "serviceArea",
-                                                                className: "flex h-12 w-full cursor-pointer rounded-xl border border-input bg-background/50 px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
+                                                                className: "flex h-12 w-full cursor-pointer rounded-xl border border-input bg-white px-4 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                                         value: "",
@@ -1962,7 +1962,7 @@ function About() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                                                                 id: "message",
                                                                 rows: 4,
-                                                                className: "flex w-full rounded-xl border border-input bg-background/50 px-4 py-3 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none",
+                                                                className: "flex w-full rounded-xl border border-input bg-white px-4 py-3 text-base transition-all focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none",
                                                                 placeholder: "Tell us about your space (sq ft, number of bedrooms/bathrooms)..."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/about/page.tsx",
