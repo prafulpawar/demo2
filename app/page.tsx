@@ -12,14 +12,11 @@ export default function Home() {
 
   useEffect(() => {
     setIsLoaded(true);
-    // 100dvh fix for mobile browsers
-    const setVh = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--app-vh', `${vh * 100}px`);
-    };
-    setVh();
-    window.addEventListener('resize', setVh);
-    return () => window.removeEventListener('resize', setVh);
+    // 100dvh fix for mobile browsers: compute once on mount, only on mobile
+    if (typeof window === "undefined") return;
+    if (window.innerWidth >= 768) return; // don't lock height on tablet/desktop
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--app-vh", `${vh * 100}px`);
   }, [])
 
   const services = [
@@ -173,8 +170,7 @@ export default function Home() {
       {!isTablet && (
       <section
         style={{ minHeight: 'calc(var(--app-vh, 100vh))' }}
-        className={`pt-24 pb-0 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex flex-col transition-all duration-1000 overflow-auto ${isLoaded ? "opacity-100" : "opacity-0"
-          }`}
+        className={`pt-24 pb-0 px-4 sm:px-6 lg:px-8 relative flex flex-col transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         <div
           className="absolute inset-0 z-0"

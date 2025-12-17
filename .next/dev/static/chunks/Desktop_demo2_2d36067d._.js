@@ -871,18 +871,12 @@ function Home() {
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Home.useEffect": ()=>{
             setIsLoaded(true);
-            // 100dvh fix for mobile browsers
-            const setVh = {
-                "Home.useEffect.setVh": ()=>{
-                    const vh = window.innerHeight * 0.01;
-                    document.documentElement.style.setProperty('--app-vh', `${vh * 100}px`);
-                }
-            }["Home.useEffect.setVh"];
-            setVh();
-            window.addEventListener('resize', setVh);
-            return ({
-                "Home.useEffect": ()=>window.removeEventListener('resize', setVh)
-            })["Home.useEffect"];
+            // 100dvh fix for mobile browsers: compute once on mount, only on mobile
+            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+            ;
+            if (window.innerWidth >= 768) return; // don't lock height on tablet/desktop
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty("--app-vh", `${vh * 100}px`);
         }
     }["Home.useEffect"], []);
     const services = [
@@ -1026,14 +1020,14 @@ function Home() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$components$2f$navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 126,
+                lineNumber: 123,
                 columnNumber: 7
             }, this),
             isTablet && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 style: {
                     minHeight: 'calc(var(--app-vh, 100vh))'
                 },
-                className: "pt-24 pb-0 px-6 relative overflow-hidden flex flex-col transition-all duration-1000 overflow-auto",
+                className: "pt-20 pb-0 px-6 relative  flex flex-col transition-all duration-1000 overflow-auto",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 z-0",
@@ -1042,7 +1036,7 @@ function Home() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 131,
+                        lineNumber: 128,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1056,23 +1050,23 @@ function Home() {
                                         children: "Lizzo Cleaning"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 131,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-2xl font-medium text-primary mb-2",
+                                        className: "text-3xl font-medium text-primary mb-2",
                                         children: "Sparkling Spaces. Zero Stress."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 132,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-lg text-foreground/70 mb-4 leading-relaxed max-w-lg",
+                                        className: "text-3xl text-foreground/70 mb-4 leading-relaxed max-w-lg",
                                         children: "Lizzo Cleaning is your trusted local cleaning service for homes, offices, and rentals. We show up on time, pay attention to the details, and leave every space fresh, organized, and guest-ready."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 133,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1086,21 +1080,21 @@ function Home() {
                                                         className: "text-primary flex-shrink-0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 138,
+                                                        lineNumber: 135,
                                                         columnNumber: 57
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-lg font-medium text-foreground",
+                                                        className: "text-2xl font-medium text-foreground",
                                                         children: "Trained, trusted cleaners"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 138,
+                                                        lineNumber: 135,
                                                         columnNumber: 115
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 138,
+                                                lineNumber: 135,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1111,21 +1105,21 @@ function Home() {
                                                         className: "text-primary flex-shrink-0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 139,
+                                                        lineNumber: 136,
                                                         columnNumber: 57
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-lg font-medium text-foreground",
+                                                        className: "text-2xl font-medium text-foreground",
                                                         children: "Flexible scheduling"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 139,
+                                                        lineNumber: 136,
                                                         columnNumber: 115
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 139,
+                                                lineNumber: 136,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1136,61 +1130,66 @@ function Home() {
                                                         className: "text-primary flex-shrink-0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 140,
+                                                        lineNumber: 137,
                                                         columnNumber: 57
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-lg font-medium text-foreground",
+                                                        className: "text-2xl font-medium text-foreground",
                                                         children: "Transparent pricing"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 140,
+                                                        lineNumber: 137,
                                                         columnNumber: 115
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 140,
+                                                lineNumber: 137,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 134,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-row gap-4 mt-4 mb-4",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                href: "/contact",
-                                                className: "px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2",
-                                                children: [
-                                                    "Book Your Cleaning ",
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                        size: 20
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 143,
-                                                        columnNumber: 226
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 143,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "tel:+1 (613) 854-7507",
-                                                className: "px-8 py-3.5 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground/5 transition-all font-semibold inline-flex items-center justify-center gap-2",
-                                                children: "Call Now"
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 144,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        className: "flex flex-row gap-4 mt-6",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/contact",
+                                            className: "w-1/2 px-8 py-3.5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg font-semibold inline-flex items-center justify-center gap-2",
+                                            children: [
+                                                "Book Your Cleaning ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                    size: 20
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/demo2/app/page.tsx",
+                                                    lineNumber: 140,
+                                                    columnNumber: 232
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/demo2/app/page.tsx",
+                                            lineNumber: 140,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/demo2/app/page.tsx",
+                                        lineNumber: 139,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-row gap-4 mt-6 mb-4 ",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "tel:+1 (613) 854-7507",
+                                            className: "w-1/2 px-8 py-3.5 border-2 border-foreground text-foreground rounded-lg hover:bg-foreground/5 transition-all font-semibold inline-flex items-center justify-center gap-2",
+                                            children: "Call Now"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/demo2/app/page.tsx",
+                                            lineNumber: 143,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
                                         lineNumber: 142,
                                         columnNumber: 15
@@ -1198,7 +1197,7 @@ function Home() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 133,
+                                lineNumber: 130,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1215,12 +1214,12 @@ function Home() {
                                                     className: "text-primary"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                    lineNumber: 154,
+                                                    lineNumber: 153,
                                                     columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 152,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1228,7 +1227,7 @@ function Home() {
                                                 children: stat.number
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 155,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1236,38 +1235,38 @@ function Home() {
                                                 children: stat.label
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 158,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 151,
                                         columnNumber: 19
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 148,
+                                lineNumber: 147,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 132,
+                        lineNumber: 129,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 130,
+                lineNumber: 127,
                 columnNumber: 9
             }, this),
             !isTablet && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 style: {
                     minHeight: 'calc(var(--app-vh, 100vh))'
                 },
-                className: `pt-24 pb-0 px-4 sm:px-6 lg:px-8 relative overflow-hidden flex flex-col transition-all duration-1000 overflow-auto ${isLoaded ? "opacity-100" : "opacity-0"}`,
+                className: `pt-24 pb-0 px-4 sm:px-6 lg:px-8 relative flex flex-col transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 z-0",
@@ -1276,7 +1275,7 @@ function Home() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 177,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1293,23 +1292,23 @@ function Home() {
                                                 children: "Lizzo Cleaning"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 191,
+                                                lineNumber: 189,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                className: "   text-md   sm:text-xl   md:text-4xl   lg:text-xl   font-medium   text-primary   mb-2   ",
+                                                className: "   text-md   sm:text-xl   md:text-4xl   lg:text-xl   font-medium   text-primary   mb-4   ",
                                                 children: "Sparkling Spaces. Zero Stress."
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 205,
+                                                lineNumber: 203,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "   text-xl   sm:text-2xl   md:text-4xl   lg:text-sm   text-foreground/70   mb-2   leading-relaxed   max-w-lg   ",
+                                                className: "   text-xl   sm:text-2xl   md:text-4xl   lg:text-sm   text-foreground/70   mb-5   leading-relaxed   max-w-lg   ",
                                                 children: "Lizzo Cleaning is your trusted local cleaning service for homes, offices, and rentals. We show up on time, pay attention to the details, and leave every space fresh, organized, and guest-ready."
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 220,
+                                                lineNumber: 218,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1323,21 +1322,21 @@ function Home() {
                                                                 className: "text-primary flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                                lineNumber: 248,
+                                                                lineNumber: 246,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "   text-md   sm:text-xl   md:text-2xl   lg:text-lg   font-medium   text-foreground   ",
+                                                                className: "   text-lg   sm:text-xl   md:text-2xl   lg:text-lg   font-medium   text-foreground   ",
                                                                 children: "Trained, trusted cleaners"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                                lineNumber: 249,
+                                                                lineNumber: 247,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 247,
+                                                        lineNumber: 245,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1348,21 +1347,21 @@ function Home() {
                                                                 className: "text-primary flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                                lineNumber: 264,
+                                                                lineNumber: 262,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "   text-sm   sm:text-xl   md:text-2xl   lg:text-lg   font-medium   text-foreground   ",
+                                                                className: "   text-lg   sm:text-xl   md:text-2xl   lg:text-lg   font-medium   text-foreground   ",
                                                                 children: "Flexible scheduling"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                                lineNumber: 265,
+                                                                lineNumber: 263,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 263,
+                                                        lineNumber: 261,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1373,27 +1372,27 @@ function Home() {
                                                                 className: "text-primary flex-shrink-0"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                                lineNumber: 280,
+                                                                lineNumber: 278,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                className: "   text-sm   sm:text-xl   md:text-2xl   lg:text-lg   font-medium   text-foreground   ",
+                                                                className: "   text-lg   sm:text-xl   md:text-2xl   lg:text-lg   font-medium   text-foreground   ",
                                                                 children: "Transparent pricing"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                                lineNumber: 281,
+                                                                lineNumber: 279,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 279,
+                                                        lineNumber: 277,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 238,
+                                                lineNumber: 236,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1408,13 +1407,13 @@ function Home() {
                                                                 size: 20
                                                             }, void 0, false, {
                                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                                lineNumber: 313,
+                                                                lineNumber: 311,
                                                                 columnNumber: 38
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 309,
+                                                        lineNumber: 307,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1423,19 +1422,19 @@ function Home() {
                                                         children: "Call Now"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 316,
+                                                        lineNumber: 314,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 297,
+                                                lineNumber: 295,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 186,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1447,7 +1446,7 @@ function Home() {
                                                     className: "absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/10 rounded-3xl blur-3xl"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                    lineNumber: 328,
+                                                    lineNumber: 326,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1456,24 +1455,24 @@ function Home() {
                                                     className: "relative rounded-2xl lg:w-[40%] xl:w-[45%] object-cover shadow-2xl ml-40"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                    lineNumber: 329,
+                                                    lineNumber: 327,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 327,
+                                            lineNumber: 325,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 326,
+                                        lineNumber: 324,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 187,
+                                lineNumber: 185,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1492,12 +1491,12 @@ function Home() {
                                                         className: "text-primary"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 355,
+                                                        lineNumber: 353,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                    lineNumber: 354,
+                                                    lineNumber: 352,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1505,7 +1504,7 @@ function Home() {
                                                     children: stat.number
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                    lineNumber: 357,
+                                                    lineNumber: 355,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1513,36 +1512,36 @@ function Home() {
                                                     children: stat.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                    lineNumber: 360,
+                                                    lineNumber: 358,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, index, true, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 353,
+                                            lineNumber: 351,
                                             columnNumber: 19
                                         }, this);
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 349,
+                                    lineNumber: 347,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 339,
+                                lineNumber: 337,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 185,
+                        lineNumber: 183,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 172,
+                lineNumber: 171,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1558,7 +1557,7 @@ function Home() {
                                     children: "How It Works"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 376,
+                                    lineNumber: 374,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1566,7 +1565,7 @@ function Home() {
                                     children: "We clean so you can focus on what matters."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 377,
+                                    lineNumber: 375,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1574,13 +1573,13 @@ function Home() {
                                     children: "Whether it is a busy family household, a high-traffic office, or a short-term rental that needs fast turnovers, Lizzo Cleaning delivers reliable, consistent results every time."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 378,
+                                    lineNumber: 376,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                            lineNumber: 375,
+                            lineNumber: 373,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1618,7 +1617,7 @@ function Home() {
                                             children: step.icon
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 404,
+                                            lineNumber: 402,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1626,7 +1625,7 @@ function Home() {
                                             children: step.number
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 407,
+                                            lineNumber: 405,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1634,7 +1633,7 @@ function Home() {
                                             children: step.title
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 410,
+                                            lineNumber: 408,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1642,29 +1641,29 @@ function Home() {
                                             children: step.desc
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 411,
+                                            lineNumber: 409,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 400,
+                                    lineNumber: 398,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                            lineNumber: 383,
+                            lineNumber: 381,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                    lineNumber: 374,
+                    lineNumber: 372,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 373,
+                lineNumber: 371,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1682,7 +1681,7 @@ function Home() {
                                         children: "We clean so you can focus"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 423,
+                                        lineNumber: 421,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1690,7 +1689,7 @@ function Home() {
                                         children: "Whether it's your home, office, or rental property, Lizzo Cleaning delivers reliable, consistent results every time with trained professionals."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 424,
+                                        lineNumber: 422,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1725,12 +1724,12 @@ function Home() {
                                                             size: 20
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                            lineNumber: 442,
+                                                            lineNumber: 440,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 441,
+                                                        lineNumber: 439,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1738,24 +1737,24 @@ function Home() {
                                                         children: item.text
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 444,
+                                                        lineNumber: 442,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 436,
+                                                lineNumber: 434,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 429,
+                                        lineNumber: 427,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 422,
+                                lineNumber: 420,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1768,33 +1767,33 @@ function Home() {
                                         className: "w-full h-full object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 452,
+                                        lineNumber: 450,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 451,
+                                    lineNumber: 449,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 450,
+                                lineNumber: 448,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 421,
+                        lineNumber: 419,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                    lineNumber: 420,
+                    lineNumber: 418,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 419,
+                lineNumber: 417,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1810,7 +1809,7 @@ function Home() {
                                     children: "Our Services"
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 469,
+                                    lineNumber: 467,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1818,13 +1817,13 @@ function Home() {
                                     children: "Comprehensive cleaning solutions for every need. Professional service you can trust."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 470,
+                                    lineNumber: 468,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                            lineNumber: 468,
+                            lineNumber: 466,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1837,7 +1836,7 @@ function Home() {
                                             children: service.icon
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 481,
+                                            lineNumber: 479,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1845,7 +1844,7 @@ function Home() {
                                             children: service.title
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 482,
+                                            lineNumber: 480,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1858,41 +1857,41 @@ function Home() {
                                                             children: "•"
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                            lineNumber: 491,
+                                                            lineNumber: 489,
                                                             columnNumber: 23
                                                         }, this),
                                                         detail
                                                     ]
                                                 }, idx, true, {
                                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                    lineNumber: 489,
+                                                    lineNumber: 487,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 487,
+                                            lineNumber: 485,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 477,
+                                    lineNumber: 475,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                            lineNumber: 475,
+                            lineNumber: 473,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                    lineNumber: 467,
+                    lineNumber: 465,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 466,
+                lineNumber: 464,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1902,21 +1901,21 @@ function Home() {
                         className: "absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 509,
+                        lineNumber: 507,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute left-0 top-0 -ml-[20%] -mt-[10%] w-[50%] h-[50%] rounded-full bg-primary/5 blur-3xl pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 512,
+                        lineNumber: 510,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute right-0 bottom-0 -mr-[20%] -mb-[10%] w-[50%] h-[50%] rounded-full bg-blue-400/5 blur-3xl pointer-events-none"
                     }, void 0, false, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 513,
+                        lineNumber: 511,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1943,14 +1942,14 @@ function Home() {
                                                 className: "w-2 h-2 rounded-full bg-primary animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 525,
+                                                lineNumber: 523,
                                                 columnNumber: 15
                                             }, this),
                                             "Service Coverage"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 519,
+                                        lineNumber: 517,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h2, {
@@ -1975,7 +1974,7 @@ function Home() {
                                                 className: "hidden md:block"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 536,
+                                                lineNumber: 534,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1983,13 +1982,13 @@ function Home() {
                                                 children: "Ottawa & Surroundings"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 537,
+                                                lineNumber: 535,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 529,
+                                        lineNumber: 527,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -2011,13 +2010,13 @@ function Home() {
                                         children: "From downtown condos to suburban family homes, our mobile team covers the entire National Capital Region."
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 540,
+                                        lineNumber: 538,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 518,
+                                lineNumber: 516,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2040,7 +2039,7 @@ function Home() {
                                                 className: "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 567,
+                                                lineNumber: 565,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2052,12 +2051,12 @@ function Home() {
                                                             size: 20
                                                         }, void 0, false, {
                                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                            lineNumber: 571,
+                                                            lineNumber: 569,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 570,
+                                                        lineNumber: 568,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2065,24 +2064,24 @@ function Home() {
                                                         children: area
                                                     }, void 0, false, {
                                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                        lineNumber: 573,
+                                                        lineNumber: 571,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 569,
+                                                lineNumber: 567,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, index, true, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 560,
+                                        lineNumber: 558,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 552,
+                                lineNumber: 550,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2105,30 +2104,30 @@ function Home() {
                                             size: 16
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 590,
+                                            lineNumber: 588,
                                             columnNumber: 54
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 586,
+                                    lineNumber: 584,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 580,
+                                lineNumber: 578,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                        lineNumber: 515,
+                        lineNumber: 513,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 506,
+                lineNumber: 504,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2145,14 +2144,14 @@ function Home() {
                                         "Ready for a spotlessly ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 605,
+                                            lineNumber: 603,
                                             columnNumber: 38
                                         }, this),
                                         " clean space?"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 604,
+                                    lineNumber: 602,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2160,7 +2159,7 @@ function Home() {
                                     children: "Whether it's a short-term rental or your forever home, our team provides the consistent quality you've been looking for."
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 607,
+                                    lineNumber: 605,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2175,13 +2174,13 @@ function Home() {
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                    lineNumber: 616,
+                                                    lineNumber: 614,
                                                     columnNumber: 26
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 612,
+                                            lineNumber: 610,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2190,19 +2189,19 @@ function Home() {
                                             children: "Call us:  +1 (613) 854-7507"
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 618,
+                                            lineNumber: 616,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                    lineNumber: 611,
+                                    lineNumber: 609,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                            lineNumber: 603,
+                            lineNumber: 601,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2218,7 +2217,7 @@ function Home() {
                                                 children: "100%"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 631,
+                                                lineNumber: 629,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2226,13 +2225,13 @@ function Home() {
                                                 children: "Satisfaction"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 632,
+                                                lineNumber: 630,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 630,
+                                        lineNumber: 628,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2243,7 +2242,7 @@ function Home() {
                                                 children: "5★"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 635,
+                                                lineNumber: 633,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2251,13 +2250,13 @@ function Home() {
                                                 children: "Rated Service"
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                                lineNumber: 636,
+                                                lineNumber: 634,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 634,
+                                        lineNumber: 632,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2267,45 +2266,45 @@ function Home() {
                                             children: '"Lizzo Cleaning transformed our office space!"'
                                         }, void 0, false, {
                                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                            lineNumber: 639,
+                                            lineNumber: 637,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                        lineNumber: 638,
+                                        lineNumber: 636,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                                lineNumber: 629,
+                                lineNumber: 627,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Desktop/demo2/app/page.tsx",
-                            lineNumber: 628,
+                            lineNumber: 626,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/demo2/app/page.tsx",
-                    lineNumber: 600,
+                    lineNumber: 598,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 599,
+                lineNumber: 597,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$demo2$2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/Desktop/demo2/app/page.tsx",
-                lineNumber: 647,
+                lineNumber: 645,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Desktop/demo2/app/page.tsx",
-        lineNumber: 124,
+        lineNumber: 121,
         columnNumber: 5
     }, this);
 }
