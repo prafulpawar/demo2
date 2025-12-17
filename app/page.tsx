@@ -212,7 +212,7 @@ export default function Home() {
             lg:text-xl
             font-medium
             text-primary
-            mb-2
+            mb-4
           "
               >
                 Sparkling Spaces. Zero Stress.
@@ -226,7 +226,7 @@ export default function Home() {
             md:text-4xl
             lg:text-sm
             text-foreground/70
-            mb-2
+            mb-5
             leading-relaxed
             max-w-lg
           "

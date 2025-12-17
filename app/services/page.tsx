@@ -330,7 +330,7 @@ export default function Services() {
                         </div>
 
                         {/* Footer - Fixed CTA */}
-                        <div className="flex flex-col pb-2 m sm:flex-row gap-3 w-full max-w-4xl mx-auto justify-center items-center">
+                        <div className="flex flex-col-reverse pb-2 m sm:flex-row pb-2  gap-3 w-full max-w-4xl mx-auto justify-center items-center">
 
                           <DrawerClose asChild>
                             <Button
